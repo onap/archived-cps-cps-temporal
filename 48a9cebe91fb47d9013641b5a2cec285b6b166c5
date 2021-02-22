@@ -1,0 +1,8 @@
+Code-Review+2: LF Jenkins CI <releng+lf-jobbuilder@linuxfoundation.org>
+Code-Review+2: Bruno Sakoto <bruno.sakoto@bell.ca>
+Verified+1: LF Jenkins CI <releng+lf-jobbuilder@linuxfoundation.org>
+Submitted-by: Bruno Sakoto <bruno.sakoto@bell.ca>
+Submitted-at: Mon, 22 Feb 2021 22:58:42 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/117716
+Project: cps/cps-temporal
+Branch: refs/heads/master
