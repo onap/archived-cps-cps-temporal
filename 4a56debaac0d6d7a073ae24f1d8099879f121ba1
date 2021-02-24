@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0f3230cc_31dcdfdd",
+        "filename": "src/test/java/org/onap/cps/temporal/ApplicationTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-02-24T12:00:42Z",
+      "side": 1,
+      "message": "I hope you consider Spock/Groovy when you start implementing real tests :-)",
+      "revId": "4a56debaac0d6d7a073ae24f1d8099879f121ba1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
