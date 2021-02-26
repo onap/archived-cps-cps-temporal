@@ -1,7 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
  * Copyright (c) 2021 Bell Canada.
- * Modifications Copyright (C) 2021 Bell Canada.
  * ================================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,21 +16,22 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal;
+package org.onap.cps.temporal.controller
 
-import org.assertj.core.util.Arrays;
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import spock.lang.Specification
 
-// This test class without any assertion is obviously not really useful.
-// Its only purpose is to be able to cover current code.
-// It should be deleted when more code will be added to the project.
-@SpringBootTest
-class ApplicationTest {
+/**
+ * Specification for Query Controller.
+ */
+class QueryControllerSpec extends Specification {
 
-    @Test
-    void testMain() {
-        Application.main(Arrays.array());
+    def objectUnderTest = new QueryController()
+
+    def 'Get home returns some data'() {
+        when: 'get home is invoked'
+            def response = objectUnderTest.home()
+        then: 'a response is returned'
+            ! response.empty
     }
 
 }
