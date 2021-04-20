@@ -1,7 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
  * Copyright (c) 2021 Bell Canada.
- * Modifications Copyright (C) 2021 Bell Canada.
  * ================================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +20,7 @@ package org.onap.cps.temporal;
 
 import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.Test;
+import org.onap.cps.temporal.repository.TimescaleContainer;
 import org.springframework.boot.test.context.SpringBootTest;
 
 // This test class without any assertion is obviously not really useful.
@@ -28,6 +28,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 // It should be deleted when more code will be added to the project.
 @SpringBootTest
 class ApplicationTest {
+
+    private static final TimescaleContainer TIMESCALE_CONTAINER = TimescaleContainer.getInstance();
+
+    static {
+        TIMESCALE_CONTAINER.start();
+    }
 
     @Test
     void testMain() {
