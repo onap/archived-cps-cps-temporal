@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6dda3a0c_77bf6a17",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-21T20:52:04Z",
+      "side": 1,
+      "message": "Same comment as the one in TimescaleContainers.",
+      "parentUuid": "0371f235_0a81a471",
+      "range": {
+        "startLine": 14,
+        "startChar": 30,
+        "endLine": 14,
+        "endChar": 34
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2d4837f7_07e55811",
         "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
         "patchSetId": 2
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "7ba3f219_d3db0d5d",
+        "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-21T20:52:04Z",
+      "side": 1,
+      "message": "OOM is now deploying PostgreSQL 13: https://github.com/onap/oom/blob/master/kubernetes/onap/values.yaml#L106\n\nI created https://jira.onap.org/browse/CPS-355 to upgrade CPS Core.",
+      "parentUuid": "0ee90a90_73d4d722",
+      "range": {
+        "startLine": 29,
+        "startChar": 74,
+        "endLine": 29,
+        "endChar": 78
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "01cecc0b_94b06d90",
         "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
         "patchSetId": 2
@@ -82,6 +130,30 @@
       "writtenOn": "2021-04-21T08:05:42Z",
       "side": 1,
       "message": "these could be tested!",
+      "range": {
+        "startLine": 54,
+        "startChar": 1,
+        "endLine": 56,
+        "endChar": 67
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "84d01dd4_c5e8bfad",
+        "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-21T20:52:04Z",
+      "side": 1,
+      "message": "Finally, I\u0027m not sure about the tests to be added as this is not the application code. This class belongs to tests and is to be used to test the application code. It is not expected that it is itself tested.\n\nThe way that we know that this code is correct is that when ApplicationTest is running, the application is successfully started, the connection to the testcontainers db instance is successful and the db schema is created in the testcontainers db instance.\n\nFor now we don\u0027t have any application code accessing the db to be tested yet.\n\nWe are simply ready with the testing framework in place, waiting for the application code.\n\nAm I missing something ?",
+      "parentUuid": "01cecc0b_94b06d90",
       "range": {
         "startLine": 54,
         "startChar": 1,
