@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2d4837f7_07e55811",
+        "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-04-21T08:05:42Z",
+      "side": 1,
+      "message": "I know its a infrastructure type class but still adding some test would be good practice, see some suggestions below",
+      "range": {
+        "startLine": 27,
+        "startChar": 13,
+        "endLine": 27,
+        "endChar": 32
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01cecc0b_94b06d90",
+        "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-04-21T08:05:42Z",
+      "side": 1,
+      "message": "these could be tested!",
+      "range": {
+        "startLine": 54,
+        "startChar": 1,
+        "endLine": 56,
+        "endChar": 67
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
