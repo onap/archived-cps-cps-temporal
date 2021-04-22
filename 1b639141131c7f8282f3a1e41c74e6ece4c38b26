@@ -163,6 +163,30 @@
       "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b808a86_eb9b4655",
+        "filename": "src/test/java/org/onap/cps/temporal/repository/TimescaleContainer.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-04-22T08:03:00Z",
+      "side": 1,
+      "message": "apologies I missed that I didn\u0027t realize this was a tets setup related class",
+      "parentUuid": "84d01dd4_c5e8bfad",
+      "range": {
+        "startLine": 54,
+        "startChar": 1,
+        "endLine": 56,
+        "endChar": 67
+      },
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
