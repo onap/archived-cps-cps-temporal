@@ -84,6 +84,24 @@
     },
     {
       "key": {
+        "uuid": "92df0178_e54535a5",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-22T12:58:03Z",
+      "side": 1,
+      "message": "I went with properties file that I found more straight forward with all one-liner properties instead of longer file with hierarchical multi line properties.\n\nWhen the file is growing I found properties file more easy to navigate thru compare to longer yaml ones.\n\nWhat I\u0027m saying here is completely subjective and I can change it if everybody has a preference for the yaml one.",
+      "parentUuid": "ca9139f7_1c01aa13",
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7a87afde_6d42b96a",
         "filename": "src/main/resources/db/changelog/schema/01-init-schema.xml",
         "patchSetId": 2
@@ -95,6 +113,24 @@
       "writtenOn": "2021-04-22T12:17:40Z",
       "side": 1,
       "message": "missed rollback in this changeset",
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "114fcf72_95243d96",
+        "filename": "src/main/resources/db/changelog/schema/01-init-schema.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-22T12:58:03Z",
+      "side": 1,
+      "message": "Rollback is not provided here as liquibase has auto rollback for this change type: https://docs.liquibase.com/change-types/community/create-index.html",
+      "parentUuid": "7a87afde_6d42b96a",
       "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
