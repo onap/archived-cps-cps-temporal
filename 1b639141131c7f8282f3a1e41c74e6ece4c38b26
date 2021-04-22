@@ -102,6 +102,24 @@
     },
     {
       "key": {
+        "uuid": "41f408e8_53fff515",
+        "filename": "src/main/resources/application.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-04-22T15:30:02Z",
+      "side": 1,
+      "message": "I think I would chose for consistency (follow CPS core) as well in this case.",
+      "parentUuid": "92df0178_e54535a5",
+      "revId": "1b639141131c7f8282f3a1e41c74e6ece4c38b26",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7a87afde_6d42b96a",
         "filename": "src/main/resources/db/changelog/schema/01-init-schema.xml",
         "patchSetId": 2
