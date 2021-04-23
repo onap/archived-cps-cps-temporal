@@ -1,0 +1,9 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Code-Review+1: Rishi Chail <rishi.chail@est.tech>
+Code-Review+2: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-by: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-at: Fri, 23 Apr 2021 16:11:35 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/120695
+Project: cps/cps-temporal
+Branch: refs/heads/master
