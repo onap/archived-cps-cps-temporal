@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0aa91932_fa610809",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-04-27T21:42:40Z",
+      "side": 0,
+      "message": "Replace with oparent version property",
+      "revId": "05855d531b912698ee63b1fd9de4303baff83670",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
