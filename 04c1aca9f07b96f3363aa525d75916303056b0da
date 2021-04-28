@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "95af3fa1_885bf35a",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-04-28T10:21:58Z",
+      "side": 1,
+      "message": "Where do you envision these values to be different for the two? Should they both not always track the same cps version. It seems correct as-is to me.",
+      "parentUuid": "d71e2341_620c9726",
+      "revId": "04c1aca9f07b96f3363aa525d75916303056b0da",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8f2cb3dc_d70f87a5",
         "filename": "pom.xml",
         "patchSetId": 3
