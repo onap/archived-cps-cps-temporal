@@ -30,3 +30,11 @@ build/
 
 ### MAC OS ###
 .DS_Store
+
+### Eclipse ###
+.settings/
+bin/
+tmp/
+.metadata
+*.tmp
+.checkstyle
