@@ -1,0 +1,207 @@
+openapi: 3.0.1
+info:
+  title: ONAP Open API v3 Configuration Persistence Service - Temporal
+  description: CPS-Temporal is time-series database for network data
+  version: 1.0.0
+  contact:
+    name: ONAP
+    url: 'https://onap.readthedocs.io'
+    email: onap-discuss@lists.onap.org
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+  x-planned-retirement-date: '202212'
+  x-component: Modeling
+servers:
+  - url: '//localhost:8088'
+tags:
+  - name: cps-temporal-query
+    description: CPS Temporal Query
+paths:
+  '/v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history':
+    get:
+      description: 'Read the data for the specified anchor based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchor data by name
+      operationId: getAnchorDataByName
+      parameters:
+        - name: dataspace-name
+          in: path
+          description: Dataspace Name
+          required: true
+          schema:
+            type: string
+        - name: anchor-name
+          in: path
+          description: Anchor Name
+          required: true
+          schema:
+            type: string
+        - name: after
+          in: query
+          description: Fetch Data after
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: simplePayloadFilter
+          in: query
+          description: Payload filter
+          required: false
+          schema:
+            type: string
+        - name: pointInTime
+          in: query
+          description: Consider data modified before
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: page
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: limit
+          in: query
+          description: Maximum number of records
+          required: false
+          schema:
+            type: integer
+            default: 1000
+        - name: sort
+          in: query
+          description: Sort by
+          required: false
+          schema:
+            type: string
+            default: timestamp:desc
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+  '/v1/dataspaces/{dataspace-name}/anchors/history':
+    get:
+      description: 'Read anchors data based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchors data based on filter criteria
+      operationId: getAnchorDataByFilter
+      parameters:
+        - name: dataspace-name
+          in: path
+          description: Dataspace Name
+          required: true
+          schema:
+            type: string
+        - name: schemaset-name
+          in: query
+          description: Schema-set name
+          required: true
+          schema:
+            type: string
+        - name: after
+          in: query
+          description: Fetch Data after
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: simplePayloadFilter
+          in: query
+          description: Payload filter
+          required: false
+          schema:
+            type: string
+        - name: pointInTime
+          in: query
+          description: Consider data modified before
+          required: false
+          schema:
+            type: string
+            format: date-time
+        - name: page
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: limit
+          in: query
+          description: Maximum number of records
+          required: false
+          schema:
+            type: integer
+            default: 1000
+        - name: sort
+          in: query
+          description: Sort by
+          required: false
+          schema:
+            type: string
+            default: timestamp:desc
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorMessage'
+components:
+  schemas:
+    ErrorMessage:
+      type: object
+      title: Error
+      properties:
+        status:
+          type: string
+          example: 400
+        message:
+          type: string
+          example: No data found
+        details:
+          type: string
+          example: Object of {type} with name {name} does not exist .
