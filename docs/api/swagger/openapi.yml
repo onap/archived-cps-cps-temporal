@@ -1,0 +1,210 @@
+openapi: 3.0.1
+info:
+  title: ONAP Open API v3 Configuration Persistence Service - Temporal
+  description: CPS-Temporal is time-series database for network data
+  version: 1.0.0
+  contact:
+    name: ONAP
+    url: 'https://onap.readthedocs.io'
+    email: onap-discuss@lists.onap.org
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+  x-planned-retirement-date: '202212'
+  x-component: Modeling
+servers:
+  - url: '//localhost:8088/cps-temporal/api'
+tags:
+  - name: cps-temporal-query
+    description: CPS Temporal Query
+paths:
+  '/v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history':
+    get:
+      description: 'Read the data for the specified anchor based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchor data by name
+      operationId: getAnchorDataByName
+      parameters:
+        - $ref: '#/components/parameters/dataspaceName'
+        - name: anchor-name
+          in: path
+          description: Anchor Name
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/after'
+        - $ref: '#/components/parameters/simplePayloadFilter'
+        - $ref: '#/components/parameters/pointInTime'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  '/v1/dataspaces/{dataspace-name}/anchors/history':
+    get:
+      description: 'Read anchors data based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchors data based on filter criteria
+      operationId: getAnchorDataByFilter
+      parameters:
+        - $ref: '#/components/parameters/dataspaceName'
+        - name: schemaset-name
+          in: query
+          description: Schema-set name
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/after'
+        - $ref: '#/components/parameters/simplePayloadFilter'
+        - $ref: '#/components/parameters/pointInTime'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          $ref: '#/components/responses/Ok'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+components:
+  parameters:
+    dataspaceName:
+      name: dataspace-name
+      in: path
+      description: Dataspace Name
+      required: true
+      schema:
+        type: string
+    after:
+      name: after
+      in: query
+      description: Fetch Data after
+      required: false
+      schema:
+        type: string
+        format: date-time
+    simplePayloadFilter:
+      name: simplePayloadFilter
+      in: query
+      description: Payload filter
+      required: false
+      schema:
+        type: string
+    pointInTime:
+      name: pointInTime
+      in: query
+      description: Consider data modified before
+      required: false
+      schema:
+        type: string
+        format: date-time
+    limit:
+      in: query
+      name: limit
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+        default: 1000
+      description: The numbers of items to return
+    page:
+      name: page
+      in: query
+      description: Page number
+      required: false
+      schema:
+        type: integer
+        default: 0
+    sort:
+      in: query
+      name: sort
+      required: false
+      schema:
+        type: string
+        default: timestamp:desc
+      description: Sort By
+  responses:
+    Ok:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AnchorHistory'
+    BadRequest:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+  schemas:
+    AnchorHistory:
+      type: object
+      title: AnchorHistory
+      properties:
+        nextRecordsLink:
+          type: string
+          example: /v1/dataspace/dataspace-name/anchors?limit=20&page=2
+        previousRecordsLink:
+          type: string
+          example: /v1/dataspace/dataspace-name/anchors?limit=20&page=0
+        records:
+          type: array
+          items:
+            type: object
+            properties:
+              timestamp:
+                type: string
+                format: date-time
+                example: '2021-03-21T00:00:00-0:00'
+              dataspace:
+                type: string
+                example: 'my-dataspace'
+              schemaSet:
+                type: string
+                example: 'my-schema-set'
+              anchor:
+                type: string
+                example: 'my-anchor'
+              data:
+                type: object
+                example: { "status" : "UP" }
+      required:
+        - records
+
+    ErrorMessage:
+      type: object
+      title: Error
+      properties:
+        status:
+          type: string
+          example: 400
+        message:
+          type: string
+          example: No data found
+        details:
+          type: string
+          example: Object of {type} with name {name} does not exist .
