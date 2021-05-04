@@ -1,6 +1,5 @@
 # ============LICENSE_START=======================================================
-# Copyright (c) 2021 Bell Canada.
-# Modifications Copyright (C) 2021 Nordix Foundation.
+# Copyright (C) 2021 Nordix Foundation.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,10 +14,30 @@
 # limitations under the License.
 # ============LICENSE_END=========================================================
 
-spring:
-    datasource:
-        url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/cpstemporaldb
-        username: ${DB_USERNAME}
-        password: ${DB_PASSWORD}
-    liquibase:
-        change-log: classpath:/db/changelog/changelog-master.xml
+version: "3.7"
+
+services:
+
+  cps-temporal:
+    container_name: cps-temporal
+    image: onap/cps-temporal:${VERSION}
+    ports:
+      - '8082:8080'
+    environment:
+      DB_HOST: timescaledb
+      DB_PORT: 5432
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+    restart: unless-stopped
+    depends_on:
+      - timescaledb
+
+  timescaledb:
+    container_name: timescaledb
+    image: timescale/timescaledb:2.1.1-pg13
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: cpstemporaldb
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
