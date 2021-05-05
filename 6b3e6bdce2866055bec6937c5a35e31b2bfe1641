@@ -46,6 +46,108 @@
       "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3e043f55_a27b2c77",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "It could be good to specify the timestamp format that is supported.",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a03f030_e8fbf50b",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "What about renaming the 2 pagination parameters `pageNumber` and `pageLimit` to make it clear that both work together to define the pagination ? Would it make the api more intuitive to use ?",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6008b96_4dc04e29",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "Should the system accept any value for the limit or should we have a maximum configurable one ?",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54b071d4_a70ad4a7",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "It could be good to specify the sort options that are supported:\n* timestamp:desc\n* timestamp:asc",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a30a05f9_aac2b752",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "`/history` is missing from the url.\n\n2 different links are required depending on the request:\n  /v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history?limit\u003d20\u0026page\u003d2\n  /v1/dataspaces/{dataspace-name}/anchors/history?limit\u003d20\u0026page\u003d2",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67877494_e8346376",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T12:53:34Z",
+      "side": 1,
+      "message": "This example does not really apply here, it could be more generic for now:\n  Dataspace or anchor not found",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
