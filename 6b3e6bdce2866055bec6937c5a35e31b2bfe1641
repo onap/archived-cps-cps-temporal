@@ -66,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "3b2a6932_c6214801",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:31:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3e043f55_a27b2c77",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a03f030_e8fbf50b",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4
@@ -100,6 +118,24 @@
     },
     {
       "key": {
+        "uuid": "3648e059_a992f1e9",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:31:42Z",
+      "side": 1,
+      "message": "I think we should to make sure that user does not request large number of records which can\u0027t be returned before timing out.",
+      "parentUuid": "c6008b96_4dc04e29",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "54b071d4_a70ad4a7",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4
@@ -114,6 +150,24 @@
       "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ff16cf97_a06db95d",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:31:42Z",
+      "side": 1,
+      "message": "I added the supported values in the description rather than using enum. Because in future we plan to support more fields like anchor.",
+      "parentUuid": "54b071d4_a70ad4a7",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -134,6 +188,24 @@
     },
     {
       "key": {
+        "uuid": "beeff053_f2efd2d7",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:31:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a30a05f9_aac2b752",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "67877494_e8346376",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4
@@ -148,6 +220,24 @@
       "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1995369a_6d59801d",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 210,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:31:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "67877494_e8346376",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
