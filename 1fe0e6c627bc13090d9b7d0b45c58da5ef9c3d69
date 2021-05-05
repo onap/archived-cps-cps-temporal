@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9401c660_75dbab31",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-05T16:21:44Z",
+      "side": 1,
+      "message": "why is this hardcoded now?",
+      "range": {
+        "startLine": 20,
+        "startChar": 42,
+        "endLine": 20,
+        "endChar": 60
+      },
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
