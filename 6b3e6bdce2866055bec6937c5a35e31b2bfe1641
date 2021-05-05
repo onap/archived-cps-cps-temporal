@@ -101,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "475d7ad4_63104f03",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-05T18:41:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a03f030_e8fbf50b",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c6008b96_4dc04e29",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4
