@@ -2,6 +2,108 @@
   "comments": [
     {
       "key": {
+        "uuid": "7f0fd944_201bb8f3",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "Then, as per properties change proposition, it becomes \n  mvn clean install -Pcps-temporal-docker -Ddocker.repository.push\u003d",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7bd89ab2_2a4e1619",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "I would propose introducing the following properties to give flexibility for each organization that is building:\n\n  // Repository to pull docker images from\n  docker.repository.pull \u003d nexus3.onap.org:10001/\n\n  // Repository to push docker images to\n  docker.repository.push \u003d nexus3.onap.org:10003/",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5810360d_3525ad03",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "Then, as per properties change proposition, it would become:\n\n  \u003cbase.image\u003e${docker.repository.pull}onap/integration-java11:8.0.0\u003c/base.image\u003e",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5334d26_a265a49f",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "Then, as per properties change proposition, it would become:\n\n  \u003cimage.name\u003e${docker.repository.push}onap/cps-temporal\u003c/image.name\u003e",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8125d4f7_03d0ae84",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "Then, as per properties change proposition, `nexus.repository` property is not needed anymore.",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "79f1fe6c_6bcc6544",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "Then, as per properties change proposition, it becomes:\n\n  \u003cimage\u003e${image.name}:${project.version}-${maven.build.timestamp}\u003c/image\u003e",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9401c660_75dbab31",
         "filename": "src/main/resources/application.yml",
         "patchSetId": 2
@@ -37,6 +139,30 @@
       "side": 1,
       "message": "apart from defaults, to keep in line with cps-core",
       "parentUuid": "9401c660_75dbab31",
+      "range": {
+        "startLine": 20,
+        "startChar": 42,
+        "endLine": 20,
+        "endChar": 60
+      },
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1cf4684_427402d5",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 1,
+      "message": "I also recommend keeping them configurable. This is important for the port number when the db instance is running on the same host as cps core one. For example, this could be the case for our local dev environment where we would need to expose both cps core and temporal db instances on the same machine.",
+      "parentUuid": "f44ebd07_b4765dc1",
       "range": {
         "startLine": 20,
         "startChar": 42,

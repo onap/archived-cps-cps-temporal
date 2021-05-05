@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4d9d4355_4e3bd131",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-05T23:17:52Z",
+      "side": 0,
+      "message": "I would keep a section with this db startup information (along with some liquibase information below) to present an alternative way from docker compose to run the application locally.\n\nIt could be useful to start the db and the application independently. The db instance is started as a docker container and then the application can be ran within the ide for development or investigation in debug mode. Docker compose is not required for these stages when building the docker image is not efficient or has limitations.",
+      "revId": "2bd625b905936425802d02f3bc067d5f56412188",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
