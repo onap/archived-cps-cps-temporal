@@ -14,10 +14,28 @@
 # limitations under the License.
 # ============LICENSE_END=========================================================
 
+server:
+    port: 8081
+
 spring:
     datasource:
         url: ${DB_URL}
         password: ${DB_PASSWORD}
         username: ${DB_USERNAME}
+        driverClassName: org.postgresql.Driver
+        initialization-mode: always
+
     liquibase:
         change-log: classpath:/db/changelog/changelog-master.xml
+    jpa:
+        ddl-auto: create
+        open-in-view: false
+        properties:
+            hibernate:
+                enable_lazy_load_no_trans: true
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+    level:
+        org:
+            springframework: INFO
