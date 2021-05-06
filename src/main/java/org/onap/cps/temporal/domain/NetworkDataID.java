@@ -16,30 +16,26 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal;
+package org.onap.cps.temporal.domain;
 
-import org.assertj.core.util.Arrays;
-import org.junit.jupiter.api.Test;
-import org.onap.cps.temporal.repository.TimescaleContainer;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.testcontainers.junit.jupiter.Testcontainers;
+import java.io.Serializable;
+import java.time.OffsetDateTime;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-// This test class without any assertion is obviously not really useful.
-// Its only purpose is to be able to cover current code.
-// It should be deleted when more code will be added to the project.
-@SpringBootTest
-@Testcontainers
-class ApplicationTest {
+/**
+ * Identifier class for current state.
+ */
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+public class NetworkDataID implements Serializable {
 
-    private static final TimescaleContainer TIMESCALE_CONTAINER = TimescaleContainer.getInstance();
+    private static final long serialVersionUID = 1L;
 
-    static {
-        TIMESCALE_CONTAINER.start();
-    }
-
-    @Test
-    void testMain() {
-        Application.main(Arrays.array());
-    }
+    private String dataspace;
+    private String anchor;
+    private OffsetDateTime timestamp;
 
 }
