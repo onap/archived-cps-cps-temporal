@@ -242,6 +242,24 @@
     },
     {
       "key": {
+        "uuid": "c15353b5_47a9caf6",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-06T11:24:50Z",
+      "side": 1,
+      "message": "I did it using inheritance. I tried to look for ways to override the variable in schema but could not find any. https://swagger.io/docs/specification/data-models/inheritance-and-polymorphism/",
+      "parentUuid": "d9003e1a_07b6fea6",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "67877494_e8346376",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4
