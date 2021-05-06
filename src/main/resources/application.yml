@@ -15,10 +15,21 @@
 # limitations under the License.
 # ============LICENSE_END=========================================================
 
+server:
+    port: 8081
+
 spring:
     datasource:
         url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/cpstemporaldb
         username: ${DB_USERNAME}
         password: ${DB_PASSWORD}
+        driverClassName: org.postgresql.Driver
+        initialization-mode: always
     liquibase:
         change-log: classpath:/db/changelog/changelog-master.xml
+    jpa:
+        properties:
+            hibernate:
+                enable_lazy_load_no_trans: true
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+
