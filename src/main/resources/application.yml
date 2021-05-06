@@ -15,6 +15,9 @@
 # limitations under the License.
 # ============LICENSE_END=========================================================
 
+server:
+    port: 8080
+
 spring:
     datasource:
         url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/cpstemporaldb
@@ -22,3 +25,12 @@ spring:
         password: ${DB_PASSWORD}
     liquibase:
         change-log: classpath:/db/changelog/changelog-master.xml
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+    level:
+        org:
+            springframework: INFO
