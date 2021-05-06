@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "08436d53_863b3a2c",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-06T16:24:48Z",
+      "side": 1,
+      "message": "As an historical list is returned, in case no records are found from the query, I think that the response still should be 200 OK, with an empty records list.\n\nThen, I\u0027m not really sure about 404 Not Found, as CPS Temporal does not have the information about dataspace or anchor existence per say.",
+      "parentUuid": "a6723691_7406a105",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 14
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d7784fed_55719b7b",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 12
@@ -60,6 +84,30 @@
       "writtenOn": "2021-05-06T14:53:33Z",
       "side": 1,
       "message": "could be moved to components.yml",
+      "range": {
+        "startLine": 89,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 10
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fecc431a_95194b60",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-06T16:24:48Z",
+      "side": 1,
+      "message": "For now, I feel that the file is still manageable and all the specification could remain in the same file. Any other advantage to have it split ?",
+      "parentUuid": "d7784fed_55719b7b",
       "range": {
         "startLine": 89,
         "startChar": 0,
