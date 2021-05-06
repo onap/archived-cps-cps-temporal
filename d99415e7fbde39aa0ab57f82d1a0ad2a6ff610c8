@@ -22,6 +22,53 @@
       "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a6723691_7406a105",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-06T14:53:33Z",
+      "side": 1,
+      "message": "Agree, 404 could be a possible scenario",
+      "parentUuid": "9d4f895f_7c49b12f",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 14
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d7784fed_55719b7b",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-06T14:53:33Z",
+      "side": 1,
+      "message": "could be moved to components.yml",
+      "range": {
+        "startLine": 89,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 10
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
