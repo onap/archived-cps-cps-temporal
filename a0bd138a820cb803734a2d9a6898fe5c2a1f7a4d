@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56847f35_6b75b017",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T13:05:18Z",
+      "side": 1,
+      "message": "i am in favour of hardcoding this for dcompose, since local setup should be as simple as possible. If required, dev can change in dc file. Maybe even VERSION, as most of the time dev wants to test \u0027latest\u0027 only. Kept like this for consistency, what do other think ?",
+      "range": {
+        "startLine": 28,
+        "startChar": 15,
+        "endLine": 28,
+        "endChar": 62
+      },
+      "revId": "a0bd138a820cb803734a2d9a6898fe5c2a1f7a4d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
