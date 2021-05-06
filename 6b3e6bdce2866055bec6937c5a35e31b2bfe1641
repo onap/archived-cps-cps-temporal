@@ -224,6 +224,24 @@
     },
     {
       "key": {
+        "uuid": "d9003e1a_07b6fea6",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-06T02:14:08Z",
+      "side": 1,
+      "message": "What I also meant is that for `/v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history` request the link in the response should be \n\n  /v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history?limit\u003d20\u0026page\u003d2\n\nCurrently we are not reflecting this. Do we want to capture this in the specification ? Is it easily feasible ?",
+      "parentUuid": "beeff053_f2efd2d7",
+      "revId": "6b3e6bdce2866055bec6937c5a35e31b2bfe1641",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "67877494_e8346376",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 4

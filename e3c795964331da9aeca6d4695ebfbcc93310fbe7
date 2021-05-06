@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf33b368_43d46892",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-06T02:14:08Z",
+      "side": 1,
+      "message": "Seconds are missing. Should it be \n\n  2021-05-05T00:05:30.123456-04:00\n\n?",
+      "revId": "e3c795964331da9aeca6d4695ebfbcc93310fbe7",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
