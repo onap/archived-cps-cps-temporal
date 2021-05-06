@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9d4f895f_7c49b12f",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T14:15:03Z",
+      "side": 1,
+      "message": "should 404 be not there? for both cases.",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 14
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
