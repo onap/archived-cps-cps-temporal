@@ -97,6 +97,30 @@
     },
     {
       "key": {
+        "uuid": "99feedf1_c79a6c3b",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-06T18:30:00Z",
+      "side": 1,
+      "message": "With this first implementation, the records history list returned would be empty when either of the 2 following is happening:\n\n1. No historical records exist for the specified dataspace and anchor\n2. Specified dataspace or anchor does not exist.\n\nLater on, if needed, the API could still be improved to differentiate these 2 scenario by having cps temporal validating dataspace and anchor existence by requesting to the owner of the information, which is cps core. In this case, to avoid additional latency, cps temporal would have to keep a sync cache of cps core dataspaces and anchors. \n\nOne important thing here I think is to maintain segregation of duties between services and to leave dataspace, schema set and anchor management to cps core (this is where client applications have to go to know about dataspaces, schema-sets and anchors).",
+      "parentUuid": "0a784f7e_f0e6a69b",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 14
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d7784fed_55719b7b",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 12
