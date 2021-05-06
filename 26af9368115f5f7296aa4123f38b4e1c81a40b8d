@@ -1,0 +1,10 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Niamh Core <niamh.core@est.tech>
+Code-Review+1: Bruno Sakoto <bruno.sakoto@bell.ca>
+Code-Review+1: Ruslan Kashapov <ruslan.kashapov@pantheon.tech>
+Code-Review+2: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-by: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-at: Thu, 06 May 2021 15:22:48 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/121077
+Project: cps/cps-temporal
+Branch: refs/heads/master
