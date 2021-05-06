@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c01e8535_f8be0f0f",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "this would create local image as \"onap/cps-temporal:latest\". Fine by me.",
+      "parentUuid": "7f0fd944_201bb8f3",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7bd89ab2_2a4e1619",
         "filename": "pom.xml",
         "patchSetId": 2
@@ -33,6 +51,24 @@
       "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a9f64160_8aef6964",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7bd89ab2_2a4e1619",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "fe23a64d_8a0d25a6",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "done. renamed to image.base to maintain alphabetical order",
+      "parentUuid": "5810360d_3525ad03",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5334d26_a265a49f",
         "filename": "pom.xml",
         "patchSetId": 2
@@ -67,6 +121,24 @@
       "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27cbff1e_b2a5de1a",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f5334d26_a265a49f",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "fc338be6_a439dd0a",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8125d4f7_03d0ae84",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "79f1fe6c_6bcc6544",
         "filename": "pom.xml",
         "patchSetId": 2
@@ -101,6 +191,24 @@
       "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b0fc985_2e1570c8",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 375,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "79f1fe6c_6bcc6544",
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -172,6 +280,30 @@
       "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6559380e_d310dd26",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T12:55:25Z",
+      "side": 1,
+      "message": "Done changes for port only.",
+      "parentUuid": "a1cf4684_427402d5",
+      "range": {
+        "startLine": 20,
+        "startChar": 42,
+        "endLine": 20,
+        "endChar": 60
+      },
+      "revId": "1fe0e6c627bc13090d9b7d0b45c58da5ef9c3d69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
