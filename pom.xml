@@ -35,6 +35,7 @@
     <description>CPS Temporal Service</description>
 
     <properties>
+        <hibernate-types.version>2.10.0</hibernate-types.version>
         <java.version>11</java.version>
         <minimum-coverage>0.8</minimum-coverage>
         <cps.checkstyle.version>1.0.1</cps.checkstyle.version>
@@ -78,9 +79,22 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.vladmihalcea</groupId>
+            <artifactId>hibernate-types-52</artifactId>
+            <version>${hibernate-types.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
             <version>4.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <!-- Runtime dependencies-->
         <dependency>
@@ -111,6 +125,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-spring</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>1.15.2</version>
@@ -121,6 +140,11 @@
             <artifactId>postgresql</artifactId>
             <version>1.15.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- For parsing JSON object -->
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
 
@@ -136,11 +160,10 @@
                 visit https://github.com/groovy/GMavenPlus/wiki -->
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
-                <version>1.12.1</version>
+                <version>1.9.0</version>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>compile</goal>
                             <goal>compileTests</goal>
                         </goals>
                     </execution>
