@@ -16,30 +16,28 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal;
+package org.onap.cps.temporal.service;
 
-import org.assertj.core.util.Arrays;
-import org.junit.jupiter.api.Test;
-import org.onap.cps.temporal.repository.TimescaleContainer;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.testcontainers.junit.jupiter.Testcontainers;
+import java.util.Collection;
+import org.onap.cps.temporal.domain.NetworkData;
 
-// This test class without any assertion is obviously not really useful.
-// Its only purpose is to be able to cover current code.
-// It should be deleted when more code will be added to the project.
-@SpringBootTest
-@Testcontainers
-class ApplicationTest {
+public interface NetworkDataService {
 
-    private static final TimescaleContainer TIMESCALE_CONTAINER = TimescaleContainer.getInstance();
+    /**
+     * Add Network data.
+     *
+     * @param networkData the network data to be stored
+     */
+    NetworkData addNetworkData(NetworkData networkData);
 
-    static {
-        TIMESCALE_CONTAINER.start();
-    }
-
-    @Test
-    void testMain() {
-        Application.main(Arrays.array());
-    }
+    /**
+     * Get Network data.
+     *
+     * @param dataspaceName dataspace name
+     * @param schemaSet schema set name
+     * @param anchor anchor name
+     * @param payload the network data filtering criteria
+     */
+    Collection<NetworkData> getNetworkData(String dataspaceName, String schemaSet, String anchor, String payload);
 
 }
