@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "0a784f7e_f0e6a69b",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-06T16:30:24Z",
+      "side": 1,
+      "message": "Ok. so in case dataspace in URL is wrong, what happens then? user might think no record exists(200), whereas all he had was a typo",
+      "parentUuid": "08436d53_863b3a2c",
+      "range": {
+        "startLine": 53,
+        "startChar": 9,
+        "endLine": 53,
+        "endChar": 14
+      },
+      "revId": "d99415e7fbde39aa0ab57f82d1a0ad2a6ff610c8",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d7784fed_55719b7b",
         "filename": "docs/api/swagger/openapi.yml",
         "patchSetId": 12
