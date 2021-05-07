@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "c64c4917_06463e09",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataService.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-07T15:49:29Z",
+      "side": 1,
+      "message": "As per DB schema, we have two more field - timestamp and version. I think version field will be auto-populated when a record is added but timestamp is something that we get in the input. \n\nI think Service should accept that domain object ( NetworkData ) as input instead of each field.",
+      "range": {
+        "startLine": 34,
+        "startChar": 16,
+        "endLine": 34,
+        "endChar": 30
+      },
+      "revId": "d775151e6ff73f3a52e11eb0fd6c6bb87fd66aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "386dbdb7_c764c9b3",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataService.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-05-07T15:49:29Z",
+      "side": 1,
+      "message": "Should be a collection as we can have multiple values based on the filtering criteria.",
+      "range": {
+        "startLine": 45,
+        "startChar": 4,
+        "endLine": 45,
+        "endChar": 15
+      },
+      "revId": "d775151e6ff73f3a52e11eb0fd6c6bb87fd66aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fcf04199_6896041e",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 10
