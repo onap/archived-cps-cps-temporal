@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "53d2e683_60d7a0e0",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-10T13:32:13Z",
+      "side": 1,
+      "message": "observedTimestamp",
+      "range": {
+        "startLine": 56,
+        "startChar": 27,
+        "endLine": 56,
+        "endChar": 36
+      },
+      "revId": "51f637ae3ae352fc934e69aff93c3e91551a2068",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e5bfc587_7b593043",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
         "patchSetId": 11
@@ -22,6 +45,53 @@
       "revId": "51f637ae3ae352fc934e69aff93c3e91551a2068",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d4198cb2_693da68e",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-10T13:32:13Z",
+      "side": 1,
+      "message": "storedTimestamp\n\nupdate liquibase accordingly later, use annotation mapping until then",
+      "range": {
+        "startLine": 77,
+        "startChar": 27,
+        "endLine": 77,
+        "endChar": 34
+      },
+      "revId": "51f637ae3ae352fc934e69aff93c3e91551a2068",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3a502be4_75a1fa58",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 11
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-10T13:32:13Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e5bfc587_7b593043",
+      "range": {
+        "startLine": 77,
+        "startChar": 12,
+        "endLine": 77,
+        "endChar": 34
+      },
+      "revId": "51f637ae3ae352fc934e69aff93c3e91551a2068",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
