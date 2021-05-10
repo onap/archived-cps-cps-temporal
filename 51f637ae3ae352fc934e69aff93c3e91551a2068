@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "76ba7f30_4c85db3f",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-10T12:35:15Z",
+      "side": 1,
+      "message": "dont think we need it since Liquibase creates our schema.",
+      "range": {
+        "startLine": 27,
+        "startChar": 8,
+        "endLine": 27,
+        "endChar": 35
+      },
+      "revId": "51f637ae3ae352fc934e69aff93c3e91551a2068",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
