@@ -88,6 +88,24 @@
     },
     {
       "key": {
+        "uuid": "5648cc82_1f977d8d",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2a81673d_f7b3fdae",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cb26c161_7d49a4a0",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
         "patchSetId": 13
@@ -105,6 +123,24 @@
     },
     {
       "key": {
+        "uuid": "226d3b74_c86640ed",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "cb26c161_7d49a4a0",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b7e581ad_a5f8b23a",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataID.java",
         "patchSetId": 13
@@ -119,6 +155,24 @@
       "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9685a56a_dc5e00ae",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataID.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b7e581ad_a5f8b23a",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -156,6 +210,24 @@
     },
     {
       "key": {
+        "uuid": "be012bce_f07cec18",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Yaa that was done for development convenience .. reverted that to 8080 in the commit",
+      "parentUuid": "d098af2e_3dbfb041",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4d2da5a4_da7f3964",
         "filename": "src/main/resources/application.yml",
         "patchSetId": 13
@@ -170,6 +242,24 @@
       "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6b3326ea_dd3b19b5",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4d2da5a4_da7f3964",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -255,6 +345,24 @@
       "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "437283dd_ca82ece8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T09:38:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e1228aed_8d3bb001",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
