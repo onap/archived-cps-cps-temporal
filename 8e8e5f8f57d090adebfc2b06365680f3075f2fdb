@@ -366,6 +366,52 @@
     },
     {
       "key": {
+        "uuid": "1ad81259_ed2fa724",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "Do not use java access modifier in Groovy as per our guidlines, no need for uppercase either\nif need use teh type but preffered not to ie.\n\ndef myCommonString \u003d \u0027some example\u0027",
+      "range": {
+        "startLine": 12,
+        "startChar": 4,
+        "endLine": 12,
+        "endChar": 25
+      },
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2342648f_069e550c",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "use single quotes unless you specifically want to use Groovy-String functionality (substitute variables etc.)\nsee guidelines for more explanation",
+      "range": {
+        "startLine": 15,
+        "startChar": 49,
+        "endLine": 15,
+        "endChar": 50
+      },
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0df26f17_fb0f914e",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
         "patchSetId": 13
@@ -400,6 +446,24 @@
     },
     {
       "key": {
+        "uuid": "04432586_abdaacac",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "setupSpec can be with @Shared (static) data. but in general it is safer to make sure each test has a fresh setup. I only use it for \u0027expensive\u0027 setup and when you are 100% sure that the test won\u0027t affect teh (data) you set up.",
+      "parentUuid": "d8efcc64_c3ec6143",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a9f1975c_6af27559",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
         "patchSetId": 13
@@ -417,6 +481,47 @@
     },
     {
       "key": {
+        "uuid": "e3fcd5b3_daf66b96",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "correct, the test is only verifying that the repository service is called with the correct parameters",
+      "parentUuid": "a9f1975c_6af27559",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57f91a8d_5dafecb3",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "not sure why you are verifying properties of networkData (they are part of your tets setup ie you are testing mainly your owntest setup).\nYou would only do this if the method being tested constructs or manipulated the networkData object.\ninstead you just need to verify the method is called using the same networkData object itself",
+      "range": {
+        "startLine": 41,
+        "startChar": 49,
+        "endLine": 43,
+        "endChar": 47
+      },
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "93d8325d_31abc3ec",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
         "patchSetId": 13
@@ -428,6 +533,24 @@
       "writtenOn": "2021-05-11T04:59:13Z",
       "side": 1,
       "message": "Querying is not implemented yet and is not in the scope of the story.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58e526d6_40c62135",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T14:14:11Z",
+      "side": 1,
+      "message": "agreed, not sure what you are trying to test here.",
+      "parentUuid": "93d8325d_31abc3ec",
       "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
