@@ -89,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "93dee4d0_43ecd178",
+        "filename": "pom.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T21:25:31Z",
+      "side": 1,
+      "message": "I\u0027m not really sure about the jacoco configuration change.\n\nFrom master branch, there is already QueryControllerSpec that is taken into account for code coverage. Anything else missing ?\n\nIt seems that the change broke code coverage validation:\n\n  [INFO] --- jacoco-maven-plugin:0.8.5:check (coverage-check) @ cps-temporal ---\n  [INFO] Skipping JaCoCo execution due to missing execution data file:/Users/bsakoto/dev/git-repositories/bell/onap/configuration-persistence-service/cps-temporal/**/code-coverage/jacoco-ut.exec",
+      "parentUuid": "039adc4c_96b8b9ac",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2a81673d_f7b3fdae",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
         "patchSetId": 13
@@ -156,6 +174,24 @@
       "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba5597af_59df0fc9",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T21:25:31Z",
+      "side": 1,
+      "message": "Nice to have comment:\n\nWhile we are renaming timestamps fields, why not making them completely consistent ?\n\nEither: observedTimestamp and createdTimestamp\n\nOr: observationTimestamp and creationTimestamp",
+      "parentUuid": "226d3b74_c86640ed",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     },
     {
       "key": {

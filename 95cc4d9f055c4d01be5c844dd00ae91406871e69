@@ -48,6 +48,23 @@
     },
     {
       "key": {
+        "uuid": "c3febd9b_789ff29f",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T21:25:31Z",
+      "side": 1,
+      "message": "I\u0027m not too familiar with groovy, I presume a kind of NPE is raised if storedData.getCreationTimestamp() is null ... Just to be sure this case is not missed ...",
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4eea79f7_eefaad08",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
         "patchSetId": 17
