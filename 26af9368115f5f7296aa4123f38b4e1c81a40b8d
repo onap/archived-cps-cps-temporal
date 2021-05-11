@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f4dcc08d_c3f8cc9f",
+        "filename": "src/test/java/org/onap/cps/temporal/ApplicationTest.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 0,
+      "message": "This test class is not an actual test class with assertions. It has only been created to meet the code coverage minimum criteria while there was no code yet for the application. \n\nNow that we are adding actual code and related test classes, are we now able to delete this ApplicationTest class ?",
+      "revId": "26af9368115f5f7296aa4123f38b4e1c81a40b8d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}

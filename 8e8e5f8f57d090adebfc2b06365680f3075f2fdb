@@ -1,0 +1,310 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45ef2617_f5814dfb",
+        "filename": "pom.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Do not change docker repository properties, it breaks docker build maven command. See the documentation in README file.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "210db456_761eec86",
+        "filename": "pom.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Personally, I used to see benefit to have properties created for pom values that are either:\n\n(1) used at several places in the pom file\nor (2) are core fundamental values for the application structure or definition.\n\nI feel that having many properties for values that are used only once and not core fundamental to the application make the pom less straightforward to read and could hide main core properties among many other not so important ones.\n\nHere, I feel that hibernate types version could be inline. For me, it is not as structuring as the application docker image name for example.\n\nThis a subjective point of view that can be discussed, I agree ...",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "29b7cd82_944e9186",
+        "filename": "pom.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Do we have a bug with jacoco configuration ? Are these changes related to this story ?\nSame questions for jacoco plugin configuration changes below.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2a81673d_f7b3fdae",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Maybe we could be a bit more precise about the role of this entity. Could it be something like:\n\nEntity to store an anchor configuration or state along with the moment it has been observed.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb26c161_7d49a4a0",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "\u0027lastTimestamp\u0027 is suggesting a changing value whose current one is the last one. But as this timestamp is never changing I would have a preference for \u0027observedTimestamp\u0027.\n\nOr \u0027observationTimestamp\u0027 if we want to make it consistent with \u0027creationTimestamp\u0027",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7e581ad_a5f8b23a",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataID.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "... for network data.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "645f9377_82ae98bc",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "As retrieving data is not is this story scope, could we either not define this method on the service interface or make it throwing Not Implemented exception to make it clear that it is not there yet.\n\nThe default implementation provided here is some how hiding a bit the actual state of the feature.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d098af2e_3dbfb041",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Is there any reason to change the default 8080 port number ? Also, changing this port number is breaking docker compose configuration.\n\nIt is for convenience for the specific situation when developers would like to run both cps and cps core locally, without docker ? \n\nFor docker and kubernetes deployments, It could be worth to a keep services standardized, all using same 8080 port.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d2da5a4_da7f3964",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Is there any reason to enable lazy loading outside from transactional context ?\n\nFor now, there are no related entities of network data that seem to require it. Am I missing something ?\n\nAlso, when used, this property can introduce an overhead on db connections, then it should be considered as last option.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02930f5f_52755059",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Unit test classes should be independent.\n\nThis one depends on ApplicationTest to have testcontainers started.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "087eeb16_96116dae",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "I\u0027m not sure about the need of using GSON library here. What is the difference between the provided string and the PAYLOAD one ?",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ac8c914_48ab02fd",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Indentation formatting ?",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "37118636_aa489cc9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "It could be interesting to verify that the creation timestamp has been successfully filled in the returned object (and that the observation timestamp is kept unchanged in the returned object).",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e1228aed_8d3bb001",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "License is missing.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0df26f17_fb0f914e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Same comment as the one for NetworkDataRepositorySpec.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d8efcc64_c3ec6143",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Are the following really setup instanciations that need to be done before each feature method ?",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a9f1975c_6af27559",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Then clause is not verifying that network data is returned, it is more verifying that network data is asked to be persisted.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93d8325d_31abc3ec",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 13
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T04:59:13Z",
+      "side": 1,
+      "message": "Querying is not implemented yet and is not in the scope of the story.",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
