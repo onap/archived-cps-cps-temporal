@@ -53,6 +53,24 @@
     },
     {
       "key": {
+        "uuid": "039adc4c_96b8b9ac",
+        "filename": "pom.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-11T05:20:52Z",
+      "side": 1,
+      "message": "I just noticed item 3. from the commit message to include spock tests in coverage check. Then I presume this is the explanation for the change.",
+      "parentUuid": "29b7cd82_944e9186",
+      "revId": "8e8e5f8f57d090adebfc2b06365680f3075f2fdb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2a81673d_f7b3fdae",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkData.java",
         "patchSetId": 13
