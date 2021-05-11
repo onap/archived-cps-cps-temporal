@@ -16,6 +16,24 @@
       "revId": "26af9368115f5f7296aa4123f38b4e1c81a40b8d",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "08c71872_d2102568",
+        "filename": "src/test/java/org/onap/cps/temporal/ApplicationTest.java",
+        "patchSetId": 13
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-11T15:59:32Z",
+      "side": 0,
+      "message": "Ack",
+      "parentUuid": "f4dcc08d_c3f8cc9f",
+      "revId": "26af9368115f5f7296aa4123f38b4e1c81a40b8d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
