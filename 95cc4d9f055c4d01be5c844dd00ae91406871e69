@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "74af7527_236c30fd",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T17:01:56Z",
+      "side": 1,
+      "message": "dont use upper case",
+      "range": {
+        "startLine": 34,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 26
+      },
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01afacde_eefc4e66",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T17:01:56Z",
+      "side": 1,
+      "message": "yes! That\u0027s is the kind of thing that goes into a setupSpec method :-)",
+      "range": {
+        "startLine": 50,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 37
+      },
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4eea79f7_eefaad08",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplTest.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-11T17:01:56Z",
+      "side": 1,
+      "message": "lower case",
+      "range": {
+        "startLine": 28,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 26
+      },
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
