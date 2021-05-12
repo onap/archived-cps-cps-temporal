@@ -18,4 +18,4 @@
 
 package org.onap.cps.temporal.repository;
 
-public interface NetworkDataRepository { }
+public class NetworkDataRepository { }
