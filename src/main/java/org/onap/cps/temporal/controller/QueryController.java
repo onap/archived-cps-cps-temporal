@@ -18,6 +18,7 @@
 
 package org.onap.cps.temporal.controller;
 
+import org.onap.cps.temporal.repository.NetworkDataRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,9 +28,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class QueryController {
 
+    private final NetworkDataRepository repository;
+
+    public QueryController(final NetworkDataRepository repository) {
+        this.repository = repository;
+    }
+
     @GetMapping("/")
     public String home() {
-        return "Welcome to CPS Temporal Service!";
+        return repository != null ? "Welcome to CPS Temporal Service!" : "N/A";
     }
 
 }
