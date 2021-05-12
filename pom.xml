@@ -367,7 +367,7 @@
                             <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
                         </container>
                         <from>
-                            <image>${base.image}</image>
+                            <image>${image.base}</image>
                         </from>
                         <to>
                             <tags>
