@@ -16,6 +16,19 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.service;
+package org.onap.cps.temporal.service.query;
 
-public interface NetworkDataService { }
+import org.onap.cps.temporal.service.store.StoreNetworkDataService;
+
+public class QueryNetworkDataService {
+
+    private final StoreNetworkDataService service;
+
+    public QueryNetworkDataService() {
+        this.service = new StoreNetworkDataService();
+    }
+
+    public StoreNetworkDataService getService() {
+        return service;
+    }
+}
