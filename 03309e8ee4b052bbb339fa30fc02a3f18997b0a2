@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "cc041640_66b8d228",
+        "filename": "pom.xml",
+        "patchSetId": 18
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T10:18:06Z",
+      "side": 1,
+      "message": "yaa adding lombok.config fixed the issue..",
+      "parentUuid": "1e248199_209c51f3",
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "24496eb5_52e9df21",
         "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataID.java",
         "patchSetId": 18
@@ -75,6 +93,30 @@
       "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9a9cf46_186dc561",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataID.java",
+        "patchSetId": 18
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T10:18:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "24496eb5_52e9df21",
+      "range": {
+        "startLine": 33,
+        "startChar": 24,
+        "endLine": 33,
+        "endChar": 26
+      },
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -217,6 +259,30 @@
     },
     {
       "key": {
+        "uuid": "1d7b6893_8afc26a0",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 18
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T10:18:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5b5bbd53_1ef936d5",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 0
+      },
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1eefd8bf_29806e68",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
         "patchSetId": 18
@@ -237,6 +303,30 @@
       "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3e9758c_474c2dc7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 18
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T10:18:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1eefd8bf_29806e68",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 39,
+        "endChar": 81
+      },
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
