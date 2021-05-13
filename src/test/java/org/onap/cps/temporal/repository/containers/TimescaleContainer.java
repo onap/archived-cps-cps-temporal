@@ -16,7 +16,7 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.repository;
+package org.onap.cps.temporal.repository.containers;
 
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.utility.DockerImageName;

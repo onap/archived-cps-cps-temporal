@@ -16,28 +16,26 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal;
+package org.onap.cps.temporal.service;
 
-import org.assertj.core.util.Arrays;
-import org.junit.jupiter.api.Test;
-import org.onap.cps.temporal.repository.TimescaleContainer;
-import org.springframework.boot.test.context.SpringBootTest;
+import lombok.extern.slf4j.Slf4j;
+import org.onap.cps.temporal.domain.NetworkData;
+import org.onap.cps.temporal.repository.NetworkDataRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-// This test class without any assertion is obviously not really useful.
-// Its only purpose is to be able to cover current code.
-// It should be deleted when more code will be added to the project.
-@SpringBootTest
-class ApplicationTest {
+/**
+ * Service implementation for Network Data.
+ */
+@Component
+@Slf4j
+public class NetworkDataServiceImpl implements NetworkDataService {
 
-    private static final TimescaleContainer TIMESCALE_CONTAINER = TimescaleContainer.getInstance();
+    @Autowired
+    NetworkDataRepository networkDataRepository;
 
-    static {
-        TIMESCALE_CONTAINER.start();
+    @Override
+    public NetworkData addNetworkData(final NetworkData networkData) {
+        return networkDataRepository.save(networkData);
     }
-
-    @Test
-    void testMain() {
-        Application.main(Arrays.array());
-    }
-
 }
