@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "aeeefbfb_e910d301",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 20
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T10:31:33Z",
+      "side": 1,
+      "message": "non blocking: remove space",
+      "range": {
+        "startLine": 64,
+        "startChar": 14,
+        "endLine": 64,
+        "endChar": 15
+      },
+      "revId": "d31d8e1cc167abf7835a1771b5ddc8d78aba9ac6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d2fb53f_cca246a6",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 20
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T10:31:33Z",
+      "side": 1,
+      "message": "not blocking: used only in one test method declare there.",
+      "range": {
+        "startLine": 32,
+        "startChar": 3,
+        "endLine": 32,
+        "endChar": 39
+      },
+      "revId": "d31d8e1cc167abf7835a1771b5ddc8d78aba9ac6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
