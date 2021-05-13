@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0f828817_92688d13",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T08:41:46Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "74af7527_236c30fd",
+      "range": {
+        "startLine": 34,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 26
+      },
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01afacde_eefc4e66",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
         "patchSetId": 17
@@ -59,6 +83,24 @@
       "writtenOn": "2021-05-11T21:25:31Z",
       "side": 1,
       "message": "I\u0027m not too familiar with groovy, I presume a kind of NPE is raised if storedData.getCreationTimestamp() is null ... Just to be sure this case is not missed ...",
+      "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bc3810c_f9481cbf",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 17
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-05-13T08:41:46Z",
+      "side": 1,
+      "message": "as both CreatedTimestamp is non nullable fields in DB, I dont think this test could throw a NPE.",
+      "parentUuid": "c3febd9b_789ff29f",
       "revId": "95cc4d9f055c4d01be5c844dd00ae91406871e69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
