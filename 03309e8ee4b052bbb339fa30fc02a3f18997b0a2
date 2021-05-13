@@ -147,6 +147,53 @@
     },
     {
       "key": {
+        "uuid": "77fac064_32e599aa",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 18
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T10:06:49Z",
+      "side": 1,
+      "message": "apologies, I got the logic wrong you already have the require check on the next line.",
+      "parentUuid": "a6b0f562_06fb8f32",
+      "range": {
+        "startLine": 64,
+        "startChar": 12,
+        "endLine": 64,
+        "endChar": 52
+      },
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aef8ed58_ede707da",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 18
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T10:06:49Z",
+      "side": 1,
+      "message": "thsi also proves it is NOT NULL, no need for explicit not-null check\n\ninstead make sure you verify this field is NULL in the ORIGNAL networkdata object (as mentioned before)",
+      "range": {
+        "startLine": 66,
+        "startChar": 44,
+        "endLine": 66,
+        "endChar": 81
+      },
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5b5bbd53_1ef936d5",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
         "patchSetId": 18
