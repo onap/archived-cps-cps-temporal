@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9bbb9f08_841732f1",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T14:33:32Z",
+      "side": 1,
+      "message": "any particular reason these dependencies version are not controlled with common properties?",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 31
+      },
+      "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92fbc5a1_cbc0c8a3",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-13T14:33:32Z",
+      "side": 1,
+      "message": "I think we could do with a component diagram to visualize the \u0027allowed\u0027 dependencies.\nWe some new joiners next week, it might be a good starting task for them to draw such diagrams",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 80
+      },
+      "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
