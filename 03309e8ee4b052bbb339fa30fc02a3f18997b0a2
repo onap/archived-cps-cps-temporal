@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6fadf0d_438f66d5",
+        "filename": "pom.xml",
+        "patchSetId": 18
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-13T00:37:03Z",
+      "side": 1,
+      "message": "equals() methods from domain are the ones that cause the coverage drop.\n\nLet\u0027s keep this package exclusion you added. Then, we\u0027ll see if it is enough for sonar that is also checking the conditions coverage percentage (and I\u0027m not sure if the exclusion applies to this one also or not).\n\nWe\u0027ll come back to the coverage if sonar starts complaining. Anyway, we don\u0027t even have enough code to test yet ;)",
+      "revId": "03309e8ee4b052bbb339fa30fc02a3f18997b0a2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
