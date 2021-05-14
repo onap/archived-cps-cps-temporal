@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1aaac1dc_d271ab3d",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-14T14:20:30Z",
+      "side": 1,
+      "message": "The change is done to to have all of them as properties.\n\nWith CPS-402 I think we\u0027ll be able to document which pom values should be properties and which ones could be inline.",
+      "parentUuid": "9bbb9f08_841732f1",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 31
+      },
+      "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "92fbc5a1_cbc0c8a3",
         "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
         "patchSetId": 2
