@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "41902ee3_65989ec6",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-17T12:04:55Z",
+      "side": 1,
+      "message": "alphabetical order is broken, looks like you introduced grouping. Fine by me, but finding properties alphabetically is easier to me",
+      "range": {
+        "startLine": 65,
+        "startChar": 9,
+        "endLine": 65,
+        "endChar": 32
+      },
+      "revId": "c6470e079ada9a85de89b2a6a01b69ff981c7cd3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "732c2dc7_d6eb1d04",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6862
+      },
+      "writtenOn": "2021-05-17T12:04:55Z",
+      "side": 1,
+      "message": "curious here. would this not be covered by line 47 ?",
+      "range": {
+        "startLine": 63,
+        "startChar": 3,
+        "endLine": 66,
+        "endChar": 0
+      },
+      "revId": "c6470e079ada9a85de89b2a6a01b69ff981c7cd3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
