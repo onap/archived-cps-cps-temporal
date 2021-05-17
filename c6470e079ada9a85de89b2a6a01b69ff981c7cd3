@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3961054f_b63cb957",
+        "filename": "pom.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-17T16:09:24Z",
+      "side": 1,
+      "message": "Agree, changed.",
+      "parentUuid": "41902ee3_65989ec6",
+      "range": {
+        "startLine": 65,
+        "startChar": 9,
+        "endLine": 65,
+        "endChar": 32
+      },
+      "revId": "c6470e079ada9a85de89b2a6a01b69ff981c7cd3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "732c2dc7_d6eb1d04",
         "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2021-05-17T12:04:55Z",
       "side": 1,
       "message": "curious here. would this not be covered by line 47 ?",
+      "range": {
+        "startLine": 63,
+        "startChar": 3,
+        "endLine": 66,
+        "endChar": 0
+      },
+      "revId": "c6470e079ada9a85de89b2a6a01b69ff981c7cd3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b4e15fef_e67f1f9d",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-17T16:09:24Z",
+      "side": 1,
+      "message": "Exact.\n\nI think that this Lang API is providing more flexibility to have custom validation. For now using predefined Layered Architecture rule from Libary API is doing the validation we need to start. Let\u0027s keep only this one then.\n\nThe change is done.",
+      "parentUuid": "732c2dc7_d6eb1d04",
       "range": {
         "startLine": 63,
         "startChar": 3,
