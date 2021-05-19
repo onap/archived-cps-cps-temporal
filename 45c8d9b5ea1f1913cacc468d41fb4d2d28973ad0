@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "52498531_7389ef5d",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-19T10:52:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1aaac1dc_d271ab3d",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 31
+      },
+      "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "92fbc5a1_cbc0c8a3",
         "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
         "patchSetId": 2
@@ -69,6 +93,30 @@
       "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6b49aadd_76cddb73",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-05-19T10:52:31Z",
+      "side": 1,
+      "message": "created https://jira.onap.org/browse/CPS-423 for this task",
+      "parentUuid": "92fbc5a1_cbc0c8a3",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 80
+      },
+      "revId": "45c8d9b5ea1f1913cacc468d41fb4d2d28973ad0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
