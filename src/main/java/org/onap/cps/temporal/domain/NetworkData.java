@@ -37,6 +37,7 @@ import org.hibernate.annotations.TypeDef;
 
 /**
  * Entity to store an anchor configuration or state along with the moment it has been observed.
+ * Testing CI-Management job
  */
 @Data
 @NoArgsConstructor
