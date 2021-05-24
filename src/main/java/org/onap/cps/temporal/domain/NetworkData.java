@@ -48,10 +48,10 @@ import org.hibernate.annotations.TypeDef;
 @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class NetworkData implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -8032810412816532433L;
 
     @Id
-    @Column(name = "timestamp")
+    @Column
     private OffsetDateTime observedTimestamp;
 
     @Id
@@ -72,7 +72,7 @@ public class NetworkData implements Serializable {
     private String payload;
 
     @CreationTimestamp
-    @Column(name = "version", updatable = false)
+    @Column(updatable = false)
     private OffsetDateTime createdTimestamp;
 
 }

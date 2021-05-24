@@ -18,13 +18,20 @@
 -->
 
 <databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
-    <include file="db/changelog/schema/01-init-schema.xml"/>
-    <include file="db/changelog/data/02-init-data.xml"/>
-    <include file="db/changelog/schema/03-rename-columns.xml"/>
-
+    <changeSet id="3" author="cps">
+        <comment>Rename timestamp and version columns in network data timescale table</comment>
+        <renameColumn
+          newColumnName="observed_timestamp"
+          oldColumnName="timestamp"
+          tableName="network_data"/>
+        <renameColumn
+          newColumnName="created_timestamp"
+          oldColumnName="version"
+          tableName="network_data"/>
+    </changeSet>
 </databaseChangeLog>
