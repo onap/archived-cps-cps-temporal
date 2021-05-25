@@ -1,0 +1,159 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "09f77687_3ea058be",
+        "filename": "src/main/resources/db/changelog/changelog-master.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Should be schema instead of data:\n\n  Failed to execute goal org.liquibase:liquibase-maven-plugin:4.3.2:update (default-cli) on project cps-temporal: \n  Error setting up or running Liquibase:\n  liquibase.exception.SetupException: The file db/changelog/data/03-update-schema.xml was not found",
+      "range": {
+        "startLine": 28,
+        "startChar": 32,
+        "endLine": 28,
+        "endChar": 36
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a13c4cc_49f1c2f7",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Providing a more specific file name could help to give a better idea of the change just by looking at the folder listing or changelog-master.xml file content. This will be interesting when the number of files is going to increase and all of them will be schema updates.\n\nEx: 03-remame-network-data-timestamps-fields.xml",
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec7667a8_b0edb50c",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Change set id 1.3 has already been applied. This one should be id 3.",
+      "range": {
+        "startLine": 26,
+        "startChar": 19,
+        "endLine": 26,
+        "endChar": 22
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "98d6ed5e_fbdef664",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Can be removed, we are not touching the this.",
+      "range": {
+        "startLine": 29,
+        "startChar": 10,
+        "endLine": 29,
+        "endChar": 50
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6024bf5a_12c86a68",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Can be removed, we are not touching the this.",
+      "range": {
+        "startLine": 32,
+        "startChar": 10,
+        "endLine": 32,
+        "endChar": 80
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d36084db_675f62ee",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Same comment as above.",
+      "range": {
+        "startLine": 35,
+        "startChar": 10,
+        "endLine": 35,
+        "endChar": 50
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c35fe30b_542f820a",
+        "filename": "src/main/resources/db/changelog/schema/03-update-schema.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-05-25T19:18:33Z",
+      "side": 1,
+      "message": "Same comment as above.",
+      "range": {
+        "startLine": 38,
+        "startChar": 10,
+        "endLine": 38,
+        "endChar": 139
+      },
+      "revId": "d1b8e75895c38ec36395fe21d5f5fef608980424",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
