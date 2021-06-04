@@ -1,5 +1,6 @@
 # ============LICENSE_START=======================================================
 # Copyright (C) 2021 Nordix Foundation.
+# Modifications Copyright (C) 2021 Bell Canada.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,16 +29,40 @@ services:
       DB_PORT: 5432
       DB_USERNAME: cpstemporal
       DB_PASSWORD: cpstemporal
+      SPRING_PROFILES_ACTIVE: dev-kafka
+      KAFKA_BOOTSTRAP_SERVER: kafka:9092
+
     restart: unless-stopped
     depends_on:
       - timescaledb
+      - kafka
 
   timescaledb:
     container_name: timescaledb
     image: timescale/timescaledb:2.1.1-pg13
     ports:
-      - '5432:5432'
+      - '5433:5432'
     environment:
       POSTGRES_DB: cpstemporaldb
-      POSTGRES_USER: ${DB_USERNAME}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: cpstemporal
+      POSTGRES_PASSWORD: cpstemporal
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:6.1.1
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+  kafka:
+    image: confluentinc/cp-kafka:6.1.1
+    container_name: kafka
+    ports:
+      - "19092:19092"
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,CONNECTIONS_FROM_HOST://localhost:19092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONNECTIONS_FROM_HOST:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
