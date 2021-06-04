@@ -16,22 +16,19 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.controller
-
-import spock.lang.Specification
+package org.onap.cps.temporal.service;
 
 /**
- * Specification for Query Controller.
+ * Class representing a service exception related to business error.
  */
-class QueryControllerSpec extends Specification {
+public class ServiceException extends RuntimeException {
 
-    def objectUnderTest = new QueryController()
-
-    def 'Get home returns some data'() {
-        when: 'get home is invoked'
-            def response = objectUnderTest.home()
-        then: 'a response is returned'
-            ! response.empty
+    /**
+     * Instantiate a service exception with the specified message.
+     * @param message the exception message
+     */
+    public ServiceException(final String message) {
+        super(message);
     }
 
 }
