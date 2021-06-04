@@ -16,20 +16,19 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+package org.onap.cps.temporal.controller.event.listener.exception;
 
 /**
- * Controller for query requests.
+ * Class representing a listener exception related to system event error.
  */
-@RestController
-public class QueryController {
+public class ListenerException extends RuntimeException {
 
-    @GetMapping("/")
-    public String home() {
-        return "Welcome to CPS Temporal Service!";
+    public ListenerException() {
+        super();
+    }
+
+    public ListenerException(final Throwable cause) {
+        super(cause);
     }
 
 }

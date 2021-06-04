@@ -46,6 +46,8 @@
         <minimum-coverage>0.8</minimum-coverage>
         <!-- Application dependencies versions -->
         <spring-boot-dependencies.version>2.3.8.RELEASE</spring-boot-dependencies.version>
+        <lombok.version>1.18.20</lombok.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
         <hibernate-types.version>2.10.0</hibernate-types.version>
         <liquibase-core.version>4.3.2</liquibase-core.version>
         <!-- Tests dependencies versions -->
@@ -117,6 +119,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.onap.cps</groupId>
+            <artifactId>cps-events</artifactId>
+            <version>1.1.0-SNAPSHOT</version>
+        </dependency>
         <!-- Runtime dependencies-->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -163,6 +179,17 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>kafka</artifactId>
+            <version>1.15.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.tngtech.archunit</groupId>
             <artifactId>archunit-junit5</artifactId>
             <version>${archunit-junit5.version}</version>
@@ -172,6 +199,25 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -364,6 +410,9 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <excludes>
+                                <exclude>org/onap/cps/temporal/event/model/*MapperImpl.class</exclude>
+                            </excludes>
                             <dataFile>${project.build.directory}/code-coverage/jacoco-ut.exec</dataFile>
                             <rules>
                                 <rule>

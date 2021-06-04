@@ -20,12 +20,48 @@ mvn clean install -Pcps-temporal-docker -Ddocker.repository.push=
 ## Running via Docker Compose
 
 `docker-compose.yml` file is provided to be run with `docker-compose` tool and local image previously built.
-It starts both Postgres Timescale database and CPS Temporal service.
+It starts following services:
 
-Execute following command from project root folder:
+* CPS Temporal service (cps-temporal)
+* Postgres Timescale database (timescaledb)
+* Kafka broker (zookeeper and kafka)
+
+Execute following command from project root folder to start all services:
 
 ```bash
-docker-compose up -d
+docker-compose up
+```
+
+Then, use `kafkacat` tool to produce a data updated event into the Kafka topic:
+
+```bash
+docker run -i --rm --network=host edenhill/kafkacat:1.6.0 -b localhost:19092 -t cps.cfg-state-events -D/ -P <<EOF
+{
+    "schema": "urn:cps:org.onap.cps:data-updated-event-schema:1.1.0-SNAPSHOT",
+    "id": "38aa6cc6-264d-4ede-b534-18f5c1f403ea",
+    "source": "urn:cps:org.onap.cps",
+    "type": "org.onap.cps.data-updated-event",
+    "content": {
+        "observedTimestamp": "2021-06-09T13:00:00.123-0400",
+        "dataspaceName": "my-dataspace",
+        "schemaSetName": "my-schema-set",
+        "anchorName": "my-anchor",
+        "data": {
+            "interface": {
+                "name": "itf-1",
+                "status": "up"
+            }
+        }
+    }
+}
+EOF
+```
+
+Finally, verify that CPS Temporal data is persisted as expected:
+
+```bash
+psql -h localhost -p 5433 -d cpstemporaldb -U cpstemporal -c \
+  "select * from network_data order by created_timestamp desc limit 1"
 ```
 
 ## Alternative local db setup

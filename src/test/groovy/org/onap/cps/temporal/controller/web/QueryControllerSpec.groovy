@@ -16,26 +16,22 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.domain;
+package org.onap.cps.temporal.controller.web
 
-import java.io.Serializable;
-import java.time.OffsetDateTime;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import spock.lang.Specification
 
 /**
- * Identifier class for network data.
+ * Specification for Query Controller.
  */
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-public class NetworkDataId implements Serializable {
+class QueryControllerSpec extends Specification {
 
-    private static final long serialVersionUID = -1039604338648260766L;
+    def objectUnderTest = new QueryController()
 
-    private OffsetDateTime observedTimestamp;
-    private String dataspace;
-    private String anchor;
+    def 'Get home returns some data'() {
+        when: 'get home is invoked'
+            def response = objectUnderTest.home()
+        then: 'a response is returned'
+            ! response.empty
+    }
 
 }
