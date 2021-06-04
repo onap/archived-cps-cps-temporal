@@ -18,28 +18,51 @@
 
 package org.onap.cps.temporal.service
 
+import org.onap.cps.temporal.domain.NetworkDataId
+
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.repository.NetworkDataRepository
 import spock.lang.Specification
 
+/**
+ * Test specification for network data service.
+ */
 class NetworkDataServiceImplSpec extends Specification {
-
-    def objectUnderTest = new NetworkDataServiceImpl()
 
     def mockNetworkDataRepository = Mock(NetworkDataRepository)
 
+    def objectUnderTest = new NetworkDataServiceImpl(mockNetworkDataRepository)
+
     def networkData = new NetworkData()
 
-    def setup() {
-        objectUnderTest.networkDataRepository = mockNetworkDataRepository
+    def 'Add network data successfully.'() {
+        given: 'network data repository is persisting network data it is asked to save'
+            def persistedNetworkData = new NetworkData()
+            persistedNetworkData.setCreatedTimestamp(OffsetDateTime.now())
+            mockNetworkDataRepository.save(networkData) >> persistedNetworkData
+        when: 'a new network data is added'
+            def result = objectUnderTest.addNetworkData(networkData)
+        then: 'result network data is the one that has been persisted'
+            result == persistedNetworkData
+            result.getCreatedTimestamp() != null
+            networkData.getCreatedTimestamp() == null
     }
 
-    def 'Add network data in timeseries database.'() {
+    def 'Add network data fails because already added'() {
+        given: 'network data repository is not able to create data it is asked to persist ' +
+                'and reveals it with null created timestamp on network data entity'
+            def persistedNetworkData = new NetworkData()
+            persistedNetworkData.setCreatedTimestamp(null)
+            mockNetworkDataRepository.save(networkData) >> persistedNetworkData
+        and: 'existing data can be retrieved'
+            def existing = new NetworkData()
+            existing.setCreatedTimestamp(OffsetDateTime.now().minusYears(1))
+            mockNetworkDataRepository.findById(_ as NetworkDataId) >> Optional.of(existing)
         when: 'a new network data is added'
             objectUnderTest.addNetworkData(networkData)
-        then: ' repository service is called with the correct parameters'
-            1 * mockNetworkDataRepository.save(networkData)
+        then: 'network service exception is thrown'
+            thrown(ServiceException)
     }
 
 }
