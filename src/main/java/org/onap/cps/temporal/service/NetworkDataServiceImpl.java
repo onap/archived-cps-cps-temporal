@@ -18,24 +18,38 @@
 
 package org.onap.cps.temporal.service;
 
+import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
 import org.onap.cps.temporal.domain.NetworkData;
+import org.onap.cps.temporal.domain.NetworkDataId;
 import org.onap.cps.temporal.repository.NetworkDataRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * Service implementation for Network Data.
  */
-@Component
+@Service
 @Slf4j
 public class NetworkDataServiceImpl implements NetworkDataService {
 
-    @Autowired
-    NetworkDataRepository networkDataRepository;
+    private final NetworkDataRepository networkDataRepository;
+
+    public NetworkDataServiceImpl(final NetworkDataRepository networkDataRepository) {
+        this.networkDataRepository = networkDataRepository;
+    }
 
     @Override
     public NetworkData addNetworkData(final NetworkData networkData) {
-        return networkDataRepository.save(networkData);
+        final var savedNetworkData = networkDataRepository.save(networkData);
+        if (savedNetworkData.getCreatedTimestamp() == null) {
+            // Data already exists and can not be inserted
+            final var id =
+                    new NetworkDataId(
+                            networkData.getObservedTimestamp(), networkData.getDataspace(), networkData.getAnchor());
+            final Optional<NetworkData> existingNetworkData = networkDataRepository.findById(id);
+            throw new ServiceException("Network data was already created: " + (existingNetworkData.orElse(null)));
+        }
+        return savedNetworkData;
     }
+
 }
