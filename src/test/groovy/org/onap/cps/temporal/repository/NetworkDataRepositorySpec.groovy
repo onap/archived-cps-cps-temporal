@@ -29,6 +29,9 @@ import spock.lang.Specification
 
 import java.time.OffsetDateTime
 
+/**
+ * Test specification for network data repository.
+ */
 @SpringBootTest
 @Testcontainers
 class NetworkDataRepositorySpec extends Specification {

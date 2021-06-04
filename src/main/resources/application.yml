@@ -27,10 +27,34 @@ spring:
         change-log: classpath:/db/changelog/changelog-master.xml
     jpa:
         properties:
-            hibernate:
-                dialect: org.hibernate.dialect.PostgreSQLDialect
+            hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+            hibernate.format_sql: true
+            hibernate.generate_statistics: true
+    kafka:
+        bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+        security:
+            protocol: SASL_SSL
+        ssl:
+            trust-store-type: JKS
+            trust-store-location: ${KAFKA_SSL_TRUST_STORE_LOCATION}
+            trust-store-password: ${KAFKA_SSL_TRUST_STORE_PASSWORD}
+        properties:
+            sasl.mechanism: SCRAM-SHA-512
+            sasl.jaas.config: ${KAFKA_SASL_JAAS_CONFIG}
+            ssl.endpoint.identification.algorithm:
+        consumer:
+            group-id: ${KAFKA_CONSUMER_GROUP_ID:cps-temporal-group}
+            # Configures the Spring Kafka ErrorHandlingDeserializer that delegates to the 'real' deserializers
+            # See https://docs.spring.io/spring-kafka/docs/2.5.11.RELEASE/reference/html/#error-handling-deserializer
+            # and https://www.confluent.io/blog/spring-kafka-can-your-kafka-consumers-handle-a-poison-pill/
+            key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+            value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+            properties:
+                spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+                spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+                spring.json.value.default.type: org.onap.cps.event.model.CpsDataUpdatedEvent
 
-logging:
-    level:
-        org:
-            springframework: INFO
+app:
+    kafka:
+        consumer:
+            topic: ${KAFKA_CONSUMER_TOPIC:cps.cfg-state-events}

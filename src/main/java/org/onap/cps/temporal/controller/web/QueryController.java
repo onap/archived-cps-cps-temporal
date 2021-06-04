@@ -16,26 +16,20 @@
  * ============LICENSE_END=========================================================
  */
 
-package org.onap.cps.temporal.domain;
+package org.onap.cps.temporal.controller.web;
 
-import java.io.Serializable;
-import java.time.OffsetDateTime;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Identifier class for network data.
+ * Controller for query requests.
  */
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-public class NetworkDataId implements Serializable {
+@RestController
+public class QueryController {
 
-    private static final long serialVersionUID = -1039604338648260766L;
-
-    private OffsetDateTime observedTimestamp;
-    private String dataspace;
-    private String anchor;
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to CPS Temporal Service!";
+    }
 
 }
