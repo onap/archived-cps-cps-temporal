@@ -1,0 +1,49 @@
+<!--
+  ============LICENSE_START=======================================================
+  Copyright (c) 2021 Bell Canada.
+  ================================================================================
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  ============LICENSE_END=========================================================
+-->
+
+<configuration>
+
+    <variable name="LOG_LEVEL_ROOT" value="${LOG_LEVEL_ROOT:-info}" />
+
+    <variable name="LOG_LEVEL_CPS" value="${LOG_LEVEL_CPS:-info}" />
+
+    <!-- Log level for sql statements, set to debug to enable -->
+    <variable name="LOG_LEVEL_SQL" value="${LOG_LEVEL_SQL:-info}" />
+
+    <!-- Log level for sql bindings, set to trace to enable -->
+    <variable name="LOG_LEVEL_SQL_BINDER" value="${LOG_LEVEL_SQL_BINDER:-info}" />
+
+    <!-- Log level for hibernate statistics, set to info to enable -->
+    <variable name="LOG_LEVEL_HIBERNATE_STATS" value="${LOG_LEVEL_HIBERNATE_STATS:-warn}" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d - %highlight(%-5level) [%-20.20thread] %cyan(%logger{36}) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.onap.cps" level="${LOG_LEVEL_CPS}"/>
+    <logger name="org.hibernate.SQL" level="${LOG_LEVEL_SQL}"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="${LOG_LEVEL_SQL_BINDER}"/>
+    <logger name="org.hibernate.engine.internal.StatisticalLoggingSessionEventListener" level="${LOG_LEVEL_HIBERNATE_STATS}"/>
+
+    <root level="${LOG_LEVEL_ROOT}}">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
