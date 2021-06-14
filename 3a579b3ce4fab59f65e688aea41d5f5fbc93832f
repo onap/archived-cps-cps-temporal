@@ -1,0 +1,395 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf75c915_c98f85c0",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "kafka service exposes 19092. I think we should use default port.",
+      "range": {
+        "startLine": 33,
+        "startChar": 30,
+        "endLine": 33,
+        "endChar": 40
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43cace95_3400aaa9",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "why not default port? \u002719092\u0027 has been used in application.yml too.",
+      "range": {
+        "startLine": 60,
+        "startChar": 8,
+        "endLine": 60,
+        "endChar": 21
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6290adff_11eb1cdd",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "providing initialization in the field itself makes it easy to read.",
+      "range": {
+        "startLine": 37,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 5
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b1a2de5_ab415409",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "When I looked at type, it thought it is the type of the field, but it is an error Type. I would suggest to rename both enum and variable name to errorType.",
+      "range": {
+        "startLine": 63,
+        "startChar": 27,
+        "endLine": 63,
+        "endChar": 31
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f131b2e6_e5a9072d",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Do we want to keep the type of actualValue and expectedValue as String or Object?  I prefer object as type. It would make the caller code more intuitive.",
+      "range": {
+        "startLine": 65,
+        "startChar": 8,
+        "endLine": 67,
+        "endChar": 0
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "106ca18d_07a309a2",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "I was thinking about where the Type enum should be. \n\nInvalidField.Type vs InvalidEventEnvelopException.Type. \n\nOut of these two option I prefer the \u0027InvalidField.Type\u0027 because \n1. the exception can have multiple invalid fields and of diff type. \n2. Type is only used to define InvalidField error Type.",
+      "range": {
+        "startLine": 70,
+        "startChar": 16,
+        "endLine": 70,
+        "endChar": 20
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d9886a8_63406f41",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Is it possible to inject mapper too ?",
+      "range": {
+        "startLine": 61,
+        "startChar": 8,
+        "endLine": 61,
+        "endChar": 73
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d854fb9_d5b1693c",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Static import will make it easier to read.",
+      "range": {
+        "startLine": 116,
+        "startChar": 25,
+        "endLine": 116,
+        "endChar": 94
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5da699af_67bf7a78",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "To make it more clear, it would be good to have expression before target. \nI got a little confused because I was expecting the first parameter to be source and second to the target as it is the other mappings.\n\nQ - It is required to set values for all the properties?",
+      "range": {
+        "startLine": 45,
+        "startChar": 4,
+        "endLine": 45,
+        "endChar": 68
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab89e203_2ec49d81",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Q - Does the generated implementation catch the checked exception and throws a RuntimeException?",
+      "range": {
+        "startLine": 48,
+        "startChar": 39,
+        "endLine": 48,
+        "endChar": 62
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2f54142_d36a1362",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Why do we make this extra call?",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 86
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "201b76fa_0bbbc41c",
+        "filename": "src/main/resources/application-dev-kafka.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "it should be default port",
+      "range": {
+        "startLine": 22,
+        "startChar": 62,
+        "endLine": 22,
+        "endChar": 67
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "beaa93f7_18468694",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Does it have any performance impact?",
+      "range": {
+        "startLine": 32,
+        "startChar": 12,
+        "endLine": 32,
+        "endChar": 47
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a6c5f776_7350a575",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "default implementation should be sasl_ssl or something else?",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 50
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38f9f5bb_bec7b633",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "Will the same file be provided in the helm charts or we expect OOM to provide only the env variables?",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e2beba22_cabaf45c",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "What is the reason to use configuration class rather than providing the values in the application.yml for testing?\nIs it because we are using testContainers?",
+      "range": {
+        "startLine": 143,
+        "startChar": 17,
+        "endLine": 143,
+        "endChar": 49
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2b2e1b98_4941882b",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-14T12:57:37Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 111,
+        "startChar": 49,
+        "endLine": 111,
+        "endChar": 51
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
