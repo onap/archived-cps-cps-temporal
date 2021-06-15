@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f78f6af5_caf57658",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "2 different ports are needed and used:\n* 9092 is the default kafka listener port and it is used for docker internal clients (for example, cps-temporal)\n* 19092 is an additional listener port for clients running on the host (for example, our favourite Kafka client to send messages to the topic from host) \n\nSee KAFKA_ADVERTISED_LISTENERS property line 66 below.\n\nFor more details, see this interesting article: https://www.confluent.io/blog/kafka-listeners-explained/",
+      "parentUuid": "cf75c915_c98f85c0",
+      "range": {
+        "startLine": 33,
+        "startChar": 30,
+        "endLine": 33,
+        "endChar": 40
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "43cace95_3400aaa9",
         "filename": "docker-compose.yml",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "why not default port? \u002719092\u0027 has been used in application.yml too.",
+      "range": {
+        "startLine": 60,
+        "startChar": 8,
+        "endLine": 60,
+        "endChar": 21
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "293d1880_b38eaa7c",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "See previous comment",
+      "parentUuid": "43cace95_3400aaa9",
       "range": {
         "startLine": 60,
         "startChar": 8,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "2b4981c3_92eaac25",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6290adff_11eb1cdd",
+      "range": {
+        "startLine": 37,
+        "startChar": 4,
+        "endLine": 40,
+        "endChar": 5
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1b1a2de5_ab415409",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
         "patchSetId": 2
@@ -82,6 +154,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "When I looked at type, it thought it is the type of the field, but it is an error Type. I would suggest to rename both enum and variable name to errorType.",
+      "range": {
+        "startLine": 63,
+        "startChar": 27,
+        "endLine": 63,
+        "endChar": 31
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb9e79f2_f80cb7d9",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1b1a2de5_ab415409",
       "range": {
         "startLine": 63,
         "startChar": 27,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "787773f8_251e8dab",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "These can be Object instead of String, but then these properties are not Serializable anymore (sonar code smell). Do you have any suggestion to handle it ?",
+      "parentUuid": "f131b2e6_e5a9072d",
+      "range": {
+        "startLine": 65,
+        "startChar": 8,
+        "endLine": 67,
+        "endChar": 0
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "106ca18d_07a309a2",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
         "patchSetId": 2
@@ -128,6 +248,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "I was thinking about where the Type enum should be. \n\nInvalidField.Type vs InvalidEventEnvelopException.Type. \n\nOut of these two option I prefer the \u0027InvalidField.Type\u0027 because \n1. the exception can have multiple invalid fields and of diff type. \n2. Type is only used to define InvalidField error Type.",
+      "range": {
+        "startLine": 70,
+        "startChar": 16,
+        "endLine": 70,
+        "endChar": 20
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc2d8949_bf6a691a",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "106ca18d_07a309a2",
       "range": {
         "startLine": 70,
         "startChar": 16,
@@ -186,6 +330,30 @@
     },
     {
       "key": {
+        "uuid": "4e64d644_b86df274",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d854fb9_d5b1693c",
+      "range": {
+        "startLine": 116,
+        "startChar": 25,
+        "endLine": 116,
+        "endChar": 94
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5da699af_67bf7a78",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
         "patchSetId": 2
@@ -197,6 +365,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "To make it more clear, it would be good to have expression before target. \nI got a little confused because I was expecting the first parameter to be source and second to the target as it is the other mappings.\n\nQ - It is required to set values for all the properties?",
+      "range": {
+        "startLine": 45,
+        "startChar": 4,
+        "endLine": 45,
+        "endChar": 68
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73d57ca8_4cac7e38",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done\n\nA - The mapping for `createdTimestamp` could be omitted as the expression is null anyway.\n\nMapstruct is mapping all fields that have the same name in both source and target. As the names are different here it is required to provide the explicit mapping we need.",
+      "parentUuid": "5da699af_67bf7a78",
       "range": {
         "startLine": 45,
         "startChar": 4,
@@ -255,6 +447,30 @@
     },
     {
       "key": {
+        "uuid": "418e52f6_0be121f3",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "The purpose of this call is to be able to provide all the information in case the exception occurs and to know exactly what the existing data record is.\n\nAll the details are then available in the logs.",
+      "parentUuid": "c2f54142_d36a1362",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 86
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "201b76fa_0bbbc41c",
         "filename": "src/main/resources/application-dev-kafka.yml",
         "patchSetId": 2
@@ -266,6 +482,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "it should be default port",
+      "range": {
+        "startLine": 22,
+        "startChar": 62,
+        "endLine": 22,
+        "endChar": 67
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca61bbbb_27f3449b",
+        "filename": "src/main/resources/application-dev-kafka.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "`19092` is port to connect to when developing or debugging cps-temporal within our ide and connecting to kafka instance started with docker-compose configuration provided. This is the reason why this value is set by default for `dev-kafka` profile only. Even for `dev-kafka` profile this is just for convenience and any other value can still be provided if needed.\n\nSee also the comment related to this in docker-compose.",
+      "parentUuid": "201b76fa_0bbbc41c",
       "range": {
         "startLine": 22,
         "startChar": 62,
@@ -324,6 +564,30 @@
     },
     {
       "key": {
+        "uuid": "afe8f31a_9875f831",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Yes, default implementation is `sasl_ssl`.\n\nA non secured implementation is available with `dev-kafka` Spring profile for dev purpose only.",
+      "parentUuid": "a6c5f776_7350a575",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 50
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "38f9f5bb_bec7b633",
         "filename": "src/main/resources/logback.xml",
         "patchSetId": 2
@@ -335,6 +599,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "Will the same file be provided in the helm charts or we expect OOM to provide only the env variables?",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10a132a9_5cba2bbf",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "I find clean to only provide env variables if the configuration is the same. It avoids duplication.\n\nBut do you see anything preventing from providing the complete file in the chart if ever we want to provide more flexibility when deploying ?",
+      "parentUuid": "38f9f5bb_bec7b633",
       "range": {
         "startLine": 19,
         "startChar": 1,
@@ -370,6 +658,30 @@
     },
     {
       "key": {
+        "uuid": "207ebcd2_ea05a9da",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Exact, from the test we need to configure kafkaTemplate for testcontainers kafka instance. This kafkaTemplate is also used to send an event to testcontainers kafka.",
+      "parentUuid": "e2beba22_cabaf45c",
+      "range": {
+        "startLine": 143,
+        "startChar": 17,
+        "endLine": 143,
+        "endChar": 49
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2b2e1b98_4941882b",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 2
@@ -381,6 +693,30 @@
       "writtenOn": "2021-06-14T12:57:37Z",
       "side": 1,
       "message": "typo",
+      "range": {
+        "startLine": 111,
+        "startChar": 49,
+        "endLine": 111,
+        "endChar": 51
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cef29c6a_bb62f09b",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-15T12:32:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b2e1b98_4941882b",
       "range": {
         "startLine": 111,
         "startChar": 49,
