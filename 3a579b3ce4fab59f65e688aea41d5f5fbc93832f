@@ -424,6 +424,30 @@
     },
     {
       "key": {
+        "uuid": "a7221741_2ca0fcee",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-18T18:28:15Z",
+      "side": 1,
+      "message": "Yes, this is the way the mapper is implemented.\nA unit test is also added to verify this.",
+      "parentUuid": "ab89e203_2ec49d81",
+      "range": {
+        "startLine": 48,
+        "startChar": 39,
+        "endLine": 48,
+        "endChar": 62
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c2f54142_d36a1362",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 2
