@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "507b4c18_cfb28078",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f78f6af5_caf57658",
+      "range": {
+        "startLine": 33,
+        "startChar": 30,
+        "endLine": 33,
+        "endChar": 40
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "43cace95_3400aaa9",
         "filename": "docker-compose.yml",
         "patchSetId": 2
@@ -93,6 +117,30 @@
       "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69a4c8a1_6982778e",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "293d1880_b38eaa7c",
+      "range": {
+        "startLine": 60,
+        "startChar": 8,
+        "endLine": 60,
+        "endChar": 21
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -448,6 +496,30 @@
     },
     {
       "key": {
+        "uuid": "826796c5_2095cd8c",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a7221741_2ca0fcee",
+      "range": {
+        "startLine": 48,
+        "startChar": 39,
+        "endLine": 48,
+        "endChar": 62
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c2f54142_d36a1362",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 2
@@ -492,6 +564,30 @@
       "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e0b1d3db_4ecf8bdf",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "418e52f6_0be121f3",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 86
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -659,6 +755,30 @@
     },
     {
       "key": {
+        "uuid": "55781312_bd6299c6",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "In the OOM, we should provide the complete xml with variables which will be populated by helm values.yaml. I am not sure how variables in this file will be used.",
+      "parentUuid": "10a132a9_5cba2bbf",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e2beba22_cabaf45c",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 2
@@ -694,6 +814,30 @@
       "side": 1,
       "message": "Exact, from the test we need to configure kafkaTemplate for testcontainers kafka instance. This kafkaTemplate is also used to send an event to testcontainers kafka.",
       "parentUuid": "e2beba22_cabaf45c",
+      "range": {
+        "startLine": 143,
+        "startChar": 17,
+        "endLine": 143,
+        "endChar": 49
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af4f6b3c_49ed9fd3",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:49:44Z",
+      "side": 1,
+      "message": "We can use @ContextConfiguration + @DynamicPropertySource to configure Kafka from test/application.yaml. It seems to work in the producer sure.",
+      "parentUuid": "207ebcd2_ea05a9da",
       "range": {
         "startLine": 143,
         "startChar": 17,
