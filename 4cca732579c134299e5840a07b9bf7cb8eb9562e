@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ac1366d_d2ca7719",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-22T12:33:48Z",
+      "side": 1,
+      "message": "name suggestion : CPS_CHANGE_EVENT_TOPIC",
+      "range": {
+        "startLine": 60,
+        "startChar": 21,
+        "endLine": 60,
+        "endChar": 45
+      },
+      "revId": "4cca732579c134299e5840a07b9bf7cb8eb9562e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
