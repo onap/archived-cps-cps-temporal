@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "805ee964_74383530",
+        "filename": "src/main/resources/application-sasl-ssl-kafka.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "As discussed, this file is not used by defaut for dev deployments and is there for convenient reason to have a reference for secured configuration that is a requirement for Kafka connectivity.",
+      "parentUuid": "9e4048e9_640032b7",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 6
+      },
+      "revId": "b338734ffed65a9882f1ea084a03af02acb83104",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6c88196f_fec058c9",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 6
@@ -36,6 +60,30 @@
       "writtenOn": "2021-06-22T12:33:48Z",
       "side": 1,
       "message": "Is it possible to use string interpolation here?",
+      "range": {
+        "startLine": 84,
+        "startChar": 45,
+        "endLine": 84,
+        "endChar": 90
+      },
+      "revId": "b338734ffed65a9882f1ea084a03af02acb83104",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57ce9aea_14b11e23",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6c88196f_fec058c9",
       "range": {
         "startLine": 84,
         "startChar": 45,

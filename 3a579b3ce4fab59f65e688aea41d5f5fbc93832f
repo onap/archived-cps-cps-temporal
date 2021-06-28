@@ -355,6 +355,30 @@
     },
     {
       "key": {
+        "uuid": "46aefc06_6b05ed4e",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6d9886a8_63406f41",
+      "range": {
+        "startLine": 61,
+        "startChar": 8,
+        "endLine": 61,
+        "endChar": 73
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7d854fb9_d5b1693c",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 2
@@ -661,6 +685,30 @@
     },
     {
       "key": {
+        "uuid": "de860c00_cf6c14dd",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "I did not have a chance yet to figure out if this can have a performance impact.\nThen, if is turned off by default for now.",
+      "parentUuid": "beaa93f7_18468694",
+      "range": {
+        "startLine": 32,
+        "startChar": 12,
+        "endLine": 32,
+        "endChar": 47
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a6c5f776_7350a575",
         "filename": "src/main/resources/application.yml",
         "patchSetId": 2
@@ -696,6 +744,30 @@
       "side": 1,
       "message": "Yes, default implementation is `sasl_ssl`.\n\nA non secured implementation is available with `dev-kafka` Spring profile for dev purpose only.",
       "parentUuid": "a6c5f776_7350a575",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 44,
+        "endChar": 50
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "489ab87f_53808df5",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "As discussed this is changed for plaintext comfiguration by default.",
+      "parentUuid": "afe8f31a_9875f831",
       "range": {
         "startLine": 35,
         "startChar": 8,
@@ -767,6 +839,30 @@
       "side": 1,
       "message": "In the OOM, we should provide the complete xml with variables which will be populated by helm values.yaml. I am not sure how variables in this file will be used.",
       "parentUuid": "10a132a9_5cba2bbf",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e25eddcb_06737975",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-28T12:44:05Z",
+      "side": 1,
+      "message": "If we are providing the complete xml in OOM, then the OOM file should not contain any variable and will then override this one.\n\nFor deployments that does not want to provide the complete xml, providing these environment variables or not providing them will also work.\n\nFrom what I can see all options are available for deployment. Am I missing something else ?",
+      "parentUuid": "55781312_bd6299c6",
       "range": {
         "startLine": 19,
         "startChar": 1,
