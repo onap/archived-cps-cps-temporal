@@ -946,6 +946,30 @@
     },
     {
       "key": {
+        "uuid": "a1516ab7_4815a824",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-06-29T21:25:51Z",
+      "side": 1,
+      "message": "Done. Much cleaner now ;)",
+      "parentUuid": "af4f6b3c_49ed9fd3",
+      "range": {
+        "startLine": 143,
+        "startChar": 17,
+        "endLine": 143,
+        "endChar": 49
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2b2e1b98_4941882b",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 2
