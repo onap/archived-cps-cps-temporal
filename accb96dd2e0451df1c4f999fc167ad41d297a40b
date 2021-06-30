@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "4f802a66_68c548d1",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-30T03:26:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fe4301c6_edd131dc",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 7
+      },
+      "revId": "accb96dd2e0451df1c4f999fc167ad41d297a40b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "39a5fc11_3eb0471b",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
         "patchSetId": 5
@@ -93,6 +117,30 @@
       "revId": "accb96dd2e0451df1c4f999fc167ad41d297a40b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "261c5958_5fb6b598",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-30T03:26:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "59b6e708_fd16b089",
+      "range": {
+        "startLine": 52,
+        "startChar": 36,
+        "endLine": 52,
+        "endChar": 45
+      },
+      "revId": "accb96dd2e0451df1c4f999fc167ad41d297a40b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
