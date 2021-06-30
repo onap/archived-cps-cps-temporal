@@ -1,0 +1,619 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "127f7eae_aa1f4949",
+        "filename": "pom.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "keep properties in alphabetical order please",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 51,
+        "endChar": 58
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a856225_a6af3035",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "FYI the latest Nordix template add this line here: \"SPDX-License-Identifier: Apache-2.0\"\nIt just that Bell Canada licensed are identical now to Nordix apart from that last line:\n\n/*-\n * \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003dLICENSE_START\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n *  Copyright (C) 20XX-20YY Nordix Foundation.\n * \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *      http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n *\n * SPDX-License-Identifier: Apache-2.0\n * \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003dLICENSE_END\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n */",
+      "range": {
+        "startLine": 15,
+        "startChar": 3,
+        "endLine": 16,
+        "endChar": 3
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "259f990d_673df0da",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/ListenerException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "Suggestion: maybe the name should be a bit more descriptive e.g EventListenerException or EventBusListenerException?",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 21
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "376e996e_22456e51",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "I always perfer full name (as teh IDE suggest too) networkDataService",
+      "range": {
+        "startLine": 55,
+        "startChar": 37,
+        "endLine": 55,
+        "endChar": 44
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d01c39a2_a9b658fe",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "cpsDataUpdatedEventMapper",
+      "range": {
+        "startLine": 56,
+        "startChar": 44,
+        "endLine": 56,
+        "endChar": 50
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5299d231_eec83198",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "as before (wont repeat)",
+      "range": {
+        "startLine": 61,
+        "startChar": 61,
+        "endLine": 61,
+        "endChar": 68
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b7c72d5_eb8d9176",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "can multiple exception occur for one event?",
+      "range": {
+        "startLine": 100,
+        "startChar": 8,
+        "endLine": 102,
+        "endChar": 10
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e26e578c_da54a4bc",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/NetworkDataId.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "I think it is OK to NOT use the classname in this case as OffsetDataTiem is a generic class (like Integer) and we need a more meaningful instance name, so \u0027observedTimestamp\u0027 \nThis comment is just to clarify there are exception on my general rule of using classnames for instances",
+      "range": {
+        "startLine": 37,
+        "startChar": 27,
+        "endLine": 37,
+        "endChar": 44
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3384e847_76664853",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "maybe \u0027savedNetworkData\u0027 ?",
+      "range": {
+        "startLine": 43,
+        "startChar": 18,
+        "endLine": 43,
+        "endChar": 25
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c472367_1a43bf39",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "existingNetworkData",
+      "range": {
+        "startLine": 49,
+        "startChar": 40,
+        "endLine": 49,
+        "endChar": 49
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4201e112_24c5f807",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "don\u0027t understand this well enough to comment on functionality, hope others do :-)",
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52da67ef_33022e70",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "suggestion: sqlSelect",
+      "range": {
+        "startLine": 110,
+        "startChar": 8,
+        "endLine": 110,
+        "endChar": 15
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b023f1b_d2f39c44",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "Don\u0027t think you are using GString functionality here so use single \u0027 instead also means you don\u0027t have to escape the \" inside it :-)",
+      "range": {
+        "startLine": 112,
+        "startChar": 12,
+        "endLine": 112,
+        "endChar": 13
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7534f31c_48898cac",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "as above",
+      "range": {
+        "startLine": 117,
+        "startChar": 11,
+        "endLine": 117,
+        "endChar": 15
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "85db15bf_add68098",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "pollingCondition",
+      "range": {
+        "startLine": 119,
+        "startChar": 8,
+        "endLine": 119,
+        "endChar": 18
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a47bf6a5_499edff7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "maybe split/use var for increased readabilt\n\ndef count \u003d dbcTemplate.queryForObject(...)\nassert count \u003d\u003d 0",
+      "range": {
+        "startLine": 123,
+        "startChar": 4,
+        "endLine": 126,
+        "endChar": 33
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17165544_9aa04b5c",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "interesting, I like it :-)",
+      "range": {
+        "startLine": 130,
+        "startChar": 22,
+        "endLine": 130,
+        "endChar": 33
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8ec4809_18477825",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "as above (assuming this is a closure and you can have multiple statements)",
+      "range": {
+        "startLine": 131,
+        "startChar": 4,
+        "endLine": 134,
+        "endChar": 37
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bfd1244_37271167",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "can you use condition.eventually here too?!",
+      "range": {
+        "startLine": 147,
+        "startChar": 13,
+        "endLine": 147,
+        "endChar": 30
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "138019bf_2f1ad6c2",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "looks like much in common with previous test class, can you extract out common basetest class?",
+      "range": {
+        "startLine": 48,
+        "startChar": 1,
+        "endLine": 69,
+        "endChar": 104
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0db48c02_b414f886",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "maybe be a bit more precise: \"an exception is thrown with 2 invalid fields\"",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 37
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0e7e33f7_5d9ffc69",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "maybe be a bit more precise: \"an exception is thrown with 2 invalid fields\"",
+      "range": {
+        "startLine": 120,
+        "startChar": 16,
+        "endLine": 120,
+        "endChar": 37
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b11fab2_e7e0c1eb",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "identical to block above, could extract out \u0027assertEntityPrpoerties\u0027 are null method(closure)",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 77,
+        "endChar": 48
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "01018b23_d07cbb9e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "I am not clear what lien is responsible for this or is it teh absence of a mock statement?",
+      "range": {
+        "startLine": 53,
+        "startChar": 40,
+        "endLine": 53,
+        "endChar": 51
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "448ee139_bf8c0ab3",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "this looks like it should be in teh next block",
+      "range": {
+        "startLine": 54,
+        "startChar": 12,
+        "endLine": 54,
+        "endChar": 56
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8d224dd_21de6acc",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "this looks like it should be in teh next block",
+      "range": {
+        "startLine": 56,
+        "startChar": 12,
+        "endLine": 56,
+        "endChar": 79
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "460c638d_7996901b",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-06-30T16:34:40Z",
+      "side": 1,
+      "message": "accidental change?",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 1
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
