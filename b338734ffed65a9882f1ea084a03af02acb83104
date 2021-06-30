@@ -117,6 +117,30 @@
       "revId": "b338734ffed65a9882f1ea084a03af02acb83104",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31626558_9f3254d5",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-30T04:04:29Z",
+      "side": 1,
+      "message": "What I actually meant was \n\n\"\"\"{\"${aDataName}\":\"${aDataValue}\"}\"\"\" or \n\"{\\\"${aDataName}\\\":\\\"${aDataValue}\\\"}\"\n\nIt is a small json string so it does not make much difference.",
+      "parentUuid": "57ce9aea_14b11e23",
+      "range": {
+        "startLine": 84,
+        "startChar": 45,
+        "endLine": 84,
+        "endChar": 90
+      },
+      "revId": "b338734ffed65a9882f1ea084a03af02acb83104",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }

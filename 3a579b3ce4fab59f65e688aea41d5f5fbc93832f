@@ -1067,6 +1067,30 @@
     },
     {
       "key": {
+        "uuid": "5a4ad807_f1ce8c64",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-06-30T04:04:29Z",
+      "side": 1,
+      "message": "The options that we have for logging are\n\n1. Keep the current file and provide env variables in OOM \u0026 no logback.xml in OOM -\u003e No option to fine tune logging based on the package for debugging without changing the OOM as logback.xml is not in configmap. \nIf more detailed logging is required, changes in the deployment are required too to attach the logback.xml to the container.  \n\n2. providing logback.xml in OOM -\u003e User still needs to change the xml if more default logging ,based on package, is to be added but no change in the deployment. \n\nI prefer the option 2 because it is more flexible and most of the ONAP components are using it.",
+      "parentUuid": "e25eddcb_06737975",
+      "range": {
+        "startLine": 19,
+        "startChar": 1,
+        "endLine": 19,
+        "endChar": 14
+      },
+      "revId": "3a579b3ce4fab59f65e688aea41d5f5fbc93832f",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e2beba22_cabaf45c",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 2
