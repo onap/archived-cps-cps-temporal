@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "821382b0_29a5860e",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/EventListenerException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-02T10:17:16Z",
+      "side": 1,
+      "message": "Should we also include details and a message output when this exception gets thrown, just to add more detail to this exception in the logs.",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cbe91c14_455229b1",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-02T10:17:16Z",
+      "side": 1,
+      "message": "Mentioned in comment in Exception Class",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02095016_584b0dc5",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-02T10:17:16Z",
+      "side": 1,
+      "message": "See comment on exception class.\n\nCurrent message thrown is more of a \u0027cause\u0027. Message could be \u0027Failed to create network data\u0027 with cause being what is currently implemented.",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64900c95_de4bd5fa",
+        "filename": "src/main/java/org/onap/cps/temporal/service/ServiceException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-02T10:17:16Z",
+      "side": 1,
+      "message": "Should we also add details and a cause to this type of exception? If more services and implementations are added in the future it could make it easier to debug if this exception is also thrown there.",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
