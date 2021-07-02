@@ -67,6 +67,75 @@
       "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02cfec70_c53f92b7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "consider TimeUnit.SECONDS.sleep(3)",
+      "range": {
+        "startLine": 113,
+        "startChar": 21,
+        "endLine": 113,
+        "endChar": 30
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dda5a05a_3c4e9b3e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "suggetsion: currentIsoTimestamp",
+      "range": {
+        "startLine": 64,
+        "startChar": 18,
+        "endLine": 64,
+        "endChar": 34
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af90a0cc_fdaa5a36",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "sicne these are now in a sperate method you will have to use the \u0027assert\u0027 keyword!",
+      "range": {
+        "startLine": 123,
+        "startChar": 6,
+        "endLine": 128,
+        "endChar": 49
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }

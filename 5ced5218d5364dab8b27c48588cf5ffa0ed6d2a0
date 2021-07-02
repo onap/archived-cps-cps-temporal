@@ -49,6 +49,54 @@
     },
     {
       "key": {
+        "uuid": "3b14064a_243ab105",
+        "filename": "pom.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "090ba514_d3c5912c",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 51,
+        "endChar": 58
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d08d87ef_22cbe03b",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/EventListenerException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "54ee7155_2956016e",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 21
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a856225_a6af3035",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
         "patchSetId": 8
@@ -93,6 +141,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fa203055_3a379040",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "yes it was FYI (For Your Information) only, maybe to check if you are still following the latest Bell template (assuming something like that exist)",
+      "parentUuid": "23f26de9_88c91b7f",
+      "range": {
+        "startLine": 15,
+        "startChar": 3,
+        "endLine": 16,
+        "endChar": 3
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -190,6 +262,30 @@
     },
     {
       "key": {
+        "uuid": "d33421dd_99825c6d",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "if the names are really long and awkward maybe but in general let try to use the full name for consistency (if we dont different developers tend to use different short versions in different part of the code)",
+      "parentUuid": "320c912a_f5a3cc15",
+      "range": {
+        "startLine": 55,
+        "startChar": 37,
+        "endLine": 55,
+        "endChar": 44
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d01c39a2_a9b658fe",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 8
@@ -234,6 +330,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b495c54_31bde049",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "16c82223_47a260bc",
+      "range": {
+        "startLine": 56,
+        "startChar": 44,
+        "endLine": 56,
+        "endChar": 50
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -284,6 +404,30 @@
     },
     {
       "key": {
+        "uuid": "c5e43414_55d908e8",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5df22672_c466bdba",
+      "range": {
+        "startLine": 61,
+        "startChar": 61,
+        "endLine": 61,
+        "endChar": 68
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5b7c72d5_eb8d9176",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 8
@@ -328,6 +472,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3df2d2ee_d2b9569e",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a865741d_de750b5d",
+      "range": {
+        "startLine": 100,
+        "startChar": 8,
+        "endLine": 102,
+        "endChar": 10
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -401,6 +569,30 @@
     },
     {
       "key": {
+        "uuid": "fa419320_14ef65d3",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "30c188bc_18cf9baf",
+      "range": {
+        "startLine": 43,
+        "startChar": 18,
+        "endLine": 43,
+        "endChar": 25
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8c472367_1a43bf39",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 8
@@ -448,6 +640,30 @@
     },
     {
       "key": {
+        "uuid": "4fc22aec_434f401f",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "75e748dd_498f0633",
+      "range": {
+        "startLine": 49,
+        "startChar": 40,
+        "endLine": 49,
+        "endChar": 49
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4201e112_24c5f807",
         "filename": "src/main/resources/logback.xml",
         "patchSetId": 8
@@ -480,6 +696,24 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8c69050_f93e8084",
+        "filename": "src/main/resources/logback.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bd8eb558_352a3394",
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -530,6 +764,30 @@
     },
     {
       "key": {
+        "uuid": "7b4be77d_3048ffcb",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d90fafa3_7f0a8be3",
+      "range": {
+        "startLine": 110,
+        "startChar": 8,
+        "endLine": 110,
+        "endChar": 15
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4b023f1b_d2f39c44",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 8
@@ -574,6 +832,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "71554be3_9625d075",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a6274d76_6ec9283d",
+      "range": {
+        "startLine": 112,
+        "startChar": 12,
+        "endLine": 112,
+        "endChar": 13
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -624,6 +906,30 @@
     },
     {
       "key": {
+        "uuid": "e2ccaaa2_676da7f4",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5894d0eb_bcac7d70",
+      "range": {
+        "startLine": 117,
+        "startChar": 11,
+        "endLine": 117,
+        "endChar": 15
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "85db15bf_add68098",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 8
@@ -668,6 +974,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ae9b25a_7b3a2198",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0811cb16_5bc13bfa",
+      "range": {
+        "startLine": 119,
+        "startChar": 8,
+        "endLine": 119,
+        "endChar": 18
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -718,6 +1048,30 @@
     },
     {
       "key": {
+        "uuid": "8a2ab327_83620803",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0457c98f_6d8f2cca",
+      "range": {
+        "startLine": 123,
+        "startChar": 4,
+        "endLine": 126,
+        "endChar": 33
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "17165544_9aa04b5c",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 8
@@ -762,6 +1116,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3fb837fa_a1ae4974",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0f953a95_c46fbf70",
+      "range": {
+        "startLine": 130,
+        "startChar": 22,
+        "endLine": 130,
+        "endChar": 33
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -859,6 +1237,30 @@
     },
     {
       "key": {
+        "uuid": "b8f08c45_748759e8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ec57a383_5905932e",
+      "range": {
+        "startLine": 147,
+        "startChar": 13,
+        "endLine": 147,
+        "endChar": 30
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "138019bf_2f1ad6c2",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 8
@@ -903,6 +1305,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb6c0b51_5316ee6a",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "21dd0d95_c3462279",
+      "range": {
+        "startLine": 48,
+        "startChar": 1,
+        "endLine": 69,
+        "endChar": 104
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -953,6 +1379,30 @@
     },
     {
       "key": {
+        "uuid": "83c9ebf8_661d279e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0bff6a78_5a1774d8",
+      "range": {
+        "startLine": 100,
+        "startChar": 14,
+        "endLine": 100,
+        "endChar": 37
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0e7e33f7_5d9ffc69",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 8
@@ -997,6 +1447,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8960587e_72206ab8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c5bd1255_594ccb27",
+      "range": {
+        "startLine": 120,
+        "startChar": 16,
+        "endLine": 120,
+        "endChar": 37
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -1047,6 +1521,30 @@
     },
     {
       "key": {
+        "uuid": "245e2cc6_940666d8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7acd26c4_3390f2ff",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 77,
+        "endChar": 48
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01018b23_d07cbb9e",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
         "patchSetId": 8
@@ -1091,6 +1589,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ba31acd_bba4751b",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7077c600_f78654f5",
+      "range": {
+        "startLine": 53,
+        "startChar": 40,
+        "endLine": 53,
+        "endChar": 51
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -1141,6 +1663,30 @@
     },
     {
       "key": {
+        "uuid": "96a4785c_db673ec9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3fe0c7ec_a03add6e",
+      "range": {
+        "startLine": 54,
+        "startChar": 12,
+        "endLine": 54,
+        "endChar": 56
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b8d224dd_21de6acc",
         "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
         "patchSetId": 8
@@ -1188,6 +1734,30 @@
     },
     {
       "key": {
+        "uuid": "d7245dde_3269b3a8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "75e55aee_2c954bd4",
+      "range": {
+        "startLine": 56,
+        "startChar": 12,
+        "endLine": 56,
+        "endChar": 79
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "460c638d_7996901b",
         "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
         "patchSetId": 8
@@ -1232,6 +1802,30 @@
       "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d6b282a1_9b16f354",
+        "filename": "src/test/java/org/onap/cps/temporal/architecture/LayeredArchitectureTest.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-02T11:26:24Z",
+      "side": 1,
+      "message": "ok, good to know I actually don\u0027t like additional whitespace in general but if this is  a SonarQube recommendation I am happy to follow it :-)",
+      "parentUuid": "da06f669_d23d890c",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 1
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
