@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "79879c93_82c1e432",
+        "filename": "pom.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "It really depends on how we want to organize all these version properties. Here they are organized by type of dependencies (appllication, tests, plugin).\n\nIMO, these properties are not really necessary when they are used only once. I would prefer having these inline in this case to remove verbosity and keep the pom more straightful to read.",
+      "parentUuid": "a5021acb_f641c153",
+      "range": {
+        "startLine": 48,
+        "startChar": 9,
+        "endLine": 48,
+        "endChar": 27
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "de1d9b1b_143487c3",
         "filename": "pom.xml",
         "patchSetId": 9
@@ -36,6 +60,30 @@
       "writtenOn": "2021-07-02T11:31:36Z",
       "side": 1,
       "message": "isnt it possible to exclude all the generated-classes ?",
+      "range": {
+        "startLine": 415,
+        "startChar": 41,
+        "endLine": 415,
+        "endChar": 92
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5d20c078_ebe9e0a2",
+        "filename": "pom.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 415,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "In fact, this configuration was invalid and is removed.\n\nMapper class is tested with `CpsDataUpdatedEventMapperSpec`. Even if we only define interfaces or abstract classes, we still need to test that the implemented functionality is the expected one.",
+      "parentUuid": "de1d9b1b_143487c3",
       "range": {
         "startLine": 415,
         "startChar": 41,
@@ -65,6 +113,24 @@
     },
     {
       "key": {
+        "uuid": "15b695d5_ae540512",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/EventListenerException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "821382b0_29a5860e",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cbe91c14_455229b1",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 9
@@ -76,6 +142,24 @@
       "writtenOn": "2021-07-02T10:17:16Z",
       "side": 1,
       "message": "Mentioned in comment in Exception Class",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86fc73b6_567a8eb9",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cbe91c14_455229b1",
       "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -99,6 +183,24 @@
     },
     {
       "key": {
+        "uuid": "61a6d944_f94bbf04",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02095016_584b0dc5",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "64900c95_de4bd5fa",
         "filename": "src/main/java/org/onap/cps/temporal/service/ServiceException.java",
         "patchSetId": 9
@@ -116,6 +218,24 @@
     },
     {
       "key": {
+        "uuid": "9d876a87_251caafe",
+        "filename": "src/main/java/org/onap/cps/temporal/service/ServiceException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "I\u0027m not sure about adding another constructor for cause that is not used for now.    \n\n  public ServiceException(final String message, final Throwable cause) {\n    super(message, cause);\n  }\n\nIt will be easy and better to add it if later needed for business exception.",
+      "parentUuid": "64900c95_de4bd5fa",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "38894b6b_86a2c50d",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 9
@@ -127,6 +247,30 @@
       "writtenOn": "2021-07-02T11:31:36Z",
       "side": 1,
       "message": "Is this really required as we are not testing the retrieved result",
+      "range": {
+        "startLine": 102,
+        "startChar": 32,
+        "endLine": 102,
+        "endChar": 38
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dee309b6_2b692336",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "You\u0027re right, initially this was done to be able to access container db content when implementing the feature. \n\nIt seems that accessing container db content will still be useful when implementing additional features or investigate bugs. To avoid having to rewrite the queries each time, it is kept here for later usage.\n\nIf something unexpected is occurring and the query is failing or an empty result is retrieved, jdbc template is still throwing an exception that is going to make the test failing.",
+      "parentUuid": "38894b6b_86a2c50d",
       "range": {
         "startLine": 102,
         "startChar": 32,
@@ -162,6 +306,30 @@
     },
     {
       "key": {
+        "uuid": "ec71f9b8_1e217db2",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "02cfec70_c53f92b7",
+      "range": {
+        "startLine": 113,
+        "startChar": 21,
+        "endLine": 113,
+        "endChar": 30
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "dda5a05a_3c4e9b3e",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
         "patchSetId": 9
@@ -185,6 +353,30 @@
     },
     {
       "key": {
+        "uuid": "6ab4b891_dec750c0",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dda5a05a_3c4e9b3e",
+      "range": {
+        "startLine": 64,
+        "startChar": 18,
+        "endLine": 64,
+        "endChar": 34
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "af90a0cc_fdaa5a36",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
         "patchSetId": 9
@@ -196,6 +388,30 @@
       "writtenOn": "2021-07-02T11:26:24Z",
       "side": 1,
       "message": "sicne these are now in a sperate method you will have to use the \u0027assert\u0027 keyword!",
+      "range": {
+        "startLine": 123,
+        "startChar": 6,
+        "endLine": 128,
+        "endChar": 49
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc67dc48_b5b91a5d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af90a0cc_fdaa5a36",
       "range": {
         "startLine": 123,
         "startChar": 6,

@@ -168,6 +168,30 @@
     },
     {
       "key": {
+        "uuid": "45527f1c_6bffe3a6",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-05T22:48:38Z",
+      "side": 1,
+      "message": "I dont think there is a specific template for Bell, we used to have the default ONAP one.",
+      "parentUuid": "fa203055_3a379040",
+      "range": {
+        "startLine": 15,
+        "startChar": 3,
+        "endLine": 16,
+        "endChar": 3
+      },
+      "revId": "5ced5218d5364dab8b27c48588cf5ffa0ed6d2a0",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "259f990d_673df0da",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/ListenerException.java",
         "patchSetId": 8
