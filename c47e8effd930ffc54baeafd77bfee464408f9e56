@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "24cd7a23_cdfedb87",
+        "filename": "INFO.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T08:19:02Z",
+      "side": 1,
+      "message": "I think Bruno (Bell Canada) added this file (you can use the git history while browsing repo to check this: https://gerrit.onap.org/r/gitweb?p\u003dcps/cps-temporal.git;a\u003dhistory;f\u003dINFO.yaml;h\u003d310032f2ef8faf70b3845a74136244a0194c6d43;hb\u003d8b2193b7ed06e2ee6a90f7986921e72ca70ad90f",
+      "range": {
+        "startLine": 2,
+        "startChar": 21,
+        "endLine": 2,
+        "endChar": 27
+      },
+      "revId": "c47e8effd930ffc54baeafd77bfee464408f9e56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
