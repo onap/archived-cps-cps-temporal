@@ -117,6 +117,98 @@
       "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e69ff48c_216942e4",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-07-06T14:51:30Z",
+      "side": 1,
+      "message": "uriSyntaxException",
+      "range": {
+        "startLine": 48,
+        "startChar": 42,
+        "endLine": 48,
+        "endChar": 43
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1aca3ca7_48bdd398",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-07-06T14:51:30Z",
+      "side": 1,
+      "message": "networkDateId",
+      "range": {
+        "startLine": 46,
+        "startChar": 22,
+        "endLine": 46,
+        "endChar": 25
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a98fea45_265605f0",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 10
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-07-06T14:51:30Z",
+      "side": 1,
+      "message": "invalidEventEnvelopException",
+      "range": {
+        "startLine": 80,
+        "startChar": 16,
+        "endLine": 80,
+        "endChar": 17
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef8aea18_d56ec3c7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-07-06T14:51:30Z",
+      "side": 1,
+      "message": "invalidEventEnvelopException",
+      "range": {
+        "startLine": 106,
+        "startChar": 16,
+        "endLine": 106,
+        "endChar": 17
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
