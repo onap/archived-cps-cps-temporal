@@ -209,6 +209,52 @@
       "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "29b3f7b1_2f7ef6e4",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-06T19:06:10Z",
+      "side": 1,
+      "message": "can use eventFixtures?",
+      "range": {
+        "startLine": 99,
+        "startChar": 19,
+        "endLine": 106,
+        "endChar": 112
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8a45317_dbfc2340",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 10
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-06T19:06:10Z",
+      "side": 1,
+      "message": "When this test is executed, the logs were showing related to Kafka connection. Is there any way to not to listen to Kafka when testing?",
+      "range": {
+        "startLine": 58,
+        "startChar": 3,
+        "endLine": 58,
+        "endChar": 62
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
