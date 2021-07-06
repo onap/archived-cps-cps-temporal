@@ -45,7 +45,7 @@
         <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
         <minimum-coverage>0.8</minimum-coverage>
         <!-- Application dependencies versions -->
-        <spring-boot-dependencies.version>2.3.8.RELEASE</spring-boot-dependencies.version>
+        <spring-boot-dependencies.version>2.5.0</spring-boot-dependencies.version>
         <hibernate-types.version>2.10.0</hibernate-types.version>
         <liquibase-core.version>4.3.2</liquibase-core.version>
         <!-- Tests dependencies versions -->
