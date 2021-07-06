@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0eb832dc_f51ae1e5",
+        "filename": "docker-compose.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T11:04:19Z",
+      "side": 1,
+      "message": "why exactly did you external port, is the a (security related) convention or was there a conflict?",
+      "range": {
+        "startLine": 43,
+        "startChar": 12,
+        "endLine": 43,
+        "endChar": 13
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2027b9ec_fc6af48e",
+        "filename": "docker-compose.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T11:04:19Z",
+      "side": 1,
+      "message": "does this mean the only way to overwrite this variable is now by editing this docker compose or pass in this variable on the command line",
+      "range": {
+        "startLine": 45,
+        "startChar": 6,
+        "endLine": 45,
+        "endChar": 32
+      },
+      "revId": "c9b99347c7c425fce7a1f5f3c7e2ac500f2f0c5c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
