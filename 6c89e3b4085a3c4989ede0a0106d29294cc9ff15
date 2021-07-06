@@ -155,6 +155,24 @@
     },
     {
       "key": {
+        "uuid": "888ac8c8_7b9a0763",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/EventListenerException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-06T11:07:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15b695d5_ae540512",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cbe91c14_455229b1",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 9
@@ -187,6 +205,24 @@
       "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e61626d_88653b85",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-06T11:07:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "86fc73b6_567a8eb9",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -225,6 +261,24 @@
     },
     {
       "key": {
+        "uuid": "20cd0400_d0326017",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-06T11:07:23Z",
+      "side": 1,
+      "message": "I think this is fine right now. We could add cause in as a separate parameter at another time if other classes throw this exception, and might have a different reason for failing",
+      "parentUuid": "61a6d944_f94bbf04",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "64900c95_de4bd5fa",
         "filename": "src/main/java/org/onap/cps/temporal/service/ServiceException.java",
         "patchSetId": 9
@@ -254,6 +308,24 @@
       "side": 1,
       "message": "I\u0027m not sure about adding another constructor for cause that is not used for now.    \n\n  public ServiceException(final String message, final Throwable cause) {\n    super(message, cause);\n  }\n\nIt will be easy and better to add it if later needed for business exception.",
       "parentUuid": "64900c95_de4bd5fa",
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb3d73a1_b353ae30",
+        "filename": "src/main/java/org/onap/cps/temporal/service/ServiceException.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-07-06T11:07:23Z",
+      "side": 1,
+      "message": "Sounds good to me!",
+      "parentUuid": "9d876a87_251caafe",
       "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
