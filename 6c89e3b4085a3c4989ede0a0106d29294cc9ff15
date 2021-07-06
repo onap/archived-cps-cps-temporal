@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "a9217f53_e22857fc",
+        "filename": "pom.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T07:41:30Z",
+      "side": 1,
+      "message": "I kind of agree, if version properties are only used once in the dependencies definition I don\u0027t think a property is helpful...",
+      "parentUuid": "79879c93_82c1e432",
+      "range": {
+        "startLine": 48,
+        "startChar": 9,
+        "endLine": 48,
+        "endChar": 27
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "de1d9b1b_143487c3",
         "filename": "pom.xml",
         "patchSetId": 9
@@ -330,6 +354,30 @@
     },
     {
       "key": {
+        "uuid": "01e6edb1_6004f9f7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T07:41:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ec71f9b8_1e217db2",
+      "range": {
+        "startLine": 113,
+        "startChar": 21,
+        "endLine": 113,
+        "endChar": 30
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dda5a05a_3c4e9b3e",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
         "patchSetId": 9
@@ -377,6 +425,30 @@
     },
     {
       "key": {
+        "uuid": "e83adf11_0d1b7ee4",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T07:41:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6ab4b891_dec750c0",
+      "range": {
+        "startLine": 64,
+        "startChar": 18,
+        "endLine": 64,
+        "endChar": 34
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "af90a0cc_fdaa5a36",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
         "patchSetId": 9
@@ -421,6 +493,30 @@
       "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1a3ca69e_6df52b91",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-06T07:41:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc67dc48_b5b91a5d",
+      "range": {
+        "startLine": 123,
+        "startChar": 6,
+        "endLine": 128,
+        "endChar": 49
+      },
+      "revId": "6c89e3b4085a3c4989ede0a0106d29294cc9ff15",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
