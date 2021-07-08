@@ -50,7 +50,7 @@
         <liquibase-core.version>4.3.2</liquibase-core.version>
         <lombok.version>1.18.20</lombok.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
-        <spring-boot-dependencies.version>2.3.8.RELEASE</spring-boot-dependencies.version>
+        <spring-boot-dependencies.version>2.5.0</spring-boot-dependencies.version>
         <!-- Tests dependencies versions -->
         <archunit-junit5.version>0.18.0</archunit-junit5.version>
         <groovy.version>3.0.7</groovy.version>
