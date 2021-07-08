@@ -22,6 +22,30 @@
       "revId": "241d984aa0eb1aee8c6ebff606250425a4afe3bc",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7543d054_c4593d57",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 7486
+      },
+      "writtenOn": "2021-07-08T10:23:02Z",
+      "side": 1,
+      "message": "Yes, from what I can see it is being used twice within this file and thus kept as a version properties.",
+      "parentUuid": "9d4aee52_8ce6edd5",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 58
+      },
+      "revId": "241d984aa0eb1aee8c6ebff606250425a4afe3bc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
