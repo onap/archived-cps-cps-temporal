@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f805fd5_24bad3da",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 7486
+      },
+      "writtenOn": "2021-07-08T11:20:46Z",
+      "side": 1,
+      "message": "Just wondering we are using 2.0-M5-groovy-3.0 in cps core, can this be upgraded as well?",
+      "range": {
+        "startLine": 58,
+        "startChar": 27,
+        "endLine": 58,
+        "endChar": 44
+      },
+      "revId": "65121dc3233ebb4f8aaef2aa38402712f32a748e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
