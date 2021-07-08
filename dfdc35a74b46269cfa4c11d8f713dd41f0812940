@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce78463f_a0174d0e",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-08T12:36:52Z",
+      "side": 1,
+      "message": "I would recommend to keep cps artifacts versions separated.\n\nWe should not couple cps events version with cps checkstyle or cps spotbugs. Conceptually, they are completely different and then should not be tied together.",
+      "revId": "dfdc35a74b46269cfa4c11d8f713dd41f0812940",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
