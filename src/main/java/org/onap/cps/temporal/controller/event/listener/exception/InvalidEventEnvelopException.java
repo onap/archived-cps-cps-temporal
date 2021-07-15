@@ -25,17 +25,21 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
+import org.onap.cps.event.model.CpsDataUpdatedEvent;
 
 /**
  * Class representing an invalid event envelop exception.
+ * It refers to the invalid event and details the invalid fields it has.
  */
 @Getter
 public class InvalidEventEnvelopException extends EventListenerException {
 
+    private final CpsDataUpdatedEvent event;
     private final List<InvalidField> invalidFields = new ArrayList<>();
 
-    public InvalidEventEnvelopException(final String message) {
+    public InvalidEventEnvelopException(final String message, final CpsDataUpdatedEvent event) {
         super(message);
+        this.event = event;
     }
 
     public void addInvalidField(final InvalidField invalidField) {
@@ -48,7 +52,9 @@ public class InvalidEventEnvelopException extends EventListenerException {
 
     @Override
     public String getMessage() {
-        return String.format("%s. invalidFields: %s", super.getMessage(), this.invalidFields.toString());
+        return
+                String.format("%s. Event: %s. Invalid fields: %s",
+                        super.getMessage(), this.event, this.invalidFields.toString());
     }
 
     @AllArgsConstructor

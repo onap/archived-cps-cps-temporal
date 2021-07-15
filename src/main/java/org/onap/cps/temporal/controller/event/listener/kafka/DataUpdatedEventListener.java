@@ -89,7 +89,8 @@ public class DataUpdatedEventListener {
 
     private void validateEventEnvelop(final CpsDataUpdatedEvent cpsDataUpdatedEvent) {
 
-        final var invalidEventEnvelopException = new InvalidEventEnvelopException("Validation failure");
+        final var invalidEventEnvelopException =
+                new InvalidEventEnvelopException("Validation failure", cpsDataUpdatedEvent);
 
         // Schema
         if (cpsDataUpdatedEvent.getSchema() == null) {
@@ -106,7 +107,7 @@ public class DataUpdatedEventListener {
                             MISSING, "id", null, null));
         }
         // Source
-        if (cpsDataUpdatedEvent.getSource() == null || !cpsDataUpdatedEvent.getSource().equals(EVENT_SOURCE)) {
+        if (!EVENT_SOURCE.equals(cpsDataUpdatedEvent.getSource())) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "source",
@@ -114,7 +115,7 @@ public class DataUpdatedEventListener {
                                     ? cpsDataUpdatedEvent.getSource().toString() : null, EVENT_SOURCE.toString()));
         }
         // Type
-        if (cpsDataUpdatedEvent.getType() == null || !cpsDataUpdatedEvent.getType().equals(EVENT_TYPE)) {
+        if (!EVENT_TYPE.equals(cpsDataUpdatedEvent.getType())) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "type", cpsDataUpdatedEvent.getType(), EVENT_TYPE));
