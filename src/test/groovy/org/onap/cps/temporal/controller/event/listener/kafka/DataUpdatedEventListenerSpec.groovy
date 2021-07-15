@@ -78,6 +78,7 @@ class DataUpdatedEventListenerSpec extends Specification {
             objectUnderTest.consume(invalidEvent)
         then: 'an exception is thrown with 4 invalid fields'
             def e = thrown(InvalidEventEnvelopException)
+            e.getCpsDataUpdatedEvent() == invalidEvent
             e.getInvalidFields().size() == 4
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
@@ -104,6 +105,7 @@ class DataUpdatedEventListenerSpec extends Specification {
             objectUnderTest.consume(invalidEvent)
         then: 'an exception is thrown with 2 invalid fields'
             def e = thrown(InvalidEventEnvelopException)
+            e.getCpsDataUpdatedEvent() == invalidEvent
             e.getInvalidFields().size() == 2
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(

@@ -89,9 +89,10 @@ public class DataUpdatedEventListener {
 
     private void validateEventEnvelop(final CpsDataUpdatedEvent cpsDataUpdatedEvent) {
 
-        final var invalidEventEnvelopException = new InvalidEventEnvelopException("Validation failure");
+        final var invalidEventEnvelopException =
+                new InvalidEventEnvelopException("Validation failure", cpsDataUpdatedEvent);
 
-        // Schema
+        // Validate schema
         if (cpsDataUpdatedEvent.getSchema() == null) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
@@ -99,22 +100,22 @@ public class DataUpdatedEventListener {
                             CpsDataUpdatedEvent.Schema.URN_CPS_ORG_ONAP_CPS_DATA_UPDATED_EVENT_SCHEMA_1_1_0_SNAPSHOT
                                     .value()));
         }
-        // Id
+        // Validate id
         if (!StringUtils.hasText(cpsDataUpdatedEvent.getId())) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             MISSING, "id", null, null));
         }
-        // Source
-        if (cpsDataUpdatedEvent.getSource() == null || !cpsDataUpdatedEvent.getSource().equals(EVENT_SOURCE)) {
+        // Validate source
+        if (!EVENT_SOURCE.equals(cpsDataUpdatedEvent.getSource())) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "source",
                             cpsDataUpdatedEvent.getSource() != null
                                     ? cpsDataUpdatedEvent.getSource().toString() : null, EVENT_SOURCE.toString()));
         }
-        // Type
-        if (cpsDataUpdatedEvent.getType() == null || !cpsDataUpdatedEvent.getType().equals(EVENT_TYPE)) {
+        // Validate type
+        if (!EVENT_TYPE.equals(cpsDataUpdatedEvent.getType())) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "type", cpsDataUpdatedEvent.getType(), EVENT_TYPE));
