@@ -89,7 +89,7 @@ public class DataUpdatedEventListener {
 
     private void validateEventEnvelop(final CpsDataUpdatedEvent cpsDataUpdatedEvent) {
 
-        final var invalidEventEnvelopException = new InvalidEventEnvelopException("Validation failure");
+        final var invalidEventEnvelopException = new InvalidEventEnvelopException(cpsDataUpdatedEvent);
 
         // Schema
         if (cpsDataUpdatedEvent.getSchema() == null) {
