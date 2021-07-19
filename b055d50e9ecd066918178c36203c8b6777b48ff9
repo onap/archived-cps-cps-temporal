@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a89d0d7_b294d0de",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-19T12:46:09Z",
+      "side": 1,
+      "message": "Any reason for removing the message from the constructor? It does give flexibility to user to add extra text about the exception. \nAnd we don\u0027t have to pass \"\" to super too.",
+      "range": {
+        "startLine": 40,
+        "startChar": 39,
+        "endLine": 40,
+        "endChar": 74
+      },
+      "revId": "b055d50e9ecd066918178c36203c8b6777b48ff9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "068291c1_7ea8b7a4",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-19T12:46:09Z",
+      "side": 1,
+      "message": "Another Unrelated comment 😊\n\nWe had a discussion about this part in the first patch related to Kafka listener. We agreed that String does not give correct picture but we can not use Object otherwise Sonar shows it as code smell. \n\nSuggestion: We can use \u003cT extends Serializable\u003e \n\npublic static class InvalidField\u003cT extends Serializable\u003e implements Serializable {\n...\n        private final T actualValue;\n        private final T expectedValue;\n...",
+      "range": {
+        "startLine": 67,
+        "startChar": 39,
+        "endLine": 69,
+        "endChar": 43
+      },
+      "revId": "b055d50e9ecd066918178c36203c8b6777b48ff9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f6575c8e_f8d4721c",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-19T12:46:09Z",
+      "side": 1,
+      "message": "Unrelated comment 😊\n\nCan change the condition to \n( ! EVENT_SOURCE.equals(cpsDataUpdatedEvent.getSource()) ) and remove a null check.",
+      "range": {
+        "startLine": 109,
+        "startChar": 12,
+        "endLine": 109,
+        "endChar": 108
+      },
+      "revId": "b055d50e9ecd066918178c36203c8b6777b48ff9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00b07533_867cbff9",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-19T12:46:09Z",
+      "side": 1,
+      "message": "same comment as above",
+      "range": {
+        "startLine": 117,
+        "startChar": 12,
+        "endLine": 117,
+        "endChar": 102
+      },
+      "revId": "b055d50e9ecd066918178c36203c8b6777b48ff9",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
