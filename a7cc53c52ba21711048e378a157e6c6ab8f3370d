@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3f246ef4_2f90fd23",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-20T20:02:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "57f49ab7_21047d65",
+      "range": {
+        "startLine": 37,
+        "startChar": 38,
+        "endLine": 37,
+        "endChar": 43
+      },
+      "revId": "a7cc53c52ba21711048e378a157e6c6ab8f3370d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d80ee126_b609c0a5",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2021-07-20T08:08:40Z",
       "side": 1,
       "message": "as above",
+      "range": {
+        "startLine": 40,
+        "startChar": 88,
+        "endLine": 40,
+        "endChar": 93
+      },
+      "revId": "a7cc53c52ba21711048e378a157e6c6ab8f3370d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "13bb8860_59229459",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/exception/InvalidEventEnvelopException.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-20T20:02:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d80ee126_b609c0a5",
       "range": {
         "startLine": 40,
         "startChar": 88,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "291f5251_0282bcdc",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-20T20:02:22Z",
+      "side": 1,
+      "message": "I tried to remove the comment and then feel that was not clear exactly what it is done in each section.\n\nI\u0027m suggesting \"validate source\" to describe what is happening in this block. It is coming from a possible method name if ever we were extracting the block in a method.\n\nWhat do you think ?",
+      "parentUuid": "1d24d5b3_f71d91f4",
+      "range": {
+        "startLine": 109,
+        "startChar": 11,
+        "endLine": 109,
+        "endChar": 17
+      },
+      "revId": "a7cc53c52ba21711048e378a157e6c6ab8f3370d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5a3030cc_4b4f78ba",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 2
@@ -82,6 +154,30 @@
       "writtenOn": "2021-07-20T08:08:40Z",
       "side": 1,
       "message": "as above, maybe \u0027Unexpected type\u0027",
+      "range": {
+        "startLine": 117,
+        "startChar": 11,
+        "endLine": 117,
+        "endChar": 15
+      },
+      "revId": "a7cc53c52ba21711048e378a157e6c6ab8f3370d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "06e7a4d0_39175927",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-20T20:02:22Z",
+      "side": 1,
+      "message": "See response above.",
+      "parentUuid": "5a3030cc_4b4f78ba",
       "range": {
         "startLine": 117,
         "startChar": 11,
