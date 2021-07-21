@@ -29,6 +29,7 @@ import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.test.context.DynamicPropertyRegistry
 import org.springframework.test.context.DynamicPropertySource
 import org.testcontainers.containers.KafkaContainer
+import org.testcontainers.spock.Testcontainers
 import spock.lang.Shared
 import spock.lang.Specification
 import spock.util.concurrent.PollingConditions
@@ -40,19 +41,18 @@ import java.util.concurrent.TimeUnit
  * This integration test is running database and kafka dependencies as docker containers.
  */
 @SpringBootTest
+@Testcontainers
 @Slf4j
 class DataUpdatedEventListenerIntegrationSpec extends Specification {
 
     @Shared
-    def databaseTestContainer = TimescaleContainer.getInstance()
+    TimescaleContainer databaseTestContainer = TimescaleContainer.getInstance()
 
     static kafkaTestContainer = new KafkaContainer()
     static {
         Runtime.getRuntime().addShutdownHook(new Thread(kafkaTestContainer::stop))
     }
-
     def setupSpec() {
-        databaseTestContainer.start()
         kafkaTestContainer.start()
     }
 

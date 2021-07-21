@@ -23,7 +23,7 @@ import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.testcontainers.junit.jupiter.Testcontainers
+import org.testcontainers.spock.Testcontainers
 import spock.lang.Shared
 import spock.lang.Specification
 
@@ -49,11 +49,7 @@ class NetworkDataRepositorySpec extends Specification {
             .schemaSet(schemaSetName).anchor(anchorName).payload(payload).build()
 
     @Shared
-    def databaseTestContainer = TimescaleContainer.getInstance()
-
-    def setupSpec() {
-        databaseTestContainer.start()
-    }
+    TimescaleContainer databaseTestContainer = TimescaleContainer.getInstance()
 
     def 'Store latest network data in timeseries database.'() {
         when: 'a new Network Data is stored'
