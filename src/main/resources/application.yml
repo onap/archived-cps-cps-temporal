@@ -18,6 +18,10 @@
 server:
     port: 8080
 
+rest:
+    api:
+        base-path: /cps-temporal/api
+
 spring:
     datasource:
         url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/cpstemporaldb
@@ -50,3 +54,11 @@ app:
     listener:
         data-updated:
             topic: ${CPS_CHANGE_EVENT_TOPIC:cps.cfg-state-events}
+
+springdoc:
+    swagger-ui:
+        disable-swagger-default-url: true
+        urlsPrimaryName: query
+        urls:
+            - name: query
+              url: /swagger/openapi.yml

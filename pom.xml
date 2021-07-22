@@ -36,7 +36,6 @@
     <description>CPS Temporal Service</description>
 
     <properties>
-        <app>org.onap.cps.temporal.Application</app>
         <docker.repository.pull>nexus3.onap.org:10001/</docker.repository.pull>
         <docker.repository.push>nexus3.onap.org:10003/</docker.repository.push>
         <image.base>${docker.repository.pull}onap/integration-java11:8.0.0</image.base>
@@ -45,7 +44,8 @@
         <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
         <minimum-coverage>0.8</minimum-coverage>
         <!-- Application dependencies versions -->
-        <cps.version>1.0.1</cps.version>
+        <!--cps.version need to be changed to released Istanbul version-->
+        <cps.version>1.1.0-SNAPSHOT</cps.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
@@ -113,6 +113,11 @@
             <artifactId>cps-events</artifactId>
             <version>1.1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.5.9</version>
+        </dependency>
         <!-- Runtime dependencies-->
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -178,6 +183,17 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>docs/api</directory>
+                <targetPath>static</targetPath>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -201,7 +217,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.3.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <!-- The gmavenplus plugin is used to compile Groovy code. To learn more about this plugin,
@@ -329,6 +352,7 @@
                       to 'Low'.
                     -->
                     <effort>Max</effort>
+                    <addSourceDirs>true</addSourceDirs>
                     <!-- Reports all bugs (other values are medium and max) -->
                     <threshold>Low</threshold>
                     <!-- Build doesn't fail if problems are found -->
@@ -390,6 +414,9 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <excludes>
+                                <exclude>org/onap/cps/temporal/controller/rest/model/*</exclude>
+                            </excludes>
                             <dataFile>${project.build.directory}/code-coverage/jacoco-ut.exec</dataFile>
                             <rules>
                                 <rule>
@@ -412,6 +439,32 @@
                         </goals>
                         <configuration>
                             <dataFile>${project.build.directory}/code-coverage/jacoco-ut.exec</dataFile>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.swagger.codegen.v3</groupId>
+                <artifactId>swagger-codegen-maven-plugin</artifactId>
+                <version>3.0.27</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/docs/api/swagger/openapi.yml</inputSpec>
+                            <invokerPackage>org.onap.cps.temporal.controller.rest</invokerPackage>
+                            <modelPackage>org.onap.cps.temporal.controller.rest.model</modelPackage>
+                            <apiPackage>org.onap.cps.temporal.controller.rest.api</apiPackage>
+                            <language>spring</language>
+                            <generateSupportingFiles>false</generateSupportingFiles>
+                            <configOptions>
+                                <sourceFolder>src/gen/java</sourceFolder>
+                                <dateLibrary>java11</dateLibrary>
+                                <interfaceOnly>true</interfaceOnly>
+                                <useTags>true</useTags>
+                            </configOptions>
                         </configuration>
                     </execution>
                 </executions>
