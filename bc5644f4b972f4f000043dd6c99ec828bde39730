@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b6f2614e_920463b0",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-22T12:32:42Z",
+      "side": 1,
+      "message": "With def the variable is defined as a generic object and this prevents to have the container automatically started.",
+      "parentUuid": "4f4a1402_7d6e72f7",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 49,
+        "endChar": 22
+      },
+      "revId": "bc5644f4b972f4f000043dd6c99ec828bde39730",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1b35e855_f73362d8",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2021-07-22T10:08:11Z",
       "side": 1,
       "message": "Same as previous comment.",
+      "range": {
+        "startLine": 52,
+        "startChar": 4,
+        "endLine": 52,
+        "endChar": 22
+      },
+      "revId": "bc5644f4b972f4f000043dd6c99ec828bde39730",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40fde600_7fa321b7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-22T12:32:42Z",
+      "side": 1,
+      "message": "Same response ;)",
+      "parentUuid": "1b35e855_f73362d8",
       "range": {
         "startLine": 52,
         "startChar": 4,
