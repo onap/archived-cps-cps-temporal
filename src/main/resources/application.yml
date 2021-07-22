@@ -13,10 +13,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
 # ============LICENSE_END=========================================================
 
 server:
     port: 8080
+
+rest:
+    api:
+        base-path: /cps-temporal/api
 
 spring:
     datasource:
@@ -50,3 +56,11 @@ app:
     listener:
         data-updated:
             topic: ${CPS_CHANGE_EVENT_TOPIC:cps.cfg-state-events}
+
+springdoc:
+    swagger-ui:
+        disable-swagger-default-url: true
+        urlsPrimaryName: query
+        urls:
+            - name: query
+              url: /swagger/openapi.yml

@@ -106,3 +106,10 @@ mvn org.liquibase:liquibase-maven-plugin:4.3.2:update \
   -Dliquibase.password=cpstemporal \
   -Dliquibase.changeLogFile=db/changelog/changelog-master.xml
 ```
+
+## Accessing services
+
+Swagger UI is available to discover service endpoints and send requests.
+
+* `http://localhost:<port-number>/swagger-ui.html`
+
