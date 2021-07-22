@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f4a1402_7d6e72f7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7486
+      },
+      "writtenOn": "2021-07-22T10:08:11Z",
+      "side": 1,
+      "message": "Is there a reason why this not a \"def\"?",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 49,
+        "endChar": 22
+      },
+      "revId": "bc5644f4b972f4f000043dd6c99ec828bde39730",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1b35e855_f73362d8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 7486
+      },
+      "writtenOn": "2021-07-22T10:08:11Z",
+      "side": 1,
+      "message": "Same as previous comment.",
+      "range": {
+        "startLine": 52,
+        "startChar": 4,
+        "endLine": 52,
+        "endChar": 22
+      },
+      "revId": "bc5644f4b972f4f000043dd6c99ec828bde39730",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
