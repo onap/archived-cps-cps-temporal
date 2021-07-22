@@ -17,6 +17,10 @@
 server:
     port: 8080
 
+rest:
+    api:
+        base-path: /cps-temporal/api
+
 spring:
     datasource:
         url: ${DB_URL}
