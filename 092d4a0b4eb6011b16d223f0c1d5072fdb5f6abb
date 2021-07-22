@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d492eb72_03b87489",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-22T22:31:01Z",
+      "side": 0,
+      "message": "It seems that we are now missing a specific version and getting a warning:\n\n  \u0027build.plugins.plugin.version\u0027 for org.springframework.boot:spring-boot-maven-plugin is missing. @ line 217, column 21",
+      "range": {
+        "startLine": 204,
+        "startChar": 16,
+        "endLine": 204,
+        "endChar": 48
+      },
+      "revId": "092d4a0b4eb6011b16d223f0c1d5072fdb5f6abb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
