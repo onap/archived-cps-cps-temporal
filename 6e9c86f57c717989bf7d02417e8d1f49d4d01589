@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "b0685148_ffc13db5",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 418,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-23T14:20:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8a6d5569_90268879",
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f3336ca8_da2a942d",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
         "patchSetId": 3
@@ -116,6 +134,30 @@
       "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1725ba62_86c81ec2",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-23T14:20:38Z",
+      "side": 1,
+      "message": "I think we good with that.\n\nAnyway, there is also an archunit rule to ensure that the packaging remains clean with an upper package: https://github.com/onap/cps-cps-temporal/blob/master/src/test/java/org/onap/cps/temporal/architecture/DependencyArchitectureTest.java#L40",
+      "parentUuid": "dd6f9cfe_5f8e8307",
+      "range": {
+        "startLine": 19,
+        "startChar": 8,
+        "endLine": 19,
+        "endChar": 45
+      },
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
