@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8a6d5569_90268879",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 418,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-23T12:55:11Z",
+      "side": 1,
+      "message": "yeah. I think it is not required.",
+      "parentUuid": "aba45713_e7738e5b",
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f3336ca8_da2a942d",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
         "patchSetId": 3
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9ca88506_198e7a2e",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-23T12:55:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f3336ca8_da2a942d",
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "93ae0162_68e642f3",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
         "patchSetId": 3
@@ -47,6 +83,30 @@
       "writtenOn": "2021-07-22T22:31:01Z",
       "side": 1,
       "message": "What about having this class into `org.onap.cps.temporal.controller.rest.api` package to have both in the interface and the same package.\n\nOr if we want to keep separated packages, I would be also good to move this class to `org.onap.cps.temporal.controller.rest.impl` to be at the same package level as `api` and `model`.",
+      "range": {
+        "startLine": 19,
+        "startChar": 8,
+        "endLine": 19,
+        "endChar": 45
+      },
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dd6f9cfe_5f8e8307",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-23T12:55:11Z",
+      "side": 1,
+      "message": "In the existing package structure, rest has only controller classes and If I introduce one more package, the code will look odd. \nNow the swagger code is getting generated in the rest package.\nWhat do you think?",
+      "parentUuid": "93ae0162_68e642f3",
       "range": {
         "startLine": 19,
         "startChar": 8,
@@ -79,6 +139,30 @@
       "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "acb1c015_0135169a",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-23T12:55:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "637d95ed_ce3ccb60",
+      "range": {
+        "startLine": 46,
+        "startChar": 37,
+        "endLine": 46,
+        "endChar": 50
+      },
+      "revId": "6e9c86f57c717989bf7d02417e8d1f49d4d01589",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
