@@ -22,8 +22,11 @@ package org.onap.cps.temporal.repository
 import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.testcontainers.spock.Testcontainers
+import org.springframework.test.annotation.Rollback
+import org.springframework.test.context.transaction.TestTransaction
 import spock.lang.Shared
 import spock.lang.Specification
 
@@ -32,15 +35,16 @@ import java.time.OffsetDateTime
 /**
  * Test specification for network data repository.
  */
-@SpringBootTest
 @Testcontainers
+@DataJpaTest @Rollback(false)
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class NetworkDataRepositorySpec extends Specification {
 
     def observedTimestamp = OffsetDateTime.now()
     def dataspaceName = 'TEST_DATASPACE'
     def schemaSetName = 'TEST_SCHEMA_SET'
     def anchorName = 'TEST_ANCHOR'
-    def payload = '{ \"message\": \"Hello World!\" }'
+    def payload = '{ "message": "Hello World!" }'
 
     @Autowired
     NetworkDataRepository networkDataRepository
@@ -54,6 +58,7 @@ class NetworkDataRepositorySpec extends Specification {
     def 'Store latest network data in timeseries database.'() {
         when: 'a new Network Data is stored'
             NetworkData savedData = networkDataRepository.save(networkData)
+            TestTransaction.end()
         then: ' the saved Network Data is returned'
             savedData.getDataspace() == networkData.getDataspace()
             savedData.getSchemaSet() == networkData.getSchemaSet()
