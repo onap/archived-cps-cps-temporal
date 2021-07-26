@@ -1,3 +1,21 @@
+# ============LICENSE_START=======================================================
+# Copyright (c) 2021 Bell Canada.
+# ================================================================================
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#         http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+# ============LICENSE_END=========================================================
+
 openapi: 3.0.1
 info:
   title: ONAP Open API v3 Configuration Persistence Service - Temporal
@@ -13,7 +31,7 @@ info:
   x-planned-retirement-date: '202212'
   x-component: Modeling
 servers:
-  - url: '//localhost:8088/cps-temporal/api'
+  - url: '/cps-temporal/api'
 tags:
   - name: cps-temporal-query
     description: CPS Temporal Query
@@ -45,7 +63,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AnchorDataByNameResponse'
+                $ref: '#/components/schemas/AnchorHistory'
+              example:
+                nextRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=2
+                previousRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=0
+                records:
+                  - timestamp: '2021-03-21T00:00:00.000000-0:00'
+                    dataspace: my-dataspace
+                    schemaSet: my-schema-set
+                    anchor: my-anchor
+                    data:
+                      status: UP
+
+
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -61,7 +91,7 @@ paths:
       operationId: getAnchorsDataByFilter
       parameters:
         - $ref: '#/components/parameters/dataspaceName'
-        - name: schemaset-name
+        - name: schema-set-name
           in: query
           description: Schema-set name
           required: true
@@ -79,7 +109,18 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/AnchorsDataByFilterResponse'
+                $ref: '#/components/schemas/AnchorHistory'
+              example:
+                nextRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=2
+                previousRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=0
+                records:
+                  - timestamp: '2021-03-21T00:00:00.000000-0:00'
+                    dataspace: my-dataspace
+                    schemaSet: my-schema-set
+                    anchor: my-anchor
+                    data:
+                      status: UP
+
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
@@ -165,6 +206,26 @@ components:
           schema:
             $ref: '#/components/schemas/ErrorMessage'
   schemas:
+    AnchorDetails:
+      type: object
+      title: AnchorDetails
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+          example: '2021-03-21T00:00:00.000000-0:00'
+        dataspace:
+          type: string
+          example: 'my-dataspace'
+        schemaSet:
+          type: string
+          example: 'my-schema-set'
+        anchor:
+          type: string
+          example: 'my-anchor'
+        data:
+          type: object
+          example: { "status" : "UP" }
     AnchorHistory:
       type: object
       title: AnchorHistory
@@ -178,51 +239,9 @@ components:
         records:
           type: array
           items:
-            type: object
-            properties:
-              timestamp:
-                type: string
-                format: date-time
-                example: '2021-03-21T00:00:00.000000-0:00'
-              dataspace:
-                type: string
-                example: 'my-dataspace'
-              schemaSet:
-                type: string
-                example: 'my-schema-set'
-              anchor:
-                type: string
-                example: 'my-anchor'
-              data:
-                type: object
-                example: { "status" : "UP" }
+            $ref: '#/components/schemas/AnchorDetails'
       required:
         - records
-
-    AnchorsDataByFilterResponse:
-      allOf:     # Combines the BasicErrorModel and the inline model
-        - $ref: '#/components/schemas/AnchorHistory'
-        - title: getAnchorDataByNameResponse
-          properties:
-            nextRecordsLink:
-              type: string
-              example: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=2
-            previousRecordsLink:
-              type: string
-              example: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=0
-
-    AnchorDataByNameResponse:
-      allOf:     # Combines the BasicErrorModel and the inline model
-        - $ref: '#/components/schemas/AnchorHistory'
-        - title: getAnchorDataByNameResponse
-          properties:
-            nextRecordsLink:
-              type: string
-              example: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=2
-            previousRecordsLink:
-              type: string
-              example: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=0
-
     ErrorMessage:
       type: object
       title: Error
