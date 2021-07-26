@@ -1,0 +1,11 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Dylan Byrne <dylan.byrne@est.tech>
+Code-Review+1: Luke Gleeson <luke.gleeson@est.tech>
+Code-Review+1: Bruno Sakoto <bruno.sakoto@bell.ca>
+Code-Review+1: Shiva Subedi <shiva.subedi@est.tech>
+Code-Review+2: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Submitted-by: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Submitted-at: Mon, 26 Jul 2021 15:40:09 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/122825
+Project: cps/cps-temporal
+Branch: refs/heads/master
