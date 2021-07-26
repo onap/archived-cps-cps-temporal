@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f7f3f4a_dba589ef",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-07-26T15:11:52Z",
+      "side": 1,
+      "message": "For better performance, it should be false\nhttps://www.baeldung.com/spring-open-session-in-view \n\nCPS already has \u0027spring.jpa.open-in-view\u0027 as false",
+      "range": {
+        "startLine": 29,
+        "startChar": 8,
+        "endLine": 29,
+        "endChar": 27
+      },
+      "revId": "b0abffa28253d49d2b901521977a9e512d1bd281",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
