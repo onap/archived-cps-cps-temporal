@@ -527,7 +527,7 @@
 
     <profiles>
         <profile>
-            <id>cps-temporal-docker</id>
+            <id>docker</id>
             <build>
                 <plugins>
                     <plugin>

@@ -34,7 +34,7 @@ mvn clean install
 Following command builds the JAR file and also generates the Docker image:
 
 ```bash
-mvn clean install -Pcps-temporal-docker -Ddocker.repository.push=
+mvn clean install -Pdocker -Ddocker.repository.push=
 ```
 
 ## Running via Docker Compose
