@@ -46,6 +46,29 @@
       "revId": "b0abffa28253d49d2b901521977a9e512d1bd281",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "28e9b072_8e59b40a",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-28T08:41:06Z",
+      "side": 1,
+      "message": "is this needed for any future tets now?",
+      "range": {
+        "startLine": 61,
+        "startChar": 12,
+        "endLine": 61,
+        "endChar": 33
+      },
+      "revId": "b0abffa28253d49d2b901521977a9e512d1bd281",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
