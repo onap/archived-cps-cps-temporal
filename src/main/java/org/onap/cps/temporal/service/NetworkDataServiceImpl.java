@@ -13,6 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
@@ -22,7 +24,10 @@ import java.util.Optional;
 import lombok.extern.slf4j.Slf4j;
 import org.onap.cps.temporal.domain.NetworkData;
 import org.onap.cps.temporal.domain.NetworkDataId;
+import org.onap.cps.temporal.domain.SearchCriteria;
 import org.onap.cps.temporal.repository.NetworkDataRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 /**
@@ -44,13 +49,18 @@ public class NetworkDataServiceImpl implements NetworkDataService {
         if (savedNetworkData.getCreatedTimestamp() == null) {
             // Data already exists and can not be inserted
             final var id =
-                    new NetworkDataId(
-                            networkData.getObservedTimestamp(), networkData.getDataspace(), networkData.getAnchor());
+                new NetworkDataId(
+                    networkData.getObservedTimestamp(), networkData.getDataspace(), networkData.getAnchor());
             final Optional<NetworkData> existingNetworkData = networkDataRepository.findById(id);
             throw new ServiceException(
-                    "Failed to create network data. It already exists: " + (existingNetworkData.orElse(null)));
+                "Failed to create network data. It already exists: " + (existingNetworkData.orElse(null)));
         }
         return savedNetworkData;
+    }
+
+    @Override
+    public Page<NetworkData> searchNetworkData(final SearchCriteria searchCriteria) {
+        return networkDataRepository.findBySearchCriteria(searchCriteria);
     }
 
 }
