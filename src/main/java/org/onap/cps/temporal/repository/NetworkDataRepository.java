@@ -13,6 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
@@ -24,5 +26,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface NetworkDataRepository extends JpaRepository<NetworkData, NetworkDataId> {
+public interface NetworkDataRepository extends JpaRepository<NetworkData, NetworkDataId>,
+    NetworkDataQueryRespository {
 }
