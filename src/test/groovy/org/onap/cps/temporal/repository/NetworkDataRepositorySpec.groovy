@@ -13,17 +13,20 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
 package org.onap.cps.temporal.repository
 
-
 import org.onap.cps.temporal.domain.NetworkData
+import org.onap.cps.temporal.domain.SearchCriteria
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
+import org.springframework.data.domain.Page
 import org.testcontainers.spock.Testcontainers
 import org.springframework.test.annotation.Rollback
 import org.springframework.test.context.transaction.TestTransaction
@@ -36,21 +39,23 @@ import java.time.OffsetDateTime
  * Test specification for network data repository.
  */
 @Testcontainers
-@DataJpaTest @Rollback(false)
+@DataJpaTest
+@Rollback(false)
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class NetworkDataRepositorySpec extends Specification {
 
+    @Shared
     def observedTimestamp = OffsetDateTime.now()
-    def dataspaceName = 'TEST_DATASPACE'
-    def schemaSetName = 'TEST_SCHEMA_SET'
-    def anchorName = 'TEST_ANCHOR'
-    def payload = '{ "message": "Hello World!" }'
+    def testDataspaceName = 'TEST_DATASPACE'
+    def testSchemaSetName = 'TEST_SCHEMA_SET'
+    def testAnchorName = 'TEST_ANCHOR'
+    def payload = '{"message": "Hello World!"}'
 
     @Autowired
     NetworkDataRepository networkDataRepository
 
-    def networkData = NetworkData.builder().observedTimestamp(observedTimestamp).dataspace(dataspaceName)
-            .schemaSet(schemaSetName).anchor(anchorName).payload(payload).build()
+    def networkData = NetworkData.builder().observedTimestamp(observedTimestamp).dataspace(testDataspaceName)
+        .schemaSet(testSchemaSetName).anchor(testAnchorName).payload(payload).build()
 
     @Shared
     TimescaleContainer databaseTestContainer = TimescaleContainer.getInstance()
@@ -70,5 +75,29 @@ class NetworkDataRepositorySpec extends Specification {
             savedData.getCreatedTimestamp() != null
         and: ' the CreationTimestamp is ahead of ObservedTimestamp'
             savedData.getCreatedTimestamp() > networkData.getObservedTimestamp()
+    }
+
+    /* TODO More and better test cases and prepare data for possible scenarios
+        remove dependency on previous test
+     */
+
+    def 'Query Network data by search criteria.'() {
+        given: 'search criteria'
+            def searchCriteria = (new SearchCriteria.Builder())
+                .dataspaceName(testDataspaceName)
+                .anchorNames(Set.of(testAnchorName))
+                .pagination(0, 1)
+                .build()
+        when: 'data is fetched'
+            Page<NetworkData> result = networkDataRepository.findBySearchCriteria(searchCriteria)
+
+        then: 'result has expected values'
+            result.getTotalElements() == 1L
+            NetworkData networkData = result.getContent().get(0);
+            networkData.getPayload() == payload
+            networkData.getAnchor() == testAnchorName
+            networkData.getDataspace() == testDataspaceName
+            networkData.getObservedTimestamp() == observedTimestamp
+            networkData.getSchemaSet() == testSchemaSetName
     }
 }

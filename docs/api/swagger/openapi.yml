@@ -51,7 +51,7 @@ paths:
           required: true
           schema:
             type: string
-        - $ref: '#/components/parameters/after'
+        - $ref: '#/components/parameters/observedTimestampAfter'
         - $ref: '#/components/parameters/simplePayloadFilter'
         - $ref: '#/components/parameters/pointInTime'
         - $ref: '#/components/parameters/pageNumber'
@@ -97,7 +97,7 @@ paths:
           required: true
           schema:
             type: string
-        - $ref: '#/components/parameters/after'
+        - $ref: '#/components/parameters/observedTimestampAfter'
         - $ref: '#/components/parameters/simplePayloadFilter'
         - $ref: '#/components/parameters/pointInTime'
         - $ref: '#/components/parameters/pageNumber'
@@ -136,10 +136,10 @@ components:
       required: true
       schema:
         type: string
-    after:
-      name: after
+    observedTimestampAfter:
+      name: observedTimestampAfter
       in: query
-      description: Fetch data after <br/> Format - 'yyyy-MM-ddTHH:mm:ss.SSSZ'
+      description: Fetch data with observed timestamp after <br/> Format - 'yyyy-MM-ddTHH:mm:ss.SSSZ'
       required: false
       schema:
         type: string
@@ -184,7 +184,7 @@ components:
       required: false
       schema:
         type: string
-        default: timestamp:desc
+        default: observed_timestamp:desc
       description: "Sort by timestamp in 'asc' or 'desc' order. Supported values: <br/> timestamp:desc<br/>timestamp:asc"
   responses:
     BadRequest:
