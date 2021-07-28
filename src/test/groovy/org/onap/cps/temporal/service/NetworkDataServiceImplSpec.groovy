@@ -13,13 +13,16 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
 package org.onap.cps.temporal.service
 
 import org.onap.cps.temporal.domain.NetworkDataId
-
+import org.onap.cps.temporal.domain.SearchCriteria
+import org.springframework.data.domain.PageImpl
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.repository.NetworkDataRepository
@@ -50,7 +53,8 @@ class NetworkDataServiceImplSpec extends Specification {
     }
 
     def 'Add network data fails because already added'() {
-        given: 'network data repository is not able to create data it is asked to persist ' +
+        given:
+            'network data repository is not able to create data it is asked to persist ' +
                 'and reveals it with null created timestamp on network data entity'
             def persistedNetworkData = new NetworkData()
             persistedNetworkData.setCreatedTimestamp(null)
@@ -63,6 +67,25 @@ class NetworkDataServiceImplSpec extends Specification {
             objectUnderTest.addNetworkData(networkData)
         then: 'network service exception is thrown'
             thrown(ServiceException)
+    }
+
+    def 'Query network data by search criteria.'() {
+        given: 'search criteria'
+            def searchCriteria = SearchCriteria.builder()
+                .dataspaceName('my-dataspaceName')
+                .schemaSetName('my-schemaset')
+                .pagination(0, 10)
+                .build()
+        and: 'response from repository'
+            def pageFromRepository = new PageImpl<>(Collections.emptyList(), searchCriteria.getPageable(), 10)
+            mockNetworkDataRepository.findBySearchCriteria(searchCriteria) >> pageFromRepository
+
+        when: 'search is executed'
+            def resultPage = objectUnderTest.searchNetworkData(searchCriteria)
+
+        then: 'data is fetched from repository and returned'
+            resultPage == pageFromRepository
+
     }
 
 }
