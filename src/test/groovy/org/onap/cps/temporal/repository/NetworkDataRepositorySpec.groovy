@@ -18,12 +18,13 @@
 
 package org.onap.cps.temporal.repository
 
-
 import org.onap.cps.temporal.domain.NetworkData
+import org.onap.cps.temporal.domain.SearchCriteria
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
+import org.springframework.data.domain.Page
 import org.testcontainers.spock.Testcontainers
 import org.springframework.test.annotation.Rollback
 import org.springframework.test.context.transaction.TestTransaction
@@ -40,11 +41,11 @@ import java.time.OffsetDateTime
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 class NetworkDataRepositorySpec extends Specification {
 
-    def observedTimestamp = OffsetDateTime.now()
+    @Shared def observedTimestamp = OffsetDateTime.now()
     def dataspaceName = 'TEST_DATASPACE'
     def schemaSetName = 'TEST_SCHEMA_SET'
     def anchorName = 'TEST_ANCHOR'
-    def payload = '{ "message": "Hello World!" }'
+    def payload = '{"message": "Hello World!"}'
 
     @Autowired
     NetworkDataRepository networkDataRepository
@@ -70,5 +71,28 @@ class NetworkDataRepositorySpec extends Specification {
             savedData.getCreatedTimestamp() != null
         and: ' the CreationTimestamp is ahead of ObservedTimestamp'
             savedData.getCreatedTimestamp() > networkData.getObservedTimestamp()
+    }
+
+    /* TODO More and better test cases and prepare data for possible scenarios
+        remove dependency on previous test
+     */
+    def 'Query Network data by search criteria.'() {
+        given: 'search criteria'
+            def searchCriteria = (new SearchCriteria.Builder())
+                    .dataspaceName(dataspaceName)
+                    .anchorNames(Set.of(anchorName))
+                    .pagination(0,1)
+                    .build()
+        when: 'data is fetched'
+            Page<NetworkData> result = networkDataRepository.findBySearchCriteria(searchCriteria)
+
+        then: 'expected '
+            result.getTotalElements() == 1L
+            NetworkData networkData = result.getContent().get(0);
+            networkData.getPayload() == payload
+            networkData.getAnchor() == anchorName
+            networkData.getDataspace() == dataspaceName
+            networkData.getObservedTimestamp() == observedTimestamp
+            networkData.getSchemaSet() == schemaSetName
     }
 }

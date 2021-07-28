@@ -19,6 +19,9 @@
 package org.onap.cps.temporal.service
 
 import org.onap.cps.temporal.domain.NetworkDataId
+import org.onap.cps.temporal.domain.SearchCriteria
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.PageImpl
 
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.domain.NetworkData
@@ -63,6 +66,25 @@ class NetworkDataServiceImplSpec extends Specification {
             objectUnderTest.addNetworkData(networkData)
         then: 'network service exception is thrown'
             thrown(ServiceException)
+    }
+
+    def 'Query network data by search criteria.'() {
+        given: 'search criteria'
+            def searchCriteria = SearchCriteria.builder()
+                    .dataspaceName('my-dataspaceName')
+                    .schemaSetName('my-schemaset')
+                    .pagination(0, 10)
+                    .build()
+        and: 'response to be returned from repository'
+            def responseFromRepository = new PageImpl<>(Collections.emptyList(),searchCriteria.getPageable(), 10)
+
+        when: 'search is executed'
+            def resultPage = objectUnderTest.searchNetworkData(searchCriteria)
+
+        then: 'data is fetched from repository and returned'
+             1 * mockNetworkDataRepository.findBySearchCriteria(searchCriteria) >> responseFromRepository
+            resultPage == responseFromRepository
+
     }
 
 }

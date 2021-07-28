@@ -49,4 +49,8 @@ public class QueryController implements CpsTemporalQueryApi {
         final @Min(0) @Max(10000) @Valid Integer pageLimit, final @Valid String sort) {
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
+
+
+
+
 }
