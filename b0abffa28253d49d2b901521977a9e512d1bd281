@@ -93,6 +93,30 @@
       "revId": "b0abffa28253d49d2b901521977a9e512d1bd281",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6734a5a6_d34ed078",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-29T07:30:29Z",
+      "side": 1,
+      "message": "thanks, maybe as suggested in standup in future add something like:\n\nand: \u0027the transaction is committed\u0027",
+      "parentUuid": "cd659168_5e9f3294",
+      "range": {
+        "startLine": 61,
+        "startChar": 12,
+        "endLine": 61,
+        "endChar": 33
+      },
+      "revId": "b0abffa28253d49d2b901521977a9e512d1bd281",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
