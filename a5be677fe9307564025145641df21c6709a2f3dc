@@ -1,0 +1,257 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e8214390_e1abdb9a",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "not sure about these variable names but let me look at teh rest of the code...",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 33
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "596757f9_6b46db9d",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "for consistency and simplicity I would split this in 2 separate exceptions  (liek you have doen for the next 2 error scenarios)",
+      "range": {
+        "startLine": 75,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "92575c45_a3eed695",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "could it be cat to a Long ?",
+      "range": {
+        "startLine": 66,
+        "startChar": 17,
+        "endLine": 66,
+        "endChar": 27
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3e6546a8_d66dbfd7",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "so pointInTime is more like \u0027createdBefore\u0027 or \u0027changedBefore\u0027",
+      "range": {
+        "startLine": 138,
+        "startChar": 60,
+        "endLine": 138,
+        "endChar": 62
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "471aaa97_88b6ff7a",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "I know we had some discussed about the names of created and observed and I am still unsure about the exact meaning :-(\n\nNut since pointInTIme is used with \u0027created\u0027 and \u0027after\u0027 is used with \u0027observed\u0027 maybe the (criteria)  names should reflect that? Not sure though, we might need a little discussion so you can explain your intention",
+      "range": {
+        "startLine": 145,
+        "startChar": 42,
+        "endLine": 145,
+        "endChar": 50
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e6167c7_c1f19e18",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "addOrderBy",
+      "range": {
+        "startLine": 150,
+        "startChar": 21,
+        "endLine": 150,
+        "endChar": 30
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe319d84_47fc036d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 30,
+        "startChar": 35,
+        "endLine": 30,
+        "endChar": 36
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b08e9f4f_7247b1c8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "alwasy check for \" (I usually do q quick replace all \" to \u0027 :-)",
+      "range": {
+        "startLine": 56,
+        "startChar": 14,
+        "endLine": 56,
+        "endChar": 15
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cdcc1964_6867416e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "add \u0027without dataspace\u0027\n(similar for all test below)",
+      "range": {
+        "startLine": 56,
+        "startChar": 34,
+        "endLine": 56,
+        "endChar": 42
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "12066c44_3f194053",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "wont review so :-)",
+      "range": {
+        "startLine": 78,
+        "startChar": 7,
+        "endLine": 78,
+        "endChar": 11
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8720c0f_85b3fb63",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-07-30T08:39:43Z",
+      "side": 1,
+      "message": "as I discussed with Rahul yesterday, if you end results depends on the defined mock behavior you don\u0027t have to check the method is called. \n\nSo simply move \u0027mockNetworkDataRepository.findBySearchCriteria(searchCriteria) \u003e\u003e responseFromRepository\u0027 (without 1 *) to the given: block (possibly as a separate and: statement)",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 48
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
