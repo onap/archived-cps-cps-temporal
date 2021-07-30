@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fb51444c_8577bbab",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-30T20:42:14Z",
+      "side": 1,
+      "message": "Because of the high volume of data that can be expected, we\u0027d better use Slice instead of Page.\n\nPage includes total number of records matching the criteria, but it comes with an additional overhead count request that we might not be able to afford. Slice does not have this total number of records. It should not be an issue as this information is not included in the API request response anyway I think.\n\nSee also section 4 at https://www.baeldung.com/spring-data-jpa-pagination-sorting",
+      "range": {
+        "startLine": 29,
+        "startChar": 4,
+        "endLine": 29,
+        "endChar": 8
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18e5a654_289500d0",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-07-30T20:42:14Z",
+      "side": 1,
+      "message": "What could be the impact of the \u0027in\u0027 clause on performance ? Could it prevents from using the index ? If this is the case, should we have an \u0027\u003d\u0027 condition ?",
+      "range": {
+        "startLine": 125,
+        "startChar": 49,
+        "endLine": 125,
+        "endChar": 52
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
