@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e72d84b2_909901ee",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "I agree. implementation has been changed.",
+      "parentUuid": "fb51444c_8577bbab",
+      "range": {
+        "startLine": 29,
+        "startChar": 4,
+        "endLine": 29,
+        "endChar": 8
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "18e5a654_289500d0",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2021-07-30T20:42:14Z",
       "side": 1,
       "message": "What could be the impact of the \u0027in\u0027 clause on performance ? Could it prevents from using the index ? If this is the case, should we have an \u0027\u003d\u0027 condition ?",
+      "range": {
+        "startLine": 125,
+        "startChar": 49,
+        "endLine": 125,
+        "endChar": 52
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20196625_8e22ad66",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "I think it will take some time to investigate the index usage in the IN clause.\n\nFor the existing requirement, we don\u0027t expect multiple anchors, hence I have changed the implementation to use the \u0027\u003d\u0027 operator.",
+      "parentUuid": "18e5a654_289500d0",
       "range": {
         "startLine": 125,
         "startChar": 49,

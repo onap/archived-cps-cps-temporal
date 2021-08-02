@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e8a86c72_a6bdff3f",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 6
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "All the code for querying is in NetworkDataRepositoryImpl so, I thought it would be better to keep the tests in a separate class \u0027NetworkDataRepositoryImplSpec\u0027 too.\n\nLet me know if any of you think otherwise.",
+      "range": {
+        "startLine": 49,
+        "startChar": 6,
+        "endLine": 49,
+        "endChar": 35
+      },
+      "revId": "3c175de9203a0a8832b62845a45cee5fbeb94283",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}

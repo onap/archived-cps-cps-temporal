@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3d4adab6_1beb4f1c",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "I agree that these names are little confusing.\n\nchanged to:\n\nprivate OffsetDateTime createdTimestampBefore;\nprivate OffsetDateTime observedTimestampAfter;",
+      "parentUuid": "e8214390_e1abdb9a",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 33
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "596757f9_6b46db9d",
         "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2021-07-30T08:39:43Z",
       "side": 1,
       "message": "for consistency and simplicity I would split this in 2 separate exceptions  (liek you have doen for the next 2 error scenarios)",
+      "range": {
+        "startLine": 75,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0c58026f_092cf4ce",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "Either one of these two must be provided. That is why this condition is checking if both are missing.\n\nI changed the error text to \"Either anchorName or schemaSetName must be provided\" to make it clear.",
+      "parentUuid": "596757f9_6b46db9d",
       "range": {
         "startLine": 75,
         "startChar": 10,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "d67792a6_017fd672",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "It is not longer valid as we are using Slice instead of Page",
+      "parentUuid": "92575c45_a3eed695",
+      "range": {
+        "startLine": 66,
+        "startChar": 17,
+        "endLine": 66,
+        "endChar": 27
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3e6546a8_d66dbfd7",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 4
@@ -82,6 +154,30 @@
       "writtenOn": "2021-07-30T08:39:43Z",
       "side": 1,
       "message": "so pointInTime is more like \u0027createdBefore\u0027 or \u0027changedBefore\u0027",
+      "range": {
+        "startLine": 138,
+        "startChar": 60,
+        "endLine": 138,
+        "endChar": 62
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c1b55afe_36486ee2",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "renamed it to createdBefore.",
+      "parentUuid": "3e6546a8_d66dbfd7",
       "range": {
         "startLine": 138,
         "startChar": 60,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "d9d9f4fb_30d7798f",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "These two variables are confusing andI did change the names in the search criteria. Does it make intention clear now?",
+      "parentUuid": "471aaa97_88b6ff7a",
+      "range": {
+        "startLine": 145,
+        "startChar": 42,
+        "endLine": 145,
+        "endChar": 50
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9e6167c7_c1f19e18",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 4
@@ -140,6 +260,30 @@
     },
     {
       "key": {
+        "uuid": "cd7dbc1d_4833f4de",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9e6167c7_c1f19e18",
+      "range": {
+        "startLine": 150,
+        "startChar": 21,
+        "endLine": 150,
+        "endChar": 30
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fe319d84_47fc036d",
         "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
         "patchSetId": 4
@@ -160,6 +304,30 @@
       "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a306892b_c7f8f415",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fe319d84_47fc036d",
+      "range": {
+        "startLine": 30,
+        "startChar": 35,
+        "endLine": 30,
+        "endChar": 36
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -209,6 +377,30 @@
     },
     {
       "key": {
+        "uuid": "d8994d34_98b7f8d8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cdcc1964_6867416e",
+      "range": {
+        "startLine": 56,
+        "startChar": 34,
+        "endLine": 56,
+        "endChar": 42
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "12066c44_3f194053",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
         "patchSetId": 4
@@ -252,6 +444,30 @@
       "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b2a028a7_333df297",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-02T16:24:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c8720c0f_85b3fb63",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 48
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
