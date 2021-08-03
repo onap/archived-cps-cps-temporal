@@ -24,8 +24,8 @@ import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.onap.cps.event.model.CpsDataUpdatedEvent;
-import org.onap.cps.event.model.Data;
+import org.onap.cps.event.model.v0.CpsDataUpdatedEvent;
+import org.onap.cps.event.model.v0.Data;
 import org.onap.cps.temporal.domain.NetworkData;
 
 /**
@@ -44,6 +44,13 @@ public abstract class CpsDataUpdatedEventMapper {
     @Mapping(source = "content.data", target = "payload")
     @Mapping(expression = "java(null)", target = "createdTimestamp")
     public abstract NetworkData eventToEntity(CpsDataUpdatedEvent cpsDataUpdatedEvent);
+
+    @Mapping(target = "withSchema", ignore = true)
+    @Mapping(target = "withType", ignore = true)
+    @Mapping(target = "withSource", ignore = true)
+    @Mapping(target = "withId", ignore = true)
+    @Mapping(target = "withContent", ignore = true)
+    public abstract CpsDataUpdatedEvent eventV1ToEventV0(org.onap.cps.event.model.v1.CpsDataUpdatedEvent event);
 
     String map(final Data data) throws JsonProcessingException {
         return data != null ? new ObjectMapper().writeValueAsString(data) : null;

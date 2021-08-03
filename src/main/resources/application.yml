@@ -51,12 +51,19 @@ spring:
             properties:
                 spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
                 spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
-                spring.json.value.default.type: org.onap.cps.event.model.CpsDataUpdatedEvent
+                spring.json.value.default.type: ${CPS_CHANGE_EVENT_TYPE:org.onap.cps.event.model.v1.CpsDataUpdatedEvent}
+                spring.json.trusted.packages: org.onap.cps.event.model.*
+                spring.json.use.type.headers: false
 
 app:
     listener:
         data-updated:
-            topic: ${CPS_CHANGE_EVENT_TOPIC:cps.cfg-state-events}
+            v0:
+                topic: ${CPS_CHANGE_EVENT_V0_LISTENER_TOPIC:cps.dev.null}
+                autoStartup: ${CPS_CHANGE_EVENT_V0_LISTENER_ENABLED:false}
+            v1:
+                topic: ${CPS_CHANGE_EVENT_V1_LISTENER_TOPIC:cps.cfg-state-events}
+                autoStartup: ${CPS_CHANGE_EVENT_V1_LISTENER_ENABLED:true}
 
 springdoc:
     swagger-ui:

@@ -25,7 +25,7 @@
     </appender>
 
     <!-- Logger for cps classes -->
-    <logger name="org.onap.cps" level="info"/>
+    <logger name="org.onap.cps" level="debug"/>
 
     <!-- Logger for sql statements. Set to info to disable, debug to enable -->
     <logger name="org.hibernate.SQL" level="info"/>
