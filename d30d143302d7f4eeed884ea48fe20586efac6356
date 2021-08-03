@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c4e886ef_e1ecd044",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "The intention of this variable is for end-user to decide what point in time they want to consider when fetching the data. I think from usage perspective it is a good name. But the same variable name \u0027pointInTime\u0027 becomes a little confusing in the implementation and I think createdBefore is a better name.\n\nI find it is okay to keep the different names as they are being seen by different set of users.  But if we want to keep it same then I would prefer pointInTime over createdBefore in the implementation too.",
+      "parentUuid": "444722f4_f6e47723",
+      "range": {
+        "startLine": 56,
+        "startChar": 41,
+        "endLine": 56,
+        "endChar": 52
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8317a62c_0989cefa",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
         "patchSetId": 7
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "9d5b7926_c4f9266c",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Fixed",
+      "parentUuid": "8317a62c_0989cefa",
+      "range": {
+        "startLine": 27,
+        "startChar": 17,
+        "endLine": 27,
+        "endChar": 45
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0e8a53a4_27fb9d98",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 7
@@ -68,6 +116,30 @@
       "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6a1220c4_cf58f808",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e8a53a4_27fb9d98",
+      "range": {
+        "startLine": 95,
+        "startChar": 33,
+        "endLine": 95,
+        "endChar": 34
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -105,6 +177,54 @@
       "writtenOn": "2021-08-03T08:04:06Z",
       "side": 1,
       "message": "it took me a while to see that the tets call this 3 times without any input parameter change which is unusual but make sense as you are testing pagination...\n\nMaybe add something to the label like \u0027fetch data (repeated 3 times)",
+      "range": {
+        "startLine": 84,
+        "startChar": 15,
+        "endLine": 84,
+        "endChar": 30
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3ea606bd_e472016d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c2b848e_298c3457",
+      "range": {
+        "startLine": 83,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 31
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "724fd4e3_a5fb03dc",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "pageNumber is an input field but I agree it was not highlighted well in the where section.",
+      "parentUuid": "70663094_189cc34a",
       "range": {
         "startLine": 84,
         "startChar": 15,
@@ -209,6 +329,102 @@
     },
     {
       "key": {
+        "uuid": "64cba3f4_b73858b9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "It is an input. I am using || to separate inputs parameters from outputs parameters now",
+      "parentUuid": "80879a6f_abb49428",
+      "range": {
+        "startLine": 96,
+        "startChar": 28,
+        "endLine": 96,
+        "endChar": 38
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "56927603_648821f8",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "24c5483a_9c29227d",
+      "range": {
+        "startLine": 96,
+        "startChar": 64,
+        "endLine": 96,
+        "endChar": 80
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "690204ea_40a4c9bb",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7f0b8308_b2b43fd3",
+      "range": {
+        "startLine": 96,
+        "startChar": 41,
+        "endLine": 96,
+        "endChar": 53
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9bcd89ee_f6410f9f",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4edcd402_6ce31d5d",
+      "range": {
+        "startLine": 96,
+        "startChar": 25,
+        "endLine": 96,
+        "endChar": 27
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26222758_acba0d8d",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 7
@@ -232,6 +448,30 @@
     },
     {
       "key": {
+        "uuid": "4824bb69_c4c38570",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "26222758_acba0d8d",
+      "range": {
+        "startLine": 171,
+        "startChar": 77,
+        "endLine": 171,
+        "endChar": 78
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bc848bae_37a081c7",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 7
@@ -243,6 +483,30 @@
       "writtenOn": "2021-08-03T08:04:06Z",
       "side": 1,
       "message": "dont create columns for data that is the same in each or\n\nin this case (when you have only one column you can use \u003c\u003c\ne.g.\n\nsimplePayloadFileter \u003c\u003c [ \u0027...\u0027, \u0027...\u0027 ]",
+      "range": {
+        "startLine": 200,
+        "startChar": 53,
+        "endLine": 200,
+        "endChar": 73
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc3d8907_f6de4ac7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "I changed the data and the expectedRecordsCount is not same for all the test",
+      "parentUuid": "bc848bae_37a081c7",
       "range": {
         "startLine": 200,
         "startChar": 53,
@@ -278,6 +542,30 @@
     },
     {
       "key": {
+        "uuid": "8a696bb8_d9693703",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "It was suggested in one of my previous patches to use similar variable name as content.\nEx:\ndef myDataspace \u003d \u0027my-dataspace\u0027\n\nHere the name is \u0027test_dataspace\u0027, hence variable name is testDataspace. \n\nI don\u0027t have strong opinion about it and open to change it back to dataspace.",
+      "parentUuid": "2745503a_35bd8291",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "21206685_a408ac5e",
         "filename": "src/test/resources/data/reload-network-data.sql",
         "patchSetId": 7
@@ -289,6 +577,24 @@
       "writtenOn": "2021-08-03T08:04:06Z",
       "side": 1,
       "message": "I wouldn\u0027t use the word \u0027RELOAD\u0027 as that describes the action in the tets when you use this file.\nI would like to see a more descriptive name though\nmaybe NETWORK_DATA_CHANGES",
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "709a46d2_0efdebf0",
+        "filename": "src/test/resources/data/reload-network-data.sql",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-03T11:16:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "21206685_a408ac5e",
       "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
