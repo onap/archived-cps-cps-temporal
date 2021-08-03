@@ -65,3 +65,19 @@ springdoc:
         urls:
             - name: query
               url: /swagger/openapi.yml
+
+# Actuator
+management:
+    server:
+        port: 8081
+    endpoints:
+        web:
+            base-path: /manage
+            exposure:
+                include: info,health,loggers,prometheus
+    endpoint:
+        health:
+            show-details: always
+            # kubernetes probes: liveness and readiness
+            probes:
+                enabled: true
