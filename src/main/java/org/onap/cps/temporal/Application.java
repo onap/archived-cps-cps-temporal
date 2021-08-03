@@ -24,7 +24,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Main application class for CPS Temporal.
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.onap.cps.temporal", "org.onap.cps.event"})
 public class Application {
 
     public static void main(final String[] args) {

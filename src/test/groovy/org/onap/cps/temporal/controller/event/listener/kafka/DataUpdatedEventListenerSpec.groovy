@@ -19,7 +19,8 @@
 package org.onap.cps.temporal.controller.event.listener.kafka
 
 import org.mapstruct.factory.Mappers
-import org.onap.cps.event.model.CpsDataUpdatedEvent
+import org.onap.cps.event.model.EventSchemaMapper
+import org.onap.cps.event.model.v1.CpsDataUpdatedEvent
 import org.onap.cps.temporal.controller.event.listener.exception.InvalidEventEnvelopException
 import org.onap.cps.temporal.controller.event.model.CpsDataUpdatedEventMapper
 import org.onap.cps.temporal.service.NetworkDataService
@@ -35,6 +36,7 @@ class DataUpdatedEventListenerSpec extends Specification {
 
     // Define event data
     def anEventType = 'my-event-type'
+    def anEventSchema = new URI('my-event-schema')
     def anEventSource = new URI('my-event-source')
     def aTimestamp = EventFixtures.currentIsoTimestamp()
     def aDataspace = 'my-dataspace'
@@ -47,10 +49,11 @@ class DataUpdatedEventListenerSpec extends Specification {
     def mockService = Mock(NetworkDataService)
 
     // Define mapper
-    def mapper = Mappers.getMapper(CpsDataUpdatedEventMapper.class)
+    def cpsDataUpdatedEventMapper = Mappers.getMapper(CpsDataUpdatedEventMapper.class)
+    def eventSchemaMapper = Mappers.getMapper(EventSchemaMapper.class)
 
     // Define listener under test
-    def objectUnderTest = new DataUpdatedEventListener(mockService, mapper)
+    def objectUnderTest = new DataUpdatedEventListener(mockService, cpsDataUpdatedEventMapper, eventSchemaMapper)
 
     def 'Event message consumption'() {
         when: 'an event is received'
@@ -82,9 +85,7 @@ class DataUpdatedEventListenerSpec extends Specification {
             e.getInvalidFields().size() == 4
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            MISSING,"schema", null,
-                            CpsDataUpdatedEvent.Schema.URN_CPS_ORG_ONAP_CPS_DATA_UPDATED_EVENT_SCHEMA_1_1_0_SNAPSHOT
-                                    .value()))
+                            UNEXPECTED,"schema", null, 'urn:cps:org.onap.cps:data-updated-event-schema:v*'))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
                             MISSING, "id", null, null))
@@ -101,12 +102,19 @@ class DataUpdatedEventListenerSpec extends Specification {
         when: 'an event with an invalid envelop is received'
             def invalidEvent =
                     new CpsDataUpdatedEvent()
-                            .withId('my-id').withSource(anEventSource).withType(anEventType)
+                            .withId('my-id')
+                            .withSchema(anEventSchema)
+                            .withSource(anEventSource)
+                            .withType(anEventType)
             objectUnderTest.consume(invalidEvent)
         then: 'an exception is thrown with 2 invalid fields'
             def e = thrown(InvalidEventEnvelopException)
             e.getCpsDataUpdatedEvent() == invalidEvent
-            e.getInvalidFields().size() == 2
+            e.getInvalidFields().size() == 3
+            e.getInvalidFields().contains(
+                    new InvalidEventEnvelopException.InvalidField(
+                            UNEXPECTED, "schema", anEventSchema.toString(),
+                            'urn:cps:org.onap.cps:data-updated-event-schema:v*'))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "type", anEventType, EventFixtures.defaultEventType))

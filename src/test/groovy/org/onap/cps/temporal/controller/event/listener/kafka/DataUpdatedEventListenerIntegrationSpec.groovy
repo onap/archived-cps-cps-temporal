@@ -19,7 +19,7 @@
 package org.onap.cps.temporal.controller.event.listener.kafka
 
 import groovy.util.logging.Slf4j
-import org.onap.cps.event.model.CpsDataUpdatedEvent
+import org.onap.cps.event.model.v1.CpsDataUpdatedEvent
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
@@ -62,7 +62,7 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     @Autowired
     JdbcTemplate jdbcTemplate
 
-    @Value('${app.listener.data-updated.topic}')
+    @Value('${app.listener.data-updated.v1.topic}')
     String topic
 
     // Define event data

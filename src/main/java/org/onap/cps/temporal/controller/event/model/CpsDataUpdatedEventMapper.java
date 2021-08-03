@@ -24,8 +24,8 @@ import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.onap.cps.event.model.CpsDataUpdatedEvent;
-import org.onap.cps.event.model.Data;
+import org.onap.cps.event.model.v1.CpsDataUpdatedEvent;
+import org.onap.cps.event.model.v1.Data;
 import org.onap.cps.temporal.domain.NetworkData;
 
 /**

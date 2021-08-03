@@ -20,9 +20,9 @@ package org.onap.cps.temporal.controller.event.model
 
 import com.fasterxml.jackson.core.JsonProcessingException
 import org.mapstruct.factory.Mappers
-import org.onap.cps.event.model.Content
-import org.onap.cps.event.model.CpsDataUpdatedEvent
-import org.onap.cps.event.model.Data
+import org.onap.cps.event.model.v1.Content
+import org.onap.cps.event.model.v1.CpsDataUpdatedEvent
+import org.onap.cps.event.model.v1.Data
 import org.onap.cps.temporal.domain.NetworkData
 import spock.lang.Specification
 

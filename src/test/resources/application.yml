@@ -51,7 +51,9 @@ spring:
             properties:
                 spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
                 spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
-                spring.json.value.default.type: org.onap.cps.event.model.CpsDataUpdatedEvent
+                spring.json.value.default.type: org.onap.cps.event.model.v1.CpsDataUpdatedEvent
+                spring.json.trusted.packages: org.onap.cps.event.model.*
+                spring.json.use.type.headers: false
         # Following is not cps-temporal configuration. It is configuration for the producer used for integration tests
         producer:
             key-serializer: org.apache.kafka.common.serialization.StringSerializer
@@ -60,4 +62,9 @@ spring:
 app:
     listener:
         data-updated:
-            topic: cps.cfg-state-events
+            v0:
+                topic: cps.dev.null
+                autoStartup: false
+            v1:
+                topic: cps.cfg-state-events
+                autoStartup: true
