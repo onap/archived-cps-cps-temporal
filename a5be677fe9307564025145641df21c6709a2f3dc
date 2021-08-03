@@ -96,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "d1241741_e09917a1",
+        "filename": "src/main/java/org/onap/cps/temporal/domain/SearchCriteria.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-03T08:04:06Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0c58026f_092cf4ce",
+      "range": {
+        "startLine": 75,
+        "startChar": 10,
+        "endLine": 78,
+        "endChar": 13
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "92575c45_a3eed695",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 4
@@ -394,6 +418,30 @@
         "startChar": 34,
         "endLine": 56,
         "endChar": 42
+      },
+      "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc39f642_6f5ba92d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-03T08:04:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b08e9f4f_7247b1c8",
+      "range": {
+        "startLine": 56,
+        "startChar": 14,
+        "endLine": 56,
+        "endChar": 15
       },
       "revId": "a5be677fe9307564025145641df21c6709a2f3dc",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
