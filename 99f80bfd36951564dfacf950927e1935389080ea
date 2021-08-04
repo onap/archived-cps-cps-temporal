@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "1997307b_50cb5cac",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-04T12:16:31Z",
+      "side": 1,
+      "message": "The mandatory max row limit coming from the slide is also ensuring that the number of records retrieved is limited.\nThe order by clause is also playing a key role for performance. See other comment in the same file.",
+      "parentUuid": "cfe2bdda_cefdb8bc",
+      "range": {
+        "startLine": 130,
+        "startChar": 21,
+        "endLine": 130,
+        "endChar": 46
+      },
+      "revId": "99f80bfd36951564dfacf950927e1935389080ea",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7b10508d_2fbfcffe",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
         "patchSetId": 9
