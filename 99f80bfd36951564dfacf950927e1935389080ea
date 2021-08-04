@@ -90,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "8a62b930_dfc0036d",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-04T12:46:42Z",
+      "side": 1,
+      "message": "We don\u0027t have index only on observed_timestamp field, so I am not sure if order by will be able use it. \nI have to read more about the impact of index in sorting. It sounds logical and should help if column is indexed but not sure how it will behave when the field is a part of a composite index.",
+      "parentUuid": "7b10508d_2fbfcffe",
+      "revId": "99f80bfd36951564dfacf950927e1935389080ea",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "86fd6e05_4d5445e7",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 9
