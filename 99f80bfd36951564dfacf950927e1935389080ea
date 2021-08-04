@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "474cb126_ec102a21",
+        "filename": "src/test/resources/data/network-data-changes.sql",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-08-04T10:30:31Z",
+      "side": 1,
+      "message": "Are we not loading in data in cps-temporal the same way we do in cps-core in regard to using liquibase changelog yml files. \n\nI presume the advantage to this is we can track every change that gets made to data and records within the DB. But if we decided to take a different approach with temporal that\u0027s fine too.",
+      "revId": "99f80bfd36951564dfacf950927e1935389080ea",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
