@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "84672540_a977b9e4",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "OK it is your interface, was just point out the inconsistency :-)",
+      "parentUuid": "74db3787_5b29acc4",
+      "range": {
+        "startLine": 56,
+        "startChar": 41,
+        "endLine": 56,
+        "endChar": 52
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8317a62c_0989cefa",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
         "patchSetId": 7
@@ -449,6 +473,30 @@
     },
     {
       "key": {
+        "uuid": "6d416257_a281e36d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "64cba3f4_b73858b9",
+      "range": {
+        "startLine": 96,
+        "startChar": 28,
+        "endLine": 96,
+        "endChar": 38
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "26222758_acba0d8d",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 7
@@ -543,6 +591,30 @@
     },
     {
       "key": {
+        "uuid": "ae7f415a_0aa66b1e",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fc3d8907_f6de4ac7",
+      "range": {
+        "startLine": 200,
+        "startChar": 53,
+        "endLine": 200,
+        "endChar": 73
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2745503a_35bd8291",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
         "patchSetId": 7
@@ -590,6 +662,48 @@
     },
     {
       "key": {
+        "uuid": "bd96395f_e3f8d3e3",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositorySpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8a696bb8_d9693703",
+      "range": {
+        "startLine": 46,
+        "startChar": 8,
+        "endLine": 46,
+        "endChar": 12
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0f31785b_17a348e8",
+        "filename": "src/test/resources/data/network-data-changes.sql",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "709a46d2_0efdebf0",
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "21206685_a408ac5e",
         "filename": "src/test/resources/data/reload-network-data.sql",
         "patchSetId": 7
@@ -622,6 +736,24 @@
       "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8b16eb75_96d6d69d",
+        "filename": "src/test/resources/data/reload-network-data.sql",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-08-04T12:57:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "709a46d2_0efdebf0",
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
