@@ -2,6 +2,30 @@
   "comments": [
     {
       "key": {
+        "uuid": "1663ab34_ce2c68be",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRepository.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-04T12:05:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e72d84b2_909901ee",
+      "range": {
+        "startLine": 29,
+        "startChar": 4,
+        "endLine": 29,
+        "endChar": 8
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fb51444c_8577bbab",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
         "patchSetId": 5
@@ -93,6 +117,30 @@
       "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7bd8f824_b2e66e49",
+        "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataRepositoryImpl.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-04T12:05:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "20196625_8e22ad66",
+      "range": {
+        "startLine": 125,
+        "startChar": 49,
+        "endLine": 125,
+        "endChar": 52
+      },
+      "revId": "7e3cd3cb3d5ffee5f0cdc5904bbeaeed21c5703a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }

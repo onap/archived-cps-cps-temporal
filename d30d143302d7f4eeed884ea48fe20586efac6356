@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "74db3787_5b29acc4",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-04T12:05:03Z",
+      "side": 1,
+      "message": "I also feel that point in time reflects the moment when data should be considered, it is like a snapshot of the data is made at that time.",
+      "parentUuid": "c4e886ef_e1ecd044",
+      "range": {
+        "startLine": 56,
+        "startChar": 41,
+        "endLine": 56,
+        "endChar": 52
+      },
+      "revId": "d30d143302d7f4eeed884ea48fe20586efac6356",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8317a62c_0989cefa",
         "filename": "src/main/java/org/onap/cps/temporal/repository/NetworkDataQueryRespository.java",
         "patchSetId": 7
