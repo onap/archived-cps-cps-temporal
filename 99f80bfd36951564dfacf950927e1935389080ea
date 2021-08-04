@@ -16,6 +16,24 @@
       "revId": "99f80bfd36951564dfacf950927e1935389080ea",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28c2483c_d7f81e28",
+        "filename": "src/test/resources/data/network-data-changes.sql",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-04T10:34:27Z",
+      "side": 1,
+      "message": "This data is only used for testing and cps is also following similar approach for test data.\n\nhttps://gerrit.onap.org/r/gitweb?p\u003dcps.git;a\u003dtree;f\u003dcps-ri/src/test/resources/data;h\u003df3c3db004028550a890625e5513a2d3c75b70955;hb\u003drefs/heads/master",
+      "parentUuid": "474cb126_ec102a21",
+      "revId": "99f80bfd36951564dfacf950927e1935389080ea",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
