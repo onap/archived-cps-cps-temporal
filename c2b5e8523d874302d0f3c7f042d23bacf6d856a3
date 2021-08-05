@@ -1,0 +1,10 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Toine Siebelink <toine.siebelink@est.tech>
+Code-Review+1: Luke Gleeson <luke.gleeson@est.tech>
+Code-Review+1: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Code-Review+2: Bruno Sakoto <bruno.sakoto@bell.ca>
+Submitted-by: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-at: Thu, 05 Aug 2021 14:22:21 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/122943
+Project: cps/cps-temporal
+Branch: refs/heads/master
