@@ -18,9 +18,9 @@
 
 package org.onap.cps.temporal.controller.event.listener.kafka
 
-import org.onap.cps.event.model.Content
-import org.onap.cps.event.model.CpsDataUpdatedEvent
-import org.onap.cps.event.model.Data
+import org.onap.cps.event.model.v0.Content
+import org.onap.cps.event.model.v0.CpsDataUpdatedEvent
+import org.onap.cps.event.model.v0.Data
 
 import java.time.OffsetDateTime
 import java.time.format.DateTimeFormatter
@@ -32,11 +32,14 @@ class EventFixtures {
 
     static DateTimeFormatter isoTimestampFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     static String defaultEventType = 'org.onap.cps.data-updated-event'
+    static URI defaultEventSchema = new URI('urn:cps:org.onap.cps:data-updated-event-schema:v0')
     static URI defaultEventSource = new URI('urn:cps:org.onap.cps')
 
     static CpsDataUpdatedEvent buildEvent(final Map map) {
         CpsDataUpdatedEvent event =
                 new CpsDataUpdatedEvent()
+                        .withSchema(
+                                map.eventSchema != null ? new URI(map.eventSchema.toString()) : defaultEventSchema)
                         .withId(
                                 map.id != null ? map.id.toString() : UUID.randomUUID().toString())
                         .withType(

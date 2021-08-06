@@ -24,7 +24,7 @@ import static org.onap.cps.temporal.controller.event.listener.exception.InvalidE
 import java.net.URI;
 import java.net.URISyntaxException;
 import lombok.extern.slf4j.Slf4j;
-import org.onap.cps.event.model.CpsDataUpdatedEvent;
+import org.onap.cps.event.model.v0.CpsDataUpdatedEvent;
 import org.onap.cps.temporal.controller.event.listener.exception.EventListenerException;
 import org.onap.cps.temporal.controller.event.listener.exception.InvalidEventEnvelopException;
 import org.onap.cps.temporal.controller.event.model.CpsDataUpdatedEventMapper;
@@ -39,6 +39,8 @@ import org.springframework.util.StringUtils;
 @Component
 @Slf4j
 public class DataUpdatedEventListener {
+
+    private static final String EVENT_SCHEMA_URN_PREFIX = "urn:cps:org.onap.cps:data-updated-event-schema:v";
 
     private static final URI EVENT_SOURCE;
 
@@ -93,12 +95,13 @@ public class DataUpdatedEventListener {
                 new InvalidEventEnvelopException("Validation failure", cpsDataUpdatedEvent);
 
         // Validate schema
-        if (cpsDataUpdatedEvent.getSchema() == null) {
+        if (cpsDataUpdatedEvent.getSchema() == null
+                || !cpsDataUpdatedEvent.getSchema().toString().startsWith(EVENT_SCHEMA_URN_PREFIX)) {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
-                            MISSING, "schema", null,
-                            CpsDataUpdatedEvent.Schema.URN_CPS_ORG_ONAP_CPS_DATA_UPDATED_EVENT_SCHEMA_1_1_0_SNAPSHOT
-                                    .value()));
+                            UNEXPECTED, "schema",
+                            cpsDataUpdatedEvent.getSchema() != null ? cpsDataUpdatedEvent.getSchema().toString() : null,
+                            EVENT_SCHEMA_URN_PREFIX + "*"));
         }
         // Validate id
         if (!StringUtils.hasText(cpsDataUpdatedEvent.getId())) {
@@ -111,8 +114,8 @@ public class DataUpdatedEventListener {
             invalidEventEnvelopException.addInvalidField(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "source",
-                            cpsDataUpdatedEvent.getSource() != null
-                                    ? cpsDataUpdatedEvent.getSource().toString() : null, EVENT_SOURCE.toString()));
+                            cpsDataUpdatedEvent.getSource() != null ? cpsDataUpdatedEvent.getSource().toString() : null,
+                            EVENT_SOURCE.toString()));
         }
         // Validate type
         if (!EVENT_TYPE.equals(cpsDataUpdatedEvent.getType())) {

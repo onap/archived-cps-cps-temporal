@@ -25,7 +25,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
-import org.onap.cps.event.model.CpsDataUpdatedEvent;
+import org.onap.cps.event.model.v0.CpsDataUpdatedEvent;
 
 /**
  * Class representing an invalid event envelop exception.
