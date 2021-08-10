@@ -166,7 +166,6 @@ components:
       schema:
         type: integer
         minimum: 0
-        maximum: 10000
         default: 1000
       description: The numbers of items to return
     pageNumber:

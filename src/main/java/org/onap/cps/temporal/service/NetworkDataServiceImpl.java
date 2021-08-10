@@ -21,11 +21,13 @@
 package org.onap.cps.temporal.service;
 
 import java.util.Optional;
+import javax.validation.ValidationException;
 import lombok.extern.slf4j.Slf4j;
 import org.onap.cps.temporal.domain.NetworkData;
 import org.onap.cps.temporal.domain.NetworkDataId;
 import org.onap.cps.temporal.domain.SearchCriteria;
 import org.onap.cps.temporal.repository.NetworkDataRepository;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
 
@@ -37,9 +39,12 @@ import org.springframework.stereotype.Service;
 public class NetworkDataServiceImpl implements NetworkDataService {
 
     private final NetworkDataRepository networkDataRepository;
+    private final int maxPageSize;
 
-    public NetworkDataServiceImpl(final NetworkDataRepository networkDataRepository) {
+    public NetworkDataServiceImpl(final NetworkDataRepository networkDataRepository,
+        final @Value("${app.query.response.max-page-size}") int maxPageSize) {
         this.networkDataRepository = networkDataRepository;
+        this.maxPageSize = maxPageSize;
     }
 
     @Override
@@ -59,6 +64,9 @@ public class NetworkDataServiceImpl implements NetworkDataService {
 
     @Override
     public Slice<NetworkData> searchNetworkData(final SearchCriteria searchCriteria) {
+        if (searchCriteria.getPageable().getPageSize() > maxPageSize) {
+            throw new ValidationException("page-size must be less than " + maxPageSize);
+        }
         return networkDataRepository.findBySearchCriteria(searchCriteria);
     }
 
