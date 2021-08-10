@@ -110,7 +110,7 @@ class CpsDataUpdatedEventMapperSpec extends Specification {
             result != null
         and: 'all result entity properties are the ones from the event'
             result.getObservedTimestamp() ==
-                    OffsetDateTime.parse(event.getContent().getObservedTimestamp(), isoTimestampFormatter)
+                OffsetDateTime.parse(event.getContent().getObservedTimestamp(), isoTimestampFormatter)
             result.getDataspace() == event.getContent().getDataspaceName()
             result.getSchemaSet() == event.getContent().getSchemaSetName()
             result.getAnchor() == event.getContent().getAnchorName()
