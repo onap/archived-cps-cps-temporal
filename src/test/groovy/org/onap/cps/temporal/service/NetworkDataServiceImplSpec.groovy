@@ -22,7 +22,14 @@ package org.onap.cps.temporal.service
 
 import org.onap.cps.temporal.domain.NetworkDataId
 import org.onap.cps.temporal.domain.SearchCriteria
+import org.spockframework.spring.SpringBean
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
+import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.data.domain.PageImpl
+import org.springframework.test.context.ContextConfiguration
+
+import javax.validation.ValidationException
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.repository.NetworkDataRepository
@@ -31,11 +38,18 @@ import spock.lang.Specification
 /**
  * Test specification for network data service.
  */
+@SpringBootTest
+@ContextConfiguration(classes = NetworkDataServiceImpl)
 class NetworkDataServiceImplSpec extends Specification {
 
-    def mockNetworkDataRepository = Mock(NetworkDataRepository)
+    @SpringBean
+    NetworkDataRepository mockNetworkDataRepository = Mock()
 
-    def objectUnderTest = new NetworkDataServiceImpl(mockNetworkDataRepository)
+    @Autowired
+    NetworkDataService objectUnderTest
+
+    @Value('${app.query.response.max-page-size}')
+    int maxPageSize
 
     def networkData = new NetworkData()
 
@@ -85,6 +99,21 @@ class NetworkDataServiceImplSpec extends Specification {
 
         then: 'data is fetched from repository and returned'
             resultPage == pageFromRepository
+
+    }
+
+    def 'Query network data with more than max page-size'() {
+        given: 'search criteria with more than max page size'
+            def searchCriteria = SearchCriteria.builder()
+                .dataspaceName('my-dataspaceName')
+                .schemaSetName('my-schemaset')
+                .pagination(0, maxPageSize + 1)
+                .build()
+        when: 'search is executed'
+            objectUnderTest.searchNetworkData(searchCriteria)
+
+        then: 'throws error'
+            thrown(ValidationException)
 
     }
 

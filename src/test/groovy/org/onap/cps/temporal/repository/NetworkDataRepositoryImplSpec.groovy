@@ -165,8 +165,7 @@ class NetworkDataRepositoryImplSpec extends Specification {
             }
         where:
             scenario                      | sortOrder                                          || expectedObservedTimestamp | expectedAnchorName
-            'observed timestamp asc'      | Sort.by(observedAscSortOrder)                      || '2021-07-22 00:00:01.000' | 'ANCHOR-01'
-            'observed timestamp asc'      | Sort.by(observedDescSortOrder)                     || '2021-07-24 00:00:01.000' | 'ANCHOR-02'
+            'observed timestamp desc'     | Sort.by(observedDescSortOrder)                     || '2021-07-24 00:00:01.000' | 'ANCHOR-02'
             'anchor asc, ' +
                 'observed timestamp desc' | Sort.by(anchorAscSortOrder, observedDescSortOrder) || '2021-07-23 00:00:01.000' | 'ANCHOR-01'
 

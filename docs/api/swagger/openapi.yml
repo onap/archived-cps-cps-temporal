@@ -166,7 +166,6 @@ components:
       schema:
         type: integer
         minimum: 0
-        maximum: 10000
         default: 1000
       description: The numbers of items to return
     pageNumber:
@@ -210,9 +209,8 @@ components:
       type: object
       title: AnchorDetails
       properties:
-        timestamp:
+        observedTimestamp:
           type: string
-          format: date-time
           example: '2021-03-21T00:00:00.000000-0:00'
         dataspace:
           type: string
