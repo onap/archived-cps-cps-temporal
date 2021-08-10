@@ -21,7 +21,6 @@ package org.onap.cps.temporal.domain
 
 import org.springframework.data.domain.Sort
 import spock.lang.Specification
-
 import java.time.OffsetDateTime
 
 class SearchCriteriaSpec extends Specification {
@@ -57,11 +56,13 @@ class SearchCriteriaSpec extends Specification {
     def 'Search Criteria with the provided values.'() {
 
         given: 'sort by parameter'
-            def sortBy = Sort.by(Sort.Direction.ASC, 'observed_timestamp')
+            def sortBy = Sort.by(Sort.Direction.DESC, 'observed_timestamp')
         and: 'data created one day ago'
             def lastDayAsCreatedBefore = OffsetDateTime.now().minusDays(1)
         and: 'observed timestamp'
             def nowAsObservedAfter = OffsetDateTime.now()
+        and: 'simple payload filter'
+            def simplePayloadFilter = '{"message":"hello world"}'
 
         when: 'search criteria is created'
             def searchCriteria = SearchCriteria.builder()
@@ -69,6 +70,7 @@ class SearchCriteriaSpec extends Specification {
                 .schemaSetName(myschemaSetName)
                 .anchorName(myAnchorName)
                 .pagination(0, 10)
+                .simplePayloadFilter(simplePayloadFilter)
                 .sort(sortBy)
                 .observedAfter(nowAsObservedAfter)
                 .createdBefore(lastDayAsCreatedBefore)
@@ -81,6 +83,7 @@ class SearchCriteriaSpec extends Specification {
                 anchorName == myAnchorName
                 observedAfter == nowAsObservedAfter
                 createdBefore == lastDayAsCreatedBefore
+                it.simplePayloadFilter == simplePayloadFilter
                 pageable.getPageNumber() == 0
                 pageable.getPageSize() == 10
                 pageable.getSort() == sortBy
@@ -117,13 +120,34 @@ class SearchCriteriaSpec extends Specification {
             thrown(IllegalStateException)
     }
 
-    def 'Error Handling: sort must be not null.'() {
+    def 'Error Handling: sort based on #scenario .'() {
         when: 'search criteria is created without sorting information'
             SearchCriteria.builder()
                 .dataspaceName(myDataspace)
                 .anchorName(myAnchorName)
                 .pagination(0, 1)
-                .sort(null)
+                .sort(sort)
+                .build()
+        then: 'exception is thrown'
+            def illegalArgumentException = thrown(IllegalArgumentException)
+            def message = illegalArgumentException.getMessage();
+            assert message.contains("sort")
+            assert message.contains(expectedExceptionMessage)
+        where:
+            scenario                 | sort                                       | expectedExceptionMessage
+            'null'                   | null                                       | "null"
+            'unsupported properties' | Sort.by(Sort.Direction.ASC, 'unsupported') | "Invalid sorting"
+    }
+
+    def 'Error Handling: Invalid simple payload filter.'() {
+        given: 'invalid simple payload filter'
+            def inavlidSimplePayloadFilter = 'invalid-json'
+        when: 'search criteria is created without invalid simple payload filter'
+            SearchCriteria.builder()
+                .dataspaceName(myDataspace)
+                .anchorName(myAnchorName)
+                .pagination(0, 1)
+                .simplePayloadFilter(inavlidSimplePayloadFilter)
                 .build()
         then: 'exception is thrown'
             thrown(IllegalArgumentException)
