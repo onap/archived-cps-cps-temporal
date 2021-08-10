@@ -21,12 +21,12 @@ package org.onap.cps.temporal.controller.event.model;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.time.OffsetDateTime;
-import java.time.format.DateTimeFormatter;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.onap.cps.event.model.CpsDataUpdatedEvent;
 import org.onap.cps.event.model.Data;
 import org.onap.cps.temporal.domain.NetworkData;
+import org.onap.cps.temporal.utils.DateTimeUtility;
 
 /**
  * Mapper for data updated event schema.
@@ -34,8 +34,7 @@ import org.onap.cps.temporal.domain.NetworkData;
 @Mapper(componentModel = "spring")
 public abstract class CpsDataUpdatedEventMapper {
 
-    private static final DateTimeFormatter ISO_TIMESTAMP_FORMATTER =
-            DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+    private ObjectMapper objectMapper = new ObjectMapper();
 
     @Mapping(source = "content.observedTimestamp", target = "observedTimestamp")
     @Mapping(source = "content.dataspaceName", target = "dataspace")
@@ -46,11 +45,11 @@ public abstract class CpsDataUpdatedEventMapper {
     public abstract NetworkData eventToEntity(CpsDataUpdatedEvent cpsDataUpdatedEvent);
 
     String map(final Data data) throws JsonProcessingException {
-        return data != null ? new ObjectMapper().writeValueAsString(data) : null;
+        return data != null ? objectMapper.writeValueAsString(data) : null;
     }
 
     OffsetDateTime map(final String timestamp) {
-        return timestamp != null ? OffsetDateTime.parse(timestamp, ISO_TIMESTAMP_FORMATTER) : null;
+        return DateTimeUtility.getOffsetDateTime(timestamp);
     }
 
 }
