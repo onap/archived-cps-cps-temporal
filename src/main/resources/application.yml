@@ -57,6 +57,9 @@ app:
     listener:
         data-updated:
             topic: ${CPS_CHANGE_EVENT_TOPIC:cps.cfg-state-events}
+    query:
+        response:
+            max-page-size: 10000
 
 springdoc:
     swagger-ui:

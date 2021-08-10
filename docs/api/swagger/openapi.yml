@@ -68,7 +68,7 @@ paths:
                 nextRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=2
                 previousRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=0
                 records:
-                  - timestamp: '2021-03-21T00:00:00.000000-0:00'
+                  - timestamp: '2021-03-21T00:00:00.000-0000'
                     dataspace: my-dataspace
                     schemaSet: my-schema-set
                     anchor: my-anchor
@@ -114,7 +114,7 @@ paths:
                 nextRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=2
                 previousRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=0
                 records:
-                  - timestamp: '2021-03-21T00:00:00.000000-0:00'
+                  - timestamp: '2021-03-21T00:00:00.000-0000'
                     dataspace: my-dataspace
                     schemaSet: my-schema-set
                     anchor: my-anchor
@@ -143,7 +143,7 @@ components:
       required: false
       schema:
         type: string
-        example: '2021-03-21T00:00:00.000000-0:00'
+        example: '2021-03-21T00:00:00.000-0000'
     simplePayloadFilter:
       name: simplePayloadFilter
       in: query
@@ -158,7 +158,7 @@ components:
       required: false
       schema:
         type: string
-        example: '2021-03-21T00:00:00.000000-0:00'
+        example: '2021-03-21T00:00:00.000-0000'
     pageLimit:
       in: query
       name: pageLimit
@@ -166,7 +166,6 @@ components:
       schema:
         type: integer
         minimum: 0
-        maximum: 10000
         default: 1000
       description: The numbers of items to return
     pageNumber:
@@ -185,7 +184,7 @@ components:
       schema:
         type: string
         default: observed_timestamp:desc
-      description: "Sort by timestamp in 'asc' or 'desc' order. Supported values: <br/> timestamp:desc<br/>timestamp:asc"
+      description: "Sort by timestamp in 'asc' or 'desc' order. Supported values: <br/>observed_timestamp:desc<br/>anchor:asc,observed_timestamp:desc"
   responses:
     BadRequest:
       description: Bad Request
@@ -210,10 +209,9 @@ components:
       type: object
       title: AnchorDetails
       properties:
-        timestamp:
+        observedTimestamp:
           type: string
-          format: date-time
-          example: '2021-03-21T00:00:00.000000-0:00'
+          example: '2021-03-21T00:00:00.000-0000'
         dataspace:
           type: string
           example: 'my-dataspace'
