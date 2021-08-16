@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "55c045fc_a5117033",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-16T11:16:06Z",
+      "side": 1,
+      "message": "it also needs to be changed",
+      "range": {
+        "startLine": 49,
+        "startChar": 8,
+        "endLine": 50,
+        "endChar": 49
+      },
+      "revId": "a22bff279450ddb9b1367b5ef2666667ce41a381",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
