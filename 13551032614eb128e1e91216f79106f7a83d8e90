@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc92fd3c_9d6ee802",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-16T19:22:26Z",
+      "side": 1,
+      "message": "If I change the format to nanoseconds, it always expect to have nanoseconds in the input. I would suggest to evaluate the decision in another story.",
+      "range": {
+        "startLine": 117,
+        "startChar": 19,
+        "endLine": 117,
+        "endChar": 61
+      },
+      "revId": "13551032614eb128e1e91216f79106f7a83d8e90",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
