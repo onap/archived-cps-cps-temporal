@@ -64,3 +64,10 @@ app:
     query:
         response:
             max-page-size: 20
+
+security:
+    # comma-separated uri patterns which do not require authorization
+    permit-uri: /manage/**,/swagger-ui/**,/swagger-resources/**,/swagger/openapi.yml
+    auth:
+        username: testUser
+        password: testPassword
