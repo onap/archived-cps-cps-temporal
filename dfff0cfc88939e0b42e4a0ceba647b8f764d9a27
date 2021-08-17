@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ed2b3a4_7711e8bd",
+        "filename": "src/main/java/org/onap/cps/temporal/config/WebSecurityConfig.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T22:55:16Z",
+      "side": 1,
+      "message": "Should it be moved to `org.onap.cps.temporal.controller.config` or even `org.onap.cps.temporal.controller.rest.config` as this config is web related ? Non blocking.",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 36
+      },
+      "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
