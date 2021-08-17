@@ -1,0 +1,8 @@
+distribution_type: container
+container_release_tag: 0.0.1
+project: cps/cps-temporal
+log_dir: cps-cps-temporal-maven-docker-stage-master/181/
+ref: 25ed5a8a63e88edd0b9c8285b640839a6e93866a
+containers:
+  - name: 'cps-temporal'
+    version: '0.0.1-20210816T130029Z'
