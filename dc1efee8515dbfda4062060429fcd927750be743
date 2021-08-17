@@ -82,6 +82,29 @@
     },
     {
       "key": {
+        "uuid": "968954a4_8cee7c6a",
+        "filename": "src/main/java/org/onap/cps/temporal/utils/DateTimeUtility.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T22:51:20Z",
+      "side": 1,
+      "message": "I\u0027m suggesting to reduce the exposition of this class by moving it to `org.onap.cps.temporal.controller.utils` package as it is only used in controller layer.",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 35
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9556b1cf_1c693080",
         "filename": "src/main/java/org/onap/cps/temporal/utils/DateTimeUtility.java",
         "patchSetId": 7
