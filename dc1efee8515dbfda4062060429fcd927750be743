@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8278167c_2e1a4230",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T20:47:25Z",
+      "side": 1,
+      "message": "Finally, aren\u0027t we able to support microseconds ?",
+      "range": {
+        "startLine": 71,
+        "startChar": 52,
+        "endLine": 71,
+        "endChar": 55
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "965417a1_5d9bc135",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T20:47:25Z",
+      "side": 1,
+      "message": "Good catch :)",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3eae54e1_fe1d6cee",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T20:47:25Z",
+      "side": 1,
+      "message": "I\u0027ve notice an issue with generated link whose timezone offset is positive. I\u0027m not sure exactly where it is coming from.\n\nLet\u0027s say we have the following request:\n\n  curl -X GET \u0027http://localhost:8082/cps-temporal/api/v1/dataspaces/bsa-dataspace-1/anchors/bsa-anchor-1/history?observedTimestampAfter\u003d2021-08-01T00:00:00.000-0000\u0026pageNumber\u003d0\u0026pageLimit\u003d1\u0027\n\nThen, generated next records link is: \n\n  /cps-temporal/api/v1/dataspaces/bsa-dataspace-1/anchors/bsa-anchor-1/history?observedTimestampAfter\u003d2021-08-01T00:00:00.000+0000\u0026pointInTime\u003d2021-08-17T15:54:46.818-0400\u0026pageNumber\u003d1\u0026pageLimit\u003d1\u0026sort\u003dobserved_timestamp:desc\n\nAnd requesting next records gives a Bad Request response:\n\n  {\n      \"status\": \"400\",\n      \"message\": \"observedTimestampAfter must be in \u0027yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSSZ\u0027 format\",\n      \"details\": null\n  }\n\nI think that \"+\" in the timestamp from the generated uri needs to be encoded with \"%2B\".",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9556b1cf_1c693080",
+        "filename": "src/main/java/org/onap/cps/temporal/utils/DateTimeUtility.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-17T20:47:25Z",
+      "side": 1,
+      "message": "Suggestion. What about\n\n  * toOffsetDateTime(String datetTimestampAsString)\n  * toString(OffsetDateTime offsetDateTime)\n\nfor the 2 methods name of this class ?",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
