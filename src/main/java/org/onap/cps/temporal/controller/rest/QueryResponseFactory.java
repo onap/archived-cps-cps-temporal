@@ -60,36 +60,50 @@ public class QueryResponseFactory {
         this.basePath = basePath;
     }
 
-    AnchorHistory createAnchorsDataByFilterResponse(final SearchCriteria searchCriteria,
-        final Slice<NetworkData> response) {
+    /**
+     * Use search criteria and search result-set to create response.
+     *
+     * @param searchCriteria searchCriteria
+     * @param searchResult   searchResult
+     * @return AnchorHistory
+     */
+    public AnchorHistory createAnchorsDataByFilterResponse(final SearchCriteria searchCriteria,
+        final Slice<NetworkData> searchResult) {
 
         final var anchorHistory = new AnchorHistory();
-        if (response.hasNext()) {
+        if (searchResult.hasNext()) {
             anchorHistory.setNextRecordsLink(
-                toRelativeLink(getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, response.nextPageable())));
+                toRelativeLink(getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.nextPageable())));
         }
-        if (response.hasPrevious()) {
+        if (searchResult.hasPrevious()) {
             anchorHistory.setPreviousRecordsLink(
                 toRelativeLink(
-                    getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, response.previousPageable())));
+                    getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.previousPageable())));
         }
-        anchorHistory.setRecords(convertToAnchorDetails(response.getContent()));
+        anchorHistory.setRecords(convertToAnchorDetails(searchResult.getContent()));
         return anchorHistory;
     }
 
-    AnchorHistory createAnchorDataByNameResponse(final SearchCriteria searchCriteria,
-        final Slice<NetworkData> response) {
+    /**
+     * Use search criteria and search result-set to create response.
+     *
+     * @param searchCriteria searchCriteria
+     * @param searchResult   searchResult
+     * @return AnchorHistory
+     */
+    public AnchorHistory createAnchorDataByNameResponse(final SearchCriteria searchCriteria,
+        final Slice<NetworkData> searchResult) {
 
         final var anchorHistory = new AnchorHistory();
-        if (response.hasNext()) {
+        if (searchResult.hasNext()) {
             anchorHistory.setNextRecordsLink(toRelativeLink(
-                getAbsoluteLinkForGetAnchorDataByName(searchCriteria, response.nextPageable())));
+                getAbsoluteLinkForGetAnchorDataByName(searchCriteria, searchResult.nextPageable())));
         }
-        if (response.hasPrevious()) {
+        if (searchResult.hasPrevious()) {
             anchorHistory.setPreviousRecordsLink(toRelativeLink(
-                getAbsoluteLinkForGetAnchorDataByName(searchCriteria, response.previousPageable())));
+                getAbsoluteLinkForGetAnchorDataByName(searchCriteria, searchResult.previousPageable())));
         }
-        anchorHistory.setRecords(convertToAnchorDetails(response.getContent()));
+        anchorHistory.setRecords(convertToAnchorDetails(searchResult.getContent()));
         return anchorHistory;
     }
 
