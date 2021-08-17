@@ -65,7 +65,7 @@ public class SortMapper {
             for (final String eachSortAsString : sortingOrderAsString) {
                 final String[] eachSortDetail = eachSortAsString.split(FIELD_DIRECTION_SEPARATOR);
                 final var direction = Direction.fromString(eachSortDetail[1]);
-                final var fieldName = eachSortDetail[0];
+                final String fieldName = eachSortDetail[0];
                 sortOrder.add(new Order(direction, fieldName));
             }
             return Sort.by(sortOrder);

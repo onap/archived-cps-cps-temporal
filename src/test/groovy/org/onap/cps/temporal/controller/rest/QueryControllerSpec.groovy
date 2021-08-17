@@ -21,8 +21,7 @@
 package org.onap.cps.temporal.controller.rest
 
 import org.onap.cps.temporal.controller.utils.DateTimeUtility
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
-
+import com.fasterxml.jackson.databind.ObjectMapper
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.controller.rest.model.AnchorDetails
 import org.onap.cps.temporal.controller.rest.model.AnchorDetailsMapperImpl
@@ -41,13 +40,14 @@ import org.springframework.data.domain.SliceImpl
 import org.springframework.data.domain.Sort
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
+import org.springframework.security.test.context.support.WithMockUser
 import org.springframework.test.web.servlet.MockMvc
-import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper
-import spock.lang.Shared
 import spock.lang.Specification
+import spock.lang.Shared
 
 @WebMvcTest(QueryController)
-@Import([SortMapper, QueryResponseFactory, AnchorDetailsMapperImpl])
+@Import([SortMapper, QueryController.QueryResponseFactory, AnchorDetailsMapperImpl])
+@WithMockUser
 class QueryControllerSpec extends Specification {
 
     @SpringBean
