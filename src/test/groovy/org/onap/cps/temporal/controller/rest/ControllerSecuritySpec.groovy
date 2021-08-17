@@ -1,0 +1,82 @@
+/*
+ * ============LICENSE_START=======================================================
+ * Copyright (c) 2021 Bell Canada.
+ * ================================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ * ============LICENSE_END=========================================================
+ */
+
+package org.onap.cps.temporal.controller.rest
+
+import org.onap.cps.temporal.config.WebSecurityConfig
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
+import org.springframework.context.annotation.Import
+import org.springframework.http.HttpHeaders
+import org.springframework.http.HttpStatus
+import org.springframework.test.web.servlet.MockMvc
+import org.springframework.test.web.servlet.setup.MockMvcBuilders
+import org.springframework.web.context.WebApplicationContext
+import spock.lang.Shared
+import spock.lang.Specification
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
+import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
+
+@WebMvcTest(QueryController)
+@Import(WebSecurityConfig)
+class ControllerSecuritySpec extends Specification {
+
+    @Autowired
+    MockMvc mvc
+
+    @Autowired
+    WebApplicationContext context;
+
+    @Shared
+    def testEndpoint = '/cps-temporal/api/v1/dataspaces/my-dataspace/anchors/my-anchor/history'
+
+    def setup() {
+        mvc = MockMvcBuilders.webAppContextSetup(this.context).apply(springSecurity()).build();
+    }
+
+    def 'Get request with authentication: #scenario'() {
+        given: 'authentication'
+            HttpHeaders httpHeaders = new HttpHeaders();
+            httpHeaders.setBasicAuth(username, password)
+        when: 'request is sent with authentication'
+            def response = mvc.perform(get(testEndpoint).headers(httpHeaders)
+            ).andReturn().response
+        then: 'HTTP OK status code is returned'
+            assert response.status == expectedHttpStatus.value()
+        where:
+            scenario              | username       | password         || expectedHttpStatus
+            'correct credentials' | 'cpsuser'      | 'cpsr0cks!'      || HttpStatus.OK
+            'unknown username'    | 'unknown-user' | 'password'       || HttpStatus.UNAUTHORIZED
+            'wrong password'      | 'cpsuser'      | 'wrong-password' || HttpStatus.UNAUTHORIZED
+    }
+
+    def 'Get urls without authentication : #scenario'() {
+        when: 'request is sent with authentication'
+            def response = mvc.perform(get('/swagger/openapi.yml')
+            ).andReturn().response
+        then: 'HTTP OK status code is returned'
+            assert response.status == HttpStatus.OK.value()
+        where:
+            scenario            | url
+            'permitted url'     | '/swagger/openapi.yml'
+            'not-permitted url' | testEndpoint
+    }
+
+}
