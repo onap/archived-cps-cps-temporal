@@ -61,3 +61,10 @@ app:
     listener:
         data-updated:
             topic: cps.cfg-state-events
+
+security:
+    # comma-separated uri patterns which do not require authorization
+    permit-uri: /manage/**,/swagger-ui/**,/swagger-resources/**,/swagger/openapi.yml
+    auth:
+        username: cpsuser
+        password: cpsr0cks!

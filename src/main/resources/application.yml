@@ -65,6 +65,12 @@ springdoc:
         urls:
             - name: query
               url: /swagger/openapi.yml
+security:
+    # comma-separated uri patterns which do not require authorization
+    permit-uri: /manage/**,/swagger-ui/**,/swagger-resources/**,/swagger/openapi.yml
+    auth:
+        username: ${APP_USERNAME}
+        password: ${APP_PASSWORD}
 
 # Actuator
 management:
