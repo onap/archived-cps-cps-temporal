@@ -69,6 +69,30 @@
       "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bd05403_198f2887",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/ControllerSecuritySpec.groovy",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T11:38:10Z",
+      "side": 1,
+      "message": "Fixed. I used testUser/testPassword.",
+      "parentUuid": "76ad77fb_e03339f9",
+      "range": {
+        "startLine": 76,
+        "startChar": 54,
+        "endLine": 76,
+        "endChar": 62
+      },
+      "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
