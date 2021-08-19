@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "24f95b3f_dba5f604",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T11:22:49Z",
+      "side": 1,
+      "message": "I tried to do address this comment and found that when Mapstruct generates a class with only no-arg constructor. So we can not pass any argument for constructor autowiring. It also does not work with field autowiring.",
+      "parentUuid": "f70c1ad0_2d570673",
+      "range": {
+        "startLine": 39,
+        "startChar": 39,
+        "endLine": 39,
+        "endChar": 58
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "91d1dea2_a9a31311",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
         "patchSetId": 8
@@ -36,6 +60,30 @@
       "writtenOn": "2021-08-19T09:11:42Z",
       "side": 1,
       "message": "are we always sure the arrayindexoutofbound never occur? just to be cautious should you check array lenngth as 2?",
+      "range": {
+        "startLine": 67,
+        "startChar": 74,
+        "endLine": 67,
+        "endChar": 75
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "00f3b83f_d5568ad0",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T11:22:49Z",
+      "side": 1,
+      "message": "User is supposed to send the sortString in the correct format. If conversion fails due to any reason, then error message is sent to user. So I think it is not required to validate it because at the end, we will throw the same error to the user. There is also a test-case for this type of input.\n\nI did change the error message to add the input sort string to help user fixing the format.",
+      "parentUuid": "91d1dea2_a9a31311",
       "range": {
         "startLine": 67,
         "startChar": 74,
@@ -68,6 +116,30 @@
       "revId": "695f640b3bcc997dc68b778d26007a875638f028",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd0a186d_c743b708",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T11:22:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8e75198f_bf7867e5",
+      "range": {
+        "startLine": 68,
+        "startChar": 22,
+        "endLine": 68,
+        "endChar": 28
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
