@@ -45,6 +45,30 @@
       "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "76ad77fb_e03339f9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/ControllerSecuritySpec.groovy",
+        "patchSetId": 5
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T11:25:04Z",
+      "side": 1,
+      "message": "I will fix it in the next patch. I created this patch on top of another one and now struggling to send changes to this one as the parent one is updated too.",
+      "parentUuid": "ecdf9a90_135cfbd4",
+      "range": {
+        "startLine": 76,
+        "startChar": 54,
+        "endLine": 76,
+        "endChar": 62
+      },
+      "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
