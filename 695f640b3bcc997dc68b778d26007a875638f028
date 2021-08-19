@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f70c1ad0_2d570673",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-19T09:11:42Z",
+      "side": 1,
+      "message": "can this be picked from springcontext.",
+      "range": {
+        "startLine": 39,
+        "startChar": 39,
+        "endLine": 39,
+        "endChar": 58
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "91d1dea2_a9a31311",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-19T09:11:42Z",
+      "side": 1,
+      "message": "are we always sure the arrayindexoutofbound never occur? just to be cautious should you check array lenngth as 2?",
+      "range": {
+        "startLine": 67,
+        "startChar": 74,
+        "endLine": 67,
+        "endChar": 75
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e75198f_bf7867e5",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-19T09:11:42Z",
+      "side": 1,
+      "message": "var? , type inference for string, nb",
+      "range": {
+        "startLine": 68,
+        "startChar": 22,
+        "endLine": 68,
+        "endChar": 28
+      },
+      "revId": "695f640b3bcc997dc68b778d26007a875638f028",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
