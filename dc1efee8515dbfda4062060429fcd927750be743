@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c10aa677_b5ca9553",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T03:51:04Z",
+      "side": 1,
+      "message": "If format is changed it to SSSSSSZ, it always expects nano seconds to be present. We should evaluate it in a different story",
+      "parentUuid": "8278167c_2e1a4230",
+      "range": {
+        "startLine": 71,
+        "startChar": 52,
+        "endLine": 71,
+        "endChar": 55
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "965417a1_5d9bc135",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
         "patchSetId": 7
@@ -59,6 +83,24 @@
     },
     {
       "key": {
+        "uuid": "2684a912_7eed6c80",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T03:51:04Z",
+      "side": 1,
+      "message": "Added a workaround till we get a proper fix for spring team. Also changed the test case to decode the query-param value ( using apache library) and compare with the expected value",
+      "parentUuid": "3eae54e1_fe1d6cee",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ec1a2d41_c8dc3253",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
         "patchSetId": 7
@@ -70,6 +112,30 @@
       "writtenOn": "2021-08-17T21:19:45Z",
       "side": 1,
       "message": "QueryController class depends on QueryResponseFactory and here we have the reverse dependency from QueryResponseFactory to QueryController.\n\nWould it be feasible to break this dependency cycle ?",
+      "range": {
+        "startLine": 119,
+        "startChar": 57,
+        "endLine": 119,
+        "endChar": 72
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31d7eaf0_9ec4eee1",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T03:51:04Z",
+      "side": 1,
+      "message": "Links are getting generate from the controller method itself. If I move the code inside the controller class, that class becomes cluttered. Another option can be to have it as an inner class in QueryController.\n\nWhat do you suggest?",
+      "parentUuid": "ec1a2d41_c8dc3253",
       "range": {
         "startLine": 119,
         "startChar": 57,
@@ -119,6 +185,24 @@
       "revId": "dc1efee8515dbfda4062060429fcd927750be743",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e26e4830_7b3506a5",
+        "filename": "src/main/java/org/onap/cps/temporal/utils/DateTimeUtility.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-19T03:51:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9556b1cf_1c693080",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
