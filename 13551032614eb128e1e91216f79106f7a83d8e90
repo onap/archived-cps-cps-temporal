@@ -22,6 +22,30 @@
       "revId": "13551032614eb128e1e91216f79106f7a83d8e90",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ed43f33_c3130181",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "dc92fd3c_9d6ee802",
+      "range": {
+        "startLine": 117,
+        "startChar": 19,
+        "endLine": 117,
+        "endChar": 61
+      },
+      "revId": "13551032614eb128e1e91216f79106f7a83d8e90",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }

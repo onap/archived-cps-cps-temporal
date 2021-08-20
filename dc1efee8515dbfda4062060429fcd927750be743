@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "f9bbcbc9_111dfcfd",
+        "filename": "docs/api/swagger/openapi.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c10aa677_b5ca9553",
+      "range": {
+        "startLine": 71,
+        "startChar": 52,
+        "endLine": 71,
+        "endChar": 55
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "965417a1_5d9bc135",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
         "patchSetId": 7
@@ -101,6 +125,24 @@
     },
     {
       "key": {
+        "uuid": "aff1bdf1_50a13e77",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2684a912_7eed6c80",
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ec1a2d41_c8dc3253",
         "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
         "patchSetId": 7
@@ -145,6 +187,54 @@
       "revId": "dc1efee8515dbfda4062060429fcd927750be743",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18b0face_55c5da0a",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryResponseFactory.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "Maybe an inner class would be fine. Let\u0027s create a Jira item to come back to this.",
+      "parentUuid": "31d7eaf0_9ec4eee1",
+      "range": {
+        "startLine": 119,
+        "startChar": 57,
+        "endLine": 119,
+        "endChar": 72
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ccd4d41_7fecbb28",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/utils/DateTimeUtility.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "968954a4_8cee7c6a",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 35
+      },
+      "revId": "dc1efee8515dbfda4062060429fcd927750be743",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {

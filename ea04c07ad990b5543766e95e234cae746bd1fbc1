@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f8fff31_6594867f",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:13:30Z",
+      "side": 1,
+      "message": "In this case I would have kept the String typed variable as reading this line only does not tell much about the type of the variable. It needs to be looked in surrounding lines. I\u0027m not sure that Sonar would have complain about not having var here. Do you know ?\n\nAnyway, not a big deal, let\u0027s keep it like this ...",
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
