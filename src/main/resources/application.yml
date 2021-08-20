@@ -52,6 +52,7 @@ spring:
                 spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
                 spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
                 spring.json.value.default.type: org.onap.cps.event.model.CpsDataUpdatedEvent
+                spring.json.use.type.headers: false
 
 app:
     listener:
