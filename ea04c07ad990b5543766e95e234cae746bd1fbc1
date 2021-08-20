@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ef7ab534_49696b35",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/model/SortMapper.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-20T11:56:51Z",
+      "side": 1,
+      "message": "Done in https://gerrit.onap.org/r/c/cps/cps-temporal/+/123323 patch",
+      "parentUuid": "4f8fff31_6594867f",
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "868696b5_4e01db43",
         "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
         "patchSetId": 9
@@ -39,6 +57,30 @@
       "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "55a3f92e_aacc29c7",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-20T11:56:51Z",
+      "side": 1,
+      "message": "Done in https://gerrit.onap.org/r/c/cps/cps-temporal/+/123323 patch",
+      "parentUuid": "868696b5_4e01db43",
+      "range": {
+        "startLine": 134,
+        "startChar": 36,
+        "endLine": 134,
+        "endChar": 37
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "210cd2db_029b2fe1",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-20T11:56:51Z",
+      "side": 1,
+      "message": "Done in https://gerrit.onap.org/r/c/cps/cps-temporal/+/123323 patch",
+      "parentUuid": "50963fe8_8d2758e9",
+      "range": {
+        "startLine": 138,
+        "startChar": 84,
+        "endLine": 138,
+        "endChar": 85
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ab3b3298_9110d199",
         "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
         "patchSetId": 9
@@ -85,6 +151,30 @@
       "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "23e5b3e3_a31487b4",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-20T11:56:51Z",
+      "side": 1,
+      "message": "Done in https://gerrit.onap.org/r/c/cps/cps-temporal/+/123323 patch",
+      "parentUuid": "ab3b3298_9110d199",
+      "range": {
+        "startLine": 139,
+        "startChar": 84,
+        "endLine": 139,
+        "endChar": 85
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
