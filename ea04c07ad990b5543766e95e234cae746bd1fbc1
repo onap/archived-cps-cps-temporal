@@ -16,6 +16,75 @@
       "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "868696b5_4e01db43",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-20T10:24:40Z",
+      "side": 1,
+      "message": "\u0027",
+      "range": {
+        "startLine": 134,
+        "startChar": 36,
+        "endLine": 134,
+        "endChar": 37
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "50963fe8_8d2758e9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-20T10:24:40Z",
+      "side": 1,
+      "message": "just for consistency \u0027:nb",
+      "range": {
+        "startLine": 138,
+        "startChar": 84,
+        "endLine": 138,
+        "endChar": 85
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab3b3298_9110d199",
+        "filename": "src/test/groovy/org/onap/cps/temporal/domain/SearchCriteriaSpec.groovy",
+        "patchSetId": 9
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 5006
+      },
+      "writtenOn": "2021-08-20T10:24:40Z",
+      "side": 1,
+      "message": "\u0027",
+      "range": {
+        "startLine": 139,
+        "startChar": 84,
+        "endLine": 139,
+        "endChar": 85
+      },
+      "revId": "ea04c07ad990b5543766e95e234cae746bd1fbc1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
