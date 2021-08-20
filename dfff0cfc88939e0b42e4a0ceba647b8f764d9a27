@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "3afa67ff_8b88e75c",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/config/WebSecurityConfig.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-20T04:17:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0ed2b3a4_7711e8bd",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 36
+      },
+      "revId": "dfff0cfc88939e0b42e4a0ceba647b8f764d9a27",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ecdf9a90_135cfbd4",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/ControllerSecuritySpec.groovy",
         "patchSetId": 5
