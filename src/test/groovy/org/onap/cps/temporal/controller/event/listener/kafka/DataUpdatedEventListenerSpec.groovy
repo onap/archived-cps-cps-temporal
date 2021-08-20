@@ -33,8 +33,11 @@ import static org.onap.cps.temporal.controller.event.listener.exception.InvalidE
  */
 class DataUpdatedEventListenerSpec extends Specification {
 
+    public static final String EXPECTED_SCHEMA_EXCEPTION_MESSAGE = 'urn:cps:org.onap.cps:data-updated-event-schema:v99'
+
     // Define event data
     def anEventType = 'my-event-type'
+    def anEventSchema = new URI('my-event-schema')
     def anEventSource = new URI('my-event-source')
     def aTimestamp = EventFixtures.currentIsoTimestamp()
     def aDataspace = 'my-dataspace'
@@ -82,9 +85,7 @@ class DataUpdatedEventListenerSpec extends Specification {
             e.getInvalidFields().size() == 4
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            MISSING,"schema", null,
-                            CpsDataUpdatedEvent.Schema.URN_CPS_ORG_ONAP_CPS_DATA_UPDATED_EVENT_SCHEMA_1_1_0_SNAPSHOT
-                                    .value()))
+                            UNEXPECTED,"schema", null, EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
                             MISSING, "id", null, null))
@@ -101,12 +102,19 @@ class DataUpdatedEventListenerSpec extends Specification {
         when: 'an event with an invalid envelop is received'
             def invalidEvent =
                     new CpsDataUpdatedEvent()
-                            .withId('my-id').withSource(anEventSource).withType(anEventType)
+                            .withId('my-id')
+                            .withSchema(anEventSchema)
+                            .withSource(anEventSource)
+                            .withType(anEventType)
             objectUnderTest.consume(invalidEvent)
         then: 'an exception is thrown with 2 invalid fields'
             def e = thrown(InvalidEventEnvelopException)
             e.getCpsDataUpdatedEvent() == invalidEvent
-            e.getInvalidFields().size() == 2
+            e.getInvalidFields().size() == 3
+            e.getInvalidFields().contains(
+                    new InvalidEventEnvelopException.InvalidField(
+                            UNEXPECTED, "schema", anEventSchema.toString(),
+                            EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
                             UNEXPECTED, "type", anEventType, EventFixtures.defaultEventType))

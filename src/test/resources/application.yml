@@ -60,7 +60,7 @@ spring:
 app:
     listener:
         data-updated:
-            topic: cps.cfg-state-events
+            topic: cps.data-updated-events
     query:
         response:
             max-page-size: 20
