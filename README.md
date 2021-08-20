@@ -55,7 +55,7 @@ docker-compose up
 Then, use `kafkacat` tool to produce a data updated event into the Kafka topic:
 
 ```bash
-docker run -i --rm --network=host edenhill/kafkacat:1.6.0 -b localhost:19092 -t cps.cfg-state-events -D/ -P <<EOF
+docker run -i --rm --network=host edenhill/kafkacat:1.6.0 -b localhost:19092 -t cps.data-updated-events -D/ -P <<EOF
 {
     "schema": "urn:cps:org.onap.cps:data-updated-event-schema:1.1.0-SNAPSHOT",
     "id": "38aa6cc6-264d-4ede-b534-18f5c1f403ea",
