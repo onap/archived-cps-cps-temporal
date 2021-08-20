@@ -20,10 +20,14 @@
 
 package org.onap.cps.temporal.domain;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import java.time.OffsetDateTime;
-import javax.validation.constraints.NotNull;
+import java.util.List;
 import lombok.AccessLevel;
 import lombok.Builder;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
@@ -31,10 +35,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.data.domain.Sort.Order;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @Builder(builderClassName = "Builder")
+@EqualsAndHashCode
 public class SearchCriteria {
 
     private OffsetDateTime createdBefore;
@@ -47,7 +53,14 @@ public class SearchCriteria {
 
     public static class Builder {
 
-        private Sort sort = Sort.by(Direction.DESC, "observed_timestamp");
+        private static final String OBSERVED_TIMESTAMP_FIELD_NAME = "observed_timestamp";
+
+        private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+        private static final List<Order> REQUIRED_SORT_ORDERS = List.of(Order.desc(OBSERVED_TIMESTAMP_FIELD_NAME));
+        private static final List<Order> SUPPORTED_SORT_ORDERS = List.of(Order.desc(OBSERVED_TIMESTAMP_FIELD_NAME),
+            Order.asc("anchor"));
+
+        private Sort sort = Sort.by(Direction.DESC, OBSERVED_TIMESTAMP_FIELD_NAME);
         private OffsetDateTime createdBefore = OffsetDateTime.now();
 
         public Builder pagination(final int pageNumber, final int pageSize) {
@@ -55,7 +68,44 @@ public class SearchCriteria {
             return this;
         }
 
-        public Builder sort(final @NotNull Sort sort) {
+        /**
+         * Validate that simplePayloadFilter is a valid json.
+         *
+         * @param simplePayloadFilter simplePayloadFilter
+         * @return Builder
+         */
+        public Builder simplePayloadFilter(final String simplePayloadFilter) {
+            if (!StringUtils.isEmpty(simplePayloadFilter)) {
+                try {
+                    OBJECT_MAPPER.readValue(simplePayloadFilter, ObjectNode.class);
+                    this.simplePayloadFilter = simplePayloadFilter;
+                } catch (final JsonProcessingException jsonProcessingException) {
+                    throw new IllegalArgumentException("simplePayloadFilter must be a valid json");
+                }
+            }
+            return this;
+        }
+
+        /**
+         * Validates the input with the expected list and saves only if matches.
+         *
+         * @param sort sort
+         * @return Builder builder
+         */
+        public Builder sort(final Sort sort) {
+            if (sort == null) {
+                throw new IllegalArgumentException("sort must not be null");
+            }
+            final List<Order> sortOrders = sort.toList();
+            if (!SUPPORTED_SORT_ORDERS.containsAll(sortOrders)) {
+                throw new IllegalArgumentException(
+                    "Invalid sorting. Supported sorts are " + SUPPORTED_SORT_ORDERS.toString());
+            }
+            if (!sortOrders.containsAll(REQUIRED_SORT_ORDERS)) {
+                throw new IllegalArgumentException(
+                    "Missing mandatory sort. Required sorts are " + REQUIRED_SORT_ORDERS.toString());
+            }
+
             this.sort = sort;
             return this;
         }
