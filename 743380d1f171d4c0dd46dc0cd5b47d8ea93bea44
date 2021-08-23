@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0949585d_da3a2798",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-23T18:24:41Z",
+      "side": 1,
+      "message": "This was a separate class but was moved inside to avoid cycling dependency. I will create a tech debt story to track it.",
+      "parentUuid": "e97ae508_beaa1ba1",
+      "range": {
+        "startLine": 141,
+        "startChar": 24,
+        "endLine": 141,
+        "endChar": 45
+      },
+      "revId": "743380d1f171d4c0dd46dc0cd5b47d8ea93bea44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bec395b7_493c603f",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/ControllerSecuritySpec.groovy",
         "patchSetId": 8
@@ -36,6 +60,30 @@
       "writtenOn": "2021-08-23T14:16:59Z",
       "side": 1,
       "message": "prefer full name (not blocking)",
+      "range": {
+        "startLine": 62,
+        "startChar": 26,
+        "endLine": 62,
+        "endChar": 33
+      },
+      "revId": "743380d1f171d4c0dd46dc0cd5b47d8ea93bea44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1e40e08_997ec892",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/ControllerSecuritySpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-23T18:24:41Z",
+      "side": 1,
+      "message": "Will change it as a part of https://jira.onap.org/browse/CPS-537 story",
+      "parentUuid": "bec395b7_493c603f",
       "range": {
         "startLine": 62,
         "startChar": 26,
@@ -68,6 +116,30 @@
       "revId": "743380d1f171d4c0dd46dc0cd5b47d8ea93bea44",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "577b7bd6_af82af46",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/QueryControllerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-08-23T18:24:41Z",
+      "side": 1,
+      "message": "yes",
+      "parentUuid": "4ed9b19d_a919829e",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 13
+      },
+      "revId": "743380d1f171d4c0dd46dc0cd5b47d8ea93bea44",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
