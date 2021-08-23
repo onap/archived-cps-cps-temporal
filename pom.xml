@@ -512,7 +512,6 @@
                     <version>3.0.0</version>
                     <configuration>
                         <container>
-                            <mainClass>${app}</mainClass>
                             <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
                         </container>
                         <from>
