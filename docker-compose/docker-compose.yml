@@ -23,9 +23,10 @@ services:
 
   cps-temporal:
     container_name: cps-temporal
-    image: onap/cps-temporal:latest
+    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-temporal:latest
     ports:
       - '8082:8080'
+      - '8087:8081'
     environment:
       DB_HOST: timescaledb
       DB_PORT: 5432
@@ -34,7 +35,8 @@ services:
       APP_USERNAME: ${APP_USERNAME:-cpsuser}
       APP_PASSWORD: ${APP_PASSWORD:-cpsr0cks!}
       KAFKA_BOOTSTRAP_SERVER: kafka:9092
-
+      APP_USERNAME: cpsuser
+      APP_PASSWORD: cpsr0cks!
     restart: unless-stopped
     depends_on:
       - timescaledb
@@ -45,10 +47,16 @@ services:
     image: timescale/timescaledb:2.1.1-pg13
     ports:
       - '5433:5432'
+    volumes:
+      - ./create-cps-database.sh:/docker-entrypoint-initdb.d/create-cps-database.sh
     environment:
-      POSTGRES_DB: cpstemporaldb
       POSTGRES_USER: cpstemporal
       POSTGRES_PASSWORD: cpstemporal
+      POSTGRES_DB: cpstemporaldb
+      CPS_CORE_DB: cpsdb
+      CPS_CORE_DB_USERNAME: cps
+      CPS_CORE_DB_PASSWORD: cps
+    command: ["-c", "max_connections=100"]
 
   zookeeper:
     image: confluentinc/cp-zookeeper:6.1.1
@@ -69,3 +77,24 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,CONNECTIONS_FROM_HOST://localhost:19092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONNECTIONS_FROM_HOST:PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  cps-and-ncmp:
+    container_name: cps-and-ncmp
+    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-and-ncmp:${CPS_CORE_VERSION:-latest}
+    ports:
+      - "8883:8080"
+      - "8887:8081"
+    environment:
+      CPS_USERNAME: cpsuser
+      CPS_PASSWORD: cpsr0cks!
+      DB_HOST: timescaledb
+      DB_USERNAME: cps
+      DB_PASSWORD: cps
+      KAFKA_BOOTSTRAP_SERVER: kafka:9092
+      notification.data-updated.enabled: 'true'
+      NOTIFICATION_DATASPACE_FILTER_PATTERNS: '.*'
+      DMI_USERNAME: cpsuser
+      DMI_PASSWORD: cpsr0cks!
+    restart: unless-stopped
+    depends_on:
+      - timescaledb
