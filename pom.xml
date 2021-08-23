@@ -110,7 +110,7 @@
         <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
-            <version>4.3.2</version>
+            <version>4.4.2-nordix</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -545,6 +545,14 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <repositories>
+        <repository>
+            <id>nordix-liquibase-repo</id>
+            <name>liquibase</name>
+            <url>https://artifactory.nordix.org/artifactory/liquibase</url>
+        </repository>
+    </repositories>
 
     <profiles>
         <profile>
