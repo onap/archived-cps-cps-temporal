@@ -131,12 +131,12 @@ class SearchCriteriaSpec extends Specification {
         then: 'exception is thrown'
             def illegalArgumentException = thrown(IllegalArgumentException)
             def message = illegalArgumentException.getMessage();
-            assert message.contains("sort")
+            assert message.contains('sort')
             assert message.contains(expectedExceptionMessage)
         where:
             scenario                 | sort                                       | expectedExceptionMessage
-            'null'                   | null                                       | "null"
-            'unsupported properties' | Sort.by(Sort.Direction.ASC, 'unsupported') | "Invalid sorting"
+            'null'                   | null                                       | 'null'
+            'unsupported properties' | Sort.by(Sort.Direction.ASC, 'unsupported') | 'Invalid sorting'
             'missing required sort'  | Sort.by(Sort.Direction.ASC, 'anchor')      | 'Missing mandatory sort'
     }
 
