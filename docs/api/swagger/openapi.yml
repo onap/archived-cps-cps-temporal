@@ -184,7 +184,7 @@ components:
       schema:
         type: string
         default: observed_timestamp:desc
-      description: "Sort by timestamp in 'asc' or 'desc' order. Supported values: <br/>observed_timestamp:desc<br/>anchor:asc,observed_timestamp:desc"
+      description: "Sort by observed_timestamp in 'desc' order. Supported values: <br/>observed_timestamp:desc<br/>anchor:asc,observed_timestamp:desc"
   responses:
     BadRequest:
       description: Bad Request

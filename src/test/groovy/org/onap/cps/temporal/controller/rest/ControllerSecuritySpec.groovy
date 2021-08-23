@@ -21,19 +21,15 @@
 package org.onap.cps.temporal.controller.rest
 
 import org.onap.cps.temporal.controller.rest.config.WebSecurityConfig
-import org.onap.cps.temporal.controller.rest.model.AnchorDetailsMapper
 import org.onap.cps.temporal.controller.rest.model.AnchorDetailsMapperImpl
-import org.onap.cps.temporal.controller.rest.model.AnchorHistory
 import org.onap.cps.temporal.controller.rest.model.SortMapper
 import org.onap.cps.temporal.domain.NetworkData
 import org.onap.cps.temporal.service.NetworkDataService
 import org.spockframework.spring.SpringBean
-import org.spockframework.spring.StubBeans
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.context.annotation.Import
 import org.springframework.data.domain.Pageable
-import org.springframework.data.domain.Slice
 import org.springframework.data.domain.SliceImpl
 import org.springframework.http.HttpHeaders
 import org.springframework.http.HttpStatus
@@ -54,18 +50,16 @@ class ControllerSecuritySpec extends Specification {
         searchNetworkData(_) >> new SliceImpl<NetworkData>([], Pageable.ofSize(1), false)
     }
 
-    QueryController.QueryResponseFactory mockQueryResponseFactory = Mock()
-
     MockMvc mvc
 
     @Autowired
-    WebApplicationContext context
+    WebApplicationContext webApplicationContext
 
     @Shared
     def testEndpoint = '/cps-temporal/api/v1/dataspaces/my-dataspace/anchors/my-anchor/history'
 
     def setup() {
-        mvc = MockMvcBuilders.webAppContextSetup(this.context).apply(springSecurity()).build();
+        mvc = MockMvcBuilders.webAppContextSetup(this.webApplicationContext).apply(springSecurity()).build();
     }
 
     def 'Get request with authentication: #scenario.'() {
