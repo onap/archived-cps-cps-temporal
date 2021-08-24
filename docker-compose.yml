@@ -31,6 +31,8 @@ services:
       DB_PORT: 5432
       DB_USERNAME: cpstemporal
       DB_PASSWORD: cpstemporal
+      APP_USERNAME: ${APP_USERNAME:-cpsuser}
+      APP_PASSWORD: ${APP_PASSWORD:-cpsr0cks!}
       KAFKA_BOOTSTRAP_SERVER: kafka:9092
 
     restart: unless-stopped
