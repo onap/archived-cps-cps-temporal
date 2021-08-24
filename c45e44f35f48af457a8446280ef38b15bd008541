@@ -1,0 +1,9 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Dylan Byrne <dylan.byrne@est.tech>
+Code-Review+1: Niamh Core <niamh.core@est.tech>
+Code-Review+2: Renu Kumari <renu.kumari@bell.ca>
+Submitted-by: Renu Kumari <renu.kumari@bell.ca>
+Submitted-at: Tue, 24 Aug 2021 10:12:25 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/123479
+Project: cps/cps-temporal
+Branch: refs/heads/master
