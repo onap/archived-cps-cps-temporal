@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b903a0dc_c317d4f5",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-08-25T11:18:27Z",
+      "side": 1,
+      "message": "nb. make a constant or parameter to improve readability",
+      "range": {
+        "startLine": 103,
+        "startChar": 55,
+        "endLine": 103,
+        "endChar": 57
+      },
+      "revId": "e36f8e376dbdb8cf10d40e67a89a712bca688601",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
