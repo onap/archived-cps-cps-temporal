@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "685aa458_d420a148",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-08-25T12:54:48Z",
+      "side": 1,
+      "message": "This is required to compile with cps-events just merged today: https://gerrit.onap.org/r/c/cps/+/123536\n\nThe confusion is coming from the fact that cps repo pom version has not been upgraded after 1.1.0 release has been completed.",
+      "parentUuid": "4a99f3c9_4e4b32e2",
+      "range": {
+        "startLine": 139,
+        "startChar": 26,
+        "endLine": 139,
+        "endChar": 35
+      },
+      "revId": "e36f8e376dbdb8cf10d40e67a89a712bca688601",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b903a0dc_c317d4f5",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 3
