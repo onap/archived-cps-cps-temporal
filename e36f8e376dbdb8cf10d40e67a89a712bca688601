@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "4a99f3c9_4e4b32e2",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 7486
+      },
+      "writtenOn": "2021-08-25T12:50:11Z",
+      "side": 1,
+      "message": "nb: Why is this put in here?",
+      "range": {
+        "startLine": 139,
+        "startChar": 26,
+        "endLine": 139,
+        "endChar": 35
+      },
+      "revId": "e36f8e376dbdb8cf10d40e67a89a712bca688601",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b903a0dc_c317d4f5",
         "filename": "src/main/java/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListener.java",
         "patchSetId": 3
