@@ -212,7 +212,7 @@
     <build>
         <resources>
             <resource>
-                <directory>docs/api</directory>
+                <directory>openapi</directory>
                 <targetPath>static</targetPath>
                 <filtering>true</filtering>
             </resource>
@@ -481,7 +481,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/docs/api/swagger/openapi.yml</inputSpec>
+                            <inputSpec>${project.basedir}/openapi/swagger/openapi.yml</inputSpec>
                             <invokerPackage>org.onap.cps.temporal.controller.rest</invokerPackage>
                             <modelPackage>org.onap.cps.temporal.controller.rest.model</modelPackage>
                             <apiPackage>org.onap.cps.temporal.controller.rest</apiPackage>
