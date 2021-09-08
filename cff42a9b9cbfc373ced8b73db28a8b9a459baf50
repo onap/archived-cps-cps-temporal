@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a3c5cf77_5d239d11",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-08T20:38:51Z",
+      "side": 1,
+      "message": "This file is coming from the conf file used for cps honolulu.\n\nAre all the new properties added related to a new istanbul requirement ? Is there any related documentation in the wiki for help on this ?\n\nIsn\u0027t better to keep the configuration small and simple as long as it is working and make changes when needed or required ?",
+      "parentUuid": "e6891a65_081d6fbd",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 28
+      },
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "66b177b5_e081238f",
         "filename": "docs/content/user-guide.rst",
         "patchSetId": 1
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "b1ceaa05_c2693beb",
+        "filename": "docs/content/user-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-08T20:38:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "66b177b5_e081238f",
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7ac2156b_bbe3e53b",
         "filename": "docs/index.rst",
         "patchSetId": 1
@@ -53,6 +95,30 @@
       "writtenOn": "2021-09-08T12:59:02Z",
       "side": 1,
       "message": "dont think we need this (no UI?)",
+      "range": {
+        "startLine": 21,
+        "startChar": 3,
+        "endLine": 21,
+        "endChar": 25
+      },
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d5355610_daafda84",
+        "filename": "docs/index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-08T20:38:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ac2156b_bbe3e53b",
       "range": {
         "startLine": 21,
         "startChar": 3,
