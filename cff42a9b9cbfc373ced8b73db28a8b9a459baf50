@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e6891a65_081d6fbd",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-08T11:33:38Z",
+      "side": 1,
+      "message": "This file is not in sync with the conf.py added in cps. https://gerrit.onap.org/r/c/cps/+/123874/4/docs/conf.py",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 28
+      },
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
