@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "d5f641b6_f894aefb",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2021-09-09T09:36:07Z",
+      "side": 1,
+      "message": "There was CSS issues I noticed when not using the latest configuration file. This is the latest config file taken from http://gerrit.onap.org/r/doc.\n\nI still made changes to the file to make it smaller. But, I also think it\u0027s good to keep these files up to date with what is in the latest version of the docs repo.",
+      "parentUuid": "a3c5cf77_5d239d11",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 28
+      },
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "66b177b5_e081238f",
         "filename": "docs/content/user-guide.rst",
         "patchSetId": 1
