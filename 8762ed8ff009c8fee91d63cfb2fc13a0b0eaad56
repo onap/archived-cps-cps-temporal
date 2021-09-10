@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "438d1fdd_574cdfaa",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-10T14:00:14Z",
+      "side": 1,
+      "message": "left over from merge?",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 5
+      },
+      "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
