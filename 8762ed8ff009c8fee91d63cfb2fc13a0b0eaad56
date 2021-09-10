@@ -45,6 +45,30 @@
       "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1bc9be13_377d2190",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-10T18:48:31Z",
+      "side": 1,
+      "message": "This was by intention to follow principles from \"Keep a change log\" https://keepachangelog.com/en/1.0.0/ and have some of these sections (Added, Changed, Fixed, Security, ...) for each release.\n\nIf you are talking about ^^^^^^, these were to create a subsection.\nIt is changed for ~~~~~~ that should be more common and also follows https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingReST/HeadlinesAndSection.html#headlines-and-sections",
+      "parentUuid": "438d1fdd_574cdfaa",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 5
+      },
+      "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }

@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "5d7817ad_74d660c2",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-10T18:48:31Z",
+      "side": 1,
+      "message": "Following changes are made accordingly to current doc project conf.py https://github.com/onap/doc/blob/master/docs/conf.py\n\n* Update css deprecated method\n* Remove extensions\n* Remove autosectionlabel_maxdepth\n\nReview from doc team has also been asked in doc slack channel.",
+      "parentUuid": "d5f641b6_f894aefb",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 28
+      },
+      "revId": "cff42a9b9cbfc373ced8b73db28a8b9a459baf50",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "66b177b5_e081238f",
         "filename": "docs/content/user-guide.rst",
         "patchSetId": 1
