@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "5a983caa_f4a8f60a",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-10T14:16:10Z",
+      "side": 1,
+      "message": "Need to discuss the use of Copyright (and modification copyright) in .rst files with Team in next stand-up. Liam Fallon pointed out that Policy do NOT add these",
+      "range": {
+        "startLine": 5,
+        "startChar": 3,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "438d1fdd_574cdfaa",
         "filename": "docs/content/release-notes.rst",
         "patchSetId": 4
