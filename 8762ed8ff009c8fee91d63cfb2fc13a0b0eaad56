@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4e2338bb_2580da08",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-13T14:48:51Z",
+      "side": 1,
+      "message": "as agreed: short copyright will be just one line depending on years and companies involved might look something like: Copyright (C) 2020-2021 Nordix Foundation, Bell Canada",
+      "parentUuid": "5a983caa_f4a8f60a",
+      "range": {
+        "startLine": 5,
+        "startChar": 3,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "438d1fdd_574cdfaa",
         "filename": "docs/content/release-notes.rst",
         "patchSetId": 4
@@ -69,6 +93,30 @@
       "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "464eaaf4_7cf9816e",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-13T14:48:51Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1bc9be13_377d2190",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 5
+      },
+      "revId": "8762ed8ff009c8fee91d63cfb2fc13a0b0eaad56",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
