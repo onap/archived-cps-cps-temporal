@@ -1,5 +1,6 @@
+#!/bin/bash -x
 # ============LICENSE_START=======================================================
-# Copyright (C) 2021 Bell Canada.
+# Copyright (c) 2021 Bell Canada.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +17,4 @@
 # SPDX-License-Identifier: Apache-2.0
 # ============LICENSE_END=========================================================
 
-# Note that these variables cannot be structured (e.g. : version.release or version.snapshot etc... )
-# because they are used in Jenkins, whose plug-in doesn't support this
-
-major=1
-minor=0
-patch=0
-
-base_version=${major}.${minor}.${patch}
-
-# Release must be completed with git revision # in Jenkins
-release_version=${base_version}
-snapshot_version=${base_version}-SNAPSHOT
+echo "to be implemented"
