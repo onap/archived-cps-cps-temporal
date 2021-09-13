@@ -16,25 +16,24 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # ============LICENSE_END=========================================================
-
 version: "3.7"
 
 services:
 
   cps-temporal:
     container_name: cps-temporal
-    image: onap/cps-temporal:latest
+    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-temporal:latest
     ports:
       - '8082:8080'
+      - '8081:8081'
     environment:
       DB_HOST: timescaledb
       DB_PORT: 5432
       DB_USERNAME: cpstemporal
       DB_PASSWORD: cpstemporal
-      APP_USERNAME: ${APP_USERNAME:-cpsuser}
-      APP_PASSWORD: ${APP_PASSWORD:-cpsr0cks!}
       KAFKA_BOOTSTRAP_SERVER: kafka:9092
-
+      APP_USERNAME: cpstemporal
+      APP_PASSWORD: cpstemporal
     restart: unless-stopped
     depends_on:
       - timescaledb
@@ -69,3 +68,34 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,CONNECTIONS_FROM_HOST://localhost:19092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONNECTIONS_FROM_HOST:PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  cps-and-ncmp:
+    container_name: cps-and-ncmp
+    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-and-ncmp:${VERSION:-latest}
+    ports:
+      - "8083:8080"
+      - "8087:8081"
+    environment:
+      CPS_USERNAME: ${CPS_USERNAME:-cpsuser}
+      CPS_PASSWORD: ${CPS_PASSWORD:-cpsr0cks!}
+      DB_HOST: dbpostgresql
+      DB_USERNAME: ${DB_USERNAME:-cps}
+      DB_PASSWORD: ${DB_PASSWORD:-cps}
+      DMI_USERNAME: ${DMI_USERNAME:-cpsuser}
+      DMI_PASSWORD: ${DMI_PASSWORD:-cpsr0cks!}
+      KAFKA_BOOTSTRAP_SERVER: kafka:9092
+      notification.data-updated.enabled: 'true'
+      NOTIFICATION_DATASPACE_FILTER_PATTERNS: '.*'
+    restart: unless-stopped
+    depends_on:
+      - dbpostgresql
+
+  dbpostgresql:
+    container_name: dbpostgresql
+    image: postgres:13.2-alpine
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: cpsdb
+      POSTGRES_USER: ${DB_USERNAME:-cps}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-cps}
