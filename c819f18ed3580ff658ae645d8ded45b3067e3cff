@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "494a0bfa_6d60559d",
+        "filename": "csit/data/test-tree.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "needed",
+      "parentUuid": "70060270_b1c038ec",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "c138d642_e83d3a44",
         "filename": "csit/data/test-tree.yang",
         "patchSetId": 1
@@ -53,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "328b6b82_52c78c66",
+        "filename": "csit/data/test-tree.yang",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "needed",
+      "parentUuid": "c138d642_e83d3a44",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "0afb5062_3983b3d6",
         "filename": "csit/data/update-test-tree.json",
         "patchSetId": 1
@@ -64,6 +100,24 @@
       "writtenOn": "2021-09-14T10:12:36Z",
       "side": 1,
       "message": "not needed",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be6a884f_ca04738d",
+        "filename": "csit/data/update-test-tree.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "needed",
+      "parentUuid": "0afb5062_3983b3d6",
       "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
@@ -93,6 +147,30 @@
     },
     {
       "key": {
+        "uuid": "24e7c9f5_267fc33d",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ce63b8a2_7f58b54e",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 48
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b37ccf33_2086b9fd",
         "filename": "csit/plans/default/setup.sh",
         "patchSetId": 1
@@ -116,6 +194,30 @@
     },
     {
       "key": {
+        "uuid": "0022e9a4_48bbdeb2",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b37ccf33_2086b9fd",
+      "range": {
+        "startLine": 34,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 11
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a91c9f5b_32312073",
         "filename": "csit/plans/default/testplan.txt",
         "patchSetId": 1
@@ -127,6 +229,30 @@
       "writtenOn": "2021-09-14T10:12:36Z",
       "side": 1,
       "message": "not needed",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 8
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c040bbb5_be71b5cb",
+        "filename": "csit/plans/default/testplan.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "needed to test the integration with  cps",
+      "parentUuid": "a91c9f5b_32312073",
       "range": {
         "startLine": 4,
         "startChar": 0,
@@ -162,6 +288,30 @@
     },
     {
       "key": {
+        "uuid": "a92135ff_c7251d98",
+        "filename": "csit/plans/default/testplan.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "needed to test the integration with cps-core",
+      "parentUuid": "2754d7b7_49baf4f6",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "835ea047_bfe8bd00",
         "filename": "csit/tests/actuator/actuator.robot",
         "patchSetId": 1
@@ -182,6 +332,30 @@
       "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c43f13d3_3ce2f36b",
+        "filename": "csit/tests/actuator/actuator.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "835ea047_bfe8bd00",
+      "range": {
+        "startLine": 25,
+        "startChar": 67,
+        "endLine": 25,
+        "endChar": 75
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -237,6 +411,30 @@
       "side": 1,
       "message": "agrerd, I think all files and test related to CPS Core shoudl be removed",
       "parentUuid": "7f29eb96_07d06f0e",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 18
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "279feb0b_d49519d8",
+        "filename": "csit/tests/cps-core/cps-core.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-14T10:27:31Z",
+      "side": 1,
+      "message": "these are needed to test the integration with cps-core.\nCPS-core needs to create the data which would be sent to cps-temporal through Kafka",
+      "parentUuid": "73d76dfc_f2a0b25c",
       "range": {
         "startLine": 36,
         "startChar": 0,
