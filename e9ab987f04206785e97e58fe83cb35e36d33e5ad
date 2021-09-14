@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4ea9b7d1_8c611872",
+        "filename": "releases/1.0.0-container.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-14T12:09:52Z",
+      "side": 1,
+      "message": "image version from https://jenkins.onap.org/job/cps-cps-temporal-maven-docker-stage-master/211/console job",
+      "range": {
+        "startLine": 9,
+        "startChar": 4,
+        "endLine": 9,
+        "endChar": 37
+      },
+      "revId": "e9ab987f04206785e97e58fe83cb35e36d33e5ad",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
