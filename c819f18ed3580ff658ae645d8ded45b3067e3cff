@@ -2,6 +2,206 @@
   "comments": [
     {
       "key": {
+        "uuid": "715d6080_475ae6b7",
+        "filename": "csit/.gitignore",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "please refrain from .gitignore in subfolder add all relevant filter to .gitignore in top level",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "70060270_b1c038ec",
+        "filename": "csit/data/test-tree.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed?",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c138d642_e83d3a44",
+        "filename": "csit/data/test-tree.yang",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed?",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0afb5062_3983b3d6",
+        "filename": "csit/data/update-test-tree.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce63b8a2_7f58b54e",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "its just yours for now :-)",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 48
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b37ccf33_2086b9fd",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "do you need to/are you starting both CPS-Core and CPS_temporal?",
+      "range": {
+        "startLine": 34,
+        "startChar": 8,
+        "endLine": 34,
+        "endChar": 11
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a91c9f5b_32312073",
+        "filename": "csit/plans/default/testplan.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 8
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2754d7b7_49baf4f6",
+        "filename": "csit/plans/default/testplan.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed yet?",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "835ea047_bfe8bd00",
+        "filename": "csit/tests/actuator/actuator.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "CPS Temporal ?!",
+      "range": {
+        "startLine": 25,
+        "startChar": 67,
+        "endLine": 25,
+        "endChar": 75
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dde35359_f71b78b3",
+        "filename": "csit/tests/cps-core/cps-core.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7f29eb96_07d06f0e",
         "filename": "csit/tests/cps-core/cps-core.robot",
         "patchSetId": 1
@@ -19,6 +219,47 @@
         "endLine": 36,
         "endChar": 18
       },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73d76dfc_f2a0b25c",
+        "filename": "csit/tests/cps-core/cps-core.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "agrerd, I think all files and test related to CPS Core shoudl be removed",
+      "parentUuid": "7f29eb96_07d06f0e",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 18
+      },
+      "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9e47df06_c32d7bb1",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-14T10:12:36Z",
+      "side": 1,
+      "message": "if it works gerat but if it cause any problems delay with this commit just an actuator test wil sufice for now. we can do proper csit IT test AFTER netx milestone",
       "revId": "c819f18ed3580ff658ae645d8ded45b3067e3cff",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
