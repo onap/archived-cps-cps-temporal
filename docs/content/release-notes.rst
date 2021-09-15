@@ -20,15 +20,13 @@ Istanbul Releases
 1.0.0
 -----
 
-.. warning:: Draft
-
 .. table::
 
    =====================  =========================================
    **Release Component**  CPS Temporal
    **Release Name**       Istanbul 1.0.0
    **Release Delivery**   Docker Image: ``onap/cps-temporal:1.0.0``
-   **Release Date**       *To be defined*
+   **Release Date**       2021-09-14
    =====================  =========================================
 
 Added
