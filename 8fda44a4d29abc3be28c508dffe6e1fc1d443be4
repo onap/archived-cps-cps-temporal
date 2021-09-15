@@ -1,0 +1,152 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9f163b_33e3045f",
+        "filename": "csit/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Why Pantheon ?",
+      "range": {
+        "startLine": 3,
+        "startChar": 22,
+        "endLine": 3,
+        "endChar": 30
+      },
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "89b63323_0f76f18f",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Any reason not to use cps licence template?\nhttps://wiki.onap.org/display/DW/Contribution+and+Development#ContributionandDevelopment-LicenseDeclarations\n\nShouldn\u0027t it be a 2021 Bell copyright?\n\nThis comment applies to some other files.",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e48fa56c_c3bf565a",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Which branch is it ? Is the date correct ? \nDo we need this line ?",
+      "range": {
+        "startLine": 19,
+        "startChar": 2,
+        "endLine": 19,
+        "endChar": 66
+      },
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "35bfa320_aaedb667",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Should we also check that CPS Core is successful started ?\nTemporal start does not mean that Core is also started.",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "46de99e8_39c92a2f",
+        "filename": "csit/plans/default/testplan.txt",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Don\u0027t we need the licence for this file ?",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e54b0e03_1a689c98",
+        "filename": "csit/tests/actuator/actuator.robot",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "We could also have tests for /info and /prometheus endpoints",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "14cd59b2_14777c6a",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Is this test depend on cps-core.robot that need to be run before ? Is this dependency enforced somehow ?\n\nI\u0027m suggesting removing this dependency by having one integrated scenario in which:\n1. Data node is created in core\n2. Created data node can be retrieved in temporal\n3. Data node is updated in core\n4. Both created and updated data nodes can be retrieved in temporal",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de49b1cf_87daa1dc",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-15T12:52:09Z",
+      "side": 1,
+      "message": "Is it possible to go beyond number of records and have some validation on data content also ?",
+      "revId": "8fda44a4d29abc3be28c508dffe6e1fc1d443be4",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
