@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5937ec07_922736dc",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-18T00:59:07Z",
+      "side": 1,
+      "message": "Good to see that observed timestamp can be provided and verified 👍",
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "239a065f_7295974d",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-18T00:59:07Z",
+      "side": 1,
+      "message": "Nice checks to verify that the all history is there 👍",
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
