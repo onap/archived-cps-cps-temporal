@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "7d60d12c_0848f5db",
+        "filename": "csit/pylibs.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-20T16:06:40Z",
+      "side": 1,
+      "message": "Not really sure , took it from other repos, can delete these and verify",
+      "parentUuid": "7f07d0d9_4c44b7ba",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 39
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "08c7f30e_65dd7d29",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -135,6 +159,30 @@
     },
     {
       "key": {
+        "uuid": "f99b66f3_92ff149f",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-20T16:06:40Z",
+      "side": 1,
+      "message": "Can add that as well, but I think in integration its not that mandatorya s even the  observed Timestamp is being issued with the request and thats being tested.",
+      "parentUuid": "242d23ce_552f37e5",
+      "range": {
+        "startLine": 90,
+        "startChar": 11,
+        "endLine": 90,
+        "endChar": 18
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "239a065f_7295974d",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -163,6 +211,24 @@
       "writtenOn": "2021-09-20T13:38:33Z",
       "side": 1,
       "message": "Are we planning to use the same for dev testing too ?",
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d595f2a2_d6b4efc2",
+        "filename": "docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-20T16:06:40Z",
+      "side": 1,
+      "message": "I think thats what we agreed in the proposal to include only one docker-compose will all the required services",
+      "parentUuid": "be5b269f_0582253d",
       "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
