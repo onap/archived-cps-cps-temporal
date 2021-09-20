@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "52b360ea_405f6ba2",
+        "filename": "csit/data/test-tree.yang",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-20T14:10:12Z",
+      "side": 1,
+      "message": "should there be a copy right on this file?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 18
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7f07d0d9_4c44b7ba",
+        "filename": "csit/pylibs.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-20T14:10:12Z",
+      "side": 1,
+      "message": "you sure all of these are really required?\nI though selenium is only for GUI interaction and since we dont have a gui I am note sure we really need these.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 39
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "08c7f30e_65dd7d29",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -13,6 +59,30 @@
       "writtenOn": "2021-09-20T13:38:33Z",
       "side": 1,
       "message": "suggestion:\nnb: \ncps_core_auth",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 10
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fabe9516_63c24b5e",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-20T14:10:12Z",
+      "side": 1,
+      "message": "i wonder about using the term \u0027CPS-Core\u0027 in earlier script too but I decide against it (and thus didn\u0027t comment) I think it is OK and better for consistency NOIT to use CPS-Core...",
+      "parentUuid": "08c7f30e_65dd7d29",
       "range": {
         "startLine": 27,
         "startChar": 2,
