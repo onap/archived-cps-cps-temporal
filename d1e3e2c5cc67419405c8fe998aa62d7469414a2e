@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "08c7f30e_65dd7d29",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T13:38:33Z",
+      "side": 1,
+      "message": "suggestion:\nnb: \ncps_core_auth",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 10
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5937ec07_922736dc",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -19,6 +42,29 @@
     },
     {
       "key": {
+        "uuid": "242d23ce_552f37e5",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T13:38:33Z",
+      "side": 1,
+      "message": "While verifying data using cps-temporal query endpoints, we have not verified the content in the cps-temporal in any test-case.",
+      "range": {
+        "startLine": 90,
+        "startChar": 11,
+        "endLine": 90,
+        "endChar": 18
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "239a065f_7295974d",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -30,6 +76,23 @@
       "writtenOn": "2021-09-18T00:59:07Z",
       "side": 1,
       "message": "Nice checks to verify that the all history is there 👍",
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be5b269f_0582253d",
+        "filename": "docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T13:38:33Z",
+      "side": 1,
+      "message": "Are we planning to use the same for dev testing too ?",
       "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
