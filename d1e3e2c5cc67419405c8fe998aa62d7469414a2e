@@ -119,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "b607f65f_14fa2f38",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T21:07:57Z",
+      "side": 1,
+      "message": "Okay. But, I think we need to think more about where to use cps or cps-core and why they are different.",
+      "parentUuid": "fabe9516_63c24b5e",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 10
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5937ec07_922736dc",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -183,6 +207,30 @@
     },
     {
       "key": {
+        "uuid": "fb066caa_288f5b67",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 9
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T21:07:57Z",
+      "side": 1,
+      "message": "I thought the data provided by cps core will be tested, like\n1. dataspace\n2. anchor\n3. schemaset\n4. dataNode\n5. observedTimestamp\n\nAnd only one use case will be tested but it will do full validation.\n\nLet\u0027s discuss it in the stand-up to get more views on it. Or people can share their views here too.",
+      "parentUuid": "f99b66f3_92ff149f",
+      "range": {
+        "startLine": 90,
+        "startChar": 11,
+        "endLine": 90,
+        "endChar": 18
+      },
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "239a065f_7295974d",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 9
@@ -232,6 +280,24 @@
       "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "389e7a78_c337d8d8",
+        "filename": "docker-compose.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-09-20T21:07:57Z",
+      "side": 1,
+      "message": "Thanks for confirming.",
+      "parentUuid": "d595f2a2_d6b4efc2",
+      "revId": "d1e3e2c5cc67419405c8fe998aa62d7469414a2e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
