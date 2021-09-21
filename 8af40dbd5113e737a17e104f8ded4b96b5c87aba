@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b5406143_f724df0f",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2021-09-21T15:41:56Z",
+      "side": 1,
+      "message": "Is the top of this license missing?",
+      "revId": "8af40dbd5113e737a17e104f8ded4b96b5c87aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
