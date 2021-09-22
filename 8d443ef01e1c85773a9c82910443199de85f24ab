@@ -22,6 +22,30 @@
       "revId": "8d443ef01e1c85773a9c82910443199de85f24ab",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e4750e59_fe6fbc20",
+        "filename": "csit/plans/default/setup.properties",
+        "patchSetId": 12
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-09-22T09:59:54Z",
+      "side": 1,
+      "message": "Have noticed that cps at times take 2-3 min for start up.. TIMEOUT should always be double the normal start up time. Hence after discussion with Rahul have decided to keep the same value.\nCSIT starts only after the  build is successful, so this should not delay the Job Builder in case there are other failures.\nIn case you still feel we should reduce the timeout, please suggest the value to be set",
+      "parentUuid": "10f8dad4_4a907a1c",
+      "range": {
+        "startLine": 29,
+        "startChar": 9,
+        "endLine": 29,
+        "endChar": 12
+      },
+      "revId": "8d443ef01e1c85773a9c82910443199de85f24ab",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
