@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "ddc1453e_9187a343",
+        "filename": "csit/data/test-tree.yang",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-22T07:54:01Z",
+      "side": 1,
+      "message": "still missing copyright here?!",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "8af40dbd5113e737a17e104f8ded4b96b5c87aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "96746f31_5ae76be4",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-22T07:54:01Z",
+      "side": 1,
+      "message": "agree with Rahul on this. I recently had a deployment failure but each test took over 5 minutes before that was reported (in verify job because of this timeout) I think it could safely be reduced 30 seconds, if we get intermittent issues because of this we can always increase it again...",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 12
+      },
+      "revId": "8af40dbd5113e737a17e104f8ded4b96b5c87aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b5406143_f724df0f",
         "filename": "csit/tests/cps-temporal/cps-temporal.robot",
         "patchSetId": 11
