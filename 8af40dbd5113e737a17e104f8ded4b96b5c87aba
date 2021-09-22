@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bd4f7da9_516b084b",
+        "filename": "csit/data/test-tree.yang",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-09-22T09:53:02Z",
+      "side": 1,
+      "message": "ok, I was wrong cannot put copyright in .yang files either. Ignore previous comment",
+      "parentUuid": "ddc1453e_9187a343",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "8af40dbd5113e737a17e104f8ded4b96b5c87aba",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "96746f31_5ae76be4",
         "filename": "csit/plans/default/setup.sh",
         "patchSetId": 11
