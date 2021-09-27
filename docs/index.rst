@@ -4,11 +4,11 @@
 ..
 .. Copyright (C) 2021 Bell Canada
 
+.. _master_index:
+
 ============
 CPS Temporal
 ============
-
-.. warning:: Draft
 
 .. toctree::
    :maxdepth: 1
@@ -18,5 +18,5 @@ CPS Temporal
    content/design.rst
    content/modeling.rst
    content/deployment.rst
-   content/apis.rst
+   content/admin-guide.rst
    content/release-notes.rst
