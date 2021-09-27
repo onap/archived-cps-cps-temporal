@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "95483bcc_98b51dfe",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "Yes, this link should be consistent with the release that is documented.\n\nMaybe doc team has a function to refer to same release documentation pages. It would really help to keep all links consistent together.We should ask them.",
+      "parentUuid": "eda8d79b_0d7a744b",
+      "range": {
+        "startLine": 15,
+        "startChar": 93,
+        "endLine": 15,
+        "endChar": 99
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "510bb3c2_5ffd17f5",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 3
@@ -59,6 +83,30 @@
       "writtenOn": "2021-09-23T15:28:22Z",
       "side": 1,
       "message": "similar heer, Istanbul branch probably dont exist yet but now this will always point to latest is taht OK?!",
+      "range": {
+        "startLine": 16,
+        "startChar": 58,
+        "endLine": 16,
+        "endChar": 125
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07abf344_e6f51007",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "Same comment as above.",
+      "parentUuid": "510bb3c2_5ffd17f5",
       "range": {
         "startLine": 16,
         "startChar": 58,
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "99f6692a_bd5e1185",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "Yes, this information is provided for deploying but this is good to have a link from the admin page.",
+      "parentUuid": "910b325e_be03a8ac",
+      "range": {
+        "startLine": 29,
+        "startChar": 2,
+        "endLine": 29,
+        "endChar": 162
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cad815fe_6bf5aba4",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 3
@@ -105,6 +177,30 @@
       "writtenOn": "2021-09-23T15:28:22Z",
       "side": 1,
       "message": "should this be documented in public read-the-docs?!",
+      "range": {
+        "startLine": 107,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 21
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8476b2bf_951de997",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "This information is required to be be able to use the service, so I think it should be somewhere.\n\nAlso, I don\u0027t think that it is really good to rely only on security by obscurity. Security should really be enforced with authentication and authorization access on k8s resources.\n\nWe can check with secom and see what they are suggesting.",
+      "parentUuid": "cad815fe_6bf5aba4",
       "range": {
         "startLine": 107,
         "startChar": 0,
@@ -140,6 +236,30 @@
     },
     {
       "key": {
+        "uuid": "d7322961_c24cc4db",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6e032520_6887e838",
+      "range": {
+        "startLine": 132,
+        "startChar": 1,
+        "endLine": 150,
+        "endChar": 135
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e6861da1_fbe3fcaf",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 3
@@ -151,6 +271,30 @@
       "writtenOn": "2021-09-23T15:28:22Z",
       "side": 1,
       "message": "section better in  admin guide?",
+      "range": {
+        "startLine": 151,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 10
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0bcbefaf_db8be7c8",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-27T12:46:26Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e6861da1_fbe3fcaf",
       "range": {
         "startLine": 151,
         "startChar": 0,
