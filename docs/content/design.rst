@@ -9,3 +9,12 @@ CPS Temporal Design
 ===================
 
 .. warning:: Draft
+
+* REST API
+
+  * Specification
+  * Postman Collection
+
+* Event Schema
+
+  * Json Schema

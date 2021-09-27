@@ -4,17 +4,12 @@
 ..
 .. Copyright (C) 2021 Bell Canada
 
-=========================
-CPS Temporal Exposed APIs
-=========================
+========================
+CPS Temporal Admin Guide
+========================
 
 .. warning:: Draft
 
-* REST API
-
-  * Specification
-  * Postman Collection
-
-* Event Schema
-
-  * Json Schema
+* Link to deployment configuration
+* Logging
+* ...
