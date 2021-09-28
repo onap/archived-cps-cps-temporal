@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b5208332_f4325e01",
+        "filename": "docs/content/architecture.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2021-09-28T09:38:20Z",
+      "side": 1,
+      "message": "Kafka typo",
+      "range": {
+        "startLine": 33,
+        "startChar": 18,
+        "endLine": 33,
+        "endChar": 23
+      },
+      "revId": "e434757590fdf429515243060b00cae3df09f9f3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
