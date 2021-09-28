@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "49629ea3_396972f9",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 4965
+      },
+      "writtenOn": "2021-09-28T21:47:11Z",
+      "side": 1,
+      "message": "In general all LGTM but it would be great if you could also document the \"ExternalSecret\" config values",
+      "revId": "b0fdaa88449be9c03c7cad03f1ee9bb3d36d21fe",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
