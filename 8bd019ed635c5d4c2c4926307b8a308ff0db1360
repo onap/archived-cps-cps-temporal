@@ -283,6 +283,54 @@
     },
     {
       "key": {
+        "uuid": "819e2aa6_141227b5",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-28T12:26:19Z",
+      "side": 1,
+      "message": "Fixed in admin guide. \nhttps://gerrit.onap.org/r/c/cps/cps-temporal/+/124525",
+      "parentUuid": "a5c2f258_85e7f25a",
+      "range": {
+        "startLine": 150,
+        "startChar": 76,
+        "endLine": 150,
+        "endChar": 131
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0110e0fc_4b653893",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-28T12:26:19Z",
+      "side": 1,
+      "message": "Move to admin guide. \nhttps://gerrit.onap.org/r/c/cps/cps-temporal/+/124525",
+      "parentUuid": "d7322961_c24cc4db",
+      "range": {
+        "startLine": 132,
+        "startChar": 1,
+        "endLine": 150,
+        "endChar": 135
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e6861da1_fbe3fcaf",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 3
@@ -318,6 +366,30 @@
       "side": 1,
       "message": "Ack",
       "parentUuid": "e6861da1_fbe3fcaf",
+      "range": {
+        "startLine": 151,
+        "startChar": 0,
+        "endLine": 153,
+        "endChar": 10
+      },
+      "revId": "8bd019ed635c5d4c2c4926307b8a308ff0db1360",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "716ba8d9_51c3fd99",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-09-28T12:26:19Z",
+      "side": 1,
+      "message": "Move to admin guide. \nhttps://gerrit.onap.org/r/c/cps/cps-temporal/+/124525",
+      "parentUuid": "0bcbefaf_db8be7c8",
       "range": {
         "startLine": 151,
         "startChar": 0,
