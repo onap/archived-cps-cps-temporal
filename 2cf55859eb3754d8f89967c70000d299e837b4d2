@@ -2,6 +2,144 @@
   "comments": [
     {
       "key": {
+        "uuid": "842186bb_b2e169f4",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "Did we agree this page should (also) refer to the CPS-Core deployment page?!",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 10
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d1d9e1f_4d0212d2",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "istanbul ?!",
+      "range": {
+        "startLine": 18,
+        "startChar": 93,
+        "endLine": 18,
+        "endChar": 99
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "12058be8_6f0a11f0",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "insert \u0027latest\u0027 (assuming we will point to master branch, or should this point to istanbul branch too ?!",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 15
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38d15720_c62f4d2e",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "istanbul ?!",
+      "range": {
+        "startLine": 21,
+        "startChar": 69,
+        "endLine": 21,
+        "endChar": 75
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5be33798_56498a9e",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "Should this not be in CPS-Core ADMIN guide instead?! ie. just link to that from here?",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 123,
+        "endChar": 11
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "279b5c80_ec54c9da",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-04T11:00:31Z",
+      "side": 1,
+      "message": "using Docker",
+      "range": {
+        "startLine": 160,
+        "startChar": 8,
+        "endLine": 160,
+        "endChar": 16
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "15011caf_61bdceab",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 10
