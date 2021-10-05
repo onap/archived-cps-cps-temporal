@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0dfbfd31_ac6f25b3",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2021-10-05T16:24:02Z",
+      "side": 1,
+      "message": "Should this be 10 or is it for 1.0.0 release vs 1.0.1 for 14 October?",
+      "range": {
+        "startLine": 14,
+        "startChar": 21,
+        "endLine": 14,
+        "endChar": 23
+      },
+      "revId": "6b90b96ea93f5dfc22e8871f07d4e9b2c671dd55",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
