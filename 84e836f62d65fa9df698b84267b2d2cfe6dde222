@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9d189c3_7fd8100e",
+        "filename": "docs/content/architecture.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-10-05T13:36:46Z",
+      "side": 1,
+      "message": "nb - remove",
+      "range": {
+        "startLine": 16,
+        "startChar": 43,
+        "endLine": 16,
+        "endChar": 51
+      },
+      "revId": "84e836f62d65fa9df698b84267b2d2cfe6dde222",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "abd5a90a_4c009b5b",
+        "filename": "docs/content/architecture.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6841
+      },
+      "writtenOn": "2021-10-05T13:36:46Z",
+      "side": 1,
+      "message": "nb - remove",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 8
+      },
+      "revId": "84e836f62d65fa9df698b84267b2d2cfe6dde222",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
