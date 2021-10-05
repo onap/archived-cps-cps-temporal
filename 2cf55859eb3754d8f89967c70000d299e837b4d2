@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7165edd6_2c95d8d4",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "842186bb_b2e169f4",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 10
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3d1d9e1f_4d0212d2",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 10
@@ -71,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "6546844e_6cbb99cd",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "This is now removed and replaced with a link to CPS Core deployment.\nLatest is still used for now as istanbul does not exist yet.",
+      "parentUuid": "12058be8_6f0a11f0",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 15
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "38d15720_c62f4d2e",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 10
@@ -82,6 +130,30 @@
       "writtenOn": "2021-10-04T11:00:31Z",
       "side": 1,
       "message": "istanbul ?!",
+      "range": {
+        "startLine": 21,
+        "startChar": 69,
+        "endLine": 21,
+        "endChar": 75
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "955b2d85_0743a033",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "This is now removed and replaced with a link to CPS Core deployment.\nLatest is still used for now as istanbul does not exist yet.",
+      "parentUuid": "38d15720_c62f4d2e",
       "range": {
         "startLine": 21,
         "startChar": 69,
@@ -117,6 +189,30 @@
     },
     {
       "key": {
+        "uuid": "ed4f3e11_55c9d20f",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "Changed for a link to cps deployment.",
+      "parentUuid": "5be33798_56498a9e",
+      "range": {
+        "startLine": 122,
+        "startChar": 0,
+        "endLine": 123,
+        "endChar": 11
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "279b5c80_ec54c9da",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 10
@@ -140,6 +236,30 @@
     },
     {
       "key": {
+        "uuid": "e3ec57e9_66260c0c",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "279b5c80_ec54c9da",
+      "range": {
+        "startLine": 160,
+        "startChar": 8,
+        "endLine": 160,
+        "endChar": 16
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "15011caf_61bdceab",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 10
@@ -151,6 +271,30 @@
       "writtenOn": "2021-10-04T10:48:56Z",
       "side": 1,
       "message": "Something wrong with the phrasing, also \u0027locally\u0027 is a relative term that can mean different thing for different people...\nSuggestion \"... can be ran on any environment using Docker containers.\"",
+      "range": {
+        "startLine": 163,
+        "startChar": 50,
+        "endLine": 163,
+        "endChar": 72
+      },
+      "revId": "2cf55859eb3754d8f89967c70000d299e837b4d2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4cf29660_b8fa0df3",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 10
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T12:56:13Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15011caf_61bdceab",
       "range": {
         "startLine": 163,
         "startChar": 50,
