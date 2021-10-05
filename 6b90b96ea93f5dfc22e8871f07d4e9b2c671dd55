@@ -22,6 +22,30 @@
       "revId": "6b90b96ea93f5dfc22e8871f07d4e9b2c671dd55",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f3b6dae_78a201e2",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-10-05T19:12:59Z",
+      "side": 1,
+      "message": "Sept 14th is the date when 1.0.0 has been released.\n\nWe don\u0027t know yet when the next release will be made. For now, no patch has been made for cps temporal. If there is still no patch required on Oct 14 then no new release will be made on that date.",
+      "parentUuid": "0dfbfd31_ac6f25b3",
+      "range": {
+        "startLine": 14,
+        "startChar": 21,
+        "endLine": 14,
+        "endChar": 23
+      },
+      "revId": "6b90b96ea93f5dfc22e8871f07d4e9b2c671dd55",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
