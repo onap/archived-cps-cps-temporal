@@ -8,8 +8,26 @@
 CPS Temporal Admin Guide
 ========================
 
-.. warning:: Draft
+* Configuration_
+* Logging_
+* Monitoring_
 
-* Link to deployment configuration
-* Logging
-* ...
+Configuration
+=============
+
+Refer to :doc:`deployment` for application properties available to configure the application.
+
+Logging
+=======
+
+Refer to `CPS Admin Guide <https://docs.onap.org/projects/onap-cps/en/latest/admin-guide.html>`_
+for documentation related to CPS Temporal and all CPS components
+logging information.
+
+
+Monitoring
+==========
+
+Refer to `CPS Admin Guide <https://docs.onap.org/projects/onap-cps/en/latest/admin-guide.html>`_
+page for documentation related to CPS Temporal and all CPS components
+monitoring information.
