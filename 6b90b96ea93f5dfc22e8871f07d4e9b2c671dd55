@@ -46,6 +46,30 @@
       "revId": "6b90b96ea93f5dfc22e8871f07d4e9b2c671dd55",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f61f87b5_a7a667db",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-06T07:32:05Z",
+      "side": 1,
+      "message": "Ack, if we do have a path and a new release we have to update the release notes as part of that process",
+      "parentUuid": "0f3b6dae_78a201e2",
+      "range": {
+        "startLine": 14,
+        "startChar": 21,
+        "endLine": 14,
+        "endChar": 23
+      },
+      "revId": "6b90b96ea93f5dfc22e8871f07d4e9b2c671dd55",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
