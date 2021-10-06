@@ -8,31 +8,39 @@
 CPS Temporal Release Notes
 ==========================
 
-This document contains information about CPS Temporal component releases.
+Version: 1.0.0
+==============
 
-Following releases are available:
+* Release Date: 2021-09-14 (Istanbul)
 
-* `1.0.0`_ (Istanbul)
-
-Istanbul Releases
-=================
-
-1.0.0
------
-
-.. warning:: Draft
+Artifacts released
+------------------
 
 .. table::
 
-   =====================  =========================================
-   **Release Component**  CPS Temporal
-   **Release Name**       Istanbul 1.0.0
-   **Release Delivery**   Docker Image: ``onap/cps-temporal:1.0.0``
-   **Release Date**       *To be defined*
-   =====================  =========================================
+   ===============================  ===============================
+   **Repository**                   **Docker Image**
+   onap/cps-temporal                onap/cps-temporal:1.0.0
+   ===============================  ===============================
 
-Added
-~~~~~
+New features
+------------
 
-* `CPS-369 <https://jira.onap.org/browse/CPS-369>`__ - Feature to store temporal data corresponding to CPS Core data node updates.
-* `CPS-370 <https://jira.onap.org/browse/CPS-370>`__ - Feature to query temporal data from REST API.
+* `CPS-369 <https://jira.onap.org/browse/CPS-369>`_ - Feature to store temporal data corresponding to CPS Core data node updates.
+* `CPS-370 <https://jira.onap.org/browse/CPS-370>`_ - Feature to query temporal data from REST API.
+
+Known Limitations, Issues and Workarounds
+-----------------------------------------
+
+* None
+
+Security Notes
+--------------
+
+Known Security Issues:
+
+* `CPS-488 <https://jira.onap.org/browse/CPS-488>`_ - Authentication and authorization for REST API is limited to one generic user.
+
+Fixed Security Issues:
+
+* None
