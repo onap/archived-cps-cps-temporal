@@ -1,0 +1,9 @@
+Code-Review+1: Thomas Kulik <thomas.kulik@telekom.de>
+Code-Review+2: Niamh Core <niamh.core@est.tech>
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Verified+1: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-by: Niamh Core <niamh.core@est.tech>
+Submitted-at: Thu, 07 Oct 2021 12:51:47 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/124740
+Project: cps/cps-temporal
+Branch: refs/heads/master
