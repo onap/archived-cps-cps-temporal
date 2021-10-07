@@ -24,6 +24,9 @@ master_doc = 'index'
 
 intersphinx_mapping = {}
 
+# Latest (change to branch)
+intersphinx_mapping['onap-cps'] = ('{}/onap-cps/en/%s'.format(doc_url) % branch, None)
+
 linkcheck_ignore = [
     'http://localhost',
 ]
