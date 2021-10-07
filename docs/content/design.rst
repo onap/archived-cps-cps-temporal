@@ -8,13 +8,37 @@
 CPS Temporal Design
 ===================
 
-.. warning:: Draft
+Exposed APIs
+============
 
-* REST API
+CPS Temporal is providing a REST HTTP API to query historical CPS data.
+Its OPEN API Specification can be found either:
 
-  * Specification
-  * Postman Collection
+* In `openapi.yml <https://github.com/onap/cps-cps-temporal/blob/master/openapi/swagger/openapi.yml>`_
+  file
+* At ``https://<cps-temporal-host>:<cps-temporal-port>/swagger/openapi.yml``
+  endpoint available on CPS Temporal running instance
 
-* Event Schema
+Swagger UI is also available at:
 
-  * Json Schema
+* ``https://<cps-temporal-host>:<cps-temporal-port>/swagger-ui.html``
+
+And following Postman collection can be used to send requests to any running
+instance:
+
+* :download:`CPS Temporal Postman Collection <../_static/postman-collections/cps-temporal-postman-collection.json>`
+
+Event Integration
+=================
+
+CPS Core and CPS Temporal are integrated with an event driven architecture.
+Integration between these two components is event notification based.
+
+For each data modification handled by CPS Core,
+
+* CPS Core is publishing, to a dedicated Kafka topic, an event representing
+  the data configuration or state.
+* CPS Temporal is listening to the same topic for the event and is responsible
+  to keep track of all data over time.
+
+Refer to :doc:`modeling` for more details on the event structure.
