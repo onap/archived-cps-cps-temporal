@@ -1,0 +1,255 @@
+# ============LICENSE_START=======================================================
+# Copyright (c) 2021 Bell Canada.
+# ================================================================================
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#         http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+# ============LICENSE_END=========================================================
+
+openapi: 3.0.1
+info:
+  title: ONAP Open API v3 Configuration Persistence Service - Temporal
+  description: CPS-Temporal is time-series database for network data
+  version: 1.0.0
+  contact:
+    name: ONAP
+    url: 'https://onap.readthedocs.io'
+    email: onap-discuss@lists.onap.org
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+  x-planned-retirement-date: '202212'
+  x-component: Modeling
+servers:
+  - url: '/cps-temporal/api'
+tags:
+  - name: cps-temporal-query
+    description: CPS Temporal Query
+paths:
+  '/v1/dataspaces/{dataspace-name}/anchors/{anchor-name}/history':
+    get:
+      description: 'Read the data for the specified anchor based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchor data by name
+      operationId: getAnchorDataByName
+      parameters:
+        - $ref: '#/components/parameters/dataspaceName'
+        - name: anchor-name
+          in: path
+          description: Anchor Name
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/observedTimestampAfter'
+        - $ref: '#/components/parameters/simplePayloadFilter'
+        - $ref: '#/components/parameters/pointInTime'
+        - $ref: '#/components/parameters/pageNumber'
+        - $ref: '#/components/parameters/pageLimit'
+        - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnchorHistory'
+              example:
+                nextRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=2
+                previousRecordsLink: /v1/dataspace/my-dataspace/anchors/my-anchor/history?pageLimit=20&pageNumber=0
+                records:
+                  - timestamp: '2021-03-21T00:00:00.000-0000'
+                    dataspace: my-dataspace
+                    schemaSet: my-schema-set
+                    anchor: my-anchor
+                    data:
+                      status: UP
+
+
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+  '/v1/dataspaces/{dataspace-name}/anchors/history':
+    get:
+      description: 'Read anchors data based on filter criteria provided in query parameters'
+      tags:
+        - cps-temporal-query
+      summary: Get anchors data based on filter criteria
+      operationId: getAnchorsDataByFilter
+      parameters:
+        - $ref: '#/components/parameters/dataspaceName'
+        - name: schema-set-name
+          in: query
+          description: Schema-set name
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/observedTimestampAfter'
+        - $ref: '#/components/parameters/simplePayloadFilter'
+        - $ref: '#/components/parameters/pointInTime'
+        - $ref: '#/components/parameters/pageNumber'
+        - $ref: '#/components/parameters/pageLimit'
+        - $ref: '#/components/parameters/sort'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnchorHistory'
+              example:
+                nextRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=2
+                previousRecordsLink: /v1/dataspace/my-dataspace/anchors/history?pageLimit=20&pageNumber=0
+                records:
+                  - timestamp: '2021-03-21T00:00:00.000-0000'
+                    dataspace: my-dataspace
+                    schemaSet: my-schema-set
+                    anchor: my-anchor
+                    data:
+                      status: UP
+
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+components:
+  parameters:
+    dataspaceName:
+      name: dataspace-name
+      in: path
+      description: Dataspace Name
+      required: true
+      schema:
+        type: string
+    observedTimestampAfter:
+      name: observedTimestampAfter
+      in: query
+      description: Fetch data with observed timestamp after <br/> Format - 'yyyy-MM-ddTHH:mm:ss.SSSZ'
+      required: false
+      schema:
+        type: string
+        example: '2021-03-21T00:00:00.000-0000'
+    simplePayloadFilter:
+      name: simplePayloadFilter
+      in: query
+      description: Payload filter
+      required: false
+      schema:
+        type: string
+    pointInTime:
+      name: pointInTime
+      in: query
+      description: Consider data modified before <br/> Format - 'yyyy-MM-ddTHH:mm:ss.SSSZ'
+      required: false
+      schema:
+        type: string
+        example: '2021-03-21T00:00:00.000-0000'
+    pageLimit:
+      in: query
+      name: pageLimit
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+        default: 1000
+      description: The numbers of items to return
+    pageNumber:
+      name: pageNumber
+      in: query
+      description: Page number
+      required: false
+      schema:
+        type: integer
+        minimum: 0
+        default: 0
+    sort:
+      in: query
+      name: sort
+      required: false
+      schema:
+        type: string
+        default: observed_timestamp:desc
+      description: "Sort by timestamp in 'asc' or 'desc' order. Supported values: <br/>observed_timestamp:desc<br/>anchor:asc,observed_timestamp:desc"
+  responses:
+    BadRequest:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorMessage'
+  schemas:
+    AnchorDetails:
+      type: object
+      title: AnchorDetails
+      properties:
+        observedTimestamp:
+          type: string
+          example: '2021-03-21T00:00:00.000-0000'
+        dataspace:
+          type: string
+          example: 'my-dataspace'
+        schemaSet:
+          type: string
+          example: 'my-schema-set'
+        anchor:
+          type: string
+          example: 'my-anchor'
+        data:
+          type: object
+          example: { "status" : "UP" }
+    AnchorHistory:
+      type: object
+      title: AnchorHistory
+      properties:
+        nextRecordsLink:
+          type: string
+          example: /v1/dataspace/dataspace-name/anchors/history?pageLimit=20&pageNumber=2
+        previousRecordsLink:
+          type: string
+          example: /v1/dataspace/dataspace-name/anchors/history?pageLimit=20&pageNumber=0
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/AnchorDetails'
+      required:
+        - records
+    ErrorMessage:
+      type: object
+      title: Error
+      properties:
+        status:
+          type: string
+          example: 400
+        message:
+          type: string
+          example: Data could not be fetched
+        details:
+          type: string
+          example: "after parameter should have datetime value in ISO format yyyy-MM-ddTHH:mm:ss.SSSZ"
