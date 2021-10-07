@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11d8c2a9_9b537b42",
+        "filename": "docs/content/design.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-07T13:54:48Z",
+      "side": 1,
+      "message": "This part is probably more appropriate to the modelling page.\nSo maybe move this (can refer to it from here) and instead of linking to a github blob download it and include it as a file in the read-the-docs. \nWe did something similar in the cps-ncmp modelling  section, see https://gerrit.onap.org/r/c/cps/+/124622/3/docs/modeling.rst line #69",
+      "range": {
+        "startLine": 44,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 0
+      },
+      "revId": "0df471c660b9bf7ee1b84af3cf003556615f9443",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
