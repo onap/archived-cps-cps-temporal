@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "9ef134f9-0f80-4a1c-92af-51da658c228b",
+		"name": "CPS Temporal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actuator",
+			"item": [
+				{
+					"name": "Get Health",
+					"protocolProfileBehavior": {
+						"disableCookies": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-management-port}}/manage/health",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-management-port}}",
+							"path": [
+								"manage",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Metrics",
+					"protocolProfileBehavior": {
+						"disableCookies": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-management-port}}/manage/prometheus",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-management-port}}",
+							"path": [
+								"manage",
+								"prometheus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Info",
+					"protocolProfileBehavior": {
+						"disableCookies": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-management-port}}/manage/info",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-management-port}}",
+							"path": [
+								"manage",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Specifications",
+			"item": [
+				{
+					"name": "Swagger UI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-port}}/swagger-ui.html",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-port}}",
+							"path": [
+								"swagger-ui.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Open API",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-port}}/swagger/openapi.yml",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-port}}",
+							"path": [
+								"swagger",
+								"openapi.yml"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Data",
+			"item": [
+				{
+					"name": "Get Anchor Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-port}}/cps-temporal/api/v1/dataspaces/{{dataspace-name}}/anchors/{{anchor-name}}/history",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-port}}",
+							"path": [
+								"cps-temporal",
+								"api",
+								"v1",
+								"dataspaces",
+								"{{dataspace-name}}",
+								"anchors",
+								"{{anchor-name}}",
+								"history"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "observed_timestamp:desc,anchor:asc",
+									"disabled": true
+								},
+								{
+									"key": "observedTimestampAfter",
+									"value": "2021-08-01T00:00:00.000-0000",
+									"disabled": true
+								},
+								{
+									"key": "pointInTime",
+									"value": "2021-08-17T14:35:00.000-0400",
+									"disabled": true
+								},
+								{
+									"key": "pageNumber",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pageLimit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Schema Set Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{temporal-host}}:{{temporal-port}}/cps-temporal/api/v1/dataspaces/{{dataspace-name}}/anchors/history?schema-set-name={{schema-set-name}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{temporal-host}}"
+							],
+							"port": "{{temporal-port}}",
+							"path": [
+								"cps-temporal",
+								"api",
+								"v1",
+								"dataspaces",
+								"{{dataspace-name}}",
+								"anchors",
+								"history"
+							],
+							"query": [
+								{
+									"key": "schema-set-name",
+									"value": "{{schema-set-name}}"
+								},
+								{
+									"key": "sort",
+									"value": "observed_timestamp:desc,anchor:asc",
+									"disabled": true
+								},
+								{
+									"key": "observedTimestampAfter",
+									"value": "2021-08-01T00:00:00.000%2B0100",
+									"disabled": true
+								},
+								{
+									"key": "pointInTime",
+									"value": "2021-08-17T14:35:00.000-0400",
+									"disabled": true
+								},
+								{
+									"key": "pageNumber",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "pageLimit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{temporal-password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{temporal-username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
