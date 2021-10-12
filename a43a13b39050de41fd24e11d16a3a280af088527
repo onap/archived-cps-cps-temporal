@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "89d6ac2b_31d994d4",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:19:50Z",
+      "side": 1,
+      "message": "ignore above comment if _static works for you that is good",
+      "parentUuid": "91ab69a2_7d076dcb",
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a0a62bed_be747420",
         "filename": "docs/content/design.rst",
         "patchSetId": 4
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "d7a474b0_444094cb",
+        "filename": "docs/content/design.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:19:50Z",
+      "side": 1,
+      "message": "ignore above comment if _static works for you that is good",
+      "parentUuid": "a0a62bed_be747420",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 40
+      },
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da5ea12d_6e11de7c",
         "filename": "docs/content/modeling.rst",
         "patchSetId": 4
@@ -53,6 +95,30 @@
       "writtenOn": "2021-10-12T17:10:46Z",
       "side": 1,
       "message": "as per previous",
+      "range": {
+        "startLine": 17,
+        "startChar": 49,
+        "endLine": 17,
+        "endChar": 65
+      },
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a92aff41_804a4855",
+        "filename": "docs/content/modeling.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:19:50Z",
+      "side": 1,
+      "message": "ignore above comment if _static works for you that is good",
+      "parentUuid": "da5ea12d_6e11de7c",
       "range": {
         "startLine": 17,
         "startChar": 49,
