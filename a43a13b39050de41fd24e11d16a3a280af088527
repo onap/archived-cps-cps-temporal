@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "91ab69a2_7d076dcb",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:10:46Z",
+      "side": 1,
+      "message": "move to /docs/openapi/swagger\n(see next comment)",
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0a62bed_be747420",
+        "filename": "docs/content/design.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:10:46Z",
+      "side": 1,
+      "message": "maybe this is the bit that doesn\u0027t work because of the way static files are really published in the rtd system. For now I would move the file using the same structure as in CPS Core and see if that works",
+      "range": {
+        "startLine": 17,
+        "startChar": 29,
+        "endLine": 17,
+        "endChar": 40
+      },
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "da5ea12d_6e11de7c",
+        "filename": "docs/content/modeling.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-12T17:10:46Z",
+      "side": 1,
+      "message": "as per previous",
+      "range": {
+        "startLine": 17,
+        "startChar": 49,
+        "endLine": 17,
+        "endChar": 65
+      },
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
