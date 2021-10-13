@@ -37,6 +37,40 @@
     },
     {
       "key": {
+        "uuid": "1d08ade2_6998379b",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-10-13T08:39:40Z",
+      "side": 1,
+      "message": "extra lines, please remove",
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fe5253a6_253f5650",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2021-10-13T08:39:40Z",
+      "side": 1,
+      "message": "extra line",
+      "revId": "a43a13b39050de41fd24e11d16a3a280af088527",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a0a62bed_be747420",
         "filename": "docs/content/design.rst",
         "patchSetId": 4
