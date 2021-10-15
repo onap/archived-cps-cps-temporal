@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "443cb806_ee71f9a8",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-15T10:49:58Z",
+      "side": 1,
+      "message": "lines 55-66 seem to refer to .directives  so I think I\u0027ll keep this line",
+      "parentUuid": "3504c7f0_84dd2936",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 43
+      },
+      "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "83d2be26_0a454f4c",
         "filename": "docs/conf.py",
         "patchSetId": 1
@@ -116,6 +140,30 @@
       "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8f2d276_cc63f294",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-15T10:49:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "604c24d5_a5a821ea",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 112,
+        "endChar": 3
+      },
+      "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
