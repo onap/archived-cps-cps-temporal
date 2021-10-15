@@ -1,0 +1,10 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Joseph Keenan <joseph.keenan@est.tech>
+Code-Review+1: Dylan Byrne <dylan.byrne@est.tech>
+Code-Review+1: Luke Gleeson <luke.gleeson@est.tech>
+Code-Review+2: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Submitted-by: aditya puthuparambil <aditya.puthuparambil@bell.ca>
+Submitted-at: Fri, 15 Oct 2021 12:01:07 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/125020
+Project: cps/cps-temporal
+Branch: refs/heads/master
