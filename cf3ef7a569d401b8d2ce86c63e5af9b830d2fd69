@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e62452af_bce6b080",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-15T09:50:51Z",
+      "side": 1,
+      "message": "Hi thomas.kulik@telekom.de can you confirm is this is needed or not please?",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 43
+      },
+      "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83d2be26_0a454f4c",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-15T09:50:51Z",
+      "side": 1,
+      "message": "I assume, these are not not (notl inks to doc generated in this repo)",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 1
+      },
+      "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72b53258_8880b305",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-15T09:50:51Z",
+      "side": 1,
+      "message": "all this stuff I really dont know. I seem to work without but thomas.kulik@telekom.de can you confirm if we should remove it or not",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 112,
+        "endChar": 3
+      },
+      "revId": "cf3ef7a569d401b8d2ce86c63e5af9b830d2fd69",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
