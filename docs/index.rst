@@ -3,12 +3,13 @@
 .. http://creativecommons.org/licenses/by/4.0
 ..
 .. Copyright (C) 2021 Bell Canada
+.. Modifications Copyright (C) 2021 Nordix Foundation
 
 .. _master_index:
 
-============
-CPS Temporal
-============
+
+CPS Temporal Documentation
+--------------------------
 
 .. toctree::
    :maxdepth: 1
@@ -20,3 +21,13 @@ CPS Temporal
    content/deployment.rst
    content/admin-guide.rst
    content/release-notes.rst
+
+CPS-NCMP Documentation
+----------------------
+
+* :ref:`CPS-NCMP<onap-cps:master_index>`
+
+DMI-Plugin Documentation
+-----------------------------
+
+* :ref:`DMI-Plugin<onap-cps-ncmp-dmi-plugin:master_index>`
