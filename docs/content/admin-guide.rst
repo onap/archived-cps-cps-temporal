@@ -3,6 +3,7 @@
 .. http://creativecommons.org/licenses/by/4.0
 ..
 .. Copyright (C) 2021 Bell Canada
+.. Modifications Copyright (C) 2021 Nordix Foundation
 
 ========================
 CPS Temporal Admin Guide
@@ -20,7 +21,7 @@ Refer to :doc:`deployment` for application properties available to configure the
 Logging
 =======
 
-Refer to `CPS Admin Guide <https://docs.onap.org/projects/onap-cps/en/latest/admin-guide.html>`_
+Refer to :ref:`CPS Logging<onap-cps:cps_common_logging>`
 for documentation related to CPS Temporal and all CPS components
 logging information.
 
@@ -28,6 +29,6 @@ logging information.
 Monitoring
 ==========
 
-Refer to `CPS Admin Guide <https://docs.onap.org/projects/onap-cps/en/latest/admin-guide.html>`_
+Refer to :ref:`CPS Monitoring<onap-cps:cps_common_monitoring>`
 page for documentation related to CPS Temporal and all CPS components
 monitoring information.

@@ -3,6 +3,7 @@
 .. http://creativecommons.org/licenses/by/4.0
 ..
 .. Copyright (C) 2021 Bell Canada
+.. Modifications Copyright (C) 2021 Nordix Foundation
 
 =======================
 CPS Temporal Deployment
@@ -15,9 +16,8 @@ CPS Temporal Deployment
 Deployment
 ==========
 
-Refer to `CPS Deployment <https://docs.onap.org/projects/onap-cps/en/latest/deployment.html>`_
-page for documentation related to CPS Temporal and all CPS components
-deployment.
+Refer to :ref:`CPS-Deployment<onap-cps:deployment>`
+page for deployment documentation related to CPS Temporal and all CPS components.
 
 Once CPS Temporal is successfully deployed and running 2 pods are started,
 one for running the service and another one for running the database instance:
@@ -46,12 +46,9 @@ exhaustive.
 |                                       | This is the user name to be used by CPS Temporal REST clients to authenticate themselves.               |                               |
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------+
 | config.appUserPassword                | Password used by CPS Temporal service to configure the authentication for REST API it exposes.          | Not defined                   |
-|                                       |                                                                                                         |                               |
 |                                       | This is the password to be used by CPS Temporal REST clients to authenticate themselves.                |                               |
-|                                       |                                                                                                         |                               |
 |                                       | If not defined, the password is generated when deploying the application.                               |                               |
-|                                       |                                                                                                         |                               |
-|                                       | See also :ref:`credentials` section.                                                                    |                               |
+|                                       | See also :ref:`CPS Credentials Retrieval<onap-cps:cps_common_credentials_retrieval>`                    |                               |
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------+
 | timescaledb.config.pgUserName         | Internal user name used bt CPS Temporal to connect to its own database.                                 | ``cpstemporal``               |
 +---------------------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------+
@@ -120,9 +117,8 @@ exhaustive.
 Credentials
 -----------
 
-Once the deployment is completed, refer to Credentials Retrieval section in
-`CPS Deployment <https://docs.onap.org/projects/onap-cps/en/latest/deployment.html>`_
-page for more information related to credentials retrieval.
+Once the deployment is completed, refer to :ref:`CPS Credentials Retrieval<onap-cps:cps_common_credentials_retrieval>`
+ for more information related to credentials retrieval.
 
 Running With Docker
 ===================
