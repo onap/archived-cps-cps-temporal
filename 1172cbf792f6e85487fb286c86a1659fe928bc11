@@ -22,6 +22,30 @@
       "revId": "1172cbf792f6e85487fb286c86a1659fe928bc11",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9623b13c_6d1947cc",
+        "filename": "docs/content/admin-guide.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2021-10-21T15:47:36Z",
+      "side": 1,
+      "message": "https://gerrit.onap.org/r/c/cps/+/125178/1/docs/admin-guide.rst#16\ncps_common_logging added as an index here",
+      "parentUuid": "f0319f9a_eef869b0",
+      "range": {
+        "startLine": 24,
+        "startChar": 27,
+        "endLine": 24,
+        "endChar": 54
+      },
+      "revId": "1172cbf792f6e85487fb286c86a1659fe928bc11",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
