@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "1b632367_c1dada5b",
+        "filename": "docs/tox.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-28T09:24:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f768e832_4d6ed822",
+      "range": {
+        "startLine": 26,
+        "startChar": 21,
+        "endLine": 26,
+        "endChar": 37
+      },
+      "revId": "6253d815f3eca5461efb2430a416c1d54c6a44f6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "be6ba232_0337f39b",
         "filename": "docs/tox.ini",
         "patchSetId": 3
@@ -45,6 +69,30 @@
       "revId": "6253d815f3eca5461efb2430a416c1d54c6a44f6",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "44b836f1_8d87d863",
+        "filename": "docs/tox.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-10-28T09:24:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be6ba232_0337f39b",
+      "range": {
+        "startLine": 39,
+        "startChar": 21,
+        "endLine": 39,
+        "endChar": 37
+      },
+      "revId": "6253d815f3eca5461efb2430a416c1d54c6a44f6",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
