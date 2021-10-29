@@ -16,7 +16,8 @@ CPS Temporal Admin Guide
 Configuration
 =============
 
-Refer to :doc:`deployment` for application properties available to configure the application.
+Refer to :doc:`deployment` for application properties available to configure
+the application.
 
 Logging
 =======
