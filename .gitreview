@@ -3,4 +3,5 @@
         host=gerrit.onap.org
         port=29418
         project=cps/cps-temporal
-        defaultbranch=istanbul
+        defaultbranch=master
+        
