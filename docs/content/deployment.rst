@@ -124,6 +124,6 @@ Running With Docker
 ===================
 
 For development purposes, CPS Temporal can be ran on any environment using
-Docker. Refer to `README.md <https://github.com/onap/cps-cps-temporal/blob/master/README.md>`_
-and `docker-compose.yml <https://github.com/onap/cps-cps-temporal/blob/master/docker-compose.yml>`_
+Docker. Refer to `README.md <https://github.com/onap/cps-cps-temporal/blob/istanbul/README.md>`_
+and `docker-compose.yml <https://github.com/onap/cps-cps-temporal/blob/istanbul/docker-compose.yml>`_
 files for more details.
