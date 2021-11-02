@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d24d8620_8f2e5a3a",
+        "filename": ".readthedocs.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-11-02T14:51:36Z",
+      "side": 1,
+      "message": "restore to latest",
+      "range": {
+        "startLine": 30,
+        "startChar": 9,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "157846bb59840fced36ddd5a4d4a46958d4552e5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c31c3521_1712d0f0",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-11-02T14:51:36Z",
+      "side": 1,
+      "message": "leave as latest, user is supposed to set using ENv property",
+      "range": {
+        "startLine": 25,
+        "startChar": 58,
+        "endLine": 25,
+        "endChar": 75
+      },
+      "revId": "157846bb59840fced36ddd5a4d4a46958d4552e5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "51753ba5_825ae4e0",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-11-02T14:51:36Z",
+      "side": 1,
+      "message": "leave as latest, user is supposed to set using ENv property",
+      "range": {
+        "startLine": 74,
+        "startChar": 78,
+        "endLine": 74,
+        "endChar": 86
+      },
+      "revId": "157846bb59840fced36ddd5a4d4a46958d4552e5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
