@@ -27,7 +27,7 @@ formats:
   - htmlzip
 
 build:
-  image: latest
+  image: istanbul
 
 python:
   version: 3.7
