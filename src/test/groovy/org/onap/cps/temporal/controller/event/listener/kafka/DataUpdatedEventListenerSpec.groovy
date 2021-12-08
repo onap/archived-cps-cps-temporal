@@ -6,22 +6,26 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *        http://www.apache.org/licenses/LICENSE-2.0
+ *         http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
 package org.onap.cps.temporal.controller.event.listener.kafka
 
 import org.mapstruct.factory.Mappers
+import org.onap.cps.event.model.Content
 import org.onap.cps.event.model.CpsDataUpdatedEvent
 import org.onap.cps.temporal.controller.event.listener.exception.InvalidEventEnvelopException
 import org.onap.cps.temporal.controller.event.model.CpsDataUpdatedEventMapper
+import org.onap.cps.temporal.domain.Operation
 import org.onap.cps.temporal.service.NetworkDataService
 import spock.lang.Specification
 
@@ -57,20 +61,49 @@ class DataUpdatedEventListenerSpec extends Specification {
 
     def 'Event message consumption'() {
         when: 'an event is received'
+            def defaultEventProperties = [observedTimestamp: aTimestamp, dataspace: aDataspace,
+                                          schemaSet        : aSchemaSet, anchor: anAnchor,
+                                          dataName         : aDataName, dataValue: aDataValue]
+            def addOperationField = eventSpecific != null ? [operation: Content.Operation.valueOf(eventSpecific)] : []
             def event =
-                    EventFixtures.buildEvent(
-                            timestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet, anchor: anAnchor,
-                            dataName: aDataName, dataValue: aDataValue)
+                    EventFixtures.buildEvent(defaultEventProperties + addOperationField)
             objectUnderTest.consume(event)
         then: 'network data service is requested to persisted the data change'
             1 * mockService.addNetworkData(
                     {
                         it.getObservedTimestamp() == EventFixtures.toOffsetDateTime(aTimestamp)
-                        && it.getDataspace() == aDataspace
-                        && it.getSchemaSet() == aSchemaSet
-                        && it.getAnchor() == anAnchor
-                        && it.getPayload() == String.format('{"%s":"%s"}', aDataName, aDataValue)
-                        && it.getCreatedTimestamp() == null
+                                && it.getDataspace() == aDataspace
+                                && it.getSchemaSet() == aSchemaSet
+                                && it.getAnchor() == anAnchor
+                                && it.getCreatedTimestamp() == null
+                                && it.getOperation() == expectedOperation
+                                && it.getPayload() == String.format('{"%s":"%s"}', aDataName, aDataValue)
+
+                    }
+            )
+        where:
+            scenario                  | eventSpecific || expectedOperation
+            'without operation field' | null          || Operation.UPDATE
+            'create operation'        | "CREATE"      || Operation.CREATE
+    }
+
+    def 'Delete Event message consumption'() {
+        when: 'an delete event is received'
+            def deleteEvent =
+                    EventFixtures.buildEvent([observedTimestamp: aTimestamp, dataspace: aDataspace,
+                                              schemaSet        : aSchemaSet, anchor: anAnchor,
+                                              operation        : Content.Operation.DELETE])
+            objectUnderTest.consume(deleteEvent)
+        then: 'network data service is requested to persisted the data change'
+            1 * mockService.addNetworkData(
+                    {
+                        it.getObservedTimestamp() == EventFixtures.toOffsetDateTime(aTimestamp)
+                                && it.getDataspace() == aDataspace
+                                && it.getSchemaSet() == aSchemaSet
+                                && it.getAnchor() == anAnchor
+                                && it.getCreatedTimestamp() == null
+                                && it.getOperation() == Operation.DELETE
+                                && it.getPayload() == null
                     }
             )
     }
@@ -85,7 +118,7 @@ class DataUpdatedEventListenerSpec extends Specification {
             e.getInvalidFields().size() == 4
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED,"schema", null, EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
+                            UNEXPECTED, "schema", null, EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
                             MISSING, "id", null, null))

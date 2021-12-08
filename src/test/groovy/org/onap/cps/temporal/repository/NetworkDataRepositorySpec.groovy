@@ -21,6 +21,7 @@
 package org.onap.cps.temporal.repository
 
 import org.onap.cps.temporal.domain.NetworkData
+import org.onap.cps.temporal.domain.Operation
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase
@@ -51,8 +52,13 @@ class NetworkDataRepositorySpec extends Specification {
     @Autowired
     NetworkDataRepository networkDataRepository
 
-    def networkData = NetworkData.builder().observedTimestamp(observedTimestamp).dataspace(myDataspaceName)
-        .schemaSet(mySchemaSetName).anchor(myAnchorName).payload(payload).build()
+    def networkData = NetworkData.builder()
+        .observedTimestamp(observedTimestamp)
+        .dataspace(myDataspaceName)
+        .schemaSet(mySchemaSetName)
+        .anchor(myAnchorName)
+        .operation(Operation.CREATE)
+        .payload(payload).build()
 
     @Shared
     TimescaleContainer databaseTestContainer = TimescaleContainer.getInstance()
@@ -62,11 +68,14 @@ class NetworkDataRepositorySpec extends Specification {
             NetworkData savedData = networkDataRepository.save(networkData)
             TestTransaction.end()
         then: ' the saved Network Data is returned'
-            savedData.getDataspace() == networkData.getDataspace()
-            savedData.getSchemaSet() == networkData.getSchemaSet()
-            savedData.getAnchor() == networkData.getAnchor()
-            savedData.getPayload() == networkData.getPayload()
-            savedData.getObservedTimestamp() == networkData.getObservedTimestamp()
+            with(savedData) {
+                dataspace == networkData.getDataspace()
+                schemaSet == networkData.getSchemaSet()
+                anchor == networkData.getAnchor()
+                payload == networkData.getPayload()
+                observedTimestamp == networkData.getObservedTimestamp()
+                operation == networkData.operation
+            }
         and: ' createdTimestamp is auto populated by db '
             networkData.getCreatedTimestamp() == null
             savedData.getCreatedTimestamp() != null
