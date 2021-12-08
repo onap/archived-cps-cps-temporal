@@ -6,15 +6,17 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *        http://www.apache.org/licenses/LICENSE-2.0
+ *         http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
-*/
+ */
 
 package org.onap.cps.temporal.controller.event.listener.kafka
 
@@ -70,6 +72,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     def aDataspace = 'my-dataspace'
     def aSchemaSet = 'my-schema-set'
     def anAnchor = 'my-anchor'
+    def aDataName = 'my-data-name'
+    def aDataValue = 'my-data-value'
 
     // Define sql queries for data validation
     def sqlCount = "select count(*) from network_data"
@@ -91,7 +95,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
         when: 'an event is produced'
             def event =
                     EventFixtures.buildEvent(
-                            timestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet, anchor: anAnchor)
+                            observedTimestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet,
+                            anchor: anAnchor, dataName: aDataName, dataValue: aDataValue)
             this.kafkaTemplate.send(topic, event)
         then: 'the event is proceeded'
             def pollingCondition = new PollingConditions(timeout: 10, initialDelay: 1, factor: 2)
