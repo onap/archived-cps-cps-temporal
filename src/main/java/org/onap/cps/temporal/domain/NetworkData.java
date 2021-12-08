@@ -23,6 +23,8 @@ import java.io.Serializable;
 import java.time.OffsetDateTime;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
@@ -31,9 +33,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
+import org.springframework.data.domain.PageRequest;
 
 /**
  * Entity to store an anchor configuration or state along with the moment it has been observed.
@@ -69,7 +73,13 @@ public class NetworkData implements Serializable {
     @Column(updatable = false)
     private String schemaSet;
 
+    @Id
     @NotNull
+    @Column(updatable = false)
+    @Enumerated(EnumType.STRING)
+    private Operation operation;
+
+    // TODO Need to add a check
     @Type(type = "jsonb")
     @Column(columnDefinition = "jsonb", updatable = false)
     private String payload;

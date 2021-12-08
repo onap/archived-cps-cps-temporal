@@ -23,7 +23,9 @@ import static org.onap.cps.temporal.controller.event.listener.exception.InvalidE
 
 import java.net.URI;
 import java.net.URISyntaxException;
+
 import lombok.extern.slf4j.Slf4j;
+import org.onap.cps.event.model.Content;
 import org.onap.cps.event.model.CpsDataUpdatedEvent;
 import org.onap.cps.temporal.controller.event.listener.exception.EventListenerException;
 import org.onap.cps.temporal.controller.event.listener.exception.InvalidEventEnvelopException;

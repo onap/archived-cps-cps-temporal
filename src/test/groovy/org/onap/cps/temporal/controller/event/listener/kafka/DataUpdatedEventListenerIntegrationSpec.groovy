@@ -70,6 +70,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     def aDataspace = 'my-dataspace'
     def aSchemaSet = 'my-schema-set'
     def anAnchor = 'my-anchor'
+    def aDataName = 'my-data-name'
+    def aDataValue = 'my-data-value'
 
     // Define sql queries for data validation
     def sqlCount = "select count(*) from network_data"
@@ -91,7 +93,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
         when: 'an event is produced'
             def event =
                     EventFixtures.buildEvent(
-                            timestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet, anchor: anAnchor)
+                            observedTimestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet,
+                            anchor: anAnchor, dataName: aDataName, dataValue: aDataValue)
             this.kafkaTemplate.send(topic, event)
         then: 'the event is proceeded'
             def pollingCondition = new PollingConditions(timeout: 10, initialDelay: 1, factor: 2)

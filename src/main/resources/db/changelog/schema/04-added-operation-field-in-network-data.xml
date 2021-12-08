@@ -18,13 +18,28 @@
 -->
 
 <databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
-    <include file="db/changelog/schema/01-init-schema.xml"/>
-    <include file="db/changelog/data/02-init-data.xml"/>
-    <include file="db/changelog/schema/03-rename-network-data-timestamp-fields.xml"/>
-    <include file="db/changelog/schema/04-added-operation-field-in-network-data.xml"/>
+    <changeSet id="4.1" author="cps">
+        <comment>Add operation field in network data timescale table</comment>
+        <addColumn tableName="network_data">
+            <column name="operation" type="VARCHAR(20)"
+                remarks="Field to store the operation type">
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="4.2" author="cps">
+        <comment>Set operation = 'UPDATE' if it is missing</comment>
+        <update tableName="network_data">
+            <column name="operation" value="UPDATE"/>
+            <where>operation is NULL</where>
+        </update>
+    </changeSet>
+    <changeSet id="4.3" author="cps">
+        <comment>Remove not null constraint from payload to support delete operation</comment>
+        <dropNotNullConstraint tableName="network_data" columnName="payload" />
+    </changeSet>
 </databaseChangeLog>
