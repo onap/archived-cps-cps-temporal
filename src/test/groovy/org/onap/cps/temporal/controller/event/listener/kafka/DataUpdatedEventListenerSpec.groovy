@@ -6,22 +6,26 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *        http://www.apache.org/licenses/LICENSE-2.0
+ *         http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
  */
 
 package org.onap.cps.temporal.controller.event.listener.kafka
 
 import org.mapstruct.factory.Mappers
+import org.onap.cps.event.model.Content
 import org.onap.cps.event.model.CpsDataUpdatedEvent
 import org.onap.cps.temporal.controller.event.listener.exception.InvalidEventEnvelopException
 import org.onap.cps.temporal.controller.event.model.CpsDataUpdatedEventMapper
+import org.onap.cps.temporal.domain.Operation
 import org.onap.cps.temporal.service.NetworkDataService
 import spock.lang.Specification
 
@@ -36,15 +40,9 @@ class DataUpdatedEventListenerSpec extends Specification {
     public static final String EXPECTED_SCHEMA_EXCEPTION_MESSAGE = 'urn:cps:org.onap.cps:data-updated-event-schema:v99'
 
     // Define event data
-    def anEventType = 'my-event-type'
     def anEventSchema = new URI('my-event-schema')
     def anEventSource = new URI('my-event-source')
     def aTimestamp = EventFixtures.currentIsoTimestamp()
-    def aDataspace = 'my-dataspace'
-    def aSchemaSet = 'my-schema-set'
-    def anAnchor = 'my-anchor'
-    def aDataName = 'my-data-name'
-    def aDataValue = 'my-data-value'
 
     // Define service mock
     def mockService = Mock(NetworkDataService)
@@ -56,21 +54,50 @@ class DataUpdatedEventListenerSpec extends Specification {
     def objectUnderTest = new DataUpdatedEventListener(mockService, mapper)
 
     def 'Event message consumption'() {
-        when: 'an event is received'
+        when: 'an event is received #scenario'
+            def defaultEventProperties = [observedTimestamp: aTimestamp, dataspace: 'my-dataspace',
+                                          schemaSet        : 'my-schema-set', anchor: 'my-anchor',
+                                          data             : ['my-data-name': 'my-data-value']]
+            def addOperationField = specifiedOperation != null ? [operation: Content.Operation.valueOf(specifiedOperation)] : []
             def event =
-                    EventFixtures.buildEvent(
-                            timestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet, anchor: anAnchor,
-                            dataName: aDataName, dataValue: aDataValue)
+                    EventFixtures.buildEvent(defaultEventProperties + addOperationField)
             objectUnderTest.consume(event)
         then: 'network data service is requested to persisted the data change'
             1 * mockService.addNetworkData(
                     {
                         it.getObservedTimestamp() == EventFixtures.toOffsetDateTime(aTimestamp)
-                        && it.getDataspace() == aDataspace
-                        && it.getSchemaSet() == aSchemaSet
-                        && it.getAnchor() == anAnchor
-                        && it.getPayload() == String.format('{"%s":"%s"}', aDataName, aDataValue)
-                        && it.getCreatedTimestamp() == null
+                                && it.getDataspace() == 'my-dataspace'
+                                && it.getSchemaSet() == 'my-schema-set'
+                                && it.getAnchor() == 'my-anchor'
+                                && it.getCreatedTimestamp() == null
+                                && it.getOperation() == expectedOperation
+                                && it.getPayload() == '{"my-data-name":"my-data-value"}'
+
+                    }
+            )
+        where:
+            scenario                  | specifiedOperation || expectedOperation
+            'without operation field' | null               || Operation.UPDATE
+            'create operation'        | 'CREATE'           || Operation.CREATE
+    }
+
+    def 'Delete Event message consumption'() {
+        when: 'an delete event is received'
+            def deleteEvent =
+                    EventFixtures.buildEvent([observedTimestamp: aTimestamp, dataspace: 'my-dataspace',
+                                              schemaSet        : 'my-schema-set', anchor: 'my-anchor',
+                                              operation        : Content.Operation.DELETE])
+            objectUnderTest.consume(deleteEvent)
+        then: 'network data service is requested to persisted the data change'
+            1 * mockService.addNetworkData(
+                    {
+                        it.getObservedTimestamp() == EventFixtures.toOffsetDateTime(aTimestamp)
+                                && it.getDataspace() == 'my-dataspace'
+                                && it.getSchemaSet() == 'my-schema-set'
+                                && it.getAnchor() == 'my-anchor'
+                                && it.getCreatedTimestamp() == null
+                                && it.getOperation() == Operation.DELETE
+                                && it.getPayload() == null
                     }
             )
     }
@@ -85,16 +112,16 @@ class DataUpdatedEventListenerSpec extends Specification {
             e.getInvalidFields().size() == 4
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED,"schema", null, EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
+                            UNEXPECTED, 'schema', null, EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            MISSING, "id", null, null))
+                            MISSING, 'id', null, null))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED, "source", null, EventFixtures.defaultEventSource.toString()))
+                            UNEXPECTED, 'source', null, EventFixtures.defaultEventSource.toString()))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED, "type", null, EventFixtures.defaultEventType))
+                            UNEXPECTED, 'type', null, EventFixtures.defaultEventType))
             e.getMessage().contains(e.getInvalidFields().toString())
     }
 
@@ -105,7 +132,7 @@ class DataUpdatedEventListenerSpec extends Specification {
                             .withId('my-id')
                             .withSchema(anEventSchema)
                             .withSource(anEventSource)
-                            .withType(anEventType)
+                            .withType('my-event-type')
             objectUnderTest.consume(invalidEvent)
         then: 'an exception is thrown with 2 invalid fields'
             def e = thrown(InvalidEventEnvelopException)
@@ -113,14 +140,14 @@ class DataUpdatedEventListenerSpec extends Specification {
             e.getInvalidFields().size() == 3
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED, "schema", anEventSchema.toString(),
+                            UNEXPECTED, 'schema', anEventSchema.toString(),
                             EXPECTED_SCHEMA_EXCEPTION_MESSAGE))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED, "type", anEventType, EventFixtures.defaultEventType))
+                            UNEXPECTED, 'type', 'my-event-type', EventFixtures.defaultEventType))
             e.getInvalidFields().contains(
                     new InvalidEventEnvelopException.InvalidField(
-                            UNEXPECTED, "source", anEventSource.toString(),
+                            UNEXPECTED, 'source', anEventSource.toString(),
                             EventFixtures.defaultEventSource.toString()))
     }
 
