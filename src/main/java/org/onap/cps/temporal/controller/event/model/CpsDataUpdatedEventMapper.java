@@ -25,10 +25,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.time.OffsetDateTime;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.onap.cps.event.model.Content;
 import org.onap.cps.event.model.CpsDataUpdatedEvent;
 import org.onap.cps.event.model.Data;
 import org.onap.cps.temporal.controller.utils.DateTimeUtility;
 import org.onap.cps.temporal.domain.NetworkData;
+import org.onap.cps.temporal.domain.Operation;
 
 /**
  * Mapper for data updated event schema.
@@ -43,11 +45,16 @@ public abstract class CpsDataUpdatedEventMapper {
     @Mapping(source = "content.schemaSetName", target = "schemaSet")
     @Mapping(source = "content.anchorName", target = "anchor")
     @Mapping(source = "content.data", target = "payload")
+    @Mapping(source = "content.operation", target = "operation")
     @Mapping(expression = "java(null)", target = "createdTimestamp")
     public abstract NetworkData eventToEntity(CpsDataUpdatedEvent cpsDataUpdatedEvent);
 
     String map(final Data data) throws JsonProcessingException {
         return data != null ? objectMapper.writeValueAsString(data) : null;
+    }
+
+    Operation map(final Content.Operation inputOperation) {
+        return inputOperation == null ? Operation.UPDATE : Operation.valueOf(inputOperation.toString());
     }
 
     OffsetDateTime map(final String timestamp) {

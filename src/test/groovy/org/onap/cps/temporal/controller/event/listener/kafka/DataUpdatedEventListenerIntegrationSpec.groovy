@@ -6,15 +6,17 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *        http://www.apache.org/licenses/LICENSE-2.0
+ *         http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * SPDX-License-Identifier: Apache-2.0
  * ============LICENSE_END=========================================================
-*/
+ */
 
 package org.onap.cps.temporal.controller.event.listener.kafka
 
@@ -52,6 +54,7 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     static {
         Runtime.getRuntime().addShutdownHook(new Thread(kafkaTestContainer::stop))
     }
+
     def setupSpec() {
         kafkaTestContainer.start()
     }
@@ -72,8 +75,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     def anAnchor = 'my-anchor'
 
     // Define sql queries for data validation
-    def sqlCount = "select count(*) from network_data"
-    def sqlSelect =  "select * from network_data"
+    def sqlCount = 'select count(*) from network_data'
+    def sqlSelect = 'select * from network_data'
     def sqlWhereClause =
             ' where observed_timestamp = to_timestamp(?, \'YYYY-MM-DD"T"HH24:MI:SS.USTZHTZM\') ' +
                     'and dataspace = ? ' +
@@ -83,7 +86,7 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
     def sqlSelectWithConditions = sqlSelect + sqlWhereClause
 
     def 'Processing a valid event'() {
-        given: "no event has been proceeded"
+        given: 'no event has been proceeded'
             def initialRecordsCount =
                     jdbcTemplate.queryForObject(sqlCountWithConditions, Integer.class,
                             aTimestamp, aDataspace, aSchemaSet, anAnchor)
@@ -91,7 +94,8 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
         when: 'an event is produced'
             def event =
                     EventFixtures.buildEvent(
-                            timestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet, anchor: anAnchor)
+                            observedTimestamp: aTimestamp, dataspace: aDataspace, schemaSet: aSchemaSet,
+                            anchor: anAnchor, data: ['my-data-name': 'my-data-value'])
             this.kafkaTemplate.send(topic, event)
         then: 'the event is proceeded'
             def pollingCondition = new PollingConditions(timeout: 10, initialDelay: 1, factor: 2)
@@ -103,7 +107,7 @@ class DataUpdatedEventListenerIntegrationSpec extends Specification {
             }
             Map<String, Object> result =
                     jdbcTemplate.queryForMap(sqlSelectWithConditions, aTimestamp, aDataspace, aSchemaSet, anAnchor)
-            log.debug("Data retrieved from db: {}", result)
+            log.debug('Data retrieved from db: {}', result)
     }
 
     def 'Processing an invalid event'() {
