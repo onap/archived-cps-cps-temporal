@@ -22,6 +22,213 @@
       "revId": "230a48496397973a11e35ff82e47083e41f1c652",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1374fa64_66395888",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "NB: could be on line above (I think it fits)",
+      "range": {
+        "startLine": 68,
+        "startChar": 58,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "adfc5388_e3c76de6",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "NB: I might have commented before. In my opinion these \u0027constant(names)\u0027 do not add value if anything they distract and I think using string literals instead is more readable. But it is just an opinion",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 36
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ae1bead2_8d403dbe",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "this is a prime example where this idea of using constants simply makes the code harder to read :-(\n(you could use Groovygstring instead: \u003d\u003d \"{\\\"${aDataName}\\\":\\\"${aDataValue}\\\"}\")\n\nbut as I argued earlier I think string literal is even better: \u003d\u003d \u0027{\"my-data-name\",\u0027my-data-value\"}\u0027\nwhich mean you don\u0027t even have to escape the \" tokens",
+      "range": {
+        "startLine": 80,
+        "startChar": 54,
+        "endLine": 80,
+        "endChar": 105
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34ebea58_0adc72a6",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "NB: using static import could make it shorter but on the other hand you might prefer to see it in context of \u0027Operation\u0027 your choice...",
+      "range": {
+        "startLine": 86,
+        "startChar": 57,
+        "endLine": 86,
+        "endChar": 73
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a713c052_763cb481",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "avoid \" tokens when you are not using Gstring functionality (inserting variables)",
+      "range": {
+        "startLine": 121,
+        "startChar": 40,
+        "endLine": 121,
+        "endChar": 42
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5adef9b1_d05bfc9a",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "use single \u0027 tokens (not a gstring)",
+      "range": {
+        "startLine": 54,
+        "startChar": 46,
+        "endLine": 54,
+        "endChar": 47
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf7eef06_c9bff25c",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "can return here (no need for short name I otherwise might comment on :-))",
+      "range": {
+        "startLine": 66,
+        "startChar": 8,
+        "endLine": 66,
+        "endChar": 33
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e76a3bf5_717cbaea",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "NB: I think I prefer the previous approach result.something\u003d\u003d ....   I can see and understand the with() statement but I think the context is clearer id repeat like before  (just my opinion but in case you are 50/50 I can try to swing you :-))",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 25
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86358796_7b87e312",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-10T15:28:34Z",
+      "side": 1,
+      "message": "add \u0027following operations are used\u0027",
+      "range": {
+        "startLine": 85,
+        "startChar": 8,
+        "endLine": 85,
+        "endChar": 14
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
