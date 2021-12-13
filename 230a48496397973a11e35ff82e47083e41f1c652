@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b7d424bb_710a5d04",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "I recently updated my IDE code-style to CPE Standard. This change is added because of it. Let me know if your IDE changes it back to the old one. I may have to recheck the configuration at my end.",
+      "parentUuid": "056e2be5_49dce731",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 34
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1374fa64_66395888",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2021-12-10T15:28:34Z",
       "side": 1,
       "message": "NB: could be on line above (I think it fits)",
+      "range": {
+        "startLine": 68,
+        "startChar": 58,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df8ad53e_0c222465",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "Yes, it fits. But, I prefer keeping different conditions at different lines. I find it easier to read and follow the same when I write code.",
+      "parentUuid": "1374fa64_66395888",
       "range": {
         "startLine": 68,
         "startChar": 58,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "b69742dc_4e4985f2",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "I did remove the newly added variables as it is not required. What naming convention do you suggest? \nI have seen \u0027aDataspace\u0027 or \u0027myDataspace\u0027 variables names being used in other test cases.",
+      "parentUuid": "adfc5388_e3c76de6",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 36
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ae1bead2_8d403dbe",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 3
@@ -82,6 +154,30 @@
       "writtenOn": "2021-12-10T15:28:34Z",
       "side": 1,
       "message": "this is a prime example where this idea of using constants simply makes the code harder to read :-(\n(you could use Groovygstring instead: \u003d\u003d \"{\\\"${aDataName}\\\":\\\"${aDataValue}\\\"}\")\n\nbut as I argued earlier I think string literal is even better: \u003d\u003d \u0027{\"my-data-name\",\u0027my-data-value\"}\u0027\nwhich mean you don\u0027t even have to escape the \" tokens",
+      "range": {
+        "startLine": 80,
+        "startChar": 54,
+        "endLine": 80,
+        "endChar": 105
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "37d4990a_ddcf822b",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "I had to use two string literals but it increased test-case readability.",
+      "parentUuid": "ae1bead2_8d403dbe",
       "range": {
         "startLine": 80,
         "startChar": 54,
@@ -117,6 +213,30 @@
     },
     {
       "key": {
+        "uuid": "7efc467c_d9cd3912",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "The Operation class is defined in two places\n1. Event -\u003e inside the Content class \n2. CPS domain object. \nI think using the class names avoid confusion and will increase the readability of the code.",
+      "parentUuid": "34ebea58_0adc72a6",
+      "range": {
+        "startLine": 86,
+        "startChar": 57,
+        "endLine": 86,
+        "endChar": 73
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a713c052_763cb481",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 3
@@ -137,6 +257,30 @@
       "revId": "230a48496397973a11e35ff82e47083e41f1c652",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cdd25e83_b8cae52d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a713c052_763cb481",
+      "range": {
+        "startLine": 121,
+        "startChar": 40,
+        "endLine": 121,
+        "endChar": 42
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +307,30 @@
     },
     {
       "key": {
+        "uuid": "0905ee9b_ca0b57df",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5adef9b1_d05bfc9a",
+      "range": {
+        "startLine": 54,
+        "startChar": 46,
+        "endLine": 54,
+        "endChar": 47
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cf7eef06_c9bff25c",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
         "patchSetId": 3
@@ -186,6 +354,30 @@
     },
     {
       "key": {
+        "uuid": "2b10d439_bbc68160",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "Done :)",
+      "parentUuid": "cf7eef06_c9bff25c",
+      "range": {
+        "startLine": 66,
+        "startChar": 8,
+        "endLine": 66,
+        "endChar": 33
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e76a3bf5_717cbaea",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
         "patchSetId": 3
@@ -197,6 +389,30 @@
       "writtenOn": "2021-12-10T15:28:34Z",
       "side": 1,
       "message": "NB: I think I prefer the previous approach result.something\u003d\u003d ....   I can see and understand the with() statement but I think the context is clearer id repeat like before  (just my opinion but in case you are 50/50 I can try to swing you :-))",
+      "range": {
+        "startLine": 119,
+        "startChar": 12,
+        "endLine": 119,
+        "endChar": 25
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "95a41843_00cfafd1",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapperSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "I find the previous one verbose. And the indentation also makes it clear that it is in the context of the result.\n\nI prefer using \u0027with\u0027 and think it makes code more readable because the reader does not need to read and ignore the first few characters to undertand the logic.",
+      "parentUuid": "e76a3bf5_717cbaea",
       "range": {
         "startLine": 119,
         "startChar": 12,
@@ -229,6 +445,30 @@
       "revId": "230a48496397973a11e35ff82e47083e41f1c652",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "936a0bf9_b63e4505",
+        "filename": "src/test/groovy/org/onap/cps/temporal/service/NetworkDataServiceImplSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T03:59:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "86358796_7b87e312",
+      "range": {
+        "startLine": 85,
+        "startChar": 8,
+        "endLine": 85,
+        "endChar": 14
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
