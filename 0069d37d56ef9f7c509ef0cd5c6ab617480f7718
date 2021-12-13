@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ef0c5eea_5d913d4c",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T15:23:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a4e6f86_3b7fb8c4",
+      "range": {
+        "startLine": 89,
+        "startChar": 34,
+        "endLine": 89,
+        "endChar": 43
+      },
+      "revId": "0069d37d56ef9f7c509ef0cd5c6ab617480f7718",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8784c734_f704bfda",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 4
@@ -45,6 +69,30 @@
       "revId": "0069d37d56ef9f7c509ef0cd5c6ab617480f7718",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43c3f95a_5afae1a0",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T15:23:33Z",
+      "side": 1,
+      "message": "Removed this log statement",
+      "parentUuid": "8784c734_f704bfda",
+      "range": {
+        "startLine": 110,
+        "startChar": 12,
+        "endLine": 110,
+        "endChar": 59
+      },
+      "revId": "0069d37d56ef9f7c509ef0cd5c6ab617480f7718",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }

@@ -214,6 +214,30 @@
     },
     {
       "key": {
+        "uuid": "ba2485cb_a3854e30",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T15:23:33Z",
+      "side": 1,
+      "message": "Moved these variables inside the test case. \nThese variables are required as they are used at multiple places in the test case.",
+      "parentUuid": "29d366ae_adf73abb",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 36
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ae1bead2_8d403dbe",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 3
