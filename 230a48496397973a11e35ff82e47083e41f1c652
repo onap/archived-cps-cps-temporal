@@ -96,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "1131abdd_80b8f3f6",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-13T08:40:08Z",
+      "side": 1,
+      "message": "ok, if that is your preference :-)",
+      "parentUuid": "df8ad53e_0c222465",
+      "range": {
+        "startLine": 68,
+        "startChar": 58,
+        "endLine": 69,
+        "endChar": 51
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "adfc5388_e3c76de6",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 3
@@ -131,6 +155,30 @@
       "side": 1,
       "message": "I did remove the newly added variables as it is not required. What naming convention do you suggest? \nI have seen \u0027aDataspace\u0027 or \u0027myDataspace\u0027 variables names being used in other test cases.",
       "parentUuid": "adfc5388_e3c76de6",
+      "range": {
+        "startLine": 72,
+        "startChar": 1,
+        "endLine": 76,
+        "endChar": 36
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "29d366ae_adf73abb",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-13T08:40:08Z",
+      "side": 1,
+      "message": "i meant NO variables just using string literals. You already do in many places.\nThe issue is that these variable(name)s dont add value or help with maintainability (find/replace all these days is just as good)\n\nfloat pi \u003d 3.1415    This variable name add value\nstring car \u003d \u0027car\u0027   this variabel does NOT add value",
+      "parentUuid": "b69742dc_4e4985f2",
       "range": {
         "startLine": 72,
         "startChar": 1,
@@ -234,6 +282,30 @@
       "revId": "230a48496397973a11e35ff82e47083e41f1c652",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f25464bd_21eaa0a9",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-13T08:40:08Z",
+      "side": 1,
+      "message": "thats a good reason!",
+      "parentUuid": "7efc467c_d9cd3912",
+      "range": {
+        "startLine": 86,
+        "startChar": 57,
+        "endLine": 86,
+        "endChar": 73
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
