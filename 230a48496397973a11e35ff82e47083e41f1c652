@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0eba0d28_d7e4d652",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/event/model/CpsDataUpdatedEventMapper.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T15:25:07Z",
+      "side": 1,
+      "message": "Yes. It is to support event V1 which does not have \u0027operation\u0027 field.",
+      "parentUuid": "ea8a1727_ee96a9a1",
+      "range": {
+        "startLine": 57,
+        "startChar": 40,
+        "endLine": 57,
+        "endChar": 56
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "056e2be5_49dce731",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 3
