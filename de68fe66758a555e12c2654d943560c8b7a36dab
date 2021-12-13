@@ -45,6 +45,30 @@
       "revId": "de68fe66758a555e12c2654d943560c8b7a36dab",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3ee6f05_992e749d",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
+        "patchSetId": 7
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-13T18:06:10Z",
+      "side": 1,
+      "message": "Created a separate method to validate the data in the database.",
+      "parentUuid": "93281b5e_96f69600",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 102,
+        "endChar": 47
+      },
+      "revId": "de68fe66758a555e12c2654d943560c8b7a36dab",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
