@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "046bce36_986b28ca",
+        "filename": "src/main/resources/db/changelog/schema/04-added-operation-field-in-network-data.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2021-12-14T23:31:39Z",
+      "side": 1,
+      "message": "4.1: I was not sure how it will behave with multiple commands in the same changeset so added an explicit rollback statement to drop the column\n\n4.2: Automatic rollback is supported for DropNotNullConstraint",
+      "parentUuid": "e3482543_6dbf0c7c",
+      "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b7f1a02c_b682afe3",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
         "patchSetId": 8
