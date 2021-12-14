@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7505c77_7ed32dd7",
+        "filename": "src/main/resources/db/changelog/schema/04-added-operation-field-in-network-data.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-12-14T06:20:30Z",
+      "side": 1,
+      "message": "As mentioned in Liquibase best practices documentation, we should always think about rollbacks: https://docs.liquibase.com/concepts/bestpractices.html\n\nChange sets 4.2 and 4.3 does not have auto rollbacks, then they should be provided explicitly:\nhttps://docs.liquibase.com/workflows/liquibase-community/liquibase-auto-rollback.html",
+      "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}

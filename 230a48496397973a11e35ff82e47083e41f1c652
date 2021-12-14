@@ -96,6 +96,30 @@
     },
     {
       "key": {
+        "uuid": "55717d17_0b2453f2",
+        "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-12-14T06:20:30Z",
+      "side": 1,
+      "message": "I don\u0027t have this indentation change neither.\n\nOn my side, here is the formatting I have:\n\n    public NetworkDataServiceImpl(final NetworkDataRepository networkDataRepository,\n            final @Value(\"${app.query.response.max-page-size}\") int maxPageSize) {\n        this.networkDataRepository \u003d networkDataRepository;\n        this.maxPageSize \u003d maxPageSize;\n    }\n\nFor the formatting I\u0027m referring to https://wiki.onap.org/display/DW/Contribution+and+Development#ContributionandDevelopment-ConfigureCPScodestyleautoformattingforIntelliJ(usingthesameCheckStylerulesandautomatingitforyou)",
+      "parentUuid": "b7d424bb_710a5d04",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 34
+      },
+      "revId": "230a48496397973a11e35ff82e47083e41f1c652",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "1374fa64_66395888",
         "filename": "src/main/java/org/onap/cps/temporal/service/NetworkDataServiceImpl.java",
         "patchSetId": 3
