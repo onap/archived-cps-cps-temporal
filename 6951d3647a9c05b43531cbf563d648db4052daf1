@@ -34,6 +34,29 @@
       "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7f1a02c_b682afe3",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerSpec.groovy",
+        "patchSetId": 8
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2021-12-14T11:35:07Z",
+      "side": 1,
+      "message": "align, non-blocking",
+      "range": {
+        "startLine": 86,
+        "startChar": 52,
+        "endLine": 86,
+        "endChar": 55
+      },
+      "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
