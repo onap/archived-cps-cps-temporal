@@ -25,6 +25,7 @@ import javax.validation.ValidationException;
 import lombok.extern.slf4j.Slf4j;
 import org.onap.cps.temporal.domain.NetworkData;
 import org.onap.cps.temporal.domain.NetworkDataId;
+import org.onap.cps.temporal.domain.Operation;
 import org.onap.cps.temporal.domain.SearchCriteria;
 import org.onap.cps.temporal.repository.NetworkDataRepository;
 import org.springframework.beans.factory.annotation.Value;
@@ -42,24 +43,33 @@ public class NetworkDataServiceImpl implements NetworkDataService {
     private final int maxPageSize;
 
     public NetworkDataServiceImpl(final NetworkDataRepository networkDataRepository,
-        final @Value("${app.query.response.max-page-size}") int maxPageSize) {
+                                  final @Value("${app.query.response.max-page-size}") int maxPageSize) {
         this.networkDataRepository = networkDataRepository;
         this.maxPageSize = maxPageSize;
     }
 
     @Override
     public NetworkData addNetworkData(final NetworkData networkData) {
+        validateNetworkData(networkData);
         final var savedNetworkData = networkDataRepository.save(networkData);
         if (savedNetworkData.getCreatedTimestamp() == null) {
             // Data already exists and can not be inserted
             final var id =
-                new NetworkDataId(
-                    networkData.getObservedTimestamp(), networkData.getDataspace(), networkData.getAnchor());
+                    new NetworkDataId(
+                            networkData.getObservedTimestamp(), networkData.getDataspace(), networkData.getAnchor());
             final Optional<NetworkData> existingNetworkData = networkDataRepository.findById(id);
             throw new ServiceException(
-                "Failed to create network data. It already exists: " + (existingNetworkData.orElse(null)));
+                    "Failed to create network data. It already exists: " + (existingNetworkData.orElse(null)));
         }
         return savedNetworkData;
+    }
+
+    private void validateNetworkData(final NetworkData networkData) {
+        if (networkData.getOperation() != Operation.DELETE
+                && networkData.getPayload() == null) {
+            throw new ValidationException(
+                    String.format("The operation %s must not have null payload", networkData.getOperation()));
+        }
     }
 
     @Override
