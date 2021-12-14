@@ -16,6 +16,24 @@
       "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e3482543_6dbf0c7c",
+        "filename": "src/main/resources/db/changelog/schema/04-added-operation-field-in-network-data.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-14T11:20:36Z",
+      "side": 1,
+      "message": "Hi bruno, can this be done later as a separate commit (still part of same user story?)",
+      "parentUuid": "e7505c77_7ed32dd7",
+      "revId": "6951d3647a9c05b43531cbf563d648db4052daf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
