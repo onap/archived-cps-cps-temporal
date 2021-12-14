@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3c123eae_bc1e5a2a",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/EventFixtures.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-14T11:18:24Z",
+      "side": 1,
+      "message": "Note: None of these were actually used by any current test. In line with best test practice I have remove any redundant code as it only can lead to confusion (e.g is \u0027the value of dataspace relevant or not?\u0027) and additional maintenance",
+      "range": {
+        "startLine": 45,
+        "startChar": 1,
+        "endLine": 48,
+        "endChar": 42
+      },
+      "revId": "e888d460303c2845cb21fce66c17e23e1a5e8180",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
