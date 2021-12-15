@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3cae36a5_81807e05",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2021-12-15T13:18:47Z",
+      "side": 1,
+      "message": "I think these need to go into dependency management as they are NOT direct dependencies we want to include",
+      "range": {
+        "startLine": 100,
+        "startChar": 0,
+        "endLine": 109,
+        "endChar": 21
+      },
+      "revId": "f976cd3dc1864f0b92bf041f9e024e9e245bc39d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
