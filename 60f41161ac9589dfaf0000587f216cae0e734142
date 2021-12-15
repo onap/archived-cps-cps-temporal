@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "db94de87_acab77e9",
+        "filename": "src/main/resources/db/changelog/schema/04-added-operation-field-in-network-data.xml",
+        "patchSetId": 11
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2021-12-15T14:26:27Z",
+      "side": 1,
+      "message": "CPS-826 is created.",
+      "parentUuid": "bd4ee226_55e7fc38",
+      "revId": "60f41161ac9589dfaf0000587f216cae0e734142",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "cd27e8cc_7cfd3c7a",
         "filename": "src/test/groovy/org/onap/cps/temporal/controller/event/listener/kafka/DataUpdatedEventListenerIntegrationSpec.groovy",
         "patchSetId": 11
