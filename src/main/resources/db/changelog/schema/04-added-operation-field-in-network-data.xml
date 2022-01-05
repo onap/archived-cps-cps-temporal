@@ -48,4 +48,8 @@
         <comment>Remove not null constraint from payload to support delete operation</comment>
         <dropNotNullConstraint tableName="network_data" columnName="payload"/>
     </changeSet>
+    <changeSet id="4.3" author="cps">
+        <comment>Added not null constraint to operation field</comment>
+        <addNotNullConstraint tableName="network_data" columnName="operation"/>
+    </changeSet>
 </databaseChangeLog>
