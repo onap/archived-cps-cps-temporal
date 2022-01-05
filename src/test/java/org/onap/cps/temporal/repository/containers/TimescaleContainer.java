@@ -26,7 +26,7 @@ import org.testcontainers.utility.DockerImageName;
  */
 public class TimescaleContainer extends PostgreSQLContainer<TimescaleContainer> {
 
-    private static final String IMAGE_NAME = "timescale/timescaledb:2.1.1-pg13";
+    private static final String IMAGE_NAME = "timescale/timescaledb:2.5.1-pg14";
     private static final DockerImageName DOCKER_IMAGE_NAME =
             DockerImageName.parse(IMAGE_NAME).asCompatibleSubstituteFor("postgres");
 

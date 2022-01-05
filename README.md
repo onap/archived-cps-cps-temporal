@@ -93,7 +93,7 @@ docker run --name postgres-cps-temporal -p 5433:5432 -d \
   -e POSTGRES_DB=cpstemporaldb \
   -e POSTGRES_USER=cpstemporal \
   -e POSTGRES_PASSWORD=cpstemporal \
-  timescale/timescaledb:2.1.1-pg13
+  timescale/timescaledb:2.5.1-pg14
 ```
 
 [Liquibase](https://www.liquibase.org/) is used to manage database schema changes and versions.
