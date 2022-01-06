@@ -8,6 +8,28 @@
 CPS Temporal Release Notes
 ==========================
 
+.. contents::
+    :depth: 2
+..
+
+..      ========================
+..      * * *   JAKARTA   * * *
+..      ========================
+
+Version: 1.1.0-SNAPSHOT
+=======================
+
+This section lists the main changes & fixes merged into master (snapshot) version of CPS-Temporal. This information is here to assist developers that want experiment/test using our latest code bases directly. Stability of this is not guaranteed.
+
+Features
+--------
+* None
+
+Bug Fixes
+---------
+
+   - `CPS-841 <https://jira.onap.org/browse/CPS-841>`_  Upgrade log4j to 2.17.1 as recommended by ONAP SECCOM
+
 Version: 1.0.0
 ==============
 
