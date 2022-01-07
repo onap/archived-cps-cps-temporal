@@ -1,0 +1,8 @@
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Code-Review+1: Bruno Sakoto <bruno.sakoto@bell.ca>
+Code-Review+2: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-by: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-at: Fri, 07 Jan 2022 09:10:42 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/126487
+Project: cps/cps-temporal
+Branch: refs/heads/istanbul
