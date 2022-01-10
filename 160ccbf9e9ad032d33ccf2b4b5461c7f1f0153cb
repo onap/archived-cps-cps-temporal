@@ -22,6 +22,75 @@
       "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20da0993_b4a51cf7",
+        "filename": "openapi/swagger/openapi.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-10T15:15:29Z",
+      "side": 1,
+      "message": "have you noticed hwo Renu is no splitting this in ROOT_ and CHILD_ operations?\n(https://gerrit.onap.org/r/c/cps/+/126521/5/cps-service/src/main/java/org/onap/cps/notification/Operation.java)\nI don\u0027t fully understand why this is needed but I presume this should align?!",
+      "range": {
+        "startLine": 230,
+        "startChar": 17,
+        "endLine": 230,
+        "endChar": 39
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f5639031_03ee97a6",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-10T15:15:29Z",
+      "side": 1,
+      "message": "I dont understand why you (can) expect (only?) these values",
+      "range": {
+        "startLine": 122,
+        "startChar": 48,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "28c52529_14ef32c4",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-10T15:15:29Z",
+      "side": 1,
+      "message": "I dont understand why you (can) expect (only?) these values",
+      "range": {
+        "startLine": 147,
+        "startChar": 14,
+        "endLine": 147,
+        "endChar": 65
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
