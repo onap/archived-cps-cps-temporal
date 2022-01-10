@@ -2,7 +2,7 @@
 .. Creative Commons Attribution 4.0 International License.
 .. http://creativecommons.org/licenses/by/4.0
 ..
-.. Copyright (C) 2021 Bell Canada
+.. Copyright (C) 2021-2022 Bell Canada
 
 =====================
 CPS Temporal Modeling
@@ -27,6 +27,7 @@ And following is an example of an event compliant with this schema:
         "type": "org.onap.cps.data-updated-event",
         "content": {
             "observedTimestamp": "2021-06-09T13:00:00.123-0400",
+            "operation": "UPDATE",
             "dataspaceName": "my-dataspace",
             "schemaSetName": "my-schema-set",
             "anchorName": "my-anchor",
