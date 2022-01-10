@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * Copyright (c) 2021 Bell Canada.
+ * Copyright (c) 2021-2022 Bell Canada.
  * ================================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,8 @@ package org.onap.cps.temporal.controller.rest
 
 import org.onap.cps.temporal.controller.utils.DateTimeUtility
 import com.fasterxml.jackson.databind.ObjectMapper
+import org.onap.cps.temporal.domain.Operation
+
 import java.time.OffsetDateTime
 import org.onap.cps.temporal.controller.rest.model.AnchorDetails
 import org.onap.cps.temporal.controller.rest.model.AnchorDetailsMapperImpl
@@ -239,6 +241,7 @@ class QueryControllerSpec extends Specification {
         return NetworkData.builder().dataspace(myDataspace)
             .schemaSet(mySchemaset).anchor(myAnchor).payload('{"message" : "Hello World"}')
             .observedTimestamp(OffsetDateTime.now())
+            .operation(Operation.CREATE)
             .createdTimestamp(OffsetDateTime.now()).build()
     }
 
@@ -248,6 +251,7 @@ class QueryControllerSpec extends Specification {
         anchorDetails.setAnchor(networkData.getAnchor())
         anchorDetails.setSchemaSet(networkData.getSchemaSet())
         anchorDetails.setObservedTimestamp(DateTimeUtility.toString(networkData.getObservedTimestamp()))
+        anchorDetails.setOperation(AnchorDetails.OperationEnum.valueOf(networkData.getOperation().toString()))
         anchorDetails.setData(networkData.getPayload())
         return anchorDetails
     }

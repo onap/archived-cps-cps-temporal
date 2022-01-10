@@ -51,6 +51,7 @@ paths:
           required: true
           schema:
             type: string
+            example: my-anchor
         - $ref: '#/components/parameters/observedTimestampAfter'
         - $ref: '#/components/parameters/simplePayloadFilter'
         - $ref: '#/components/parameters/pointInTime'
@@ -192,18 +193,30 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ErrorMessage'
+          example:
+            status: 400 BAD_REQUEST
+            message: Bad request error message
+            details: Bad request error details
     Unauthorized:
       description: Unauthorized
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ErrorMessage'
+          example:
+            status: 401
+            message: Unauthorized error message
+            details: Unauthorized error details
     Forbidden:
       description: Forbidden
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/ErrorMessage'
+          example:
+            status: 403
+            message: Forbidden error message
+            details: Forbidden error details
   schemas:
     AnchorDetails:
       type: object
@@ -212,6 +225,10 @@ components:
         observedTimestamp:
           type: string
           example: '2021-03-21T00:00:00.000-0000'
+        operation:
+          type: string
+          enum: [CREATE, UPDATE, DELETE]
+          example: UPDATE
         dataspace:
           type: string
           example: 'my-dataspace'
