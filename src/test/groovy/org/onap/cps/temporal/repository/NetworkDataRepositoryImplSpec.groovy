@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * Copyright (c) 2021 Bell Canada.
+ * Copyright (c) 2021-2022 Bell Canada.
  * ================================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
   * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@
 package org.onap.cps.temporal.repository
 
 import org.onap.cps.temporal.domain.NetworkData
+import org.onap.cps.temporal.domain.Operation
 import org.onap.cps.temporal.domain.SearchCriteria
 import org.onap.cps.temporal.repository.containers.TimescaleContainer
 import org.springframework.beans.factory.annotation.Autowired
@@ -118,6 +119,7 @@ class NetworkDataRepositoryImplSpec extends Specification {
                 assert data.getObservedTimestamp().isAfter(observedAfter) || data.getObservedTimestamp().isEqual(observedAfter)
                 assert data.getAnchor() == queryAnchorName
                 assert data.getDataspace() == queryDataspaceName
+                assert data.getOperation() != null
             }
     }
 
@@ -141,6 +143,7 @@ class NetworkDataRepositoryImplSpec extends Specification {
                 assert data.getCreatedTimestamp().isBefore(createdBefore) || data.getCreatedTimestamp().isEqual(createdBefore)
                 assert data.getAnchor() == queryAnchorName
                 assert data.getDataspace() == queryDataspaceName
+                assert data.getOperation() != null
             }
     }
 
