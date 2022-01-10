@@ -127,3 +127,15 @@ For development purposes, CPS Temporal can be ran on any environment using
 Docker. Refer to `README.md <https://github.com/onap/cps-cps-temporal/blob/master/README.md>`_
 and `docker-compose.yml <https://github.com/onap/cps-cps-temporal/blob/master/docker-compose.yml>`_
 files for more details.
+
+Upgrade
+=======
+
+Required upgrade for CPS Core 2.1.0
+-----------------------------------
+
+CPS-Core version 2.1.0 contains changes to include operation field in the event sent to cps-temporal. The event schema is backward compatible
+meaning the events from cps-core 2.0.3(Istanbul) could be consumed by the schema in cps-temporal 1.1.0 (Jakarta).But the new events from cps-core 2.1.0(Jakarta)
+cannot be consumed by the schema in cps-temporal 1.0.0 (or older).
+Hence whenever cps-core version is updated to 2.1.0 or above, cps-temporal version should be updated to 1.1.0 or above.
+
