@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "61189fb9_0a8a45f0",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2022-01-10T14:56:36Z",
+      "side": 1,
+      "message": "Is there reason this is in for 400 and 401 does not have unauthorized etc?",
+      "range": {
+        "startLine": 197,
+        "startChar": 24,
+        "endLine": 197,
+        "endChar": 35
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
