@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "097e99d7_f5246b9a",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "not sure if the title is clear enough. Cant think of what is best but I would refer to the cps-core update\n\nsuggestion \u0027CPS-Core event update\u0027\nor \u0027Required upgrade for CPS Core 2.1.0\u0027",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 26
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74d2b53b_e78ddf6c",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "nb: number of tokens should match title (one to many)",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 27
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e73791a1_bd26adb6",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "event sent to",
+      "range": {
+        "startLine": 137,
+        "startChar": 78,
+        "endLine": 137,
+        "endChar": 86
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c725e52f_3060331a",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "events from cps-core 2.1 (Istanbul)",
+      "range": {
+        "startLine": 138,
+        "startChar": 20,
+        "endLine": 138,
+        "endChar": 46
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e19c1dae_78ae9ee7",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "schema in cps-temporal 1.1.0 (Jakarta)",
+      "range": {
+        "startLine": 138,
+        "startChar": 76,
+        "endLine": 138,
+        "endChar": 104
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "595387a9_18ffe2b9",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "schema in cps-temporal 1.0.0 (or older)",
+      "range": {
+        "startLine": 138,
+        "startChar": 150,
+        "endLine": 138,
+        "endChar": 165
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}

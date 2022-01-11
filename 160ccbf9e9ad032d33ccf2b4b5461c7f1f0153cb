@@ -120,6 +120,30 @@
     },
     {
       "key": {
+        "uuid": "eac9ab3f_d33d7f85",
+        "filename": "openapi/swagger/openapi.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2e35ac76_533db3cc",
+      "range": {
+        "startLine": 230,
+        "startChar": 17,
+        "endLine": 230,
+        "endChar": 39
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5639031_03ee97a6",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 1
@@ -164,6 +188,30 @@
       "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9646b4f_64fc6d5a",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-11T11:06:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8b94fbbc_c95d2ec1",
+      "range": {
+        "startLine": 122,
+        "startChar": 48,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
