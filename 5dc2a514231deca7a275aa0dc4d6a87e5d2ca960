@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "644a32f2_3a240d7f",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "097e99d7_f5246b9a",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 26
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "74d2b53b_e78ddf6c",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "d974306f_b30a1fca",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "74d2b53b_e78ddf6c",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 135,
+        "endChar": 27
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e73791a1_bd26adb6",
         "filename": "docs/content/deployment.rst",
         "patchSetId": 4
@@ -68,6 +116,30 @@
       "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "97ffe7b7_51a2c0c2",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e73791a1_bd26adb6",
+      "range": {
+        "startLine": 137,
+        "startChar": 78,
+        "endLine": 137,
+        "endChar": 86
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     },
     {
       "key": {
@@ -137,6 +209,78 @@
       "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7f1bc5f9_fa6ef733",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e19c1dae_78ae9ee7",
+      "range": {
+        "startLine": 138,
+        "startChar": 76,
+        "endLine": 138,
+        "endChar": 104
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "71f43532_3b2a15ac",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "595387a9_18ffe2b9",
+      "range": {
+        "startLine": 138,
+        "startChar": 150,
+        "endLine": 138,
+        "endChar": 165
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7e2bc098_df9db4cf",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T11:33:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c725e52f_3060331a",
+      "range": {
+        "startLine": 138,
+        "startChar": 20,
+        "endLine": 138,
+        "endChar": 46
+      },
+      "revId": "5dc2a514231deca7a275aa0dc4d6a87e5d2ca960",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
