@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ab65194b_14a6908f",
+        "filename": "docs/_static/openapi/swagger/openapi.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 197,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T10:07:20Z",
+      "side": 1,
+      "message": "outside the scope of this story... since it was a minor change, done.",
+      "parentUuid": "61189fb9_0a8a45f0",
+      "range": {
+        "startLine": 197,
+        "startChar": 24,
+        "endLine": 197,
+        "endChar": 35
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "20da0993_b4a51cf7",
         "filename": "openapi/swagger/openapi.yml",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2022-01-10T15:15:29Z",
       "side": 1,
       "message": "have you noticed hwo Renu is no splitting this in ROOT_ and CHILD_ operations?\n(https://gerrit.onap.org/r/c/cps/+/126521/5/cps-service/src/main/java/org/onap/cps/notification/Operation.java)\nI don\u0027t fully understand why this is needed but I presume this should align?!",
+      "range": {
+        "startLine": 230,
+        "startChar": 17,
+        "endLine": 230,
+        "endChar": 39
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2e35ac76_533db3cc",
+        "filename": "openapi/swagger/openapi.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T10:07:20Z",
+      "side": 1,
+      "message": "As per Renu\u0027s latest commit, the operation values are set to CREATE, UPDATE and DELETE",
+      "parentUuid": "20da0993_b4a51cf7",
       "range": {
         "startLine": 230,
         "startChar": 17,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "8b94fbbc_c95d2ec1",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T10:07:20Z",
+      "side": 1,
+      "message": "replaced with not null check as this field is newly added",
+      "parentUuid": "f5639031_03ee97a6",
+      "range": {
+        "startLine": 122,
+        "startChar": 48,
+        "endLine": 122,
+        "endChar": 64
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "28c52529_14ef32c4",
         "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
         "patchSetId": 1
@@ -91,6 +163,30 @@
       "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3aba7581_57c23890",
+        "filename": "src/test/groovy/org/onap/cps/temporal/repository/NetworkDataRepositoryImplSpec.groovy",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-11T10:07:20Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "28c52529_14ef32c4",
+      "range": {
+        "startLine": 147,
+        "startChar": 14,
+        "endLine": 147,
+        "endChar": 65
+      },
+      "revId": "160ccbf9e9ad032d33ccf2b4b5461c7f1f0153cb",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
