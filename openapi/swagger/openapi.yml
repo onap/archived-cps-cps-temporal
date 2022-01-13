@@ -1,5 +1,5 @@
 # ============LICENSE_START=======================================================
-# Copyright (c) 2021 Bell Canada.
+# Copyright (c) 2021-2022 Bell Canada.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -194,7 +194,7 @@ components:
           schema:
             $ref: '#/components/schemas/ErrorMessage'
           example:
-            status: 400 BAD_REQUEST
+            status: 400
             message: Bad request error message
             details: Bad request error details
     Unauthorized:
@@ -225,6 +225,10 @@ components:
         observedTimestamp:
           type: string
           example: '2021-03-21T00:00:00.000-0000'
+        operation:
+          type: string
+          enum: [CREATE, UPDATE, DELETE]
+          example: UPDATE
         dataspace:
           type: string
           example: 'my-dataspace'
