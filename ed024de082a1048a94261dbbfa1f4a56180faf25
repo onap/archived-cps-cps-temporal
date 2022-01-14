@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "15da4f06_99be2e9f",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 6738
+      },
+      "writtenOn": "2022-01-14T11:23:52Z",
+      "side": 1,
+      "message": "Below",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 156,
+        "endChar": 6
+      },
+      "revId": "ed024de082a1048a94261dbbfa1f4a56180faf25",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
