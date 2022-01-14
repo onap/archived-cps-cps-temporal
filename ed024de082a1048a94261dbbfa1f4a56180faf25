@@ -22,6 +22,29 @@
       "revId": "ed024de082a1048a94261dbbfa1f4a56180faf25",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d36248b8_173df8c1",
+        "filename": "docs/content/deployment.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-01-14T12:17:37Z",
+      "side": 1,
+      "message": "shodul we get another team member to test this independently ?",
+      "range": {
+        "startLine": 205,
+        "startChar": 1,
+        "endLine": 253,
+        "endChar": 8
+      },
+      "revId": "ed024de082a1048a94261dbbfa1f4a56180faf25",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
