@@ -75,14 +75,14 @@ paths:
                     anchor: my-anchor
                     data:
                       status: UP
-
-
         '400':
           $ref: '#/components/responses/BadRequest'
         '401':
           $ref: '#/components/responses/Unauthorized'
         '403':
           $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
   '/v1/dataspaces/{dataspace-name}/anchors/history':
     get:
       description: 'Read anchors data based on filter criteria provided in query parameters'
@@ -128,6 +128,8 @@ paths:
           $ref: '#/components/responses/Unauthorized'
         '403':
           $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
 components:
   parameters:
     dataspaceName:
@@ -217,6 +219,16 @@ components:
             status: 403
             message: Forbidden error message
             details: Forbidden error details
+    InternalServerError:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorMessage"
+          example:
+            status: 500
+            message: Internal Server Error
+            details: Internal Server Error occurred
   schemas:
     AnchorDetails:
       type: object
