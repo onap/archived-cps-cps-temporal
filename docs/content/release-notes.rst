@@ -30,6 +30,34 @@ Bug Fixes
 
    - `CPS-841 <https://jira.onap.org/browse/CPS-841>`_  Upgrade log4j to 2.17.1 as recommended by ONAP SECCOM
 
+..      ========================
+..      * * *   ISTANBUL   * * *
+..      ========================
+
+Version: 1.0.1
+==============
+
+* Release Date: 2021-01-06 (Istanbul)
+
+Artifacts released
+------------------
+
+.. table::
+
+   ===============================  ===============================
+   **Repository**                   **Docker Image**
+   onap/cps-temporal                onap/cps-temporal:1.0.1
+   ===============================  ===============================
+
+Features
+--------
+* None
+
+Bug Fixes
+---------
+
+   - `CPS-841 <https://jira.onap.org/browse/CPS-841>`_  Update log4j version to 2.17.1 due to security vulnerability
+
 Version: 1.0.0
 ==============
 
