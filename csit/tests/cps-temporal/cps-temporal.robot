@@ -1,5 +1,5 @@
 # ============LICENSE_START=======================================================
-# Copyright (C) 2021 Bell Canada.
+# Copyright (C) 2021-2022 Bell Canada.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,7 +36,10 @@ ${schemaSetName}                     CSIT-SchemaSet
 ${anchorName}                        CSIT-Anchor
 ${observedTimestampCreation}         2021-03-21T00:00:00.000+0000
 ${observedTimestampUpdate}           2021-05-21T00:00:00.000+0000
-
+${observedTimestampDelete}           2021-06-21T00:00:00.000+0000
+${operation_delete}                  DELETE
+${operation_update}                  UPDATE
+${operation_create}                  CREATE
 
 *** Test Cases ***
 Create Dataspace
@@ -101,3 +104,23 @@ Get Anchor History by dataspace and anchor name with updated data node
     Length Should Be                        ${responseJson['records']}    2
     Should Be Equal As Strings              ${responseJson['records'][1]['observedTimestamp']}   ${observedTimestampCreation}
     Should Be Equal As Strings              ${responseJson['records'][0]['observedTimestamp']}   ${observedTimestampUpdate}
+
+Delete Data Node
+    ${uri}=             Set Variable        ${cps_core_basePath}/v1/dataspaces/${dataspaceName}/anchors/${anchorName}/nodes
+    ${headers}          Create Dictionary   Content-Type=application/json  Authorization=${cps_core_auth}
+    ${params}=          Create Dictionary   xpath=/test-tree   observed-timestamp=${observedTimestampDelete}
+    ${response}=        DELETE On Session    CPS_CORE_URL   ${uri}   params=${params}  headers=${headers}
+    Should Be Equal As Strings              ${response.status_code}   204
+
+Get Anchor History by dataspace and anchor name with deleted data node
+    Create Session      CPS_TEMPORAL_URL    http://${CPS_TEMPORAL_HOST}:${CPS_TEMPORAL_PORT}
+    ${uri}=             Set Variable        ${cps_temporal_basePath}/v1/dataspaces/${dataspaceName}/anchors/${anchorName}/history
+    ${headers}=         Create Dictionary   Authorization=${cps_temporal_auth}
+    ${params}=          Create Dictionary   sort=observed-timestamp:desc
+    ${response}=        Get On Session      CPS_TEMPORAL_URL   ${uri}  headers=${headers}   expected_status=200
+    ${responseJson}=    Set Variable        ${response.json()}
+    Should Be Equal As Strings              ${response.status_code}       200
+    Length Should Be                        ${responseJson['records']}    3
+    Should Be Equal As Strings              ${responseJson['records'][0]['operation']}      ${operation_delete}
+    Should Be Equal As Strings              ${responseJson['records'][1]['operation']}      ${operation_update}
+    Should Be Equal As Strings              ${responseJson['records'][2]['operation']}      ${operation_create}

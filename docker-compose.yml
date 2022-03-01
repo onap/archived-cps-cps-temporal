@@ -22,7 +22,7 @@ services:
 
   cps-temporal:
     container_name: cps-temporal
-    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-temporal:latest
+    image: onap/cps-temporal:latest
     ports:
       - '8082:8080'
       - '8081:8081'
