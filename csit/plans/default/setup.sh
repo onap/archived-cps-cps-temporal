@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # ============LICENSE_START=======================================================
-# Copyright (C) 2021 Bell Canada.
+# Copyright (C) 2021-2022 Bell Canada.
 # ================================================================================
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,6 +30,9 @@ source $WORKSPACE/plans/default/setup.properties
 curl -L https://github.com/docker/compose/releases/download/1.25.0/docker-compose-`uname -s`-`uname -m` > docker-compose
 chmod +x docker-compose
 
+# Set environment variables for docker compose
+export CPS_TEMPORAL_DOCKER_REPO=
+export CPS_CORE_VERSION=3.0.0-SNAPSHOT-20220303T233031Z
 # start CPS Temporal, cps-core, timescaledb, PostgresSQL and kafka containers with docker compose
 ./docker-compose up -d
 python3 --version
