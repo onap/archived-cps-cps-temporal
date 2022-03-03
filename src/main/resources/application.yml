@@ -82,7 +82,7 @@ management:
         port: 8081
     endpoints:
         web:
-            base-path: /manage
+            base-path: /manage-broken
             exposure:
                 include: info,health,loggers,prometheus
     endpoint:
