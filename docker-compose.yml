@@ -22,7 +22,7 @@ services:
 
   cps-temporal:
     container_name: cps-temporal
-    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-temporal:latest
+    image: ${CPS_TEMPORAL_DOCKER_REPO-nexus3.onap.org:10003/}onap/cps-temporal:${CPS_TEMPORAL_VERSION:-latest}
     ports:
       - '8082:8080'
       - '8081:8081'
@@ -71,7 +71,7 @@ services:
 
   cps-and-ncmp:
     container_name: cps-and-ncmp
-    image: ${DOCKER_REPO:-nexus3.onap.org:10003}/onap/cps-and-ncmp:${VERSION:-latest}
+    image: ${CPS_CORE_DOCKER_REPO-nexus3.onap.org:10003/}onap/cps-and-ncmp:${CPS_CORE_VERSION:-latest}
     ports:
       - "8083:8080"
       - "8087:8081"

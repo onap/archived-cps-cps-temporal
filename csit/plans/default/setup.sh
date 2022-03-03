@@ -31,6 +31,7 @@ curl -L https://github.com/docker/compose/releases/download/1.25.0/docker-compos
 chmod +x docker-compose
 
 # start CPS Temporal, cps-core, timescaledb, PostgresSQL and kafka containers with docker compose
+export CPS_TEMPORAL_DOCKER_REPO=dummy/
 ./docker-compose up -d
 python3 --version
 # Validate CPS service initialization completed via periodic log checking for line like below:
