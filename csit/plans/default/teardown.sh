@@ -18,4 +18,5 @@
 # ============LICENSE_END=========================================================
 
 cd $WORKSPACE/archives/docker-compose
+./docker-compose logs
 ./docker-compose down -v
