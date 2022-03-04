@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3716e2_2e0747ee",
+        "filename": "csit/tests/cps-temporal/cps-temporal.robot",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-04T11:13:29Z",
+      "side": 1,
+      "message": "I am always wondering about test-pyramid strategy when we are adding CSIT test and ask myself are these variations really using anything new form an integration point of view i.e a new  rest endpoint, or in these case a different type of Kafa topic/event?! \n\nif not teh n principe we should not add these test. you can always argue that one or 2 variation don\u0027t matter but eventually if we are no strict on this we end up with additional maintenance and running cost of tets that don\u0027t add value...\n\nI strongly suspect that is not the case here, I think 1 operation e2e test will do it will test the rest endpoints and event handling. The operation-variations are will covered in unit test....\n\nbut lets discuss, maybe there is something I am missing that makes these test necessary...",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 43
+      },
+      "revId": "61b1f26aad1568d15084cb6946f35959e17e6d7e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
