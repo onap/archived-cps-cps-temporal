@@ -46,6 +46,30 @@
       "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "47a02ee6_628d8e03",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-03-07T13:53:02Z",
+      "side": 1,
+      "message": "This is to be able to set empty value for the repo variable.\n\n* ${VARIABLE:-default} evaluates to default if VARIABLE is unset or empty in the environment.\n* ${VARIABLE-default} evaluates to default only if VARIABLE is unset in the environment.\n\nhttps://docs.docker.com/compose/environment-variables/",
+      "parentUuid": "b3b05114_8aac8bf1",
+      "range": {
+        "startLine": 74,
+        "startChar": 32,
+        "endLine": 74,
+        "endChar": 35
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
