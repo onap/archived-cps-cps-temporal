@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4c4432e6_f86d5f3e",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2022-03-07T03:21:45Z",
+      "side": 1,
+      "message": "What is the reason for changing from :- to - ?",
+      "range": {
+        "startLine": 74,
+        "startChar": 32,
+        "endLine": 74,
+        "endChar": 35
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
