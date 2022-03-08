@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "ab2a6a9c_1d5577a2",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-08T14:17:51Z",
+      "side": 1,
+      "message": "STABLE_CPS_CORE_VERSION",
+      "range": {
+        "startLine": 35,
+        "startChar": 7,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "4c4432e6_f86d5f3e",
         "filename": "docker-compose.yml",
         "patchSetId": 1
@@ -108,6 +131,30 @@
       "side": 1,
       "message": "so now you can set it to empty using a blak value in environment, can we discuss explain during standup please",
       "parentUuid": "47a02ee6_628d8e03",
+      "range": {
+        "startLine": 74,
+        "startChar": 32,
+        "endLine": 74,
+        "endChar": 35
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "514d9d22_2881854f",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-08T14:17:51Z",
+      "side": 1,
+      "message": "so it is doen to be able to set this to \u0027blank\u0027",
+      "parentUuid": "461e5b74_7b17590c",
       "range": {
         "startLine": 74,
         "startChar": 32,
