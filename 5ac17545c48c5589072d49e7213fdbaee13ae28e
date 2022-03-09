@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "f198883e_341c2c32",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-09T14:21:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a6d1a964_ebe5bea8",
+      "range": {
+        "startLine": 35,
+        "startChar": 7,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c4432e6_f86d5f3e",
         "filename": "docker-compose.yml",
         "patchSetId": 1
@@ -188,6 +212,30 @@
       "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c97f21f4_2dd54581",
+        "filename": "docker-compose.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-09T14:21:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "514d9d22_2881854f",
+      "range": {
+        "startLine": 74,
+        "startChar": 32,
+        "endLine": 74,
+        "endChar": 35
+      },
+      "revId": "5ac17545c48c5589072d49e7213fdbaee13ae28e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
