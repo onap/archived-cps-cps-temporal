@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "463d7ad0_f56e4f69",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-15T16:16:05Z",
+      "side": 1,
+      "message": "note sure if these need to go into the release notes?!",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 96
+      },
+      "revId": "2e6cf3685dadbca59068af57315962fa2b6053cd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
