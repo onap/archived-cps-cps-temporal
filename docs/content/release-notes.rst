@@ -16,19 +16,37 @@ CPS Temporal Release Notes
 ..      * * *   JAKARTA   * * *
 ..      ========================
 
-Version: 1.1.0-SNAPSHOT
-=======================
+Version: 1.1.0
+==============
 
-This section lists the main changes & fixes merged into master (snapshot) version of CPS-Temporal. This information is here to assist developers that want experiment/test using our latest code bases directly. Stability of this is not guaranteed.
+.. table::
+
+   ===============================  ===============================
+   **Docker Image**                 onap/cps-temporal:1.1.0
+   **Designation**                  1.1.0 Jakarta
+   **Date**                         2022 March 15
+   ===============================  ===============================
 
 Features
 --------
-* None
+
+* `CPS-747 <https://jira.onap.org/browse/CPS-747>`_ - Add support for Data Deletion Events
+* `CPS-482 <https://jira.onap.org/browse/CPS-482>`_ - Add CSIT tests
 
 Bug Fixes
 ---------
 
-   - `CPS-841 <https://jira.onap.org/browse/CPS-841>`_  Upgrade log4j to 2.17.1 as recommended by ONAP SECCOM
+* `CPS-820 <https://jira.onap.org/browse/CPS-820>`_ - Upgrade log4j to 2.16.0
+* `CPS-841 <https://jira.onap.org/browse/CPS-841>`_ - Upgrade log4j to 2.17.1 as recommended by ONAP SECCOM
+* `CPS-905 <https://jira.onap.org/browse/CPS-905>`_ - Fix Docker images for CSIT tests
+
+Tasks
+-----
+
+* `CPS-582 <https://jira.onap.org/browse/CPS-582>`_ - Upgrade Spring Boot dependencies to 2.5.5
+* `CPS-815 <https://jira.onap.org/browse/CPS-815>`_ - Upgrade Spring Boot dependencies to 2.5.7
+* `CPS-842 <https://jira.onap.org/browse/CPS-842>`_ - Upgrade Postgres temporal db to version 14
+
 
 ..      ========================
 ..      * * *   ISTANBUL   * * *
@@ -37,16 +55,12 @@ Bug Fixes
 Version: 1.0.1
 ==============
 
-* Release Date: 2021-01-06 (Istanbul)
-
-Artifacts released
-------------------
-
 .. table::
 
    ===============================  ===============================
-   **Repository**                   **Docker Image**
-   onap/cps-temporal                onap/cps-temporal:1.0.1
+   **Docker Image**                 onap/cps-temporal:1.0.1
+   **Designation**                  1.0.1 Istanbul
+   **Date**                         2021 January 6
    ===============================  ===============================
 
 Features
@@ -56,21 +70,17 @@ Features
 Bug Fixes
 ---------
 
-   - `CPS-841 <https://jira.onap.org/browse/CPS-841>`_  Update log4j version to 2.17.1 due to security vulnerability
+* `CPS-841 <https://jira.onap.org/browse/CPS-841>`_ - Update log4j version to 2.17.1 due to security vulnerability
 
 Version: 1.0.0
 ==============
 
-* Release Date: 2021-09-14 (Istanbul)
-
-Artifacts released
-------------------
-
 .. table::
 
    ===============================  ===============================
-   **Repository**                   **Docker Image**
-   onap/cps-temporal                onap/cps-temporal:1.0.0
+   **Docker Image**                 onap/cps-temporal:1.0.0
+   **Designation**                  1.0.0 Istanbul
+   **Date**                         2021 September 14
    ===============================  ===============================
 
 New features
