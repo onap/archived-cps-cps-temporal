@@ -29,7 +29,7 @@ to implement additional functionalities or storage forms.
 The event messaging system for this integration is **Kafka**, whose running
 instance is deployed independently from CPS. It could be either:
 
-* the ONAP Kafka instance from ONAP DMaaP component,
+* the ONAP Kafka instance from ONAP Strimzi component,
 * or any specific Kafka instance deployed independently from ONAP
 
 The following diagram is the C4 Model representing CPS System Containers:
