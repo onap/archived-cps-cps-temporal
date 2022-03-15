@@ -22,6 +22,30 @@
       "revId": "2e6cf3685dadbca59068af57315962fa2b6053cd",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a6b2b3f_59ace320",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-03-15T17:13:22Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "463d7ad0_f56e4f69",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 96
+      },
+      "revId": "2e6cf3685dadbca59068af57315962fa2b6053cd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
