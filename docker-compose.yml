@@ -71,7 +71,7 @@ services:
 
   cps-and-ncmp:
     container_name: cps-and-ncmp
-    image: ${CPS_CORE_DOCKER_REPO-nexus3.onap.org:10003/}onap/cps-and-ncmp:${STABLE_CPS_CORE_VERSION:-latest}
+    image: ${CPS_CORE_DOCKER_REPO-nexus3.onap.org:10001/}onap/cps-and-ncmp:${STABLE_CPS_CORE_VERSION:-latest}
     ports:
       - "8083:8080"
       - "8087:8081"

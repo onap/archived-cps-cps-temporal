@@ -46,7 +46,7 @@
         <maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
         <minimum-coverage>0.8</minimum-coverage>
         <!-- Application dependencies versions -->
-        <cps.version>2.1.0-SNAPSHOT</cps.version>
+        <cps.version>3.0.0</cps.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
