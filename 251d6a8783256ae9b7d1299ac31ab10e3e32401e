@@ -22,6 +22,30 @@
       "revId": "251d6a8783256ae9b7d1299ac31ab10e3e32401e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65c8dfa8_280c27b8",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-03-17T14:43:03Z",
+      "side": 1,
+      "message": "10003 is the port to use to push (snapshot) images. 10001 is the one for general read.\n\nIn https://jira.linuxfoundation.org/plugins/servlet/theme/portal/2/IT-21516 Jessica gave us an explanation of the process that happens when a new repo is created:\n\nA new local user \"repo-name\" is created and its given permissions to push docker images in ports 10003 (snapshots), 10004 (staging), 10002 (release). And it\u0027s given read access to port 10001 (public)",
+      "parentUuid": "82bddbae_d796a66b",
+      "range": {
+        "startLine": 74,
+        "startChar": 50,
+        "endLine": 74,
+        "endChar": 55
+      },
+      "revId": "251d6a8783256ae9b7d1299ac31ab10e3e32401e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
