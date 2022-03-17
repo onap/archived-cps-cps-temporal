@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82bddbae_d796a66b",
+        "filename": "docker-compose.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2022-03-17T13:20:36Z",
+      "side": 1,
+      "message": "What is the difference between 10001 and 10003?",
+      "range": {
+        "startLine": 74,
+        "startChar": 50,
+        "endLine": 74,
+        "endChar": 55
+      },
+      "revId": "251d6a8783256ae9b7d1299ac31ab10e3e32401e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
