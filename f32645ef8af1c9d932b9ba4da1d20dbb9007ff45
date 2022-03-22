@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b6b7eef8_db0f7f5d",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 7965
+      },
+      "writtenOn": "2022-03-22T10:58:48Z",
+      "side": 1,
+      "message": "Suggestion : we can define the version in the properties section and just use the tag here.\neg : \n\u003cproperties\u003e\n\u003clog4j.version\u003e2.17.2\u003c/log4j.version\u003e\n\u003c/properties\n\nand then use \u003cversion\u003e${log4j.version}\u003c/version\u003e\n\nSame comments for cps, temporal and dmi-plugin.",
+      "range": {
+        "startLine": 79,
+        "startChar": 16,
+        "endLine": 79,
+        "endChar": 41
+      },
+      "revId": "f32645ef8af1c9d932b9ba4da1d20dbb9007ff45",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
