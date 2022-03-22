@@ -46,6 +46,30 @@
       "revId": "f32645ef8af1c9d932b9ba4da1d20dbb9007ff45",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b2f9f65a_73bdf68a",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-03-22T12:58:50Z",
+      "side": 1,
+      "message": "It seems good, this is in dependency management section ...",
+      "parentUuid": "3f08a735_7cad500c",
+      "range": {
+        "startLine": 79,
+        "startChar": 16,
+        "endLine": 79,
+        "endChar": 41
+      },
+      "revId": "f32645ef8af1c9d932b9ba4da1d20dbb9007ff45",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
