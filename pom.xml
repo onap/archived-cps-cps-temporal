@@ -55,7 +55,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.5.7</version>
+                <version>2.6.4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -72,16 +72,6 @@
                 <version>1.15.3</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-api</artifactId>
-                <version>2.17.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-to-slf4j</artifactId>
-                <version>2.17.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -253,7 +243,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.3.RELEASE</version>
+                <version>2.6.4</version>
                 <executions>
                     <execution>
                         <goals>

@@ -28,10 +28,7 @@ import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilde
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.util.CollectionUtils
 import org.springframework.util.MultiValueMap
-import org.springframework.web.util.DefaultUriBuilderFactory
 import org.springframework.web.util.UriComponentsBuilder
-import org.springframework.web.util.UriUtils
-
 import java.nio.charset.Charset
 import java.time.OffsetDateTime
 
@@ -140,7 +137,9 @@ class QueryControllerDataBuilder {
     private void validateQueryParam(String paramName, Object expectedValue, MultiValueMap<String, String> queryParams) {
         def values = queryParams.get(paramName)
         assert (!CollectionUtils.isEmpty(values))
-        assert (expectedValue == URLDecoder.decode(values.get(0), Charset.defaultCharset()))
+
+        def actualValue = getActualValue(values.get(0))
+        assert (expectedValue == actualValue)
     }
 
     boolean validatePointInTime(MultiValueMap<String, String> queryParams) {
@@ -148,12 +147,22 @@ class QueryControllerDataBuilder {
         def values = queryParams.get(POINT_IN_TIME_QUERY_PARAM)
         assert (!CollectionUtils.isEmpty(values))
         def actualValue = URLDecoder.decode(values.get(0), Charset.defaultCharset())
-
+        actualValue = getActualValue(values.get(0))
         if (parameters.pointInTime == null) {
             assert DateTimeUtility.toOffsetDateTime(actualValue).isAfter(OffsetDateTime.now().minusMinutes(2))
         } else {
             assert parameters.pointInTime == actualValue
         }
+    }
+
+    private String getActualValue(String value) {
+        def actualValue = URLDecoder.decode(value, Charset.defaultCharset())
+        actualValue = actualValue
+            .replaceAll('%', '')
+            .replaceAll('253A', ':')
+            .replaceAll('252B', '+')
+            .replaceAll('252C', ',')
+        actualValue
     }
 
 }
