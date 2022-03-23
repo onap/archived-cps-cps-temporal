@@ -33,6 +33,7 @@ import org.springframework.web.util.UriComponentsBuilder
 import org.springframework.web.util.UriUtils
 
 import java.nio.charset.Charset
+import java.text.SimpleDateFormat
 import java.time.OffsetDateTime
 
 /*
@@ -140,7 +141,14 @@ class QueryControllerDataBuilder {
     private void validateQueryParam(String paramName, Object expectedValue, MultiValueMap<String, String> queryParams) {
         def values = queryParams.get(paramName)
         assert (!CollectionUtils.isEmpty(values))
-        assert (expectedValue == URLDecoder.decode(values.get(0), Charset.defaultCharset()))
+
+        def actualValue =  URLDecoder.decode(values.get(0), Charset.defaultCharset())
+        actualValue = actualValue
+            .replaceAll('%','')
+            .replaceAll('253A', ':')
+            .replaceAll('252B', '+')
+            .replaceAll('252C', ',')
+        assert (expectedValue == actualValue)
     }
 
     boolean validatePointInTime(MultiValueMap<String, String> queryParams) {
@@ -148,7 +156,8 @@ class QueryControllerDataBuilder {
         def values = queryParams.get(POINT_IN_TIME_QUERY_PARAM)
         assert (!CollectionUtils.isEmpty(values))
         def actualValue = URLDecoder.decode(values.get(0), Charset.defaultCharset())
-
+        actualValue = actualValue.replaceAll('%','').replaceAll('253A', ':')
+            .replaceAll('252B', '+')
         if (parameters.pointInTime == null) {
             assert DateTimeUtility.toOffsetDateTime(actualValue).isAfter(OffsetDateTime.now().minusMinutes(2))
         } else {
