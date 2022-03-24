@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "241b7b4f_e3955f0b",
+        "filename": "src/test/groovy/org/onap/cps/temporal/controller/rest/QueryControllerDataBuilder.groovy",
+        "patchSetId": 4
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 7743
+      },
+      "writtenOn": "2022-03-24T14:36:14Z",
+      "side": 1,
+      "message": "@Bruno - I was getting an error in the timestamp when running a build so I adde this quick hack. Can you please have a look and advise on how to proceed?\n\nBelow is a snippet of the error I recieve:\n\nassert (expectedValue \u003d\u003d URLDecoder.decode(values.get(0), Charset.defaultCharset()))\n|                             |             |             |      |      |               |\n|                             |             false         |      |      |               windows-1252\n|                             |                           |      |      \u00272021-07-24T03%25253A00%25253A01.000-0400\u0027\n|                             |                           |      [\u00272021-07-24T03%25253A00%25253A01.000-0400\u0027]\n|                             |                           \u00272021-07-24T03%253A00%253A01.000-0400\u0027\n|                             \u00272021-07-24T03:00:01.000-0400\u0027",
+      "range": {
+        "startLine": 158,
+        "startChar": 3,
+        "endLine": 166,
+        "endChar": 5
+      },
+      "revId": "829e7371aca3bad88f1b4977dd0eab2e15daf396",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
