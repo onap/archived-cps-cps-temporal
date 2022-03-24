@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d1b3aa6a_f66f509e",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-03-24T15:43:34Z",
+      "side": 1,
+      "message": "dodo we really want timestamped snapshot version here?!",
+      "range": {
+        "startLine": 35,
+        "startChar": 36,
+        "endLine": 35,
+        "endChar": 62
+      },
+      "revId": "27537a638bd612f546696d568e9c58269ee9617e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
