@@ -32,7 +32,7 @@ chmod +x docker-compose
 
 # Set environment variables for docker compose
 export CPS_TEMPORAL_DOCKER_REPO=
-export STABLE_CPS_CORE_VERSION=3.0.0
+export STABLE_CPS_CORE_VERSION=3.1.0-SNAPSHOT-20220323T082949Z
 # start CPS Temporal, cps-core, timescaledb, PostgresSQL and kafka containers with docker compose
 ./docker-compose up -d
 python3 --version
