@@ -46,6 +46,30 @@
       "revId": "27537a638bd612f546696d568e9c58269ee9617e",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "51a999cc_3d002804",
+        "filename": "csit/plans/default/setup.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-03-25T12:57:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "053f6841_caf4085e",
+      "range": {
+        "startLine": 35,
+        "startChar": 36,
+        "endLine": 35,
+        "endChar": 62
+      },
+      "revId": "27537a638bd612f546696d568e9c58269ee9617e",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
