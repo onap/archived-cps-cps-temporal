@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62ae12f1_ced22cc1",
+        "filename": ".gitreview",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2022-03-25T15:00:19Z",
+      "side": 1,
+      "message": "nb -whitespace here",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 8
+      },
+      "revId": "e902d73a837e236e06de3fa16d8b3ba5c30c7d13",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
