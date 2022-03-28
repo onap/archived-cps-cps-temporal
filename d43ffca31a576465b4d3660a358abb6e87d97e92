@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0b0583f9_94c1d73a",
+        "filename": "pom.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2022-03-28T11:18:01Z",
+      "side": 1,
+      "message": "License Extension",
+      "range": {
+        "startLine": 4,
+        "startChar": 16,
+        "endLine": 4,
+        "endChar": 21
+      },
+      "revId": "d43ffca31a576465b4d3660a358abb6e87d97e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "afe7157e_102bc57c",
+        "filename": "version.properties",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 7830
+      },
+      "writtenOn": "2022-03-28T11:18:01Z",
+      "side": 1,
+      "message": "License Extension",
+      "range": {
+        "startLine": 2,
+        "startChar": 16,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "d43ffca31a576465b4d3660a358abb6e87d97e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
