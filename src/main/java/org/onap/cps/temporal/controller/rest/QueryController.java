@@ -1,6 +1,6 @@
 /*
  * ============LICENSE_START=======================================================
- * Copyright (c) 2021 Bell Canada.
+ * Copyright (c) 2021-2022 Bell Canada
  * ================================================================================
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,10 +42,10 @@ import org.onap.cps.temporal.service.NetworkDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
+import org.springframework.hateoas.Link;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("${rest.api.base-path}")
@@ -172,13 +172,11 @@ public class QueryController implements CpsTemporalQueryApi {
             final var anchorHistory = new AnchorHistory();
             if (searchResult.hasNext()) {
                 anchorHistory.setNextRecordsLink(
-                    toRelativeLink(
-                        getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.nextPageable())));
+                        getRelativeLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.nextPageable()));
             }
             if (searchResult.hasPrevious()) {
                 anchorHistory.setPreviousRecordsLink(
-                    toRelativeLink(
-                        getAbsoluteLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.previousPageable())));
+                        getRelativeLinkForGetAnchorsDataByFilter(searchCriteria, searchResult.previousPageable()));
             }
             anchorHistory.setRecords(convertToAnchorDetails(searchResult.getContent()));
             return anchorHistory;
@@ -196,12 +194,12 @@ public class QueryController implements CpsTemporalQueryApi {
 
             final var anchorHistory = new AnchorHistory();
             if (searchResult.hasNext()) {
-                anchorHistory.setNextRecordsLink(toRelativeLink(
-                    getAbsoluteLinkForGetAnchorDataByName(searchCriteria, searchResult.nextPageable())));
+                anchorHistory.setNextRecordsLink(
+                    getRelativeLinkForGetAnchorDataByName(searchCriteria, searchResult.nextPageable()));
             }
             if (searchResult.hasPrevious()) {
-                anchorHistory.setPreviousRecordsLink(toRelativeLink(
-                    getAbsoluteLinkForGetAnchorDataByName(searchCriteria, searchResult.previousPageable())));
+                anchorHistory.setPreviousRecordsLink(
+                    getRelativeLinkForGetAnchorDataByName(searchCriteria, searchResult.previousPageable()));
             }
             anchorHistory.setRecords(convertToAnchorDetails(searchResult.getContent()));
             return anchorHistory;
@@ -224,62 +222,34 @@ public class QueryController implements CpsTemporalQueryApi {
                 https://github.com/spring-projects/spring-hateoas/issues/361
                 https://github.com/spring-projects/spring-hateoas/pull/1375
              */
-            final int contextPathBeginIndex = absoluteLink.indexOf("rest.api.base-path%257D");
-            return basePath + absoluteLink.substring(contextPathBeginIndex + 23);
+            final int contextPathBeginIndex = absoluteLink.indexOf("${rest.api.base-path}");
+            return basePath + absoluteLink.substring(contextPathBeginIndex + 21);
         }
 
-        private String getAbsoluteLinkForGetAnchorDataByName(final SearchCriteria searchCriteria,
-            final Pageable pageable) {
-            final var uriComponentsBuilder = linkTo(methodOn(QueryController.class).getAnchorDataByName(
+        private String getRelativeLinkForGetAnchorDataByName(final SearchCriteria searchCriteria,
+                                                             final Pageable pageable) {
+            final Link absoluteLink = linkTo(methodOn(QueryController.class).getAnchorDataByName(
                 searchCriteria.getDataspaceName(),
                 searchCriteria.getAnchorName(),
                 DateTimeUtility.toString(searchCriteria.getObservedAfter()),
-                null,
+                searchCriteria.getSimplePayloadFilter(),
                 DateTimeUtility.toString(searchCriteria.getCreatedBefore()),
                 pageable.getPageNumber(), pageable.getPageSize(),
-                sortMapper.sortAsString(searchCriteria.getPageable().getSort())))
-                .toUriComponentsBuilder();
-            addSimplePayloadFilter(uriComponentsBuilder, searchCriteria.getSimplePayloadFilter());
-            return encodePlusSign(uriComponentsBuilder.toUriString());
+                sortMapper.sortAsString(searchCriteria.getPageable().getSort()))).withSelfRel();
+            return Link.of(toRelativeLink(absoluteLink.getHref())).expand().getHref();
         }
 
-        private String getAbsoluteLinkForGetAnchorsDataByFilter(final SearchCriteria searchCriteria,
-            final Pageable pageable) {
-            final var uriComponentsBuilder = linkTo(methodOn(QueryController.class).getAnchorsDataByFilter(
+        private String getRelativeLinkForGetAnchorsDataByFilter(final SearchCriteria searchCriteria,
+                                                                final Pageable pageable) {
+            final Link absoluteLink = linkTo(methodOn(QueryController.class).getAnchorsDataByFilter(
                 searchCriteria.getDataspaceName(),
                 searchCriteria.getSchemaSetName(),
                 DateTimeUtility.toString(searchCriteria.getObservedAfter()),
-                null,
+                searchCriteria.getSimplePayloadFilter(),
                 DateTimeUtility.toString(searchCriteria.getCreatedBefore()),
                 pageable.getPageNumber(), pageable.getPageSize(),
-                sortMapper.sortAsString(searchCriteria.getPageable().getSort())))
-                .toUriComponentsBuilder();
-            addSimplePayloadFilter(uriComponentsBuilder, searchCriteria.getSimplePayloadFilter());
-            return encodePlusSign(uriComponentsBuilder.toUriString());
-        }
-
-        /*
-            Spring hateoas does double encoding when generting URI.
-            To avoid it in the case of simplePayloadFilter,
-             the 'simplePayloadFilter is being added explicitly to UriComponentsBuilder
-         */
-        private UriComponentsBuilder addSimplePayloadFilter(final UriComponentsBuilder uriComponentsBuilder,
-            final String simplePayloadFilter) {
-            if (simplePayloadFilter != null) {
-                uriComponentsBuilder.queryParam("simplePayloadFilter", simplePayloadFilter);
-            }
-            return uriComponentsBuilder;
-        }
-
-        /*
-            Spring hateoas does not encode '+' in the query param but it deccodes '+' as space.
-            Due to this inconsistency, API was failing to convert datetime with positive timezone.
-            The fix is done in the spring-hateoas 1.4 version but it is yet to release.
-            As a workaround, we are replacing all the '+' with '%2B'
-            https://github.com/spring-projects/spring-hateoas/issues/1485
-         */
-        private String encodePlusSign(final String link) {
-            return link.replace("+", "%2B");
+                sortMapper.sortAsString(searchCriteria.getPageable().getSort()))).withSelfRel();
+            return Link.of(toRelativeLink(absoluteLink.getHref())).expand().getHref();
         }
     }
 }

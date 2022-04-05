@@ -135,7 +135,7 @@ class QueryControllerSpec extends Specification {
             responseBody.getRecords() == [toAnchorDetails(networkData)]
         where:
             scenario                                                   | endpointName           | urlSpecifParams          | parameters
-            'without observedTimestampAfter and with payloadFilter'    | 'anchor by name'       | [anchor: myAnchor]       | [observedTimestampAfter: null, payloadFilter: null]
+            'without observedTimestampAfter and without payloadFilter' | 'anchor by name'       | [anchor: myAnchor]       | [observedTimestampAfter: null, payloadFilter: null]
             'with observedTimestampAfter and without payloadFilter'    | 'anchor by name'       | [anchor: myAnchor]       | [observedTimestampAfter: '2021-07-24T03:00:01.000-0400', payloadFilter: null]
             'without observedTimestampAfter and with payloadFilter'    | 'anchor by name'       | [anchor: myAnchor]       | [observedTimestampAfter: null, payloadFilter: '{"message" : "hello+world"}']
             'with observedTimestampAfter and with payloadFilter'       | 'anchor by name'       | [anchor: myAnchor]       | [observedTimestampAfter: '2021-07-24T03:00:01.000+0400', payloadFilter: '{"message" : "hello world"}']
