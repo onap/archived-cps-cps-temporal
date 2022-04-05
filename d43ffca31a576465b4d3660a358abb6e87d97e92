@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3aa49497_a948b315",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2022-04-05T04:23:12Z",
+      "side": 0,
+      "message": "It is not required as Link is being used instead of UriComponentsBuilder.",
+      "range": {
+        "startLine": 261,
+        "startChar": 8,
+        "endLine": 272,
+        "endChar": 9
+      },
+      "revId": "d43ffca31a576465b4d3660a358abb6e87d97e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c6de3cc7_90b42101",
+        "filename": "src/main/java/org/onap/cps/temporal/controller/rest/QueryController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 7680
+      },
+      "writtenOn": "2022-04-05T04:23:12Z",
+      "side": 0,
+      "message": "Upgraded to Spring Hateoas 1.4 version which had this fix.",
+      "range": {
+        "startLine": 274,
+        "startChar": 8,
+        "endLine": 283,
+        "endChar": 9
+      },
+      "revId": "d43ffca31a576465b4d3660a358abb6e87d97e92",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
