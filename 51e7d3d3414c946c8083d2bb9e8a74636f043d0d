@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3645dac8_5cc87b18",
+        "filename": "docs/tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-04-27T16:20:57Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 41,
+        "startChar": 73,
+        "endLine": 41,
+        "endChar": 81
+      },
+      "revId": "51e7d3d3414c946c8083d2bb9e8a74636f043d0d",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
