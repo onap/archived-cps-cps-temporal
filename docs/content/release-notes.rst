@@ -3,6 +3,8 @@
 .. http://creativecommons.org/licenses/by/4.0
 ..
 .. Copyright (C) 2021 Bell Canada
+.. DO NOT CHANGE THIS LABEL FOR RELEASE NOTES - EVEN THOUGH IT GIVES A WARNING
+.. _release_notes:
 
 ==========================
 CPS Temporal Release Notes
