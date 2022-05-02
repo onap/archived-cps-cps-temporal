@@ -4,6 +4,8 @@
 ..
 .. Copyright (C) 2021 Bell Canada
 
+.. _release_notes:
+
 ==========================
 CPS Temporal Release Notes
 ==========================
