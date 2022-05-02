@@ -7,6 +7,8 @@
 
 .. _release_notes:
 
+.. _release_notes:
+
 ==========================
 CPS Temporal Release Notes
 ==========================
