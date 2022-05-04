@@ -24,6 +24,8 @@ rest:
         base-path: /cps-temporal/api
 
 spring:
+    application:
+        name: cps-temporal
     datasource:
         url: ${DB_URL}
         username: ${DB_USERNAME}
