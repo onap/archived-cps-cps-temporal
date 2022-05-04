@@ -25,6 +25,8 @@ rest:
         base-path: /cps-temporal/api
 
 spring:
+    application:
+        name: cps-temporal
     datasource:
         url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/cpstemporaldb
         username: ${DB_USERNAME}
@@ -91,3 +93,7 @@ management:
             # kubernetes probes: liveness and readiness
             probes:
                 enabled: true
+
+logging:
+    format: json
+    
