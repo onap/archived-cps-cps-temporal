@@ -97,6 +97,30 @@
     },
     {
       "key": {
+        "uuid": "c30d5ac6_59751bf6",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-05-06T11:45:11Z",
+      "side": 1,
+      "message": "Exact, dependency management is there for import scope as this one is only supported for dependency management.\nYour points are fair.",
+      "parentUuid": "2edb6465_1b20e5cf",
+      "range": {
+        "startLine": 107,
+        "startChar": 12,
+        "endLine": 107,
+        "endChar": 37
+      },
+      "revId": "798ba153fc86a43aa3567c647cdc4099e12fcb32",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8bee6791_0af40a80",
         "filename": "pom.xml",
         "patchSetId": 2
