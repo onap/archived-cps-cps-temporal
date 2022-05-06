@@ -16,6 +16,24 @@
       "revId": "098a0dea52d46c30c261b6154020339788346f9b",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43153d2c_5c499fb9",
+        "filename": "src/main/resources/application.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 7957
+      },
+      "writtenOn": "2022-05-06T12:40:46Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "448e159a_c34e9de3",
+      "revId": "098a0dea52d46c30c261b6154020339788346f9b",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
     }
   ]
 }
