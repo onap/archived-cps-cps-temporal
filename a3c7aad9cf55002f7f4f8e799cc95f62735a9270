@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dbca9313_c6bd550b",
+        "filename": "pom.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 223,
+      "author": {
+        "id": 7744
+      },
+      "writtenOn": "2022-05-06T08:19:02Z",
+      "side": 1,
+      "message": "Were the comments in Patchset #2 regarding using dependency management here addressed?",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 223,
+        "endChar": 21
+      },
+      "revId": "a3c7aad9cf55002f7f4f8e799cc95f62735a9270",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
