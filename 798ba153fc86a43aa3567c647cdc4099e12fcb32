@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "2edb6465_1b20e5cf",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-05-06T11:30:24Z",
+      "side": 1,
+      "message": "I see you point Bruno but would like to add \n(in order of relevance)\n1) controlling versions in dependency mgmnt has the added benefit of enforcing the version off transient dependencies too!\n\n2) dep. mgnt is already (partly) used here... \n3) I like consistency :-D",
+      "parentUuid": "e85a4048_b86bca08",
+      "range": {
+        "startLine": 107,
+        "startChar": 12,
+        "endLine": 107,
+        "endChar": 37
+      },
+      "revId": "798ba153fc86a43aa3567c647cdc4099e12fcb32",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8bee6791_0af40a80",
         "filename": "pom.xml",
         "patchSetId": 2
