@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e85a4048_b86bca08",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 5658
+      },
+      "writtenOn": "2022-05-06T11:26:27Z",
+      "side": 1,
+      "message": "Being only one unique module, temporal is currently not using dependency management.\n\nI think that dependency management is valuable and required for projects having several modules in order to decouple the declaration from the actual dependency and ensure that all modules dependencies versions are consistent. Agree, this is a must have in this case.\n\nFor a single module project, I see less value in dependency management, and I would delay its introduction later on if ever the project is turned into multi-modules.\n\nWe can still discuss and share our thoughts on this ...",
+      "parentUuid": "379e511d_0ca68403",
+      "range": {
+        "startLine": 107,
+        "startChar": 12,
+        "endLine": 107,
+        "endChar": 37
+      },
+      "revId": "798ba153fc86a43aa3567c647cdc4099e12fcb32",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8bee6791_0af40a80",
         "filename": "pom.xml",
         "patchSetId": 2
