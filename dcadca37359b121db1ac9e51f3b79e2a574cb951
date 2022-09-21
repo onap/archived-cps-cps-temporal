@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3acc3854_7398ce74",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 7931
+      },
+      "writtenOn": "2022-09-21T16:01:48Z",
+      "side": 1,
+      "message": "add nordix 2022\n\nwonder now if the others needs copyrights?",
+      "range": {
+        "startLine": 5,
+        "startChar": 2,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "dcadca37359b121db1ac9e51f3b79e2a574cb951",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
