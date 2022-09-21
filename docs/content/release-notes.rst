@@ -15,6 +15,67 @@ CPS Temporal Release Notes
     :depth: 2
 ..
 
+..      ====================
+..      * * *   KOHN   * * *
+..      ====================
+
+Version: 1.2.0
+==============
+
+Release Data
+------------
+
++--------------------------------------+--------------------------------------------------------+
+| **CPS Project**                      |  Temporal                                              |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Docker images**                    | onap/cps-temporal:1.2.0                                |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Release designation**              | 1.2.0 Kohn                                             |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Release date**                     | 2022 September 21                                      |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+
+Features
+--------
+
+None
+
+Bug Fixes
+---------
+
+None
+
+Known Limitations, Issues and Workarounds
+-----------------------------------------
+
+*System Limitations*
+
+None
+
+*Known Vulnerabilities*
+
+None
+
+*Workarounds*
+
+None
+
+Security Notes
+--------------
+
+*Fixed Security Issues*
+
+   - `CPS-963 <https://jira.onap.org/browse/CPS-963>`_  Liquibase has got serious vulnerability, upgrade required
+
+*Known Security Issues*
+
+None
+
+
 ..      ========================
 ..      * * *   JAKARTA   * * *
 ..      ========================
