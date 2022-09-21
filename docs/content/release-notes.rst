@@ -15,6 +15,69 @@ CPS Temporal Release Notes
     :depth: 2
 ..
 
+..      ====================
+..      * * *   KOHN   * * *
+..      ====================
+
+Version: 1.2.0
+==============
+
+Release Data
+------------
+
++--------------------------------------+--------------------------------------------------------+
+| **CPS Project**                      |  Temporal                                              |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Docker images**                    | onap/cps-temporal:1.2.0                                |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Release designation**              | 1.2.0 Kohn                                             |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+| **Release date**                     | 2022 September 21                                      |
+|                                      |                                                        |
++--------------------------------------+--------------------------------------------------------+
+
+Features
+--------
+   - `CPS-748 <https://jira.onap.org/browse/CPS-748>`_  Support ONAP Strimzi Kafka PoC
+   - `CPS-827 <https://jira.onap.org/browse/CPS-827>`_  Remove explicit dependency on log4j 2.16.0
+   - `CPS-962 <https://jira.onap.org/browse/CPS-962>`_  Update SpringBoot CPS-Temporal to 2.6.4
+   - `CPS-1031 <https://jira.onap.org/browse/CPS-1031>`_  Review properties defined in (oom) application-helm
+   - `CPS-1134 <https://jira.onap.org/browse/CPS-1134>`_  Update CPS info.yaml
+
+Bug Fixes
+---------
+   - `CPS-963 <https://jira.onap.org/browse/CPS-963>`_  Liquibase has got serious vulnerability, upgrade required
+
+Known Limitations, Issues and Workarounds
+-----------------------------------------
+
+*System Limitations*
+
+None
+
+*Known Vulnerabilities*
+
+None
+
+*Workarounds*
+
+None
+
+Security Notes
+--------------
+
+*Fixed Security Issues*
+
+None
+
+*Known Security Issues*
+
+None
+
+
 ..      ========================
 ..      * * *   JAKARTA   * * *
 ..      ========================
