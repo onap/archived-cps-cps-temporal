@@ -22,6 +22,30 @@
       "revId": "dcadca37359b121db1ac9e51f3b79e2a574cb951",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "973012da_baa1cd86",
+        "filename": "docs/content/release-notes.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-09-22T09:00:44Z",
+      "side": 1,
+      "message": "add modificationscopyright",
+      "parentUuid": "3acc3854_7398ce74",
+      "range": {
+        "startLine": 5,
+        "startChar": 2,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "dcadca37359b121db1ac9e51f3b79e2a574cb951",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
     }
   ]
 }
