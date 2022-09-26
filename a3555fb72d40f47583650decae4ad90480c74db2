@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "724d5059_ac41d556",
+        "filename": "pom.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 7743
+      },
+      "writtenOn": "2022-09-26T10:21:12Z",
+      "side": 1,
+      "message": "2021 - 2022",
+      "range": {
+        "startLine": 5,
+        "startChar": 30,
+        "endLine": 5,
+        "endChar": 34
+      },
+      "revId": "a3555fb72d40f47583650decae4ad90480c74db2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f68c8498_1fab4eb2",
+        "filename": "version.properties",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 7743
+      },
+      "writtenOn": "2022-09-26T10:21:12Z",
+      "side": 1,
+      "message": "Add Nordix copyright modification",
+      "range": {
+        "startLine": 3,
+        "startChar": 3,
+        "endLine": 3,
+        "endChar": 4
+      },
+      "revId": "a3555fb72d40f47583650decae4ad90480c74db2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
