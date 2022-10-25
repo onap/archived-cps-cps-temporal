@@ -261,5 +261,5 @@ production upgrade).
 
 For more details about TimescaleDB and PostgresSQL upgrades, refer to:
 
-* `Updating TimescaleDB versions <https://docs.timescale.com/timescaledb/latest/how-to-guides/update-timescaledb/>`_
+* `Updating TimescaleDB versions <https://docs.timescale.com/timescaledb/latest/how-to-guides/>`_
 * `Upgrading a PostgreSQL Cluster <https://www.postgresql.org/docs/14/upgrading.html>`_
