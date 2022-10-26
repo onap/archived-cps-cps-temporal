@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa803a7e_bdcab749",
+        "filename": "docs/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 7743
+      },
+      "writtenOn": "2022-10-26T08:22:29Z",
+      "side": 1,
+      "message": "2022",
+      "range": {
+        "startLine": 2,
+        "startChar": 17,
+        "endLine": 2,
+        "endChar": 22
+      },
+      "revId": "73205dac28f04e223036bafa8c3a6cb560fd6f73",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15e1e8df_bcf4b7cd",
+        "filename": "docs/tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 7743
+      },
+      "writtenOn": "2022-10-26T08:22:29Z",
+      "side": 1,
+      "message": "Add modifications copyright",
+      "revId": "73205dac28f04e223036bafa8c3a6cb560fd6f73",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": true
+    }
+  ]
+}
