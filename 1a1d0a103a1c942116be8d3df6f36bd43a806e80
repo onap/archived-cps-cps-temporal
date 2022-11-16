@@ -1,0 +1,9 @@
+Code-Review+1: Luke Gleeson <luke.gleeson@est.tech>
+Code-Review+2: Thomas Kulik <thomas.kulik@telekom.de>
+Code-Review+2: Toine Siebelink <toine.siebelink@est.tech>
+Verified+1: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-by: Toine Siebelink <toine.siebelink@est.tech>
+Submitted-at: Wed, 16 Nov 2022 15:58:31 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/cps/cps-temporal/+/132262
+Project: cps/cps-temporal
+Branch: refs/heads/kohn
