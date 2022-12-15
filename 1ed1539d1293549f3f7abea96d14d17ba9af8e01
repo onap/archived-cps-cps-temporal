@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "516ef0b6_28d240de",
+        "filename": "pom.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 168,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2022-12-15T08:42:06Z",
+      "side": 1,
+      "message": "weird, I cannot find where the version used to be set...\nIt must have inherited from somewhere, maybe cps or teh test container.\n\nAnyway, this way it is clearly defined here!",
+      "range": {
+        "startLine": 168,
+        "startChar": 12,
+        "endLine": 168,
+        "endChar": 38
+      },
+      "revId": "1ed1539d1293549f3f7abea96d14d17ba9af8e01",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a",
+      "unresolved": false
+    }
+  ]
+}
