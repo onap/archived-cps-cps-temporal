@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18585495_d0f537e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-10-26T16:37:58Z",
+      "side": 1,
+      "message": "Maven failed, but i removed that -1 since it is not related to INFO.yaml and this repo will be archived soon anyways.",
+      "revId": "cbb741eb5d35379892092f9739d787c9b8d48f36",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
