@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eac81ae9_04af9d61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2023-10-31T18:04:02Z",
+      "side": 1,
+      "message": "Please note we are retiring this repo so not sure if you want to ho ahead with these changes",
+      "revId": "f85760aeb09f7053febd2a907583adb0676cb480",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
